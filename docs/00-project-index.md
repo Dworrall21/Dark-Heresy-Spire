@@ -2,7 +2,7 @@
 
 **Dark Heresy Spire** is a Spire / Resistance Toolbox style hack for **Imperium Maledictum - Inquisition** play.
 
-The project is currently in a **v0.1 playtest chassis** state. The core loop, character creation, advancement, classes, Patron pressure, Heat/Subtlety, GM support, requisition/gear, and table sheets are present enough to support a first playtest.
+The project is currently in a **v0.1 playtest chassis** state. The core loop, character creation, advancement, classes, Patron pressure, Heat/Subtlety, GM support, requisition/gear, psychic and forbidden methods, and table sheets are present enough to support a first playtest.
 
 ---
 
@@ -33,6 +33,7 @@ The project is currently in a **v0.1 playtest chassis** state. The core loop, ch
 | 07 | [Mission and Operation Template v0.1](07-mission-operation-template-v0.1.md) | Campaign, Mission, Operation, Situation, clue, opposition, and clock templates | Current |
 | 08 | [GM Toolkit v0.1](08-gm-toolkit-v0.1.md) | GM agenda, moves, threats, factions, clue design, clocks, NPCs, procedures | Current |
 | 09 | [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md) | Modular equipment, tags, burdens, requisition procedure, random gear/name tables | Current |
+| 10 | [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md) | Psychic powers, Warp trace, forbidden methods, radical costs, generators | Current |
 
 ### Legacy / Superseded
 
@@ -49,7 +50,7 @@ The project is currently in a **v0.1 playtest chassis** state. The core loop, ch
 | 02 | [Cell Sheet](sheets/02-cell-sheet-v0.1.md) | Shared cell resources, cover, bonds, contacts, and notes | Current |
 | 03 | [Patron Sheet](sheets/03-patron-sheet-v0.1.md) | Patron profile, Boons, Liabilities, Patience, Red Lines | Current |
 | 04 | [Operation Sheet](sheets/04-operation-sheet-v0.1.md) | Operation Heat, Awareness, clocks, clues, opposition, and fallout prompts | Current |
-| 05 | [Quick Reference Sheet](sheets/05-quick-reference-sheet-v0.1.md) | Table-facing rules summary; gear/requisition summary is next cleanup item | Current |
+| 05 | [Quick Reference Sheet](sheets/05-quick-reference-sheet-v0.1.md) | Table-facing rules summary, including compact gear/requisition reference | Current |
 
 ---
 
@@ -69,6 +70,8 @@ The game currently supports:
 - GM-facing threat, clue, faction, clock, and NPC tools.
 - Modular requisition and gear.
 - Random equipment and equipment name generation.
+- Psychic powers, Warp Trace, and Psychic Burdens.
+- Forbidden methods, Radical pressure, Red Lines, and Patron Notice triggers.
 - Player and table sheets.
 
 This is enough to run a one-shot or short playtest mission.
@@ -77,56 +80,15 @@ This is enough to run a one-shot or short playtest mission.
 
 ## Immediate Next Steps
 
-### 1. Quick Reference Gear Integration
+### 1. First Playtest Mission
 
-Update:
-
-```text
-docs/sheets/05-quick-reference-sheet-v0.1.md
-```
-
-Add compact references for:
-
-- Equipment structure.
-- Gear functions.
-- Resource dice.
-- Common tags.
-- Burden triggers.
-- Requisition procedure.
-- Weapon stress scale.
-- Protection scale.
-
-### 2. Psychic Powers and Forbidden Methods v0.1
-
-Create a standalone reference that expands the core examples into complete table-facing systems.
+Create a short mission designed to test the core loop.
 
 Proposed file:
 
 ```text
-10-psychic-powers-and-forbidden-methods-v0.1.md
+11-the-saint-with-the-wrong-shadow-v0.1.md
 ```
-
-Proposed contents:
-
-1. Psychic Power Principles
-2. Using Psychic Powers
-3. Psychic Stress and Warp Trace
-4. Psychic Power Tags
-5. Psychic Power Chassis
-6. Psychic Power Modules
-7. Example Psychic Powers
-8. Perils / Psychic Burdens
-9. Forbidden Method Principles
-10. Forbidden Method Tags
-11. Forbidden Method Chassis
-12. Example Forbidden Methods
-13. Radical Use, Patron Notice, and Red Lines
-14. Random Psychic / Forbidden Method Generator
-15. One-Page Reference
-
-### 3. First Playtest Mission
-
-Create a short mission designed to test the core loop.
 
 Working title:
 
@@ -134,13 +96,39 @@ Working title:
 The Saint with the Wrong Shadow
 ```
 
-It should test investigation, Heat/Subtlety, Requisition, Patron pressure, a forbidden shortcut, at least one psychic or occult threat, one quiet route, one loud route, and one disastrous route.
+It should test:
 
-### 4. Cleanup / Repo Hygiene
+- Investigation.
+- Heat/Subtlety.
+- Requisition.
+- Patron pressure.
+- Psychic or occult threat.
+- Forbidden shortcut.
+- At least one quiet route.
+- At least one loud route.
+- At least one disastrous route.
+
+### 2. Class Starting Package Gear Pass
+
+Update class starting gear to reference the modular equipment structure from Requisition and Gear v0.1.
+
+Focus on:
+
+- Chassis.
+- Tags.
+- Resource dice.
+- Burdens for restricted, forbidden, Patron-marked, or suspicious gear.
+- Keeping class gear flavorful without turning it into a shopping list.
+
+### 3. README / Entry Point
+
+Create or update a top-level `README.md` that points readers to this index and gives a recommended playtest reading order.
+
+### 4. Repo Hygiene
 
 - Delete or archive the superseded `06-heat-subtlety-v0.1-outline.md` after confirming nothing references it.
-- Add links from relevant docs to the Quick Reference and Sheets Index.
-- Consider a `README.md` that points to this index and explains the playtest order.
+- Add cross-links from relevant docs to the Quick Reference and Sheets Index.
+- Later, convert Markdown sheets into standalone site pages.
 
 ---
 
@@ -156,7 +144,8 @@ For a GM running a first test:
 6. Run pressure using [Heat and Subtlety v0.1](06-heat-subtlety-v0.1.md).
 7. Use [GM Toolkit v0.1](08-gm-toolkit-v0.1.md) during prep and play.
 8. Use [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md) for equipment, assets, and rewards.
-9. Keep [Quick Reference Sheet](sheets/05-quick-reference-sheet-v0.1.md) open at the table.
+9. Use [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md) for psykers, Warp Trace, radical shortcuts, and forbidden assets.
+10. Keep [Quick Reference Sheet](sheets/05-quick-reference-sheet-v0.1.md) open at the table.
 
 ---
 
@@ -167,12 +156,13 @@ For a GM running a first test:
 | Core roll | Playtest-ready | Needs table testing for dice pool size and difficulty feel. |
 | Stress/Fallout | Playtest-ready | Fallout examples may need expansion after testing. |
 | Character creation | Playtest-ready | Starting gear should now reference modular equipment. |
-| Classes | Playtest-ready | Needs balance review after first mission. |
+| Classes | Playtest-ready | Needs balance review and modular gear pass after first mission. |
 | Advancement | Playtest-ready | Beat rewards need table pacing test. |
 | Patron system | Playtest-ready | Strong; should be tested with Heat and Requisition. |
 | Heat/Subtlety | Playtest-ready | Canonical file exists; old outline should be removed later. |
 | GM Toolkit | Playtest-ready | Strong enough for first GM pass. |
-| Requisition/Gear | Playtest-ready draft | Needs quick reference integration and class starting package pass. |
-| Psychic/Forbidden methods | Needed next | Currently exists only as core examples and Heat interactions. |
-| Playtest mission | Needed soon | Required for practical validation. |
+| Requisition/Gear | Playtest-ready draft | Needs class starting package integration after first mission. |
+| Psychic/Forbidden methods | Playtest-ready draft | Needs table testing for cost severity, Warp Trace, and forbidden shortcut frequency. |
+| Quick Reference | Current | Includes compact gear/requisition reference. |
+| Playtest mission | Needed next | Required for practical validation. |
 | Site/sheet pages | Future | Markdown sheets are ready to become standalone pages later. |
