@@ -2,7 +2,7 @@
 
 **Dark Heresy Spire** is a Spire / Resistance Toolbox style hack for **Imperium Maledictum - Inquisition** play.
 
-The project is currently in a **v0.1 playtest chassis** state. The core loop, character creation, advancement, classes, Patron pressure, Heat/Subtlety, GM support, requisition/gear, psychic and forbidden methods, and table sheets are present enough to support a first playtest.
+The project is currently in a **v0.1 playtest chassis** state. The core loop, character creation, advancement, classes, Patron pressure, Heat/Subtlety, GM support, requisition/gear, psychic and forbidden methods, a first playtest mission, and table sheets are present enough to support a first playtest.
 
 ---
 
@@ -34,6 +34,7 @@ The project is currently in a **v0.1 playtest chassis** state. The core loop, ch
 | 08 | [GM Toolkit v0.1](08-gm-toolkit-v0.1.md) | GM agenda, moves, threats, factions, clue design, clocks, NPCs, procedures | Current |
 | 09 | [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md) | Modular equipment, tags, burdens, requisition procedure, random gear/name tables | Current |
 | 10 | [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md) | Psychic powers, Warp trace, forbidden methods, radical costs, generators | Current |
+| 11 | [The Saint with the Wrong Shadow v0.1](11-the-saint-with-the-wrong-shadow-v0.1.md) | First playtest mission testing investigation, Heat, Requisition, Patron pressure, psychic threats, and forbidden shortcuts | Current |
 
 ### Legacy / Superseded
 
@@ -72,6 +73,7 @@ The game currently supports:
 - Random equipment and equipment name generation.
 - Psychic powers, Warp Trace, and Psychic Burdens.
 - Forbidden methods, Radical pressure, Red Lines, and Patron Notice triggers.
+- A first playtest mission: **The Saint with the Wrong Shadow**.
 - Player and table sheets.
 
 This is enough to run a one-shot or short playtest mission.
@@ -80,35 +82,7 @@ This is enough to run a one-shot or short playtest mission.
 
 ## Immediate Next Steps
 
-### 1. First Playtest Mission
-
-Create a short mission designed to test the core loop.
-
-Proposed file:
-
-```text
-11-the-saint-with-the-wrong-shadow-v0.1.md
-```
-
-Working title:
-
-```text
-The Saint with the Wrong Shadow
-```
-
-It should test:
-
-- Investigation.
-- Heat/Subtlety.
-- Requisition.
-- Patron pressure.
-- Psychic or occult threat.
-- Forbidden shortcut.
-- At least one quiet route.
-- At least one loud route.
-- At least one disastrous route.
-
-### 2. Class Starting Package Gear Pass
+### 1. Class Starting Package Gear Pass
 
 Update class starting gear to reference the modular equipment structure from Requisition and Gear v0.1.
 
@@ -120,11 +94,17 @@ Focus on:
 - Burdens for restricted, forbidden, Patron-marked, or suspicious gear.
 - Keeping class gear flavorful without turning it into a shopping list.
 
-### 3. README / Entry Point
+Proposed file to update:
+
+```text
+04-complete-classes-v0.1.md
+```
+
+### 2. README / Entry Point
 
 Create or update a top-level `README.md` that points readers to this index and gives a recommended playtest reading order.
 
-### 4. Repo Hygiene
+### 3. Repo Hygiene
 
 - Delete or archive the superseded `06-heat-subtlety-v0.1-outline.md` after confirming nothing references it.
 - Add cross-links from relevant docs to the Quick Reference and Sheets Index.
@@ -145,7 +125,8 @@ For a GM running a first test:
 7. Use [GM Toolkit v0.1](08-gm-toolkit-v0.1.md) during prep and play.
 8. Use [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md) for equipment, assets, and rewards.
 9. Use [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md) for psykers, Warp Trace, radical shortcuts, and forbidden assets.
-10. Keep [Quick Reference Sheet](sheets/05-quick-reference-sheet-v0.1.md) open at the table.
+10. Run or adapt [The Saint with the Wrong Shadow v0.1](11-the-saint-with-the-wrong-shadow-v0.1.md) as the first playtest mission.
+11. Keep [Quick Reference Sheet](sheets/05-quick-reference-sheet-v0.1.md) open at the table.
 
 ---
 
@@ -161,8 +142,9 @@ For a GM running a first test:
 | Patron system | Playtest-ready | Strong; should be tested with Heat and Requisition. |
 | Heat/Subtlety | Playtest-ready | Canonical file exists; old outline should be removed later. |
 | GM Toolkit | Playtest-ready | Strong enough for first GM pass. |
-| Requisition/Gear | Playtest-ready draft | Needs class starting package integration after first mission. |
+| Requisition/Gear | Playtest-ready draft | Needs class starting package integration. |
 | Psychic/Forbidden methods | Playtest-ready draft | Needs table testing for cost severity, Warp Trace, and forbidden shortcut frequency. |
 | Quick Reference | Current | Includes compact gear/requisition reference. |
-| Playtest mission | Needed next | Required for practical validation. |
+| Playtest mission | Current | First test mission exists as `11-the-saint-with-the-wrong-shadow-v0.1.md`. |
+| README / entry point | Needed | Should point readers to this index and the playtest running order. |
 | Site/sheet pages | Future | Markdown sheets are ready to become standalone pages later. |
