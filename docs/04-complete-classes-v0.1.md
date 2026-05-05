@@ -12,6 +12,24 @@ Use these with [Advancement v0.1](03-advancement-v0.1.md):
 
 A character may still choose non-class advances, requisitions, cross-class abilities, protection, bonds, or resources instead.
 
+## Starting Gear Format
+
+Class starting gear now uses the modular equipment language from [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md).
+
+Starting gear should be fast to use at the table. Each item lists:
+
+| Field | Meaning |
+|---|---|
+| **Chassis** | The base item. |
+| **Resource** | The item's starting Resource die, if it matters. |
+| **Tags** | Fictional/mechanical traits. |
+| **Effect** | What it lets the acolyte do. |
+| **Burden** | A latent complication that triggers when the item is exposed, inspected, overused, used outside mandate, or rolled on a 7 or lower. |
+
+A Burden is not always active. It is a loaded gun on the table.
+
+Do not trigger every Burden every time an item is used. Trigger it when the item becomes important, public, strained, inspected, politically sensitive, or dramatically useful.
+
 ---
 
 ## 1. Interrogator
@@ -24,8 +42,17 @@ You are not an Inquisitor. Not yet. But you have been given enough authority to 
 
 **Skill:** Command  
 **Domain:** Inquisition  
-**Protection:** Authority Protection 1  
-**Gear:** Rosette cipher-fragment, encrypted orders, formal sidearm, seal case  
+**Protection:** Authority Protection 1
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Rosette Cipher-Fragment** | D8 | Patron Marked, Restricted, Sanctioned, Traceable | Permission to imply Inquisitorial mandate without revealing the full chain. Gain Mastery when invoking limited Patron authority once per Operation. | **Patron Marked:** if revealed publicly, recorded, or challenged, mark Patron Notice or Heat +1. |
+| **Encrypted Orders** | D6 | Traceable, Restricted, Paper Trail | Establishes official mission cover, limited jurisdiction, or proof of tasking. | **Paper Trail:** if audited, take D3 Authority stress or tick an Audit clock. |
+| **Formal Sidearm** | D6 | Concealable, Reliable, Sanctioned | D6 Body. Socially acceptable in many official spaces if the cover supports it. | **Restricted Pattern:** if inspected outside mandate, take D3 Authority stress. |
+| **Seal Case** | D6 | Concealable, Traceable | Holds writs, ciphers, stamps, and identity seals; grants permission for soft authority. | **False Provenance:** if the seals are checked deeply, take D3 Shadow stress. |
+
 **Core Ability — Voice of the Master:** Once per Operation, when you invoke your Patron's authority without revealing the full Inquisitorial chain, gain Mastery on Command or Procure. Then mark D3 Authority or Shadow stress.  
 **Refresh:** Remove stress when you take responsibility for the cell's actions before a superior, rival, tribunal, or dangerous authority.
 
@@ -71,8 +98,17 @@ You are the one who sees the shape of guilt in receipts, wounds, prayer schedule
 
 **Skill:** Investigate  
 **Domain:** Heresy or Imperium  
-**Protection:** Mind Protection 1  
-**Gear:** Data-slate, mnemonic engine, evidence kit, ciphered notebooks  
+**Protection:** Mind Protection 1
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Cogitator Data-Slate** | D6 | Traceable, Reliable | Stores, indexes, copies, and cross-references case data. Gain Mastery when organizing evidence under time pressure. | **Traceable:** if seized or scanned, it creates evidence against the cell. |
+| **Mnemonic Engine** | D6 | Restricted, Experimental, Hungry | Lets you retain patterns, recall details, or compare clues beyond normal memory. | **Hungry:** after major use, take D3 Mind stress or step it down. |
+| **Forensic Evidence Kit** | D8 | Reliable, Suspicious | Permission and Mastery to preserve, test, or interpret physical evidence, residues, blood, ash, fibers, or wounds. | **Witness-Magnet:** obvious use in public draws questions or Heat +1. |
+| **Ciphered Notebooks** | D6 | Concealable, Traceable | Keeps personal case patterns hidden from ordinary search. | **False Provenance:** if decoded, reveals what the Explicator already suspected. |
+
 **Core Ability — The Shape of Guilt:** When you find a clue, you may ask one extra question: “What does this imply that no one wants noticed?” Take D3 Mind stress if the answer points toward someone powerful.  
 **Refresh:** Remove stress when you explain the truth to someone who does not want to hear it.
 
@@ -118,8 +154,17 @@ You know pain is a language. You know fear is a key. You know the problem is not
 
 **Skill:** Command or Investigate  
 **Domain:** Inquisition  
-**Protection:** Mind Protection 1  
-**Gear:** Excruciator kit, restraint wire, psycho-chemical ampoules  
+**Protection:** Mind Protection 1
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Excruciator Kit** | D8 | Restricted, Obvious, Coercive, Doctrinally Suspect | Permission and Mastery for controlled pain, fear, and interrogation procedures. May inflict D6 Mind or Authority stress. | **Doctrinally Suspect:** if seen by a Puritan, priest, superior, or rival cell, take D3 Authority stress or mark Patron Notice. |
+| **Restraint Wire** | D6 | Concealable, Brutal, Restricted | Permission to bind, control, or transport a prisoner discreetly. | **Witness-Magnet:** public use creates a witness or Heat +1. |
+| **Psycho-Chemical Ampoules** | D6 | Restricted, Disposable, Unstable | Burn or step down to sedate, heighten pain, force lucidity, or prevent collapse. | **Contaminated:** on 7 or lower, the subject suffers harm, false memory, or medical evidence remains. |
+| **Confession Seals** | D6 | Sanctioned, Traceable | Officially marks a subject, testimony, or secured chamber as under Inquisitorial examination. | **Paper Trail:** if logged, the Imperium knows who requested custody. |
+
 **Core Ability — Pain Is Also Testimony:** When you use coercion, torture, fear, or controlled cruelty to extract information, you always get a clue if the target knows one. On 7 or lower, the GM chooses whether the clue is incomplete, contaminated, or costly.  
 **Refresh:** Remove stress when you accept moral responsibility for harm done in the name of the mission.
 
@@ -165,8 +210,17 @@ You are the person who was never there. The clerk with the right stamp. The pilg
 
 **Skill:** Deceive or Skulk  
 **Domain:** Underworld or Imperium  
-**Protection:** Shadow Protection 2  
-**Gear:** Cover papers, disguise kit, concealed weapon, dead-drop token  
+**Protection:** Shadow Protection 2
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Cover Papers** | D8 | False Provenance, Traceable, Concealable | Permission to operate under a mission cover. May absorb Shadow stress from scrutiny or identity checks. | **False Provenance:** if deeply checked, the cover becomes Questioned or Flagged. |
+| **Disguise Kit** | D6 | Concealable, Disposable | Gain Mastery when altering appearance, costume, gait, or surface identity. | **Traceable:** residue, fabric, or witness memory can connect identities. |
+| **Concealed Weapon** | D6 | Concealable, Silent or Loud, Crude | D3 or D6 Body depending on form. Useful when smuggled into a restricted place. | **Black-Market Source:** if traced, criminals know where it came from. |
+| **Dead-Drop Token** | D6 | Concealable, Suspicious | Permission to access one hidden cache, message route, or fallback contact per Operation. | **Debt-Bound:** if leaned on hard, someone expects payment. |
+
 **Core Ability — Burnable Face:** You begin each Mission with one extra Cover Identity at D6. You may burn it to ignore one Shadow fallout, but that identity is destroyed and Heat increases by 1.  
 **Refresh:** Remove stress when you abandon, repair, or deepen a false identity at personal cost.
 
@@ -212,8 +266,17 @@ You are legal because someone signed the right execution delay. You are useful b
 
 **Skill:** Resist or Investigate  
 **Domain:** Warp  
-**Protection:** Corruption Protection 1  
-**Gear:** Psy-focus, sanctioning brand, warded restraints, sedatives  
+**Protection:** Corruption Protection 1
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Psy-Focus** | D8 | Warded, Sanctioned, Echoing | Grants permission and Mastery for controlled psychic work when properly used. May absorb one psychic backlash complication per Mission by stepping down. | **Warp Echo:** if used near wards, relics, death, dreams, or fear, it leaves a psychic impression. |
+| **Sanctioning Brand** | D6 | Sanctioned, Obvious, Traceable | Reduces Authority risk when the psyker's legal status is challenged. | **Witness-Magnet:** civilians, priests, and officials remember the brand. |
+| **Warded Restraints** | D6 | Warded, Restricted, Obvious | Permission to contain the psyker, suppress escalation, or survive transport under suspicion. | **Sacred Obligation:** if used improperly, take D3 Mind or Authority stress. |
+| **Sedatives** | D6 | Disposable, Restricted, Unstable | Burn or step down to suppress panic, vision, seizure, or uncontrolled manifestation. | **Contaminated:** on 7 or lower, take D3 Body or Corruption stress. |
+
 **Core Ability — Licensed Witch:** You begin with two Psychic Powers. When you use a Psychic Power and roll a 10, clear D3 Mind or Corruption stress. When you roll a 1, the GM introduces psychic backlash or daemonic attention.  
 **Refresh:** Remove stress when you submit to containment, confession, psychic examination, or self-denial.
 
@@ -259,8 +322,17 @@ You know the grammar of the dark: how it enters, how it anchors, how it bargains
 
 **Skill:** Resist or Command  
 **Domain:** Warp or Ecclesiarchy  
-**Protection:** Corruption Protection 2  
-**Gear:** Hexagrammic charms, blessed blade, warding chalk, censers  
+**Protection:** Corruption Protection 2
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Hexagrammic Charms** | D8 | Warded, Holy, Restricted | Protection against possession, Warp trace, psychic intrusion, and daemonic influence. | **Sacred Obligation:** misuse or compromise invites Ecclesiarchy pressure or D3 Authority stress. |
+| **Blessed Blade** | D6 | Holy, Concealable or Obvious | D6 Body. Against daemonic or warp-touched threats, may inflict Corruption stress instead. | **Blooded History:** the blade has a prior case, victim, or grudge attached. |
+| **Warding Chalk** | D6 | Disposable, Warded, Holy | Burn or step down to create a warded circle, seal, barrier, or diagnostic rite. | **Paper Trail:** rare marks identify the exorcistic tradition or Patron source. |
+| **Censers and Incense** | D6 | Holy, Obvious, Witness-Magnet | Gain Mastery when purifying, revealing, calming, or preparing a ritual space. | **Miracle Rumor:** public use may turn into fear, faith, or Heat +1. |
+
 **Core Ability — Name the Intruder:** When you confront possession, daemonic influence, or warp manifestation, you may ask: “What anchors it here?” Gain Mastery when acting directly against that anchor.  
 **Refresh:** Remove stress when you banish, bind, name, or ritually contain a supernatural threat.
 
@@ -306,8 +378,17 @@ You are the voice that makes fear kneel. You are comfort, accusation, scripture,
 
 **Skill:** Command  
 **Domain:** Ecclesiarchy  
-**Protection:** Mind Protection 1 or Authority Protection 1  
-**Gear:** Scripture, censer, devotional icon, preacher's robes  
+**Protection:** Mind Protection 1 or Authority Protection 1
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Scripture and Devotional Icon** | D6 | Holy, Concealable or Obvious | Grants permission and Mastery for rites, prayer, confession, crowd faith, or doctrinal argument. | **Sacred Obligation:** if used to justify compromise, take D3 Mind or Authority stress. |
+| **Censer / Ritual Kit** | D6 | Holy, Obvious | Mastery in purification, public devotion, ward preparation, or calming faithful witnesses. | **Witness-Magnet:** public ritual gathers attention quickly. |
+| **Preacher's Robes** | D6 | Elegant, Obvious, Sanctioned | Social permission in shrines, pilgrim lines, confessionals, and Ministorum spaces. | **Traceable:** witnesses remember the priest. |
+| **Confessor's Seal** | D6 | Sanctioned, Restricted, Paper Trail | Permission to hear confession, request privacy, or claim spiritual jurisdiction. | **Paper Trail:** if invoked officially, Ecclesiarchy records may follow. |
+
 **Core Ability — The Emperor Demands:** When you frame an action as obedience to Imperial faith, grant an ally Mastery. If they roll 7 or lower, you also take D3 Mind or Authority stress.  
 **Refresh:** Remove stress when you lead others in prayer, judgment, confession, or penance during danger.
 
@@ -353,8 +434,25 @@ You are the moment subtlety ends. You are applied force: timed, aimed, and justi
 
 **Skill:** Fight  
 **Domain:** Militarum or Inquisition  
-**Protection:** Body Protection 2  
-**Gear:** Boltgun or hellgun, carapace armour, combat blade  
+**Protection:** Body Protection 2
+
+**Starting Gear:**
+
+Choose one primary weapon:
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Boltgun** | D8 | Loud, Brutal, Restricted | D8 Body. On a 10, +1 stress or shatter cover/armour. | **Restricted Pattern:** if inspected, logged, or used publicly, take D3 Authority stress or Heat +1. |
+| **Hellgun / Hot-Shot Lasgun** | D8 | Reliable, Restricted, Accurate, Unstable | D8 Body. Gain Mastery when prepared, braced, or firing from a tactical position. | **Unstable:** on 7 or lower, step down, overheat, or mark D3 Body stress. |
+
+Also begin with:
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Carapace Armour** | D8 | Heavy, Restricted, Reliable | Body Protection 2. May absorb one serious hit per Operation without stepping down. | **Obvious:** civilian, noble, or sacred spaces treat you as a threat. |
+| **Combat Blade** | D6 | Concealable, Reliable | D3 Body; useful for silent violence or last-resort close work. | **Blooded History:** if examined, it may connect to a prior killing. |
+| **Munitorum Ammo / Charge Pack** | D6 | Disposable, Traceable | Burn or step down to avoid an ammo complication or add +1 stress once. | **Paper Trail:** official ammunition links back to a supply chain. |
+
 **Core Ability — Decisive Application of Force:** When you initiate violence from a position of preparation or surprise, gain Mastery and increase your weapon stress die by one step. Heat increases by 1 if the attack is loud or public.  
 **Refresh:** Remove stress when you end a threat decisively and accept the consequences.
 
@@ -400,8 +498,17 @@ You know the body as testimony. Wounds confess. Organs remember. Disease has a m
 
 **Skill:** Operate or Investigate  
 **Domain:** Mechanicus or Heresy  
-**Protection:** Body Protection 1  
-**Gear:** Medicae kit, bone saw, toxin sampler, auto-suture tools  
+**Protection:** Body Protection 1
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Medicae Kit** | D8 | Reliable, Traceable | Permission and Mastery to treat injuries, toxins, disease, shock, or autopsy evidence. | **Paper Trail:** supplies, drugs, and tools can be traced to a source. |
+| **Bone Saw and Surgical Tools** | D6 | Obvious, Brutal, Restricted | Permission for field surgery, dissection, autopsy, or invasive extraction. | **Witness-Magnet:** public use creates fear, rumors, or Heat +1. |
+| **Toxin Sampler** | D6 | Restricted, Contaminated | Identify, preserve, or apply toxins, plagues, mutagens, residues, or unknown biological material. | **Contaminated:** on 7 or lower, take D3 Body or Corruption stress. |
+| **Auto-Suture Tools** | D6 | Reliable, Disposable | Step down or burn to reduce Body stress by D3 after an injury or stabilize fallout until later. | **Machine-Spirit Temper:** failure demands maintenance, parts, or rites. |
+
 **Core Ability — Flesh Remembers:** When examining wounds, corpses, disease, mutation, or biological evidence, ask one extra question about what caused it or what it is becoming.  
 **Refresh:** Remove stress when you save a life, dissect a truth, or choose which one matters more.
 
@@ -447,8 +554,17 @@ You are the treaty between flesh and mechanism. You know the machine is not loya
 
 **Skill:** Operate  
 **Domain:** Mechanicus  
-**Protection:** Body Protection 1 or Corruption Protection 1  
-**Gear:** Sacred toolkit, auspex, servo-skull, mechadendrite rig  
+**Protection:** Body Protection 1 or Corruption Protection 1
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Sacred Toolkit** | D8 | Reliable, Holy, Machine-Spirit Temper | Permission and Mastery for repairs, rites, bypasses, consecration, or machine diagnosis. | **Machine-Spirit Temper:** if used without proper rites, next use is Risky or the kit steps down. |
+| **Auspex** | D6 | Reliable, Traceable | Mastery when scanning for bio-signs, radiation, energy, void leaks, relic residue, or hidden machinery. | **Traceable:** scans can be logged, detected, or reconstructed. |
+| **Servo-Skull** | D6 | Obvious, Traceable, Reliable | Scout, record, carry a small tool, illuminate, observe, or assist Operate rolls. | **False Provenance:** if its origin is checked, someone recognizes the skull or its former owner. |
+| **Mechadendrite Rig** | D8 | Obvious, Restricted, Heavy | Permission and Mastery for technical work requiring reach, strength, precision, or simultaneous manipulation. | **Restricted Pattern:** if inspected by Mechanicus rivals, they may claim, question, or sanction it. |
+
 **Core Ability — Machine-Spirit Intercession:** Once per Situation, when a device, weapon, door, engine, servo-skull, cogitator, or system would fail, you may keep it functioning. Mark D3 Authority, Body, or Corruption stress depending on what you offended.  
 **Refresh:** Remove stress when you repair, sanctify, appease, or meaningfully improve a machine.
 
@@ -494,8 +610,17 @@ You are absence made flesh. Psykers recoil. Daemons hate you. Ordinary people ma
 
 **Skill:** Resist or Skulk  
 **Domain:** Inquisition or Warp  
-**Protection:** Corruption Protection 3  
-**Gear:** Null collar, concealing hood, compact weapon, isolation orders  
+**Protection:** Corruption Protection 3
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Null Collar** | D8 | Restricted, Obvious, Warded, Suspicious | Permission to explain, contain, or modulate the Untouchable's nature under Inquisitorial control. | **Doctrinally Suspect:** if exposed to priests, psykers, or rival cells, take D3 Authority stress or faction suspicion. |
+| **Concealing Hood** | D6 | Concealable, Suspicious | Helps hide signs of discomfort, identity, or abnormal presence; may absorb Shadow stress from scrutiny. | **Witness-Magnet:** people remember the discomfort even if they do not know why. |
+| **Compact Weapon** | D6 | Concealable, Reliable | D6 Body or D3 Body if very small; usable while isolated, restrained, or undercover. | **Black-Market Source:** if traced, it creates underworld questions. |
+| **Isolation Orders** | D6 | Patron Marked, Sanctioned, Traceable | Permission to demand distance, containment, special transport, or private quarters. | **Paper Trail:** if checked, the orders reveal the cell is handling a classified liability. |
+
 **Core Ability — Absence:** Psychic powers, daemonic influence, and warp phenomena near you become Risky if Safe, or Dangerous if Risky, for everyone using them. Allies also find your presence disturbing; social rolls to comfort, inspire, or blend in become Risky when your nature is obvious.  
 **Refresh:** Remove stress when you isolate yourself to protect the cell or let others treat you as a necessary horror.
 
@@ -541,8 +666,17 @@ You are what the Inquisition usually burns. But someone decided you were more us
 
 **Skill:** Choose one  
 **Domain:** Heresy, Warp, or Xenos  
-**Protection:** Corruption Protection 1 or Shadow Protection 1  
-**Gear:** Forbidden token, handler's leash, concealed relic, old enemy contact  
+**Protection:** Corruption Protection 1 or Shadow Protection 1
+
+**Starting Gear:**
+
+| Item | Resource | Tags | Effect | Burden |
+|---|---:|---|---|---|
+| **Forbidden Token** | D8 | Forbidden, Traceable, Hungry | Proof of the old life: cult sign, xenos shard, warp scar, heretek key, or contaminated relic. Gain Mastery when recognizing or approaching the related threat. | **Faction Claim:** the enemy, Patron, or rival Inquisition may believe it belongs to them. |
+| **Handler's Leash** | D6 | Patron Marked, Restricted, Sanctioned | Explains why the asset is alive and under control. Can absorb Authority or Shadow scrutiny once by stepping down. | **Patron Marked:** if revealed, mark Patron Notice or create a faction question. |
+| **Concealed Relic** | D6 | Forbidden, Concealable, Unstable | One narrow impossible effect tied to Heresy, Warp, or Xenos. | **Unstable:** on 7 or lower, take +D3 Corruption or Authority stress. |
+| **Old Enemy Contact** | D6 | Debt-Bound, Suspicious, Secret-Keeper | A dangerous contact from the asset's former life who can provide rumors, access, or warning. | **Debt-Bound:** when used for major benefit, create a Debt clock or owe a favor. |
+
 **Core Ability — Useful Blasphemy:** Choose one Forbidden Method. When you use it, gain Mastery. If you roll 7 or lower, take +D3 Corruption or Authority stress.  
 **Refresh:** Remove stress when you prove your forbidden nature was necessary to the mission.
 
@@ -588,3 +722,5 @@ Watch especially:
 - How often Heat rises.
 - Whether Radical tools feel tempting.
 - Whether Untouchable and Exorcist constrain Warp threats too strongly.
+- Whether starting gear Burdens trigger naturally without making equipment feel punitive.
+- Whether class gear feels flavorful and modular without turning character creation into a shopping list.
