@@ -213,6 +213,156 @@ At the start of each session, each player chooses:
 
 ---
 
+# Equipment Structure
+
+Most meaningful equipment uses this structure:
+
+```text
+Equipment = Chassis + Modules + Tags + Effect + Resource Die + Burden Profile
+```
+
+| Part | Meaning |
+|---|---|
+| **Chassis** | Base item, such as lasgun, flak coat, auspex, false credentials, servo-skull, or medicae kit. |
+| **Modules** | Add-ons, modifications, rites, ammunition, hidden functions, defects, or attached assets. |
+| **Tags** | Fictional and mechanical traits that tell the table how the item behaves. |
+| **Effect** | Permission, Mastery, Protection, stress die, Heat reduction, access, or other concrete benefit. |
+| **Resource Die** | Quality, supply, reliability, authority, ammo, charge, influence, or durability. |
+| **Burden Profile** | Drawback, trigger, narrative power, and mechanical bite. |
+
+---
+
+# Gear Functions
+
+| Function | Meaning |
+|---|---|
+| **Permission** | Lets you attempt something otherwise impossible or implausible. |
+| **Mastery** | Grants Mastery in a specific situation. |
+| **Protection** | Reduces stress to a named Resistance. |
+| **Stress Dice** | Inflicts stress, usually Body, Mind, Authority, or Corruption. |
+| **Tags** | Changes fictional position, Heat, difficulty, or consequences. |
+
+---
+
+# Resource Dice
+
+| Die | Equipment Quality |
+|---:|---|
+| **D3** | Failing, temporary, improvised, nearly spent, badly damaged, or highly conditional. |
+| **D6** | Standard, common, functional, ordinary, locally available, or limited. |
+| **D8** | Reliable, sanctioned, well-maintained, military, specialist, or strongly supported. |
+| **D10** | Rare, master-crafted, restricted, sacred, highly classified, or unusually potent. |
+
+A Resource Die may grant Mastery, absorb appropriate stress, establish permission, avoid a tag consequence once, resist damage or confiscation, or measure how much use remains.
+
+Step-down path:
+
+```text
+D10 -> D8 -> D6 -> D3 -> gone / broken / empty / exposed
+```
+
+---
+
+# Common Gear Tags
+
+| Tag | Quick Effect |
+|---|---|
+| **Accurate** | Gain Mastery when prepared, braced, scoped, aimed, or firing from advantage. |
+| **Area** | Affects a group, zone, mob, room, or vehicle bay. Usually Loud or Obvious. |
+| **Brutal** | On a 10, inflict +1 stress or force panic, surrender, maiming, or collateral damage. |
+| **Concealable** | Can be hidden from casual inspection; gain Mastery when smuggling or palming it. |
+| **Disposable** | Can be burned for one strong effect, then destroyed or reduced to D3. |
+| **Forbidden** | Use may cause Corruption, Shadow, Patron Notice, faction hostility, or Red Line pressure. |
+| **Heavy** | Hard to conceal and slow to deploy; usually grants stronger stress, Protection, or permission. |
+| **Holy** | Gain Mastery or +1 effect against daemonic, heretical, fear-based, or faith-sensitive threats. |
+| **Loud** | If used in a populated, sacred, noble, monitored, or tense area, Heat +1 unless contained. |
+| **Obvious** | Cannot be hidden without special preparation; Cover or social rolls may become Risky. |
+| **Piercing** | Ignores 1 Protection when fictionally appropriate. |
+| **Reliable** | Ignore the first step-down, jam, misfire, supply issue, or maintenance complication each Operation. |
+| **Restricted** | If inspected by officials, mark D3 Authority stress or create a faction question. |
+| **Sanctioned** | Officially permitted under specific authority; reduces Authority risk until used outside mandate. |
+| **Silent** | Does not raise Heat from noise alone. Bodies, witnesses, traces, and records still matter. |
+| **Traceable** | If left behind, used publicly, scanned, logged, or inspected, it creates evidence. |
+| **Unstable** | On a 7 or lower, the GM may step it down, jam it, overheat it, or inflict D3 stress. |
+| **Warded** | Provides Protection 1 against Corruption, Warp traces, possession, hexes, or psychic intrusion. |
+
+---
+
+# Burden Profiles
+
+A Burden Profile gives the GM a trigger and a narrative move.
+
+```text
+Burden Tag:
+Trigger:
+Narrative Power:
+Mechanical Bite:
+```
+
+A Burden should trigger when the item is:
+
+- Used publicly.
+- Inspected.
+- Scanned.
+- Logged.
+- Left behind.
+- Used on a 7 or lower.
+- Used to solve a major problem.
+- Used outside its mandate.
+- Used against its nature.
+- Seen by the wrong faction.
+- Connected to a prior owner.
+- Fed with something it wants.
+
+Common bites include Heat +1, D3 Shadow stress, D3 Authority stress, D3 Corruption stress, Patron Notice, faction suspicion, a Debt clock, an Audit clock, an Evidence Review clock, or a new Mission hook.
+
+---
+
+# Weapon Stress Scale
+
+| Weapon Scale | Stress |
+|---|---:|
+| Minor / improvised / concealed | D3 |
+| Standard sidearm or melee | D6 |
+| Military, brutal, specialist, or heavy | D8 |
+| Extreme, anti-armour, plasma, melta, forbidden | D10 |
+
+A 10 on an attack or direct harm roll adds **+1 stress inflicted** for each 10 rolled.
+
+---
+
+# Protection Scale
+
+Protection reduces incoming stress to the named Resistance.
+
+| Protection | Meaning |
+|---:|---|
+| **1** | Light, narrow, conditional, or concealed protection. |
+| **2** | Serious, military, specialist, or restricted protection. |
+| **3** | Heavy, rare, sacred, powered, or story-level protection. |
+
+---
+
+# Requisition Procedure
+
+Use Requisition when the cell wants gear, personnel, access, transport, authority, specialists, cover support, or forbidden assets.
+
+1. State the request.
+2. Choose the channel: local office, Arbites, Mechanicus, Ecclesiarchy, Militarum/PDF, Underworld, Void Guild, Patron Boon, or Forbidden Source.
+3. Determine difficulty.
+4. Usually roll **Procure + relevant Domain**.
+5. On success, receive the asset. On a cost, add Heat, stress, delay, handler, faction attention, or a Burden Profile.
+
+| Result | Requisition Outcome |
+|---|---|
+| **1** | Arrives wrong, late, exposed, cursed, broken, or with a severe Burden. Take double stress or trigger a major complication. |
+| **2-5** | You do not get it, or only get it by accepting a serious cost. |
+| **6-7** | You get it, but choose or roll a Burden, Heat, Authority stress, delay, handler, or faction attention. |
+| **8-9** | You get it cleanly, within the fiction of the request. |
+| **10** | You get it cleanly, plus better Quality, extra Module, reduced Heat, useful clue, or no paper trail. |
+
+---
+
 # End-of-Situation Checklist
 
 At the end of each Situation, ask:
