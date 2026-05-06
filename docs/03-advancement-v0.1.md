@@ -206,6 +206,8 @@ Duty Beats reward obedience, orthodoxy, command, sacrifice, official violence, a
 - Take Body, Mind, or Authority stress while upholding doctrine.
 - Let a lesser evil continue because the Patron's objective matters more.
 - Refuse a bargain with a forbidden source.
+- Destroy a piece of equipment that has become compromising or doctrinally suspect.
+- Requisition official gear through proper channels when a faster, dirtier option exists.
 
 ### Major Duty Beats
 
@@ -296,6 +298,8 @@ Radical Beats reward forbidden knowledge, expedience, secrecy, compromise, corru
 - Trade with the underworld for mission advantage.
 - Conceal your own corruption, fear, or forbidden knowledge.
 - Take Corruption, Shadow, or Authority stress while using an unclean solution.
+- Rely on a negative aspect of forbidden equipment to achieve a desperate goal.
+- Modify, upgrade, or corrupt a piece of equipment beyond its sanctioned design.
 
 ### Major Radical Beats
 

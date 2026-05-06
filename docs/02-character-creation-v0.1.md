@@ -229,6 +229,27 @@ Each Bond has:
 | Bound familiar | Scouting, sensory link, warning | Capture, corruption |
 | Dead mentor's notes | Clues, forbidden history | Rival Inquisitors |
 
+### Bond Aspects
+
+Like equipment, Bonds have implicit positive and negative aspects.
+
+The **positive aspect** is what the Bond provides when it works in your favor — roll with Mastery when you lean on it. The **negative aspect** is the vulnerability or complication the Bond creates — Difficulty increases by 1 when you’re forced to rely on the Bond’s weakness.
+
+| Bond | Positive Aspect (→ Mastery) | Negative Aspect (→ +1 Difficulty) |
+|---|---|---|
+| Former squadmate | Battlefield loyalty — will fight alongside you without hesitation. | Shell-shocked — panics under surprise, drawing attention. |
+| Hive sibling | Unconditional trust — will shelter you without questions. | Vulnerable — enemies can use them as leverage against you. |
+| Confessor | Absolute discretion — confessions are sacred and protected. | Doctrinal limits — cannot sanction heretical methods or protect radical action. |
+| Tech-priest colleague | Machine expertise — can fix, bypass, or build anything mechanical. | Mechanicus orthodoxy — suspicious of flesh-logic and may report anomalies. |
+| Underhive fixer | Unlimited access — can source anything, no questions asked. | Criminal loyalty — expects payment and may sell you to a higher bidder. |
+| Rival acolyte | Insider knowledge — knows what the Inquisition is doing before you do. | Competitive — may use your failures for their own advancement. |
+| Saved mutant child | Pure trust — sees you as a protector without reservation. | Politically dangerous — association invites Puritan judgment. |
+| Noble cousin | Social access — opens doors money and warrants cannot. | Family obligation — favors come with dynastic strings attached. |
+| Bound familiar | Psychic connection — senses danger and relays information wordlessly. | Warp liability — can be traced, targeted, or turned by psychic threats. |
+| Dead mentor’s notes | Forbidden insight — answers questions no living person will. | Dangerous legacy — possession of the notes is evidence of radical association. |
+
+When creating a Bond, you do not need to write out both aspects formally. They should be obvious from the Bond’s description. If they are not, ask: **"What does this Bond do well, and what makes relying on it dangerous?"**
+
 ### Bond Stress
 
 Bonds can take stress like Resources.
@@ -267,6 +288,8 @@ No starting acolyte may begin with more than **2 Forbidden Domains** from this l
 ---
 
 ## 9. Starting Gear and Protection
+
+For the full equipment structure — including chassis, modules, tags, resource dice, burden profiles, and tag aspect names for naming your gear — see [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md).
 
 Each acolyte begins with:
 
@@ -444,7 +467,7 @@ Psychic Powers / Forbidden Methods:
 
 **Protection:** Mind Protection 1, Authority Protection 1
 
-**Gear:** Laspistol; cipher slate; evidence kit; old cult token hidden in a prayer-book.
+**Gear:** Steadfast Compact Laspistol (D6 Body, Concealable, Reliable); Dependable Cogitator Cipher-Slate (D6, Traceable); Tried-and-Tested Evidence Kit (D6, Suspicious); old cult token hidden in a prayer-book.
 
 **Bonds:**
 

@@ -21,6 +21,86 @@ A good piece of equipment should answer:
 
 If you take advantage of the positive aspect of the item, you roll with Mastery on checks where you use it. If you’re forced into a situation where you have to rely on the negative aspect of the item, the difficulty of the action increases by 1.
 
+Every piece of meaningful equipment has a positive and negative aspect implied by its tags. You do not need a separate field — aspects emerge from how the item is described. When building or naming a piece of equipment, look at its tags. Each tag carries a strength and a weakness baked into its fiction.
+
+### Tag Aspect Names and Aspects
+
+Each equipment tag provides **flavor names** for equipment name generation and implies a **positive aspect** (→ Mastery when exploited) and a **negative aspect** (→ Difficulty +1 when forced to rely on the weakness).
+
+When naming a piece of equipment, choose one or two adjectives from its tags. When using the equipment, the positive aspect explains when Mastery applies; the negative aspect explains when the fiction turns the item against you.
+
+| Tag | Flavor Names | Positive Aspect | Negative Aspect |
+|---|---|---|---|
+| **Accurate** | Zeroed, Scoped, True-Sighted, Calibrated | Devastating with preparation — rewards patience. | Useless in close quarters or panic. |
+| **Ancient** | Relic-Forged, Archeotech, Antediluvian, Ancestral | Commands respect and awe. | Fragile, irreplaceable, and politically entangling. |
+| **Area** | Wide-Pattern, Scattercast, Purging, Cleansing-Arc | Clears groups and choke points without precision. | Cannot discriminate — collateral and Heat follow. |
+| **Blessed** | Saint-Touched, Consecrated, Litany-Marked, Anointed | Opens faithful spaces and calms holy fear. | Demands doctrinal purity — misuse invites judgment. |
+| **Block** | Fortress-Grip, Bulwark, Parrying, Shield-Frame | Absorbs punishment and holds ground. | Passive — rewards defense, not initiative. |
+| **Bloodbound** | Scarified, Oath-Cut, Vitae-Linked, Blood-Woken | Ferocious when fed with sacrifice. | Useless or mutinous without the offering. |
+| **Bolt** | Godwyn-Pattern, Mass-Reactive, Kraken-Loaded, Shatter-Round | Catastrophic against flesh and light cover. | All fury, no finesse against the well-protected. |
+| **Brutal** | Eviscerating, Mauling, Sawteeth, Gore-Edged | Maximum violence — breaks morale and bodies. | Messy — leaves gore, witnesses, and nightmares. |
+| **Burning** | Promethium-Fed, Incendiary, Purifier, Ash-Maker | Cleanses, denies, and terrifies. | Uncontrollable — spreads to evidence and exits. |
+| **Close** | Trench-Pattern, Gut-Distance, Infighter’s, Melee-Forged | Intimate and decisive at arm’s reach. | Helpless beyond melee distance. |
+| **Concealable** | Compact, Holdout, Sleeve-Fit, Pilgrim-Pocket | Invisible until needed — passes inspection. | Small, limited, or underpowered. |
+| **Conduit** | Psycho-Resonant, Spirit-Linked, Empathic, Nerve-Laced | Amplifies will and intent into devastating effect. | Feeds on the user each time. |
+| **Crude** | Jury-Rigged, Scrap-Built, Underhive, Gutter-Forged | Available anywhere, no questions asked. | Shoddy and suspicious — marks wielder as underclass. |
+| **Dangerous** | Volatile, Over-Charged, Risk-Pattern, Death-Wish | Extreme power when it works. | Self-destructive — hurts the wielder too. |
+| **Debilitating** | Nerve-Strike, Shock-Tipped, Crippling, Stagger-Impact | Creates openings for follow-up. | Merely wounds alone — requires commitment. |
+| **Disposable** | Single-Issue, Burn-After, Expendable, Throwaway | Perfect alibi — use once and walk away clean. | Gone after one use. |
+| **Dual** | Paired, Twin-Fang, Mirrored, Both-Handed | Overwhelming flurry of output. | All offense, no defense — nothing in reserve. |
+| **Elegant** | Gilded, Noble-Forged, Court-Pattern, Heraldic | Opens elite doors by appearance alone. | Conspicuous — everyone remembers the noble weapon. |
+| **Experimental** | Prototype, Test-Bed, Beta-Pattern, Unsanctioned-Tech | Capable of impossible effects. | Unpredictable — may malfunction or attract attention. |
+| **Far Range** | Long-Barrel, Sniper-Grade, Overwatch, Spire-Reach | Lethal at distance before the target knows. | Helpless up close — needs distance and setup. |
+| **Forbidden** | Proscribed, Hereticus-Indexed, Damned, Excommunicate-Grade | Solves problems Imperial tools cannot. | Possession alone is a death sentence. |
+| **Heavy** | Bulkhead-Pattern, Siege-Grade, Crew-Served, Iron-Shod | Overwhelming force — breaks what lighter weapons cannot. | Slow, loud, and impossible to hide. |
+| **Holy** | Emperor-Blessed, Shrine-Forged, Martyr-Touched, Sacred | Anathema to the unholy — minimum effect against taint. | Bound by doctrine — misuse invites spiritual consequence. |
+| **Hungry** | Thirsting, Soul-Fed, Demanding, Never-Sated | Powerful when fed. | Insatiable — withholds function unless given what it craves. |
+| **Limited X** | Rationed, Scarce-Load, Counted-Shot, Tithe-Issue | Potent within its window — every shot matters. | Runs out and creates panic. |
+| **Loud** | Thundercrack, Roaring, Report-Heavy, Wall-Shaker | Terrifying presence — sound itself is a weapon. | Announces position, violence, and guilt to every ear. |
+| **Melta** | Fusion, Thermal-Lance, Slag-Maker, Sun-Core | Ignores all protection — nothing hides behind armour. | Short-ranged and evidence-heavy. |
+| **Obvious** | Unmistakable, Banner-Bright, Parade-Grade, Statement | Commands attention and respect. | Impossible to deny ownership. |
+| **One-Shot** | Last-Resort, Martyrdom-Charge, Final-Argument, Doomsday | Maximum effect in a single moment. | One chance — failure is permanent. |
+| **Penitent** | Self-Flagellant, Mortification, Pain-Offering, Wound-Prayer | Powered by suffering and sacrifice. | Injures the user — every use is a wound. |
+| **Piercing** | Armour-Breaker, Penetrator, Needle-Point, Keyhole | Punches through protection. | Over-penetrates soft targets without stopping power. |
+| **Plasma** | Sun-Forge, Star-Chamber, Ryza-Core, Annihilator | Devastating against everything. | Self-destructive on overload. |
+| **Point-Blank** | Execution-Range, Muzzle-Press, Contact-Shot, Close-Kill | Devastating at touch distance. | Worthless from across the room. |
+| **Ranged** | Standard-Issue, Service-Pattern, Field-Tested, Common-Bore | Versatile across ordinary combat distances. | No special advantage in any specific circumstance. |
+| **Reliable** | Steadfast, Dependable, Tried-and-Tested, Workhorse | Works every time — ignores the first malfunction. | Pedestrian — dependability, not excellence. |
+| **Reload** | Magazine-Fed, Charge-Cycled, Break-Action, Drum-Loaded | Powerful enough to justify the downtime. | Vulnerable during reload. |
+| **Restricted** | Classified, Mandate-Only, Clearance-Required, Sealed-Armoury | Official sanction — backed by authority. | Inspection-magnet — officials have questions. |
+| **Sanctioned** | Authorized, Mandate-Stamped, Approval-Sealed, Cleared | Legally unassailable within mandate. | Use outside parameters creates legal exposure. |
+| **Silent** | Whisper-Bore, Ghost-Action, Suppressed, Noiseless | Kills without sound — preserves stealth. | Bodies, blood, and witnesses still remain. |
+| **Spread** | Scattershot, Fragmentation, Shrapnel-Burst, Crowd-Clearer | Hits everything nearby — impossible to miss a group. | Hits everything — including allies and evidence. |
+| **Suppressive** | Pinning, Covering, Denial-Pattern, Fear-Fire | Controls space and forces enemies to ground. | Burns ammunition and creates noise. |
+| **Suspicious** | Questionable, Odd-Pattern, Out-of-Place, Eyebrow-Raising | Functional in grey areas. | Invites scrutiny — everyone asks questions. |
+| **Traceable** | Serial-Stamped, Gene-Coded, Logged, Registry-Linked | Provenance proves legitimacy when needed. | Provenance proves guilt when investigated. |
+| **Unreliable** | Temperamental, Fickle, Spite-Forged, Grudge-Machine | Powerful when it cooperates. | Refuses to work when needed most. |
+| **Unstable** | Overcharged, Flickering, Cracked-Core, Bleeding-Edge | Exceeds design limits — bursts of impossible performance. | May overheat, jam, scream, or explode. |
+| **Volatile** | Hair-Trigger, Spark-Happy, Chain-Reactive, Combustible | Raw destructive energy. | Failure creates spectacle and exposure. |
+| **Warded** | Hexagrammic, Sigil-Bound, Rune-Carved, Sanctum-Forged | Repels corruption, possession, and psychic intrusion. | Marks the wielder as someone who expects the unholy. |
+| **Wyrd** | Witch-Touched, Soul-Scarred, Warp-Bright, Dream-Forged | Devastating against psychic and daemonic threats. | Corrupting — each use feeds something back. |
+
+### Naming Equipment from Tags
+
+When building a named piece of equipment, pick one or two flavor names from its tags and combine them with the chassis and a pattern/nickname:
+
+```text
+[Tag Flavor Name] + [Chassis] + [Pattern / Nickname]
+```
+
+**Examples from tags:**
+
+| Tags | Possible Name |
+|---|---|
+| Reliable + Concealable | Steadfast Holdout Laspistol, Mk III |
+| Loud + Bolt + Brutal | Thundercrack Deathspitter Boltgun, Ryza Variant |
+| Warded + Holy + Restricted | Hexagrammic Consecrated Chains, Confessor’s Mark |
+| Forbidden + Hungry + Warp Echo | Proscribed Thirsting Data-Spike, Bone Key |
+| Silent + Concealable + Restricted | Whisper-Bore Sleeve-Fit Needle Pistol, Dead Letter |
+| Crude + Concealable + Loud | Scrap-Built Holdout Stub Pistol, Underhive |
+
+The tag flavor names also serve as shorthand for the item’s aspects in play. A “Steadfast” laspistol signals reliability as its positive aspect. A “Holdout” laspistol signals concealment — but also its limitations when firepower matters.
+
 ---
 
 ## 1. Core Equipment Structure
@@ -139,7 +219,7 @@ A Resource Die may be used to:
 - Avoid a tag consequence once.
 - Resist being damaged, traced, exhausted, or confiscated.
 - Measure how much use remains.
-- Determine the amount of stress inflicted on an obstacle when using that equipment. Without a relevant piece of equipment, the stress die is D4 if the action is possible at all.
+- Determine the amount of stress inflicted on an obstacle when using that equipment. Without a relevant piece of equipment, the stress die is D3 if the action is possible at all.
 
 When a Resource Die is strained, stepped down, damaged, or partially spent:
 

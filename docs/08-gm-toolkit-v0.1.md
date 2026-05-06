@@ -197,6 +197,19 @@ Low pools need special care:
 | Alert opposition, exposed methods, hostile ground, supernatural danger, forced to rely on a negative equipment aspect, or active pursuit | **Dangerous** |
 | Success cannot be clean without sacrifice, exposure, fallout, or escalation | **Impossible** |
 
+### When Negative Equipment Aspects Apply
+
+A negative aspect increases Difficulty by 1 only when the fiction makes the item’s weakness unavoidable. This is not a routine penalty.
+
+Invoke a negative aspect when:
+
+- The acolyte is using the item outside its designed role (a Concealable pistol at extreme range, a Holy weapon to deceive).
+- The environment turns a tag against the user (a Loud weapon during infiltration, a Traceable tool under Mechanicus audit).
+- The opposition has specifically prepared against the item’s strength, forcing reliance on its weakness.
+- The acolyte has no better option and must lean on the one thing the item does badly.
+
+Do not invoke a negative aspect when the acolyte is using the item within its intended purpose. A boltgun’s Loud tag does not increase Difficulty during an open firefight — it increases Difficulty when the acolyte needs the firefight to stay quiet.
+
 ### Calibrated Examples
 
 | Situation | Likely Pool and Difficulty | Why |
@@ -377,7 +390,7 @@ What They Do At Heat 9:
 
 ### Inflicting Stress on Threats and Obstacles
 
-When an acolyte inflicts stress to overcome a threat or obstacle, the stress die is determined by the weapon or equipment used (often matching its Resource die). Without a relevant piece of equipment, the stress die is **D4**, assuming the action is possible at all.
+When an acolyte inflicts stress to overcome a threat or obstacle, the stress die is determined by the weapon or equipment used (often matching its Resource die). Without a relevant piece of equipment, the stress die is **D3**, assuming the action is possible at all.
 
 ### Threat Scale
 

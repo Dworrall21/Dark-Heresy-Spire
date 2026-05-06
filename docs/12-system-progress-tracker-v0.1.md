@@ -55,23 +55,20 @@ This is enough to run a one-shot or short playtest mission.
 
 ## Immediate Next Steps
 
-### 1. Class Starting Package Gear Pass
+### 1. ~~Class Starting Package Gear Pass~~ ✔ DONE
 
-Update class starting gear to reference the modular equipment structure from [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md).
+Class starting gear already used the modular equipment structure. All 12 classes now have tag-derived aspect flavor names on every starting item, connecting them to the Tag Aspect Names table in [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md).
 
-Focus on:
+### 1b. Equipment Aspects Integration ✔ DONE
 
-- Chassis.
-- Tags.
-- Resource dice.
-- Burdens for restricted, forbidden, Patron-marked, or suspicious gear.
-- Keeping class gear flavorful without turning it into a shopping list.
-
-Proposed file to update:
-
-```text
-04-complete-classes-v0.1.md
-```
+- Tag Aspect Names table added to doc 09 — every tag now has flavor names, positive aspects, and negative aspects.
+- Equipment naming system integrated with tag aspects.
+- Bond aspects added to doc 02.
+- Equipment-drama Beats added to doc 03.
+- Obstacle stress rule (D3 unarmed fallback) added to core rules (doc 01).
+- GM guidance for negative aspect invocation added to doc 08.
+- Quick Reference sheet updated with equipment aspect rules.
+- Example character Mara Venn updated with named gear.
 
 ### 2. README / Entry Point
 
@@ -92,14 +89,14 @@ Create or update a top-level `README.md` that points readers to the project inde
 | Core roll | Playtest-ready | Needs table testing for dice pool size and difficulty feel. |
 | Stress/Fallout | Playtest-ready | Fallout examples may need expansion after testing. |
 | Character creation | Playtest-ready | Starting gear should now reference modular equipment. |
-| Classes | Playtest-ready | Needs balance review and modular gear pass after first mission. |
+| Classes | Playtest-ready | All 12 classes have tag-derived aspect names on starting gear. Balance review needed after first mission. |
 | Advancement | Playtest-ready | Beat rewards need table pacing test. |
 | Patron system | Playtest-ready | Strong; should be tested with Heat and Requisition. |
 | Heat/Subtlety | Playtest-ready | Current file is `06-heat-subtlety-v0.1-outline.md`; decide later whether to rename. |
 | GM Toolkit | Playtest-ready | Strong enough for first GM pass. |
-| Requisition/Gear | Playtest-ready draft | Needs class starting package integration. |
+| Requisition/Gear | Playtest-ready | Tag aspect names, equipment aspects, Bond aspects, and obstacle stress rules integrated across all docs. |
 | Psychic/Forbidden methods | Playtest-ready draft | Needs table testing for cost severity, Warp Trace, and forbidden shortcut frequency. |
-| Quick Reference | Current | Includes compact gear/requisition reference. |
+| Quick Reference | Current | Includes equipment aspects, gear/requisition reference, and D3 unarmed stress fallback. |
 | Playtest mission | Current | First test mission exists as `11-the-saint-with-the-wrong-shadow-v0.1.md`. |
 | README / entry point | Needed | Should point readers to the project index and the playtest running order. |
 | Site/sheet pages | Future | Markdown sheets are ready to become standalone pages later. |

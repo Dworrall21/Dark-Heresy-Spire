@@ -60,7 +60,7 @@ Add dice as follows:
 |---|---|
 | You have the relevant **Skill** | Fight, Deceive, Investigate, etc. |
 | You have the relevant **Domain** | Heresy, Imperium, Void, etc. |
-| You have **Mastery** | From a class ability, gear (e.g., taking advantage of a positive aspect), leverage, or preparation |
+| You have **Mastery** | From a class ability, gear (e.g., taking advantage of a positive aspect), leverage, or preparation (see §14 for full list) |
 | A helper assists you | They must have a relevant Skill or Domain |
 | Gear or circumstances grant a bonus | Auspex, forged credentials, ambush position |
 
@@ -368,6 +368,10 @@ They have:
 When an acolyte acts against a threat and rolls 7 or lower, the threat pushes back through stress, escalation, or a GM move.
 
 When a threat takes stress equal to its Resistance, it is defeated in the relevant way: killed, driven off, captured, exposed, blackmailed, discredited, banished, or forced to reveal something.
+
+### Inflicting Stress on Threats
+
+When an acolyte acts to damage, overcome, expose, or defeat a threat, the stress inflicted is determined by their weapon or equipment — usually matching the item’s stress die. Without a relevant piece of equipment, the stress die is D3, assuming the action is possible at all. For the full equipment structure and stress dice, see [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md).
 
 ---
 

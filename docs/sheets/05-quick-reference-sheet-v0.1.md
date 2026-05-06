@@ -260,6 +260,17 @@ Equipment = Chassis + Modules + Tags + Effect + Resource Die + Burden Profile
 
 ---
 
+# Equipment Aspects
+
+| Aspect | Rule |
+|---|---|
+| **Positive aspect** | Roll with Mastery when exploiting what the item is designed for. |
+| **Negative aspect** | Difficulty +1 when forced to rely on the item’s weakness. |
+| **Obstacle stress** | Use the weapon/equipment stress die. Without relevant gear: **D3**. |
+| **Naming** | Choose flavor adjectives from tag aspect names to name equipment. |
+
+---
+
 # Resource Dice
 
 | Die | Equipment Quality |
