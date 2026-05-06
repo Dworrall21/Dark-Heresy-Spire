@@ -88,7 +88,7 @@ Choose one.
 
 | Class | Concept |
 |---|---|
-| **Interrogator** | The Patron's heir-apparent, trusted but watched |
+| **Legate** | The Patron's delegated voice, trusted but watched |
 | **Explicator** | Pattern-reader, clue-breaker, savant investigator |
 | **Cruciator** | Torturer, confessor, coercive truth-maker |
 | **Penumbra** | Spy, infiltrator, false-face specialist |

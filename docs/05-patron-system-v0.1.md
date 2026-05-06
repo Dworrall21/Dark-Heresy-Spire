@@ -42,7 +42,35 @@ To create a Patron:
 
 ---
 
-## 3. Patron Sheet
+## 3. Patron Pressure and the Core Rules
+
+The Patron connects campaign pressure to the core rules.
+
+| Patron Element | Core Rule Interaction |
+|---|---|
+| **Boons** | Resources that grant permission, Mastery, leverage, cover, specialist help, or concrete assets. |
+| **Limitless Authority** | Powerful Inquisitorial authority with stress, Heat, Patron Notice, Liability, or faction cost. |
+| **Liabilities** | GM moves tied to the cost of Patron power. |
+| **Patron Notice** | Attention, correction, audit, and short-term reaction from the Patron. |
+| **Patience** | Long-term trust, tolerance, and willingness to keep backing the cell. |
+| **Red Lines** | Hard constraints with explicit consequences when approached or crossed. |
+
+### Patron Pressure Calibration
+
+Use Patron pressure like any other pressure tool:
+
+- Use **Difficulty** when the Patron's doctrine, restriction, or scrutiny makes an action harder.
+- Use **Authority or Shadow stress** when the cell personally pays for invoking mandate, hiding contradiction, or absorbing institutional pressure.
+- Use **Heat** when Patron action makes the Operation noisier.
+- Use **Enemy Awareness** when the opposition learns the Patron's methods, assets, or identity.
+- Use **clocks** when audits, faction complaints, rival attention, or institutional consequences should build.
+- Use **Liabilities** when the Patron's specific weakness, secret, rival, doctrine, or compromised asset enters play.
+
+Do not stack every cost onto one Patron interaction. Choose the pressure that best expresses what just happened.
+
+---
+
+## 4. Patron Sheet
 
 ```text
 Name:
@@ -79,7 +107,7 @@ What They Would Burn:
 
 ---
 
-## 4. Ordo
+## 5. Ordo
 
 The Patron's Ordo defines the broad category of threat they hunt.
 
@@ -130,7 +158,7 @@ A minor Ordo, splinter conclave, personal crusade, or unofficial network focused
 
 ---
 
-## 5. Philosophy
+## 6. Philosophy
 
 The Patron's Philosophy defines how they believe the Inquisition should win.
 
@@ -166,7 +194,7 @@ When the cell acts according to the Patron's private Method, they may gain Maste
 
 ---
 
-## 6. Mandate
+## 7. Mandate
 
 The Mandate is what the Patron is hunting right now.
 
@@ -191,7 +219,7 @@ When the cell delays, obscures, or contradicts the Mandate, mark Patron Notice.
 
 ---
 
-## 7. Boons
+## 8. Boons
 
 Boons are the Patron's useful assets. Each Boon is a Resource with a die rating.
 
@@ -206,23 +234,43 @@ Most starting Boons are **D6**. A particularly central or powerful Boon may begi
 
 ### Using a Boon
 
-When the cell uses a Boon, choose one:
+Boons are Resource dice, not generic bonus pools.
+
+When the cell uses a Boon, choose one clear benefit:
 
 | Use | Effect |
 |---|---|
 | **Permission** | The Boon makes an action possible. |
-| **Mastery** | The Boon grants Mastery to a relevant roll. |
-| **Resource Die** | Roll the Boon's die for effect, protection, leverage, or stress. |
-| **Protection** | The Boon absorbs stress like Protection. |
+| **Mastery** | The Boon grants Mastery to a relevant roll. Mastery does not stack. |
+| **Resource Die** | Roll or spend the Boon's die for effect, leverage, access, stress, cover, or durability. |
+| **Temporary Protection** | The Boon absorbs stress when its effect says it can or the fiction clearly supports it. |
 | **Narrative Override** | The Boon solves a logistical obstacle, but causes Patron Notice, Heat, or a Liability trigger. |
 
-After a Boon is used in a major way, the GM may step it down one die size until repaired, justified, concealed, repaid, or refreshed between Missions.
+After a Boon is used in a major way, the GM may step it down one die size until justified, concealed, repaired, repaid, refreshed, or restored in debrief.
+
+### Boon Refresh
+
+Boons refresh when the Patron's network has time, cover, and political room to recover.
+
+| Boon Type | Refreshes When... |
+|---|---|
+| **Authority** | Reports are filed, superiors are satisfied, records are amended, jurisdiction is restored, or the mandate is clarified. |
+| **Cover / spy network** | Suspicion cools, witnesses are handled, false trails are planted, aliases are repaired, or the network replaces burned assets. |
+| **Archive / knowledge** | Access is reauthorized, data is sanitized, favors are repaid, dangerous records are secured, or a savant finishes cross-checking. |
+| **Military / faction support** | Logistics reset, casualties are explained, jurisdiction is restored, debts are settled, or commanders receive proof. |
+| **Forbidden** | Secrecy, containment, feeding, specialist maintenance, a faction bargain, or accepting a Liability. |
+
+If refresh would be routine, handle it between Missions.
+
+If refresh requires pressure or compromise, use a Debrief result, Requisition, Liability, clock, Patron demand, or Authority/Shadow stress.
 
 ### Core Boon: Limitless Authority
 
 **Limitless Authority — D8 Authority Resource**
 
 Your Patron is an Inquisitor. Officially, legitimate Imperial authorities should answer their call.
+
+Limitless Authority is the Patron-facing version of invoking Inquisitorial authority.
 
 Once per Operation, the cell may invoke Limitless Authority to do one:
 
@@ -232,7 +280,7 @@ Once per Operation, the cell may invoke Limitless Authority to do one:
 - Force an official to comply.
 - Seize a person, place, record, or object under Inquisitorial mandate.
 
-Then choose one cost:
+Then choose one meaningful cost:
 
 - Mark D6 Authority stress.
 - Mark D6 Shadow stress.
@@ -240,9 +288,11 @@ Then choose one cost:
 - Trigger a Patron Liability.
 - Mark Patron Notice.
 
+Use only one cost unless the fiction has become openly catastrophic.
+
 ---
 
-## 8. Example Boons
+## 9. Example Boons
 
 ### Spy Network
 
@@ -328,7 +378,7 @@ Cost: If exposed, trigger Authority or Corruption fallout.
 
 ---
 
-## 9. Liabilities
+## 10. Liabilities
 
 Liabilities are the price of the Patron's power.
 
@@ -338,6 +388,10 @@ Some Liabilities are known to the cell. Others are secret until triggered.
 
 ### Triggering a Liability
 
+Liabilities are GM moves, not punishments for using the Patron.
+
+Trigger a Liability when Patron power becomes exposed, overused, politically awkward, ideologically revealing, or tied to the Patron's secret.
+
 Once per Operation, the GM may trigger a relevant Liability when:
 
 - The cell uses a Patron Boon.
@@ -346,6 +400,7 @@ Once per Operation, the GM may trigger a relevant Liability when:
 - Heat reaches 6 or higher.
 - A player completes a Major or Severe Radical Beat.
 - The cell suffers Severe Authority, Shadow, or Corruption fallout.
+- The Patron's private Method, Secret, Rival, or compromised asset becomes relevant.
 
 When a Liability triggers, choose one:
 
@@ -357,6 +412,8 @@ When a Liability triggers, choose one:
 | **Consume** | Step down one Boon die. |
 | **Demand** | The Patron issues an immediate order. |
 | **Reveal** | A secret, rival, or hidden cost enters play. |
+
+Choose the Liability effect that expresses the Patron's specific weakness. Do not use Liabilities as generic punishment when stress, Heat, Awareness, or a clock would say the same thing more cleanly.
 
 ### Example Liabilities
 
@@ -380,9 +437,11 @@ When a Liability triggers, choose one:
 
 ---
 
-## 10. Patron Notice
+## 11. Patron Notice
 
 Patron Notice measures how much attention the cell has drawn from their own master.
+
+Patron Notice is short-term attention and correction. It should fire often.
 
 Mark **1 Patron Notice** when:
 
@@ -411,9 +470,11 @@ When Patron Notice reaches **3**, the Patron makes a Move, then clear Patron Not
 
 ---
 
-## 11. Patience
+## 12. Patience
 
 Patience is how much failure, disobedience, exposure, and ideological drift the Patron will tolerate.
+
+Patience is long-term trust and tolerance. Losing Patience should feel serious.
 
 | Patron Type | Starting Patience |
 |---|---:|
@@ -445,9 +506,32 @@ When Patience reaches **0**, make a Judgment Move.
 
 Patience can be restored by completing a major Mandate objective, delivering something the Patron demanded, accepting punishment, exposing a rival, or sacrificing a valuable asset for the mission.
 
+### Patron Notice vs Patience
+
+Use **Patron Notice** when the Patron has reason to react soon:
+
+- Noise, exposure, or dramatic Boon use.
+- Ideological drift.
+- A Red Line is approached.
+- Heat rises in a way the Patron cares about.
+- The cell delays, contradicts, or complicates the Mandate.
+
+Use **Patience loss** when the Patron's trust is actually damaged:
+
+- A Red Line is crossed.
+- A direct order is disobeyed.
+- A Boon or Patron asset is lost, corrupted, or publicly exposed.
+- Hidden evidence is discovered.
+- A rival gains leverage.
+- A mission-damaging failure makes the cell look like a liability.
+
+Patron Notice asks: **What does the Patron do now?**
+
+Patience asks: **How much longer will the Patron keep backing you?**
+
 ---
 
-## 12. Red Lines
+## 13. Red Lines
 
 Red Lines are things the cell must not do — or must never be caught doing.
 
@@ -472,7 +556,7 @@ Each Patron has three:
 
 ---
 
-## 13. Standing Order
+## 14. Standing Order
 
 A Standing Order is the Patron's default command.
 
@@ -493,7 +577,7 @@ When the cell openly violates it, mark Patron Notice.
 
 ---
 
-## 14. Forbidden Offer
+## 15. Forbidden Offer
 
 A Forbidden Offer is the Patron's tempting solution. It is powerful, effective, and incriminating.
 
@@ -512,21 +596,23 @@ The Forbidden Offer should always work. That is why it is dangerous.
 
 ---
 
-## 15. Patron Requisition Procedure
+## 16. Patron Requisition Procedure
 
 When the cell asks the Patron for a resource, decide whether it is **Routine**, **Costly**, or **Contested**.
 
 | Type | Procedure |
 |---|---|
 | **Routine** | The Patron provides it if a relevant Boon exists. |
-| **Costly** | The Patron provides it, but mark Patron Notice, step down a Boon, or take Authority/Shadow stress. |
-| **Contested** | Roll Procure + relevant Domain. On 8+, get it. On 6-7, get it with cost. On 2-5, get a lesser version or trigger a Liability. On 1, trigger a Liability and mark Patron Notice. |
+| **Costly** | The Patron provides it, but choose one cost: mark Patron Notice, step down a Boon, take Authority/Shadow stress, create debt, or tick a faction clock. |
+| **Contested** | Roll Procure + relevant Domain. On 8+, get it. On 6-7, it arrives with one meaningful cost. On 2-5, get a lesser version, delay, debt, or Liability. On 1, trigger a major Patron complication and mark Patron Notice. |
 
 Use **Contested** when the request is urgent, illegal, forbidden, faction-dependent, under scrutiny, distant, politically constrained, or likely to expose the cell.
 
+Use the Requisition/Gear outcome calibration: a Patron Requisition should not become a flat dead end unless refusal itself changes the situation. If the Patron cannot or will not provide the request, offer a worse asset, a delayed asset, a compromising channel, a Patron demand, or a Forbidden Offer.
+
 ---
 
-## 16. Defying the Patron
+## 17. Defying the Patron
 
 When the cell defies a direct order, choose how they do it.
 
@@ -547,7 +633,7 @@ On 1, lose 1 Patience and trigger an immediate Patron Move.
 
 ---
 
-## 17. Patron Refresh
+## 18. Patron Refresh
 
 At the end of each Mission, hold a **Debrief**.
 
@@ -573,7 +659,22 @@ Then choose one if justified:
 
 ---
 
-## 18. Example Patron
+## 19. Patron GM Checklist
+
+When Patron pressure enters a scene or Debrief, check:
+
+| Question | If Yes |
+|---|---|
+| Did the cell use Patron authority? | Choose whether the cost is stress, Heat, Notice, Liability, faction reaction, or a clock. |
+| Did a Boon become visible? | Step it down, mark Patron Notice, create a witness problem, or attach a future demand. |
+| Did Heat or Enemy Awareness rise because of the Patron? | Decide who noticed the Patron's method, asset, name, doctrine, or jurisdiction. |
+| Was a Red Line approached or crossed? | Mark Patron Notice for approach; lose Patience or trigger a major consequence for crossing. |
+| Is this attention or trust damage? | Mark Patron Notice for reaction; lose Patience for deeper breaches. |
+| What pressure carries forward? | Trigger a Liability, Boon step-down, stress, clock, demand, audit, rival move, or Forbidden Offer. |
+
+---
+
+## 20. Example Patron
 
 ### Inquisitor Severine Vhal, Ordo Hereticus
 
@@ -610,7 +711,7 @@ Then choose one if justified:
 
 ---
 
-## 19. Playtest Intent
+## 21. Playtest Intent
 
 This Patron system should create three pressures:
 

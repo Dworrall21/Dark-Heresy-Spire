@@ -118,7 +118,7 @@ Heat rises when the cell leaves:
 - Witnesses
 - Records
 - Bodies
-- Psychic traces
+- Psychic traces / Warp Trace
 - Public authority
 - Forbidden evidence
 - Obvious violence
@@ -192,6 +192,22 @@ Mark Patron Notice when:
 - A Red Line is approached.
 
 At **3 Patron Notice**, the Patron makes a Move, then clear Patron Notice.
+
+---
+
+# Psychic / Forbidden Calibration
+
+| Question | Use |
+|---|---|
+| Is the danger present before the roll? | Difficulty. |
+| Does the acolyte personally pay? | Stress. |
+| Did outsiders see or record it? | Heat. |
+| Did the enemy learn a method, signature, or weakness? | Enemy Awareness. |
+| Did occult residue remain? | Warp Trace. |
+| Would the Patron or rival Inquisition judge this? | Patron Notice, Patience, Red Line, or Authority stress. |
+| Should the cost mature later? | Burden or clock. |
+
+On **7 or lower**, psychic powers usually add Corruption stress unless the power says otherwise. A Forbidden Method may simply work and charge a cost when uncertainty is not interesting.
 
 ---
 
@@ -284,7 +300,7 @@ D10 -> D8 -> D6 -> D3 -> gone / broken / empty / exposed
 | **Silent** | Does not raise Heat from noise alone. Bodies, witnesses, traces, and records still matter. |
 | **Traceable** | If left behind, used publicly, scanned, logged, or inspected, it creates evidence. |
 | **Unstable** | On a 7 or lower, the GM may step it down, jam it, overheat it, or inflict D3 stress. |
-| **Warded** | Provides Protection 1 against Corruption, Warp traces, possession, hexes, or psychic intrusion. |
+| **Warded** | Provides Protection 1 against Corruption, Warp Trace, possession, hexes, or psychic intrusion. |
 
 ---
 

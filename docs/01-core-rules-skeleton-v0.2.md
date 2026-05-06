@@ -1,6 +1,18 @@
-# Inquisition Resistance Hack: Core Rules Skeleton v0.2
+# Dark Heresy Spire: Core Rules v0.2
 
-This is the consolidated core rules draft for a Spire-style Inquisition hack. It keeps the D10 pool, Skills, Domains, Stress, Fallout, and Refresh logic, but rebuilds the premise around deniable Inquisitorial acolytes.
+This is the table-facing core rules chapter for **Dark Heresy Spire**.
+
+Use this chapter for the universal procedures of play: the conversation, core roll, Difficulty, stress, Fallout, Protection, Skills, Domains, Mastery, helping, clues, threats, combat, and the basic pressure tracks.
+
+Other chapters expand the subsystems:
+
+- Character creation and classes: [Character Creation v0.1](02-character-creation-v0.1.md) and [Complete Classes v0.1](04-complete-classes-v0.1.md)
+- Advancement: [Advancement v0.1](03-advancement-v0.1.md)
+- Patron pressure: [Patron System v0.1](05-patron-system-v0.1.md)
+- Heat, Shadow, Cover, and Enemy Awareness: [Heat and Subtlety v0.1](06-heat-subtlety-v0.1-outline.md)
+- Mission structure: [Mission and Operation Template v0.1](07-mission-operation-template-v0.1.md)
+- Gear and Requisition: [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md)
+- Psychic powers and forbidden methods: [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md)
 
 > Working premise: you are doomed agents of an oppressive empire trying to prevent something worse.
 
@@ -52,7 +64,15 @@ Add dice as follows:
 | A helper assists you | They must have a relevant Skill or Domain |
 | Gear or circumstances grant a bonus | Auspex, forged credentials, ambush position |
 
-Roll the whole pool. Then apply Difficulty. Finally, read the highest remaining die.
+Resolve a roll in this order:
+
+1. Say what the acolyte is trying to do.
+2. Say what is at risk: stress, Heat, Awareness, clocks, evidence, time, a Bond, a Resource, or a worse position.
+3. Choose the relevant Skill and Domain.
+4. Build the D10 pool.
+5. Set Difficulty.
+6. Roll, remove dice for Difficulty, and read the highest remaining die.
+7. Apply the result, including stress, Fallout checks, Heat, clocks, or GM moves.
 
 ---
 
@@ -148,8 +168,9 @@ When you take stress:
 
 1. The GM chooses the relevant Resistance.
 2. The GM rolls the stress die.
-3. Add the result to that Resistance.
-4. Immediately check for Fallout.
+3. Mark the rolled stress against available Protection first.
+4. Add any remaining stress to that Resistance.
+5. If stress was added to a Resistance, immediately check for Fallout.
 
 ---
 
@@ -157,7 +178,13 @@ When you take stress:
 
 Fallout happens when accumulated stress becomes a concrete consequence.
 
-Each time you take stress, the GM rolls 1D10. If the result is **lower than your current stress in that Resistance**, you suffer Fallout.
+Each time stress is added to a Resistance, the GM rolls 1D10. If the result is **lower than your current stress in that Resistance**, you suffer Fallout.
+
+When Fallout triggers:
+
+1. Determine severity from the current stress in the triggering Resistance.
+2. Apply a concrete consequence that fits the fiction.
+3. Clear stress based on the severity.
 
 | Severity | Stress Range | Meaning |
 |---|---:|---|
@@ -358,27 +385,24 @@ Violence is fast, ugly, and consequential.
 
 ## 19. Gear
 
-Gear does one or more of the following:
+Gear is not a shopping list. It is permission, leverage, danger, authority, evidence, and temptation.
 
-1. Makes an action possible.
-2. Grants Protection.
-3. Grants Mastery in a specific situation.
-4. Inflicts stress.
-5. Acts as a Resource die.
-6. Creates fictional permission or complication.
+Meaningful gear is usually described by:
 
-| Gear | Rules |
-|---|---|
-| **Laspistol** | D6 Body, Concealable, Reliable |
-| **Boltgun** | D8 Body, Loud, Brutal, Restricted |
-| **Needle Pistol** | D6 Body, Silent, Toxin, Illegal |
-| **Chainsword** | D6 Body, Brutal, Loud |
-| **Auspex** | Mastery when scanning for hidden bio-signs, radiation, or energy traces |
-| **Excruciator Kit** | D6 Mind or Authority, Slow, Horrifying |
-| **Rosette Cipher** | Authority Protection 1; may justify impossible requisitions |
-| **Hexagrammic Wards** | Corruption Protection 2; fragile against direct daemonic contact |
-| **Carapace Armour** | Body Protection 3, Obvious |
-| **Administratum Cover Papers** | Shadow Protection 2 when dealing with bureaucracy |
+```text
+Chassis + Resource Die + Tags + Effect + Burden
+```
+
+Gear may:
+
+- Make an action possible.
+- Grant Mastery in a specific situation.
+- Provide Protection.
+- Inflict stress.
+- Act as a Resource die.
+- Create fictional permission, evidence, or complication.
+
+For the full equipment structure, tags, burdens, weapon chassis, modules, random tables, and class gear language, use [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md).
 
 ---
 
@@ -398,24 +422,17 @@ When the outcome is uncertain, roll **Procure + relevant Domain**.
 | Restricted daemonology file | Procure + Inquisition or Warp |
 | Xenos containment vault | Procure + Xenos or Inquisition |
 
-### Resource Dice
+Resource dice usually range from **D3** to **D10**. A Resource can grant permission, Mastery, protection, progress, leverage, or effect depending on what it represents.
 
-| Resource Die | Example |
-|---|---|
-| **D3** | One-use bribe, rumor, poor-quality tool |
-| **D6** | Local contact, safehouse, forged pass |
-| **D8** | Armed squad, restricted archive access, medicae team |
-| **D10** | Orbital strike, elite kill-team, full planetary lockdown |
-
-Using a Resource lets you roll its die for stress, protection, progress, leverage, or effect, depending on what it is.
+A Resource can be strained, stepped down, damaged, exposed, confiscated, or burned for one strong effect. Full Resource rules live in [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md).
 
 ---
 
 ## 21. Flashing the Rosette
 
-An acolyte may openly invoke Inquisitorial authority.
+An acolyte may openly invoke Inquisitorial authority or use a lesser writ, seal, cipher-fragment, Patron phrase, or delegated mandate.
 
-When you flash the Rosette, choose one:
+When you invoke Inquisitorial authority, choose one:
 
 - Gain Mastery on a Command, Procure, or Investigate roll.
 - Turn a failed requisition into a success at cost.
@@ -423,13 +440,21 @@ When you flash the Rosette, choose one:
 - Bypass ordinary legal restrictions.
 - Command immediate access to a location, prisoner, archive, or restricted object.
 
-Then take **D6 Shadow or Authority stress**. If done publicly, also increase Operation Heat.
+Then take **D6 Shadow or Authority stress**, or the stress specified by the ability or asset. If done publicly, also increase Operation Heat.
 
-The Rosette solves the immediate problem. It creates a bigger one.
+Authority solves the immediate problem. It creates a bigger one.
 
 ---
 
-## 22. Operation Heat
+## 22. Shadow, Heat, and Enemy Awareness
+
+Dark Heresy Spire tracks three related forms of exposure.
+
+| Track | Scale | What It Means |
+|---|---|---|
+| **Shadow Stress** | Individual acolyte / sometimes cell | Personal secrecy, cover identities, aliases, surveillance, evidence, and exposure. |
+| **Heat** | Operation | How visible, noisy, and unstable the current Operation has become. |
+| **Enemy Awareness** | Primary opposition | What the main enemy specifically knows about the cell and its methods. |
 
 Each Operation has a shared **Heat** rating from 0 to 9.
 
@@ -440,70 +465,19 @@ Each Operation has a shared **Heat** rating from 0 to 9.
 | 6-8 | Hunted. The enemy, authorities, or rivals are actively moving. |
 | 9+ | Burned. The operation changes violently or collapses. |
 
-Heat is not the same as Shadow stress.
-
-**Shadow** is individual exposure. **Heat** is operation-level exposure.
+Use [Heat and Subtlety v0.1](06-heat-subtlety-v0.1-outline.md) for starting Heat, Heat triggers, Heat Moves, Cover, Enemy Awareness, and exposure procedures.
 
 ---
 
 ## 23. Psychic Powers
 
-Psychic powers are dangerous abilities with clear effects, rolls, and fallout hooks.
+Psychic powers are dangerous abilities with clear effects, rolls, Difficulty calibration, traces, and fallout hooks.
 
 When a psychic power is used under pressure, roll the listed Skill + Domain. Most psychic powers use **Warp**, but some may use **Heresy**, **Inquisition**, or **Imperium** depending on training and sanction.
 
-On a 7 or lower, the psyker takes Corruption stress in addition to any other consequences. On a 1, the GM may immediately introduce psychic phenomena, daemonic attention, possession pressure, or collateral harm.
+On a 7 or lower, the psyker takes Corruption stress in addition to any other consequences unless the power says otherwise. On a 1, the GM may immediately introduce psychic phenomena, daemonic attention, possession pressure, collateral harm, Warp Trace, Heat, or Enemy Awareness.
 
-### Example Psychic Powers
-
-**Witch-Sight**  
-Roll: Investigate + Warp.  
-Effect: Perceive psychic residue, daemonic traces, emotional imprints, possession scars, or warp-thin places. Ask the GM one direct question about an immaterial influence. On a 10, ask two.  
-Cost: On 7 or lower, take D3 Corruption or Mind stress.  
-Tell: Your eyes cloud, bleed, glow, or reflect impossible stars.  
-Fallout Hook: You see something that sees you back.
-
-**Soul Hook**  
-Roll: Command + Warp.  
-Effect: Seize a target's attention through psychic pressure. They must answer one question, freeze, obey a short command, or reveal their strongest surface emotion.  
-Cost: On 7 or lower, take D6 Mind stress, or D6 Corruption if the target is tainted.  
-Tell: The air tightens. Nearby candles bend toward you.  
-Fallout Hook: You leave a psychic fingerprint in the target.
-
-**Telekinetic Rebuke**  
-Roll: Fight + Warp.  
-Effect: Hurl, crush, pin, or disarm a target. Inflict D6 Body stress, or D8 if the environment is full of dangerous debris.  
-Cost: On 7 or lower, take D3 Body stress from backlash and D3 Corruption stress.  
-Tell: Blood beads at your nose, ears, or fingertips.  
-Fallout Hook: The force strikes something unintended.
-
-**Pyroclastic Purge**  
-Roll: Fight + Warp.  
-Effect: Ignite a target, zone, infestation, corpse-pile, ritual circle, or swarm. Inflict D8 Body or Corruption stress against vulnerable targets.  
-Cost: Always mark D3 Corruption stress after use. On 7 or lower, the fire spreads.  
-Tell: Flames burn in colors not found in nature.  
-Fallout Hook: The fire consumes evidence, civilians, supplies, or something the cell needed.
-
-**Mind-Scrape**  
-Roll: Investigate + Warp.  
-Effect: Tear a useful image, phrase, route, face, password, or emotional truth from a target's mind.  
-Cost: Take D3 Mind stress. On 7 or lower, also take D3 Corruption stress.  
-Tell: The target weeps, laughs, bleeds from the eyes, or forgets a personal memory.  
-Fallout Hook: You also pull out something implanted, alien, daemonic, or false.
-
-**Veil of Unnotice**  
-Roll: Skulk + Warp.  
-Effect: Ordinary witnesses overlook you unless you draw direct attention. Cameras blur, memory softens, and casual observers rationalize your presence.  
-Cost: On 7 or lower, take D6 Shadow or Corruption stress.  
-Tell: People's eyes slide away from you a moment too late.  
-Fallout Hook: Someone remembers you perfectly.
-
-**Astropathic Needle**  
-Roll: Operate + Warp or Command + Warp.  
-Effect: Send a short message through hostile psychic conditions without normal astropathic infrastructure.  
-Cost: Always take D3 Mind stress. On 7 or lower, take D6 Corruption stress.  
-Tell: Everyone nearby hears one word of the message in their own voice.  
-Fallout Hook: Something else answers.
+Use [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md) for core-rule calibration, power structure, tags, Warp Trace, Psychic Burdens, containment, and example powers.
 
 ---
 
@@ -513,73 +487,9 @@ Forbidden Methods solve problems by crossing lines. They should be tempting beca
 
 When a Psychic Power or Forbidden Method would solve a problem faster, cleaner, or more completely than orthodox methods, the GM should make that true. Do not make forbidden tools weak to balance them. Instead, make them costly.
 
-### Example Forbidden Methods
+Forbidden Methods may simply work and charge a cost when uncertainty is not the interesting question. If a roll matters, use the normal result bands and choose one meaningful pressure rather than stacking every cost at once.
 
-**Flash the Rosette**  
-Benefit: Gain Mastery on Command, Procure, or Investigate, or turn failed requisition into success at cost.  
-Cost: D6 Shadow or Authority stress.  
-Exposure Risk: Heat +1, or +2 if public.  
-Fallout Hook: Someone obeys while notifying a rival, superior, cult handler, or local power.
-
-**Interfactional Requisition**  
-Roll: Procure + relevant Domain.  
-Benefit: Gain a Resource die from D6 to D10 depending on the faction and ask.  
-Cost: On 7 or lower, take Authority stress.  
-Exposure Risk: The lending faction now has leverage, witnesses, or expectations.  
-Fallout Hook: The borrowed asset follows its own doctrine instead of yours.
-
-**Excruciator Protocol**  
-Roll: Command + Inquisition, Investigate + Inquisition, or Command + Heresy.  
-Benefit: You get the clue if the target knows it.  
-Cost: D3 Mind or Authority stress. If the target is innocent, also D6 Shadow stress.  
-Exposure Risk: Witnesses, medicae evidence, corpse disposal, confession reliability.  
-Fallout Hook: The target says what you want to hear, implicates someone useful, dies, or reveals a truth you were not prepared for.
-
-**Soulguilt Scan**  
-Roll: Operate + Inquisition or Investigate + Heresy.  
-Benefit: Ask “What are they hiding?” or “What do they feel guilty about?”  
-Cost: On 7 or lower, take Mind stress; if the device touches warp-taint, take Corruption stress.  
-Exposure Risk: The scan is invasive, legally dubious, and politically explosive.  
-Fallout Hook: The device finds guilt, but not the guilt you were looking for.
-
-**Daemonological Consultation**  
-Roll: Investigate + Warp or Investigate + Heresy.  
-Benefit: Ask one true question about a daemon, ritual, possession, warp breach, or summoning.  
-Cost: Always take D3 Corruption stress. On 7 or lower, take D6.  
-Exposure Risk: Any Puritan who learns of this may treat it as evidence against you.  
-Fallout Hook: The answer includes a command, invitation, name, or price.
-
-**Xenos Artefact Exploitation**  
-Roll: Operate + Xenos or Investigate + Xenos.  
-Benefit: Achieve an effect Imperial tools cannot.  
-Cost: D3 Corruption or Authority stress. If used openly, also Shadow stress.  
-Exposure Risk: Possessing the device is itself incriminating.  
-Fallout Hook: The artefact teaches you how to use it better next time.
-
-**Unsanctioned Psyker Asset**  
-Benefit: Gain a D8 Resource for prophecy, surveillance, psychic intrusion, or warp navigation.  
-Cost: D6 Authority or Corruption stress when first used.  
-Exposure Risk: Any loyal authority may demand execution or transfer to the Black Ships.  
-Fallout Hook: The asset is right, but for the wrong reason.
-
-**Daemonhost Weapon**  
-Benefit: Gain a D10 or D12 Resource against daemonic, psychic, or impossible threats.  
-Cost: Always take D6 Corruption stress. Using it in the field makes the situation Dangerous if it was not already.  
-Exposure Risk: Discovery may end the campaign's current direction.  
-Fallout Hook: The daemon does exactly what you asked, not what you meant.
-
-**Psyber-Familiar Extension**  
-Roll: Operate + Mechanicus, Investigate + Inquisition, or Investigate + Warp.  
-Benefit: Scout, deliver a message, mark a target, or grant Mastery to a relevant roll.  
-Cost: On 7 or lower, the familiar takes stress as a Bond or Resource.  
-Exposure Risk: If captured, it contains evidence.  
-Fallout Hook: The familiar sees something and refuses to return, or returns changed.
-
-**Warded Armour Overload**  
-Benefit: Reduce incoming Corruption stress by one die size, or downgrade a psychic/daemonic situation from Dangerous to Risky for one roll.  
-Cost: The protection burns out until repaired or reconsecrated.  
-Exposure Risk: The ward flare is visible to psykers, daemons, and trained witch-hunters.  
-Fallout Hook: The ward stops the attack by trapping part of it inside the armour.
+Use [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md) for method structure, forbidden assets, Resource dice, radical doctrine, containment, examples, and generators.
 
 ---
 
@@ -620,24 +530,4 @@ Example:
 **Operation 3:** Identify the noble house shielding the cult.  
 **Operation 4:** Decide whether to purge, expose, or exploit the truth.
 
----
-
-## 27. Locked Draft Assumptions
-
-| Question | Draft Answer |
-|---|---|
-| Use D10 pools? | Yes |
-| Keep Skills + Domains? | Yes |
-| Use Lex-style Difficulty? | Yes: remove highest die after rolling |
-| Keep stress and fallout? | Yes |
-| Use per-Resistance Fallout? | Yes |
-| Keep money/Silver? | No |
-| Add Authority Resistance? | Yes |
-| Add Corruption Resistance? | Yes |
-| Track shared Heat? | Yes |
-| Make combat separate? | No |
-| Make investigation clue-forward? | Yes |
-| Use Patrons/Requisition? | Yes, simplified |
-| Use classes instead of careers? | Yes, Spire-style classes inspired by Inquisition roles |
-| Make forbidden tools strong? | Yes |
-| Balance forbidden tools with cost? | Yes |
+Use [Mission and Operation Template v0.1](07-mission-operation-template-v0.1.md) for prep sheets, Operation checklists, clue webs, opposition templates, and mission-scale procedures.

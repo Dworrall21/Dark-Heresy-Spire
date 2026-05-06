@@ -19,7 +19,7 @@ A good piece of equipment should answer:
 
 ---
 
-# 1. Core Equipment Structure
+## 1. Core Equipment Structure
 
 Most meaningful equipment is built from:
 
@@ -48,7 +48,55 @@ A mission-defining item should have the full structure.
 
 ---
 
-# 2. The Five Gear Functions
+## 2. Gear and the Core Roll
+
+Gear interacts with the core rules in six main ways.
+
+| Gear Element | Core Rule Interaction |
+|---|---|
+| **Permission** | Lets an acolyte attempt an action that would otherwise be impossible or implausible. |
+| **Mastery** | Adds +1D10 to the pool when the item's narrow condition applies. Mastery does not stack. |
+| **Protection** | Absorbs rolled stress before that stress reaches a Resistance. |
+| **Stress Dice** | Set harm, coercion, exposure, corruption, or effect severity. |
+| **Tags** | Change Difficulty, Heat, Awareness, stress type, consequences, or fictional position. |
+| **Resource Dice** | Track quality, supply, legitimacy, authority, charge, ammo, durability, or how much use remains. |
+
+Gear should usually make the roll better in **one** clear way:
+
+- Let the roll happen at all.
+- Grant Mastery.
+- Reduce Difficulty.
+- Reduce or absorb stress.
+- Change which Resistance is risked.
+- Reduce Heat, Awareness, or evidence.
+- Create a stronger effect on success.
+
+Avoid giving every important item all of these benefits at once.
+
+### Calibration Guidance for Gear
+
+Use the GM Toolkit's Difficulty calibration when deciding what an item does.
+
+If gear makes a low-pool action viable, it should usually grant **permission plus one advantage**: Mastery, reduced Difficulty, Protection, or a cleaner consequence profile.
+
+Examples:
+
+| Gear Impact | Use When |
+|---|---|
+| **Permission only** | The item makes the action possible, but does not make it safer. |
+| **Permission + Mastery** | The item is purpose-built for this exact action. |
+| **Reduced Difficulty** | The item changes the situation: strong cover papers, prepared breaching charge, trusted seal, perfect disguise. |
+| **Protection** | The item absorbs the cost if the action goes badly. |
+| **Lower Heat or Awareness** | The item hides, explains, contains, silences, or redirects evidence. |
+| **Burden instead of Difficulty** | The item works well now, but creates a future problem. |
+
+Restricted, Loud, Forbidden, Traceable, Obvious, Patron Marked, and similar tags should often affect **Heat, Awareness, Burdens, clocks, or faction reaction** instead of simply making the roll harder.
+
+Do not use gear as a quiet +1 for everything. Make the benefit concrete and the risk visible.
+
+---
+
+## 3. The Five Gear Functions
 
 Gear may provide one or more of the following.
 
@@ -66,7 +114,7 @@ Avoid making every item do everything.
 
 ---
 
-# 3. Resource Dice
+## 4. Resource Dice
 
 A Resource Die measures how strong, reliable, well-supported, supplied, or legitimate a piece of equipment is.
 
@@ -77,7 +125,7 @@ A Resource Die measures how strong, reliable, well-supported, supplied, or legit
 | **D8** | Reliable, sanctioned, well-maintained, military, specialist, or strongly supported. |
 | **D10** | Rare, master-crafted, restricted, sacred, highly classified, or unusually potent. |
 
-## Using a Resource Die
+### Using a Resource Die
 
 A Resource Die may be used to:
 
@@ -94,7 +142,7 @@ When a Resource Die is strained, stepped down, damaged, or partially spent:
 D10 -> D8 -> D6 -> D3 -> gone / broken / empty / exposed
 ```
 
-## Burning a Resource
+### Burning a Resource
 
 A player may burn a Resource to gain one strong effect:
 
@@ -109,7 +157,37 @@ Then the item is destroyed, spent, confiscated, exposed, corrupted, or reduced t
 
 ---
 
-# 4. Quality Table
+## 5. Resource Dice vs Protection
+
+Resource dice and Protection are related, but they are not the same thing.
+
+| Rule | Use It For |
+|---|---|
+| **Protection rating** | Absorbing stress before it reaches a Resistance. |
+| **Resource die** | Testing or tracking quality, supply, legitimacy, durability, charge, authority, ammo, or how much use remains. |
+
+Protection is a rating: **Protection 1**, **Protection 2**, **Protection 3**, and so on.
+
+A Resource is a die: **D3**, **D6**, **D8**, or **D10**.
+
+A Resource may absorb stress only when its effect says it can, when it is being burned for that purpose, or when the fiction clearly supports it. Otherwise, Resource dice should be strained, stepped down, damaged, exposed, or tested when the item's reliability, access, authority, or supply is under pressure.
+
+Examples:
+
+- A flak vest with **Body Protection 1** absorbs 1 Body stress when hit.
+- A D8 cover identity may be stepped down when its papers are audited.
+- A D6 medicae kit may be stepped down when supplies run low.
+- A D10 Inquisition writ may absorb Authority scrutiny if its effect says it can, but it may also create a Paper Trail or Patron Marked Burden.
+
+### Forbidden Assets
+
+Forbidden Assets follow the same Resource and Protection rules as gear, but their Burdens should usually point toward Corruption, Shadow, Patron Notice, Enemy Awareness, Red Lines, faction claims, or Warp Trace.
+
+They may grant permission, Mastery, leverage, temporary Protection, or a decisive effect. They should step down or demand refresh when exposed, fed, repaired, concealed, used on a 7 or lower, inspected by experts, or used to solve a major problem.
+
+---
+
+## 6. Quality Table
 
 Roll D20 when generating random equipment.
 
@@ -134,7 +212,7 @@ On a 20, generate the item normally, then add:
 
 ---
 
-# 5. Equipment Tags
+## 7. Equipment Tags
 
 Every tag should have a clear table-facing meaning.
 
@@ -164,15 +242,34 @@ Every tag should have a clear table-facing meaning.
 | **Suspicious** | The item is not illegal by itself, but invites questions, searches, witnesses, or rumors. |
 | **Traceable** | If left behind, used publicly, scanned, logged, or inspected, it creates evidence. |
 | **Unstable** | On a 7 or lower, the GM may step it down, jam it, overheat it, scream, leak, or inflict D3 stress. |
-| **Warded** | Provides Protection 1 against Corruption, Warp traces, possession, hexes, or psychic intrusion. |
+| **Warded** | Provides Protection 1 against Corruption, Warp Trace, possession, hexes, or psychic intrusion. |
 
 ---
 
-# 6. Burden Profiles
+## 8. Burden Profiles
 
 A Burden Profile is not just a penalty.
 
 It gives the GM a trigger and a narrative move.
+
+Burdens are GM moves, not automatic taxes on every use.
+
+Trigger a Burden when the item becomes important, exposed, inspected, strained, used outside mandate, used on a 7 or lower, used to solve a major problem, or put under dramatic pressure.
+
+Do not trigger every Burden every time an item appears in play. If the Burden fires, make it matter.
+
+Tie the outcome to one of the table's pressure tools:
+
+- Stress.
+- Heat.
+- Enemy Awareness.
+- A clock.
+- Faction reaction.
+- Patron Notice.
+- Cover damage.
+- Resource step-down.
+- Clue contamination.
+- A new obligation, witness, debt, or claim.
 
 ```text
 Burden Tag:
@@ -190,7 +287,7 @@ Narrative Power: Someone can identify its origin, prior owner, forge, regiment, 
 Mechanical Bite: Heat +1, D3 Shadow stress, or tick an Evidence Review clock.
 ```
 
-## D20 Burden Profile Table
+### D20 Burden Profile Table
 
 | D20 | Burden Tag | Trigger | Narrative Power | Mechanical Bite |
 |---:|---|---|---|---|
@@ -217,7 +314,7 @@ Mechanical Bite: Heat +1, D3 Shadow stress, or tick an Evidence Review clock.
 
 ---
 
-# 7. Weapon Chassis
+## 9. Weapon Chassis
 
 Weapons primarily provide **stress dice** and **tags**.
 
@@ -245,7 +342,7 @@ Weapons primarily provide **stress dice** and **tags**.
 
 ---
 
-# 8. Weapon Modules
+## 10. Weapon Modules
 
 Add 0-3 modules to a weapon.
 
@@ -274,7 +371,7 @@ Add 0-3 modules to a weapon.
 
 ---
 
-# 9. Armour and Protection Chassis
+## 11. Armour and Protection Chassis
 
 Armour primarily provides **Protection**.
 
@@ -297,7 +394,28 @@ Protection reduces incoming stress to the named Resistance by its rating.
 
 ---
 
-# 10. Armour Modules
+## 12. Protection Refresh
+
+Protection refreshes when the fiction gives the item, identity, mandate, rite, or supply chain enough time and support to recover.
+
+| Protection Type | Refreshes When... |
+|---|---|
+| **Physical armour** | Repaired, patched, reloaded, replaced, refitted, or given maintenance time. |
+| **Cover / credentials** | Paperwork is reinforced, suspicion is redirected, witnesses are handled, records are amended, or the identity has downtime to cool. |
+| **Authority / writ / seal** | Mandate is clarified, superiors are satisfied, records are amended, jurisdiction is reasserted, or political cover is restored. |
+| **Warded / holy / anti-Warp** | Reconsecrated, ritually repaired, recharged, confessed over, supplied with relics, or renewed through proper rites. |
+| **Medical / drug / survival** | Supplies are restocked, tools are sterilized, drugs are replaced, field gear is repaired, or treatment space is secured. |
+| **Forbidden / xenos / heretek** | Risky maintenance, feeding, secrecy, specialist help, a faction bargain, or accepting a Burden. |
+
+If refresh would be easy and routine, let it happen during downtime.
+
+If refresh requires attention under pressure, use Requisition, a Resource step-down, a faction demand, a clock, or a Burden.
+
+If Protection was burned to cancel a major consequence, it should not refresh until the table sees what repair, replacement, confession, or repayment costs.
+
+---
+
+## 13. Armour Modules
 
 | D20 | Module | Adds Tags | Effect |
 |---:|---|---|---|
@@ -324,7 +442,7 @@ Protection reduces incoming stress to the named Resistance by its rating.
 
 ---
 
-# 11. Tools and Investigation Gear
+## 14. Tools and Investigation Gear
 
 Tools primarily provide **Permission** or **Mastery**.
 
@@ -345,7 +463,7 @@ Tools primarily provide **Permission** or **Mastery**.
 
 ---
 
-# 12. General Tool Modules
+## 15. General Tool Modules
 
 | D20 | Module | Adds Tags | Effect |
 |---:|---|---|---|
@@ -372,7 +490,7 @@ Tools primarily provide **Permission** or **Mastery**.
 
 ---
 
-# 13. Requisition Procedure
+## 16. Requisition Procedure
 
 When the cell wants gear, personnel, access, transport, authority, specialists, or cover support during play, use Requisition.
 
@@ -393,11 +511,11 @@ A Requisition may be:
 - A faction favor.
 - A forbidden asset.
 
-## Step 1: State the Request
+### Step 1: State the Request
 
 The player says what they want and why it helps the Operation.
 
-## Step 2: Choose the Channel
+### Step 2: Choose the Channel
 
 | Channel | Likely Domain | Typical Risk |
 |---|---|---|
@@ -411,7 +529,7 @@ The player says what they want and why it helps the Operation.
 | **Patron Boon** | Inquisition | Patron Notice, Liability trigger |
 | **Forbidden Source** | Heresy, Warp, Xenos | Corruption, Red Lines, enemy recognition |
 
-## Step 3: Determine Difficulty
+### Step 3: Determine Difficulty
 
 | Difficulty | Use When |
 |---|---|
@@ -420,7 +538,7 @@ The player says what they want and why it helps the Operation.
 | **Dangerous** | The request is restricted, loud, illegal, above the cell's cover, or contradicts orders. |
 | **Impossible** | The request should only work by spending Patron authority, burning assets, or accepting severe consequences. |
 
-## Step 4: Roll
+### Step 4: Roll
 
 Usually roll:
 
@@ -438,7 +556,7 @@ Other possible rolls:
 | **Skulk + Underworld** | Acquiring quietly or illegally. |
 | **Operate + Mechanicus** | Building, repairing, or modifying it. |
 
-## Step 5: Read the Result
+### Step 5: Read the Result
 
 | Result | Requisition Outcome |
 |---|---|
@@ -450,7 +568,23 @@ Other possible rolls:
 
 ---
 
-# 14. Requisition Types
+### Requisition Outcome Calibration
+
+Use the result to choose one clear outcome. Do not stack every possible cost onto a single roll.
+
+| Result Band | Calibration |
+|---|---|
+| **1** | The request creates a major complication. The asset may arrive wrong, late, exposed, cursed, broken, or with a severe Burden. |
+| **2-5** | The request fails, or it succeeds only if the cell accepts a serious cost first. |
+| **6-7** | The cell generally gets the asset, but the GM chooses one meaningful cost: Burden, Heat, Authority stress, delay, handler, faction attention, or clock tick. |
+| **8-9** | The cell gets the asset cleanly within the fiction of the request. |
+| **10** | The cell gets one clean improvement: better Quality, extra Module, reduced paper trail, useful clue, faster arrival, reduced Heat, or a favorable contact. |
+
+Contested Requisitions should use Difficulty, Burdens, faction clocks, or Patron Notice deliberately. Choose the pressure that best expresses the situation.
+
+---
+
+## 17. Requisition Types
 
 | Type | Description | Typical Die | Typical Burdens |
 |---|---|---:|---|
@@ -463,7 +597,7 @@ Other possible rolls:
 
 ---
 
-# 15. Contested Requisitions
+## 18. Contested Requisitions
 
 A Requisition is Contested when:
 
@@ -486,7 +620,7 @@ When a Requisition is Contested, choose one:
 
 ---
 
-# 16. Random Equipment Generator
+## 19. Random Equipment Generator
 
 Use this when the GM needs fast gear, corpse-loot, black-market stock, suspicious requisitions, Patron rewards, relics, or strange evidence.
 
@@ -501,7 +635,7 @@ Roll or choose:
 7. Burden Profile
 8. Name Pattern
 
-## D20 Equipment Category
+### D20 Equipment Category
 
 | D20 | Category | Default Function | Default Tags / Effects |
 |---:|---|---|---|
@@ -524,11 +658,11 @@ Roll or choose:
 
 ---
 
-# 17. Random Name Generator
+## 20. Random Name Generator
 
 Most Imperial equipment names should sound bureaucratic, sacred, archaic, violent, or over-documented.
 
-## Name Formula
+### Name Formula
 
 ```text
 [Prefix] + [Descriptor] + [Chassis] + [Pattern / Serial / Nickname]
@@ -540,7 +674,7 @@ Example:
 Ash-marked Compliance Laspistol, Mk III
 ```
 
-## D20 Prefix
+### D20 Prefix
 
 | D20 | Prefix |
 |---:|---|
@@ -565,7 +699,7 @@ Ash-marked Compliance Laspistol, Mk III
 | 19 | Underhive |
 | 20 | Ordo-sealed |
 
-## D20 Descriptor
+### D20 Descriptor
 
 | D20 | Descriptor |
 |---:|---|
@@ -590,7 +724,7 @@ Ash-marked Compliance Laspistol, Mk III
 | 19 | Sepulchre |
 | 20 | Black Archive |
 
-## D20 Pattern / Nickname
+### D20 Pattern / Nickname
 
 | D20 | Pattern |
 |---:|---|
@@ -617,9 +751,9 @@ Ash-marked Compliance Laspistol, Mk III
 
 ---
 
-# 18. Generated Equipment Examples
+## 21. Generated Equipment Examples
 
-## Ash-marked Compliance Laspistol, Mk III
+### Ash-marked Compliance Laspistol, Mk III
 
 ```text
 Chassis: Laspistol
@@ -633,7 +767,7 @@ Narrative Power: The serial connects to a missing evidence locker.
 Mechanical Bite: D3 Authority stress or tick an Audit clock.
 ```
 
-## Hexagrammic Silence Flak Coat, Witchbane
+### Hexagrammic Silence Flak Coat, Witchbane
 
 ```text
 Chassis: Flak Coat
@@ -647,7 +781,7 @@ Narrative Power: The warded inscriptions condemn the wearer's compromise.
 Mechanical Bite: D3 Mind or Authority stress; Ecclesiarchy faction becomes Suspicious.
 ```
 
-## Redacted Confession Servo-Skull, Dead Letter
+### Redacted Confession Servo-Skull, Dead Letter
 
 ```text
 Chassis: Servo-Skull
@@ -661,7 +795,7 @@ Narrative Power: The skull belonged to someone who was never declared dead.
 Mechanical Bite: D3 Shadow stress or a rival acolyte recognizes it.
 ```
 
-## Ordo-Sealed Judgment Bolt Pistol, Red Vault
+### Ordo-Sealed Judgment Bolt Pistol, Red Vault
 
 ```text
 Chassis: Bolt Weapon
@@ -675,7 +809,7 @@ Narrative Power: It proves the Patron armed the cell for an unauthorized purge.
 Mechanical Bite: Mark Patron Notice; if already at 2 Notice, trigger a Patron Move.
 ```
 
-## Condemned Black Archive Data-Spike, Bone Key
+### Condemned Black Archive Data-Spike, Bone Key
 
 ```text
 Chassis: Data-Spike
@@ -691,9 +825,9 @@ Mechanical Bite: Create a new Mission hook, tick Evidence Review, or mark D3 Cor
 
 ---
 
-# 19. One-Page Gear Reference
+## 22. One-Page Gear Reference
 
-## To Build Gear
+### To Build Gear
 
 ```text
 1. Pick Chassis.
@@ -704,18 +838,20 @@ Mechanical Bite: Create a new Mission hook, tick Evidence Review, or mark D3 Cor
 6. Add Burden Profile if restricted, forbidden, rare, powerful, or suspicious.
 ```
 
-## To Use Gear
+### To Use Gear
 
 Ask:
 
 1. Does it give permission?
 2. Does it grant Mastery?
-3. Does it provide Protection?
-4. Does it inflict stress?
-5. Do its Tags change the fictional position?
-6. Does a Burden trigger?
+3. Does it reduce Difficulty?
+4. Does it provide Protection?
+5. Does it inflict stress?
+6. Do its Tags change Heat, Awareness, stress type, or fictional position?
+7. Is a Resource die strained, stepped down, or burned?
+8. Does a Burden trigger?
 
-## Quick Stress Dice
+### Quick Stress Dice
 
 | Weapon Scale | Stress |
 |---|---:|
@@ -724,7 +860,7 @@ Ask:
 | Military, brutal, specialist, or heavy | D8 |
 | Extreme, anti-armour, plasma, melta, forbidden | D10 |
 
-## Quick Protection
+### Quick Protection
 
 | Protection | Meaning |
 |---:|---|
@@ -732,7 +868,25 @@ Ask:
 | 2 | Serious, military, specialist, or restricted protection. |
 | 3 | Heavy, rare, sacred, powered, or story-level protection. |
 
-## Quick Burden Trigger
+### Quick Resource / Protection Distinction
+
+| Rule | Quick Use |
+|---|---|
+| **Protection** | Absorbs stress before it reaches a Resistance. |
+| **Resource die** | Tracks quality, supply, legitimacy, durability, access, authority, charge, or how much use remains. |
+
+### Quick Protection Refresh
+
+| Protection Type | Refresh Route |
+|---|---|
+| **Armour** | Repair, patch, reload, replace, or maintain. |
+| **Cover / credentials** | Reinforce paperwork, redirect suspicion, handle witnesses, or let the identity cool. |
+| **Authority / writ / seal** | Clarify mandate, satisfy superiors, amend records, or restore political cover. |
+| **Warded / holy** | Reconsecrate, repair ritually, recharge, confess, or supply proper relics. |
+| **Medical / survival** | Restock, sterilize, repair, or secure treatment space. |
+| **Forbidden / xenos / heretek** | Risky maintenance, feeding, secrecy, specialist help, bargain, or Burden. |
+
+### Quick Burden Trigger
 
 A Burden should trigger when the item is:
 
@@ -751,7 +905,7 @@ A Burden should trigger when the item is:
 
 ---
 
-# 20. Design Notes
+## 23. Design Notes
 
 This gear system is intentionally modular.
 

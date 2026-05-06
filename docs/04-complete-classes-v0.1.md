@@ -32,9 +32,9 @@ Do not trigger every Burden every time an item is used. Trigger it when the item
 
 ---
 
-## 1. Interrogator
+## 1. Legate
 
-The Patron's heir-apparent, trusted but watched.
+The Patron's delegated voice, trusted but watched.
 
 You are not an Inquisitor. Not yet. But you have been given enough authority to terrify officials, enough knowledge to condemn worlds, and enough rope to hang yourself. You speak with your Patron's voice — and every word is evidence.
 
@@ -74,7 +74,7 @@ You are not an Inquisitor. Not yet. But you have been given enough authority to 
 
 ### Major Advances
 
-**Interrogator's Seal:** Gain a persistent D8 Authority Resource representing clearance, codes, writs, or old favors. Whenever you use it publicly, increase Heat by 1.
+**Legate's Seal:** Gain a persistent D8 Authority Resource representing clearance, codes, writs, or old favors. Whenever you use it publicly, increase Heat by 1.
 
 **The Burden Is Mine:** When another acolyte would take Authority stress, you may take it instead and reduce it by one die step. If this triggers fallout, your Patron notices.
 
@@ -216,7 +216,7 @@ You are the person who was never there. The clerk with the right stamp. The pilg
 
 | Item | Resource | Tags | Effect | Burden |
 |---|---:|---|---|---|
-| **Cover Papers** | D8 | False Provenance, Traceable, Concealable | Permission to operate under a mission cover. May absorb Shadow stress from scrutiny or identity checks. | **False Provenance:** if deeply checked, the cover becomes Questioned or Flagged. |
+| **Cover Papers** | D8 | False Provenance, Traceable, Concealable | Permission to operate under a mission cover. May absorb one scrutiny or identity-check complication by stepping down. | **False Provenance:** if deeply checked, the cover becomes Questioned or Flagged. |
 | **Disguise Kit** | D6 | Concealable, Disposable | Gain Mastery when altering appearance, costume, gait, or surface identity. | **Traceable:** residue, fabric, or witness memory can connect identities. |
 | **Concealed Weapon** | D6 | Concealable, Silent or Loud, Crude | D3 or D6 Body depending on form. Useful when smuggled into a restricted place. | **Black-Market Source:** if traced, criminals know where it came from. |
 | **Dead-Drop Token** | D6 | Concealable, Suspicious | Permission to access one hidden cache, message route, or fallback contact per Operation. | **Debt-Bound:** if leaned on hard, someone expects payment. |
@@ -272,12 +272,12 @@ You are legal because someone signed the right execution delay. You are useful b
 
 | Item | Resource | Tags | Effect | Burden |
 |---|---:|---|---|---|
-| **Psy-Focus** | D8 | Warded, Sanctioned, Echoing | Grants permission and Mastery for controlled psychic work when properly used. May absorb one psychic backlash complication per Mission by stepping down. | **Warp Echo:** if used near wards, relics, death, dreams, or fear, it leaves a psychic impression. |
+| **Psy-Focus** | D8 | Warded, Sanctioned, Echoing | Grants permission and Mastery for controlled psychic work when properly used. May absorb one psychic backlash or Warp Trace complication per Mission by stepping down. Refreshes through sanctioning rites, maintenance, or confession. | **Warp Echo:** if used near wards, relics, death, dreams, or fear, it leaves a psychic impression. |
 | **Sanctioning Brand** | D6 | Sanctioned, Obvious, Traceable | Reduces Authority risk when the psyker's legal status is challenged. | **Witness-Magnet:** civilians, priests, and officials remember the brand. |
 | **Warded Restraints** | D6 | Warded, Restricted, Obvious | Permission to contain the psyker, suppress escalation, or survive transport under suspicion. | **Sacred Obligation:** if used improperly, take D3 Mind or Authority stress. |
 | **Sedatives** | D6 | Disposable, Restricted, Unstable | Burn or step down to suppress panic, vision, seizure, or uncontrolled manifestation. | **Contaminated:** on 7 or lower, take D3 Body or Corruption stress. |
 
-**Core Ability — Licensed Witch:** You begin with two Psychic Powers. When you use a Psychic Power and roll a 10, clear D3 Mind or Corruption stress. When you roll a 1, the GM introduces psychic backlash or daemonic attention.  
+**Core Ability — Licensed Witch:** You begin with two Psychic Powers. When you use a Psychic Power and roll a 10, clear D3 Mind or Corruption stress. When you roll a 1, the GM introduces psychic backlash, Warp Trace, or daemonic attention.  
 **Refresh:** Remove stress when you submit to containment, confession, psychic examination, or self-denial.
 
 ### Class Questions
@@ -328,7 +328,7 @@ You know the grammar of the dark: how it enters, how it anchors, how it bargains
 
 | Item | Resource | Tags | Effect | Burden |
 |---|---:|---|---|---|
-| **Hexagrammic Charms** | D8 | Warded, Holy, Restricted | Protection against possession, Warp trace, psychic intrusion, and daemonic influence. | **Sacred Obligation:** misuse or compromise invites Ecclesiarchy pressure or D3 Authority stress. |
+| **Hexagrammic Charms** | D8 | Warded, Holy, Restricted | Permission to ward against possession, Warp Trace, psychic intrusion, and daemonic influence. May absorb one ward-related complication by stepping down. Refreshes through reconsecration or proper rites. | **Sacred Obligation:** misuse or compromise invites Ecclesiarchy pressure or D3 Authority stress. |
 | **Blessed Blade** | D6 | Holy, Concealable or Obvious | D6 Body. Against daemonic or warp-touched threats, may inflict Corruption stress instead. | **Blooded History:** the blade has a prior case, victim, or grudge attached. |
 | **Warding Chalk** | D6 | Disposable, Warded, Holy | Burn or step down to create a warded circle, seal, barrier, or diagnostic rite. | **Paper Trail:** rare marks identify the exorcistic tradition or Patron source. |
 | **Censers and Incense** | D6 | Holy, Obvious, Witness-Magnet | Gain Mastery when purifying, revealing, calming, or preparing a ritual space. | **Miracle Rumor:** public use may turn into fear, faith, or Heat +1. |
@@ -617,11 +617,11 @@ You are absence made flesh. Psykers recoil. Daemons hate you. Ordinary people ma
 | Item | Resource | Tags | Effect | Burden |
 |---|---:|---|---|---|
 | **Null Collar** | D8 | Restricted, Obvious, Warded, Suspicious | Permission to explain, contain, or modulate the Untouchable's nature under Inquisitorial control. | **Doctrinally Suspect:** if exposed to priests, psykers, or rival cells, take D3 Authority stress or faction suspicion. |
-| **Concealing Hood** | D6 | Concealable, Suspicious | Helps hide signs of discomfort, identity, or abnormal presence; may absorb Shadow stress from scrutiny. | **Witness-Magnet:** people remember the discomfort even if they do not know why. |
+| **Concealing Hood** | D6 | Concealable, Suspicious | Helps hide signs of discomfort, identity, or abnormal presence; may absorb one scrutiny complication by stepping down. | **Witness-Magnet:** people remember the discomfort even if they do not know why. |
 | **Compact Weapon** | D6 | Concealable, Reliable | D6 Body or D3 Body if very small; usable while isolated, restrained, or undercover. | **Black-Market Source:** if traced, it creates underworld questions. |
 | **Isolation Orders** | D6 | Patron Marked, Sanctioned, Traceable | Permission to demand distance, containment, special transport, or private quarters. | **Paper Trail:** if checked, the orders reveal the cell is handling a classified liability. |
 
-**Core Ability — Absence:** Psychic powers, daemonic influence, and warp phenomena near you become Risky if Safe, or Dangerous if Risky, for everyone using them. Allies also find your presence disturbing; social rolls to comfort, inspire, or blend in become Risky when your nature is obvious.  
+**Core Ability — Absence:** Psychic powers, daemonic influence, and warp phenomena near you become Risky if Safe, Dangerous if Risky, or remain Dangerous with an added null complication if already Dangerous. Allies also find your presence disturbing; social rolls to comfort, inspire, or blend in become Risky when your nature is obvious.  
 **Refresh:** Remove stress when you isolate yourself to protect the cell or let others treat you as a necessary horror.
 
 ### Class Questions
@@ -642,7 +642,7 @@ You are absence made flesh. Psykers recoil. Daemons hate you. Ordinary people ma
 
 ### Major Advances
 
-**Blank Zone:** Once per Situation, declare a small area around you spiritually dead. Psychic powers and daemonic effects inside it are downgraded or become Dangerous to use. You also become impossible to ignore.
+**Blank Zone:** Once per Situation, declare a small area around you spiritually dead. Psychic powers and daemonic effects inside it have reduced effect; any roll to use them becomes Dangerous. You also become impossible to ignore.
 
 **Cut the Thread:** When a psychic power, ritual, possession, or daemonic effect targets someone near you, mark D3 Body or Mind stress to interrupt it.
 
@@ -673,8 +673,8 @@ You are what the Inquisition usually burns. But someone decided you were more us
 | Item | Resource | Tags | Effect | Burden |
 |---|---:|---|---|---|
 | **Forbidden Token** | D8 | Forbidden, Traceable, Hungry | Proof of the old life: cult sign, xenos shard, warp scar, heretek key, or contaminated relic. Gain Mastery when recognizing or approaching the related threat. | **Faction Claim:** the enemy, Patron, or rival Inquisition may believe it belongs to them. |
-| **Handler's Leash** | D6 | Patron Marked, Restricted, Sanctioned | Explains why the asset is alive and under control. Can absorb Authority or Shadow scrutiny once by stepping down. | **Patron Marked:** if revealed, mark Patron Notice or create a faction question. |
-| **Concealed Relic** | D6 | Forbidden, Concealable, Unstable | One narrow impossible effect tied to Heresy, Warp, or Xenos. | **Unstable:** on 7 or lower, take +D3 Corruption or Authority stress. |
+| **Handler's Leash** | D6 | Patron Marked, Restricted, Sanctioned | Explains why the asset is alive and under control. May absorb one Authority or Shadow scrutiny complication by stepping down. | **Patron Marked:** if revealed, mark Patron Notice or create a faction question. |
+| **Concealed Relic** | D6 | Forbidden, Concealable, Unstable | Grants permission for one narrow impossible effect tied to Heresy, Warp, or Xenos. | **Unstable:** on 7 or lower, take +D3 Corruption or Authority stress. |
 | **Old Enemy Contact** | D6 | Debt-Bound, Suspicious, Secret-Keeper | A dangerous contact from the asset's former life who can provide rumors, access, or warning. | **Debt-Bound:** when used for major benefit, create a Debt clock or owe a favor. |
 
 **Core Ability — Useful Blasphemy:** Choose one Forbidden Method. When you use it, gain Mastery. If you roll 7 or lower, take +D3 Corruption or Authority stress.  

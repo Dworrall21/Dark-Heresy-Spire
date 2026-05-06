@@ -507,8 +507,8 @@ When a Situation ends messily, identify what remains.
 | **Weapon Traces** | Reveal method, faction, restricted gear, or Inquisition pattern. |
 | **Pict / Vox Records** | Can spread quickly, be edited, or be planted. |
 | **Cogitator Logs** | Machine-spirit memory, access timestamps, noospheric traces. |
-| **Psychic Residue** | Detectable by psykers, witches, daemons, exorcists, and wards. |
-| **Forbidden Artifacts** | Incriminating by existence alone. |
+| **Psychic Residue / Warp Trace** | Detectable by psykers, witches, daemons, exorcists, wards, victims, and occult rivals. |
+| **Forbidden Artifacts** | Incriminating by existence alone; may also function as Forbidden Assets with Resource dice and Burdens. |
 | **Confessions** | Useful, unreliable, politically dangerous. |
 | **Paper Trails** | Slow, hard to erase, and deadly when finally assembled. |
 
@@ -950,7 +950,7 @@ The GM makes a Rumors move: a local enforcer asks why tithe auditors are carryin
 
 ### Situation 3: Rosette Threat
 
-The Interrogator privately invokes Inquisitorial authority to force the enforcer to hand over pict records.
+The Legate privately invokes Inquisitorial authority to force the enforcer to hand over pict records.
 
 The benefit works.
 

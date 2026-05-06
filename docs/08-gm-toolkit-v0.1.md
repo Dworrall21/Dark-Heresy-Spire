@@ -10,7 +10,7 @@ The GM is here to make the Imperium, the enemy, the Patron, and the consequences
 
 ---
 
-# 1. GM Agenda
+## 1. GM Agenda
 
 When running the game, aim to:
 
@@ -28,9 +28,9 @@ They should feel like deniable agents of a terrifying power who can break doors,
 
 ---
 
-# 2. GM Principles
+## 2. GM Principles
 
-## Ask What It Costs
+### Ask What It Costs
 
 When an acolyte acts, ask:
 
@@ -44,7 +44,7 @@ When an acolyte acts, ask:
 
 The answer is usually more important than whether the action “works.”
 
-## Do Not Hide the Core Clue
+### Do Not Hide the Core Clue
 
 If a clue is necessary for the Mission to continue, the acolytes should get it.
 
@@ -59,7 +59,7 @@ The roll decides:
 
 Failure should complicate the investigation, not end it.
 
-## Let Authority Work
+### Let Authority Work
 
 When the cell invokes power, let it work.
 
@@ -67,7 +67,7 @@ Then ask what that power costs.
 
 A Rosette, writ, seal, Inquisitorial cipher, Patron phrase, or official threat should open doors. It should also create witnesses, resentment, reports, factional complaint, Patron Notice, Heat, or a future rival.
 
-## Make the Enemy Specific
+### Make the Enemy Specific
 
 Do not run “a cult” as a vague evil cloud.
 
@@ -81,7 +81,7 @@ Give the opposition:
 - A reason someone protects them.
 - A response when the cell interferes.
 
-## Push with Consequences, Not Turns
+### Push with Consequences, Not Turns
 
 Enemies do not need traditional turns.
 
@@ -96,7 +96,7 @@ They act when:
 
 ---
 
-# 3. When to Call for a Roll
+## 3. When to Call for a Roll
 
 Call for a roll only when all three are true:
 
@@ -110,7 +110,7 @@ Acolytes are trained, dangerous, and chosen by the Inquisition.
 
 Roll when their competence risks something.
 
-## Good Reasons to Roll
+### Good Reasons to Roll
 
 | Situation | Possible Roll |
 |---|---|
@@ -123,7 +123,7 @@ Roll when their competence risks something.
 | Escaping a collapsing hab-block | Move + Frontier |
 | Interrogating a cult courier without killing them | Command or Investigate + Heresy |
 
-## Poor Reasons to Roll
+### Poor Reasons to Roll
 
 Do not roll just to see if an acolyte:
 
@@ -138,7 +138,7 @@ Instead, say what happens and move forward.
 
 ---
 
-# 4. Setting Difficulty
+## 4. Setting Difficulty
 
 Difficulty reflects how hostile, exposed, unstable, or overwhelming the situation is.
 
@@ -149,7 +149,66 @@ Difficulty reflects how hostile, exposed, unstable, or overwhelming the situatio
 | **Dangerous** | The situation is actively hostile, exposed, supernatural, heavily defended, or likely to change the Operation. |
 | **Impossible** | The action should not work cleanly. Even success brings stress, exposure, fallout, sacrifice, or escalation. |
 
-## Difficulty Questions
+### Difficulty Probabilities and Calibration
+
+Difficulty is the strongest lever in the dice system because it changes which result bands are possible.
+
+Use Difficulty to tune the **chance of each result band**. Use stress dice to tune the **severity of cost**. Use Heat or Enemy Awareness to decide **who notices**. Use clocks for **delayed consequences**.
+
+Do not make every dangerous moment Dangerous difficulty, D10 stress, Heat +2, Awareness +1, and a clock tick. Pick the pressure that best expresses the fiction.
+
+| Pool | Difficulty | Critical Failure 1 | Failure 2-5 | Success at Cost 6-7 | Clean Success 8-9 | Critical Success 10 |
+|---:|---|---:|---:|---:|---:|---:|
+| 2D10 | Safe | 1.0% | 24.0% | 24.0% | 32.0% | 19.0% |
+| 2D10 | Risky | 19.0% | 56.0% | 16.0% | 8.0% | 1.0% |
+| 2D10 | Dangerous | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| 3D10 | Safe | 0.1% | 12.4% | 21.8% | 38.6% | 27.1% |
+| 3D10 | Risky | 2.8% | 47.2% | 28.4% | 18.8% | 2.8% |
+| 3D10 | Dangerous | 27.1% | 60.4% | 9.8% | 2.6% | 0.1% |
+| 4D10 | Safe | 0.0% | 6.2% | 17.8% | 41.6% | 34.4% |
+| 4D10 | Risky | 0.4% | 30.9% | 33.9% | 29.6% | 5.2% |
+| 4D10 | Dangerous | 5.2% | 63.5% | 22.9% | 8.0% | 0.4% |
+| 5D10 | Safe | 0.0% | 3.1% | 13.7% | 42.2% | 41.0% |
+| 5D10 | Risky | 0.0% | 18.7% | 34.1% | 39.0% | 8.1% |
+| 5D10 | Dangerous | 0.9% | 49.1% | 33.7% | 15.5% | 0.9% |
+| 6D10 | Safe | 0.0% | 1.6% | 10.2% | 41.4% | 46.9% |
+| 6D10 | Risky | 0.0% | 10.9% | 31.1% | 46.6% | 11.4% |
+| 6D10 | Dangerous | 0.1% | 34.2% | 40.1% | 24.0% | 1.6% |
+
+Read the table this way:
+
+- **Safe** tests competence under stakes. Skilled acolytes usually succeed, and the main question is whether they pay a cost.
+- **Risky** tests preparation, cover, leverage, or pressure. A 3D10 Risky roll is a coin flip between failure and success.
+- **Dangerous** tests whether the cell built enough advantage to survive the approach. A 5D10 Dangerous roll is a coin flip.
+- **Impossible** is not a probability category. It means the action cannot be clean: even success brings stress, exposure, fallout, sacrifice, or escalation.
+
+Low pools need special care:
+
+- A **1D10 Risky** or **1D10 Dangerous** roll becomes an automatic critical failure because all dice are removed.
+- A **2D10 Dangerous** roll also becomes an automatic critical failure.
+- If an acolyte only has **1D10**, invite them to get help, use gear, change approach, find leverage, or accept automatic success with a clear cost instead of forcing a dead-end roll.
+
+### Default Difficulty by Approach
+
+| Approach | Default Difficulty |
+|---|---|
+| Strong cover, clear leverage, prepared position, or ordinary access | **Safe** |
+| Scrutiny, time pressure, weak cover, contested access, or an unstable scene | **Risky** |
+| Alert opposition, exposed methods, hostile ground, supernatural danger, or active pursuit | **Dangerous** |
+| Success cannot be clean without sacrifice, exposure, fallout, or escalation | **Impossible** |
+
+### Calibrated Examples
+
+| Situation | Likely Pool and Difficulty | Why |
+|---|---|---|
+| A Legate uses **Command + Inquisition** to imply limited Patron authority before a nervous local official. | 3D10 Safe or Risky | Safe if the official wants direction; Risky if the office is already auditing the cell. |
+| A Penumbra uses **Skulk + Underworld + Cover Papers** to enter a gang counting-house during normal business. | 4D10 Safe | The cover and local domain fit, so the roll tests whether anything is left behind. |
+| A Secutor uses **Fight + Militarum + Mastery** to ambush alerted cult guards during a Hunted Operation. | 4D10 Risky or Dangerous | Risky if the ambush is solid; Dangerous if the guards are already watching for the cell's methods. |
+| An Explicator uses **Investigate + Heresy** on a contaminated confession while the enemy is moving evidence. | 3D10 Risky | The clue should appear, but the likely costs are time, stress, or false context. |
+| A Sanctioned Psyker uses **Investigate + Warp** to read a fresh possession trace in a warded shrine. | 3D10 Dangerous | The power can work, but the place, trace, and Warp risk make clean success unlikely. |
+| The cell tries quiet extraction at Heat 9 while local law, rivals, and the enemy all watch the exits. | Usually Dangerous or Impossible | Quiet success may require changing the situation, burning Cover, or accepting a major cost. |
+
+### Difficulty Questions
 
 Ask:
 
@@ -162,7 +221,7 @@ Ask:
 7. Is forbidden knowledge, psychic power, or xenos influence involved?
 8. Has Heat made this approach harder?
 
-## Heat and Difficulty
+### Heat and Difficulty
 
 Heat does not make every roll harder.
 
@@ -181,7 +240,7 @@ Sneaking out afterward is probably Dangerous.
 
 ---
 
-# 5. Assigning Stress
+## 5. Assigning Stress
 
 When a roll causes stress, choose the Resistance that best represents what is being risked.
 
@@ -193,7 +252,7 @@ When a roll causes stress, choose the Resistance that best represents what is be
 | **Authority** | Faction standing, Patron trust, official pressure, chain of command |
 | **Corruption** | Warp-taint, forbidden knowledge, xenos contamination, mutation, possession |
 
-## Stress Die Guidelines
+### Stress Die Guidelines
 
 | Stress Die | Use For |
 |---|---|
@@ -202,7 +261,7 @@ When a roll causes stress, choose the Resistance that best represents what is be
 | **D8** | Major danger, restricted enemies, psychic danger, public scandal |
 | **D10** | Daemonhosts, lethal ambushes, sector politics, extreme corruption, open Inquisitorial disaster |
 
-## Mixed Stress
+### Mixed Stress
 
 Some consequences threaten more than one Resistance.
 
@@ -222,11 +281,11 @@ Do not overuse mixed stress. Save it for moments where two kinds of cost are cle
 
 ---
 
-# 6. GM Moves
+## 6. GM Moves
 
 Use GM Moves when the players roll 7 or lower, when Heat reaches a threshold, when Fallout triggers, when a clock fills, or when the fiction demands pressure.
 
-## Soft Moves
+### Soft Moves
 
 Soft Moves warn, reveal, complicate, or offer a choice.
 
@@ -243,7 +302,7 @@ Soft Moves warn, reveal, complicate, or offer a choice.
 | Reveal a false lead | “The ledger points to a scapegoat who is too obvious.” |
 | Ask who suffers | “Someone saw you. Which Contact is now at risk?” |
 
-## Hard Moves
+### Hard Moves
 
 Hard Moves land consequences.
 
@@ -264,7 +323,7 @@ Hard Moves land consequences.
 
 ---
 
-# 7. Threat Design
+## 7. Threat Design
 
 Threats in this game are not stat blocks first.
 
@@ -281,7 +340,7 @@ A threat should answer:
 7. What can the cell gain from them?
 8. What happens when they are exposed?
 
-## Threat Template
+### Threat Template
 
 ```text
 Name:
@@ -304,7 +363,7 @@ What They Do At Heat 6:
 What They Do At Heat 9:
 ```
 
-## Threat Traits
+### Threat Traits
 
 | Trait | Meaning |
 |---|---|
@@ -316,7 +375,7 @@ What They Do At Heat 9:
 | **Tell** | What reveals its nature. |
 | **Clue / Resource** | What the cell can gain from it. |
 
-## Threat Scale
+### Threat Scale
 
 | Scale | Resistance | Stress Die | Use For |
 |---|---:|---:|---|
@@ -331,9 +390,9 @@ It may represent secrecy, loyalty, legal insulation, ritual protection, public r
 
 ---
 
-# 8. Opposition Types
+## 8. Opposition Types
 
-## Cult Cell
+### Cult Cell
 
 | Field | Guidance |
 |---|---|
@@ -351,7 +410,7 @@ Example moves:
 - Reveal that the cult solved a real local problem.
 - Offer the cell a forbidden shortcut.
 
-## Corrupt Institution
+### Corrupt Institution
 
 | Field | Guidance |
 |---|---|
@@ -369,7 +428,7 @@ Example moves:
 - Blame a subordinate.
 - Turn the cell’s authority into a public issue.
 
-## Noble Conspiracy
+### Noble Conspiracy
 
 | Field | Guidance |
 |---|---|
@@ -387,7 +446,7 @@ Example moves:
 - Offer an alliance against a worse enemy.
 - Make exposure politically catastrophic.
 
-## Heretek Network
+### Heretek Network
 
 | Field | Guidance |
 |---|---|
@@ -405,7 +464,7 @@ Example moves:
 - Corrupt a tool the cell depends on.
 - Leave a useful device that wants to be used.
 
-## Rogue Psyker / Witch Circle
+### Rogue Psyker / Witch Circle
 
 | Field | Guidance |
 |---|---|
@@ -423,7 +482,7 @@ Example moves:
 - Mark someone with a soul impression.
 - Let the Warp notice.
 
-## Xenos Infiltration
+### Xenos Infiltration
 
 | Field | Guidance |
 |---|---|
@@ -441,7 +500,7 @@ Example moves:
 - Have the enemy learn the cell’s pattern.
 - Make containment more dangerous than destruction.
 
-## Daemonic Incursion
+### Daemonic Incursion
 
 | Field | Guidance |
 |---|---|
@@ -461,7 +520,7 @@ Example moves:
 
 ---
 
-# 9. Factions
+## 9. Factions
 
 Factions should complicate the mission even when they are not the enemy.
 
@@ -474,7 +533,7 @@ Every faction should have:
 - A line they will not cross.
 - A thing they are wrong about.
 
-## Faction Template
+### Faction Template
 
 ```text
 Name:
@@ -490,7 +549,7 @@ Representative NPC:
 Faction Clock:
 ```
 
-## Common Imperial Factions
+### Common Imperial Factions
 
 | Faction | Useful For | Dangerous Because |
 |---|---|---|
@@ -504,7 +563,7 @@ Faction Clock:
 | **Void Guilds** | Travel, cargo, docks, manifests | Contracts, quarantine, alien contact |
 | **Rival Inquisition** | Expertise, authority, hidden truths | Jurisdiction, ideology, purges |
 
-## Faction Reaction Ladder
+### Faction Reaction Ladder
 
 | State | Faction Behavior |
 |---|---|
@@ -516,7 +575,7 @@ Faction Clock:
 
 ---
 
-# 10. Clue Design
+## 10. Clue Design
 
 A clue is not just information.
 
@@ -531,7 +590,7 @@ A clue should do at least one of these:
 - Offer a forbidden solution.
 - Show what will happen if the cell does nothing.
 
-## Clue Types
+### Clue Types
 
 | Clue Type | Examples |
 |---|---|
@@ -543,7 +602,7 @@ A clue should do at least one of these:
 | **Institutional** | Missing tithe, impossible promotion, jurisdiction anomaly |
 | **Negative** | Missing corpse, erased record, absent witness, impossible silence |
 
-## Three-Clue Method
+### Three-Clue Method
 
 For every Core Revelation, prepare at least three ways the cell can learn it.
 
@@ -556,7 +615,7 @@ For every Core Revelation, prepare at least three ways the cell can learn it.
 
 The cell does not need all three clues. They need enough to act.
 
-## Clue Costs
+### Clue Costs
 
 When the acolytes roll poorly while investigating, use one of these costs:
 
@@ -573,7 +632,7 @@ When the acolytes roll poorly while investigating, use one of these costs:
 
 ---
 
-# 11. Clocks
+## 11. Clocks
 
 Clocks track pressure that should build over time.
 
@@ -587,7 +646,7 @@ Use clocks when:
 
 Do not use a clock when the consequence should happen immediately.
 
-## Clock Sizes
+### Clock Sizes
 
 | Clock Size | Use For |
 |---:|---|
@@ -596,7 +655,7 @@ Do not use a clock when the consequence should happen immediately.
 | **8 segments** | Mission-level danger |
 | **10 segments** | Campaign-level threat |
 
-## Example Clocks
+### Example Clocks
 
 | Clock | Segments | Advances When | When Full |
 |---|---:|---|---|
@@ -609,7 +668,7 @@ Do not use a clock when the consequence should happen immediately.
 | **Public Panic** | 4 | Psychic phenomena, bodies, rumors | Riot, purge, or mass confession. |
 | **Patron Judgment** | 6 | Red Lines, Patron Notice, hidden evidence | The Patron issues correction. |
 
-## Advancing Clocks
+### Advancing Clocks
 
 Advance a clock by 1 when:
 
@@ -630,7 +689,7 @@ Advance a clock by 2 when:
 
 ---
 
-# 12. NPCs
+## 12. NPCs
 
 NPCs should be simple, memorable, and useful.
 
@@ -648,7 +707,7 @@ What They Hide:
 What They Do Under Pressure:
 ```
 
-## NPC Pressure Questions
+### NPC Pressure Questions
 
 Ask yourself:
 
@@ -660,7 +719,7 @@ Ask yourself:
 6. What lie do they believe?
 7. What happens to them if the cell leaves?
 
-## Fast NPC Table
+### Fast NPC Table
 
 | D10 | NPC |
 |---:|---|
@@ -677,11 +736,11 @@ Ask yourself:
 
 ---
 
-# 13. Running Investigations
+## 13. Running Investigations
 
 Investigations should move through pressure, not locked doors.
 
-## Investigation Loop
+### Investigation Loop
 
 1. Present an unstable situation.
 2. Let the cell choose an approach.
@@ -692,7 +751,7 @@ Investigations should move through pressure, not locked doors.
 7. Ask what truth the cell acts on.
 8. Force a judgment.
 
-## Investigation Failure Modes
+### Investigation Failure Modes
 
 Avoid:
 
@@ -713,7 +772,7 @@ Use:
 
 ---
 
-# 14. Running Violence
+## 14. Running Violence
 
 Combat is a Situation, not a separate game mode.
 
@@ -726,7 +785,7 @@ Start with:
 5. What evidence will remain?
 6. What changes if the cell wins loudly?
 
-## Violence Outcomes
+### Violence Outcomes
 
 When violence occurs, consider:
 
@@ -741,7 +800,7 @@ When violence occurs, consider:
 | Was the scene secured? | Evidence remains or vanishes |
 | Did the violence solve the wrong problem? | New clue or new threat |
 
-## Harm and Defeat
+### Harm and Defeat
 
 When an NPC or threat takes stress equal to its Resistance, choose what defeat means:
 
@@ -760,7 +819,7 @@ Defeat does not have to mean death.
 
 ---
 
-# 15. Running Social Pressure
+## 15. Running Social Pressure
 
 Social scenes should have stakes.
 
@@ -773,7 +832,7 @@ Before a social roll, identify:
 5. What authority, leverage, or Cover applies?
 6. Who might hear about this later?
 
-## Social Consequences
+### Social Consequences
 
 | Situation | Consequence |
 |---|---|
@@ -787,7 +846,7 @@ Before a social roll, identify:
 
 ---
 
-# 16. Running Forbidden Methods
+## 16. Running Forbidden Methods
 
 Forbidden Methods should be tempting because they work.
 
@@ -803,7 +862,7 @@ When a player proposes a Forbidden Method, ask:
 6. What would the Patron say publicly?
 7. What would the Patron say privately?
 
-## Forbidden Method Costs
+### Forbidden Method Costs
 
 | Cost | Example |
 |---|---|
@@ -816,9 +875,11 @@ When a player proposes a Forbidden Method, ask:
 | **Clock** | The method creates future hunger or exposure |
 | **Debt** | The tool, entity, or informant wants payment |
 
+For full procedure, result bands, Forbidden Assets, Warp Trace, and refresh guidance, use [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md). At the table, pick the pressure that best expresses the cost instead of adding every cost at once.
+
 ---
 
-# 17. Running Patron Pressure
+## 17. Running Patron Pressure
 
 The Patron should be felt even when absent.
 
@@ -834,7 +895,7 @@ Use Patron pressure when:
 - Another faction complains.
 - Severe Fallout changes the Mission.
 
-## Patron Moves
+### Patron Moves
 
 | Move | Use When |
 |---|---|
@@ -849,7 +910,7 @@ Use Patron pressure when:
 | **Spend Patience** | The Patron tolerates a mistake but marks it. |
 | **Issue Judgment** | The cell has become part of the problem. |
 
-## Patron Communication
+### Patron Communication
 
 Patron messages should be short.
 
@@ -868,7 +929,7 @@ Examples:
 
 ---
 
-# 18. Rival Acolytes
+## 18. Rival Acolytes
 
 Rival acolytes are not just enemies.
 
@@ -876,7 +937,7 @@ They are mirrors.
 
 They should show another way to serve the Inquisition.
 
-## Rival Cell Template
+### Rival Cell Template
 
 ```text
 Cell Name:
@@ -892,7 +953,7 @@ Line They Will Cross:
 Line They Will Not Cross:
 ```
 
-## Rival Cell Moves
+### Rival Cell Moves
 
 - Arrive with better authority.
 - Claim jurisdiction.
@@ -907,11 +968,11 @@ Line They Will Not Cross:
 
 ---
 
-# 19. Operation Prep Procedure
+## 19. Operation Prep Procedure
 
 Use this when preparing a session.
 
-## Step 1: Define the Operation
+### Step 1: Define the Operation
 
 ```text
 Operation Name:
@@ -924,7 +985,7 @@ Core Revelation:
 Exit Condition:
 ```
 
-## Step 2: Build the Opposition
+### Step 2: Build the Opposition
 
 Give the opposition:
 
@@ -936,7 +997,7 @@ Give the opposition:
 - Protection.
 - Heat 3 / 6 / 9 responses.
 
-## Step 3: Build the Clue Web
+### Step 3: Build the Clue Web
 
 Create:
 
@@ -947,7 +1008,7 @@ Create:
 - 1 person who lies.
 - 1 person who knows but is afraid.
 
-## Step 4: Add Factions
+### Step 4: Add Factions
 
 Choose 2–3 factions.
 
@@ -958,7 +1019,7 @@ For each, define:
 - What they will hide.
 - What makes them hostile.
 
-## Step 5: Add Clocks
+### Step 5: Add Clocks
 
 Create 2–4 clocks:
 
@@ -970,7 +1031,7 @@ Create 2–4 clocks:
 - Rival arrival.
 - Evidence review.
 
-## Step 6: Add Fallout Prompts
+### Step 6: Add Fallout Prompts
 
 Prepare one fallout idea for each Resistance:
 
@@ -980,9 +1041,9 @@ Prepare one fallout idea for each Resistance:
 | **Mind** | Fear, guilt, obsession, memory scar |
 | **Shadow** | Witness, pict capture, damaged Cover |
 | **Authority** | Complaint, audit, superior, jurisdiction |
-| **Corruption** | Warp trace, xenos mark, forbidden appetite |
+| **Corruption** | Warp Trace, xenos mark, forbidden appetite |
 
-## Step 7: Add a Forbidden Shortcut
+### Step 7: Add a Forbidden Shortcut
 
 Every good Operation should have one terrible efficient answer.
 
@@ -999,7 +1060,7 @@ Examples:
 
 ---
 
-# 20. Session Start Procedure
+## 20. Session Start Procedure
 
 At the start of play:
 
@@ -1024,7 +1085,7 @@ Examples:
 
 ---
 
-# 21. End-of-Session Procedure
+## 21. End-of-Session Procedure
 
 At the end of a session:
 
@@ -1051,9 +1112,24 @@ The next pressure is:
 
 ---
 
-# 22. One-Page GM Reference
+## 22. One-Page GM Reference
 
-## During Play
+### GM Load-Bearing Checklist
+
+Use this when a Situation starts to wobble and you need to make a fast, fair call.
+
+| Question | Table Answer |
+|---|---|
+| Roll or no roll? | Roll only if failure or cost changes the situation. |
+| What is at stake? | Name the thing at risk before the dice hit the table. |
+| Difficulty? | Set the chance of each result band: Safe, Risky, Dangerous, or Impossible. |
+| Resistance? | Choose Body, Mind, Shadow, Authority, or Corruption. |
+| Stress die? | Set cost severity: D3, D6, D8, or D10. |
+| Heat or Awareness? | Heat if the Operation gets noisier; Awareness if the enemy learns something specific. |
+| Clock? | Tick a clock when the consequence should build instead of landing immediately. |
+| Fallout prompt? | Know what concrete consequence could appear if stress spills over. |
+
+### During Play
 
 When unsure, ask:
 
@@ -1065,7 +1141,7 @@ When unsure, ask:
 6. What would the Patron think?
 7. What clock advances?
 
-## On 7 or Lower
+### On 7 or Lower
 
 Choose one or more:
 
@@ -1082,7 +1158,7 @@ Choose one or more:
 - Offer a worse bargain.
 - Reveal a dangerous truth.
 
-## When the Cell Succeeds
+### When the Cell Succeeds
 
 Ask:
 
@@ -1100,7 +1176,7 @@ It does not mean the world stops reacting.
 
 ---
 
-# 23. Design Notes
+## 23. Design Notes
 
 This toolkit assumes the GM is not hiding a single correct path.
 

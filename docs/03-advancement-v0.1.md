@@ -136,7 +136,7 @@ Examples:
 - A Secutor trains under a Penumbra to learn a stealth ability.
 - An Explicator studies with a Chirurgeon to read biological evidence.
 - A Hierophant learns anti-daemon rites from an Exorcist.
-- A Radical Asset learns command procedure from an Interrogator.
+- A Radical Asset learns command procedure from a Legate.
 
 When you take a cross-class ability, also add one complication tied to the source.
 

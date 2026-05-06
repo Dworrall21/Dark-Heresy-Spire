@@ -6,11 +6,11 @@ They are balanced because they work.
 
 Acolytes should be tempted to use them when ordinary investigation, authority, violence, or requisition is too slow. The cost is not that the method fails. The cost is that it leaves marks: on the user, on the victim, on the Operation, on the Patron’s patience, and on the soul of the cell.
 
-This document expands the core examples from the rules skeleton into table-facing procedures, tags, burdens, power chassis, forbidden method chassis, and generators.
+This document expands the core examples from Core Rules v0.2 into table-facing procedures, tags, burdens, power chassis, forbidden method chassis, and generators.
 
 ---
 
-# 1. Core Principle
+## 1. Core Principle
 
 When a Psychic Power or Forbidden Method is used, ask:
 
@@ -29,7 +29,7 @@ Make them attractive, effective, and costly.
 
 ---
 
-# 2. Psychic Powers vs. Forbidden Methods
+## 2. Psychic Powers vs. Forbidden Methods
 
 | Type | What It Is | Primary Risk |
 |---|---|---|
@@ -44,7 +44,55 @@ Forbidden Methods are often choices, procedures, assets, or plans.
 
 ---
 
-# 3. Using Psychic Powers
+## 3. Psychic/Forbidden Methods and the Core Rules
+
+Psychic Powers and Forbidden Methods use the same core machinery as the rest of **Dark Heresy Spire**. They are not separate minigames; they are high-leverage ways to change what is possible and what the table must pay for afterward.
+
+| Element | Core Rule Interaction |
+|---|---|
+| **Permission** | A power, rite, asset, or radical shortcut lets the cell attempt something ordinary methods cannot. |
+| **Mastery** | A prepared focus, discipline, forbidden asset, or known method may grant +1D10. Mastery does not stack. |
+| **Difficulty** | Wards, exposure, unstable Warp conditions, witnesses, opposition, null presence, or impossible clean success remove dice. |
+| **Stress Dice** | Personal cost usually lands as Corruption, Mind, Shadow, Authority, or Body stress. |
+| **Protection** | Wards, sanctified tools, null fields, restraints, cover, or sanctioned paperwork may absorb specific stress when their effect says so. |
+| **Resource Dice** | Forbidden Assets, psy-focuses, grimoires, daemonhosts, xenos tools, contacts, and cover channels can step down when strained. |
+| **Tags** | Tags tell the GM what pressure to use: Heat, Enemy Awareness, Warp Trace, Patron Notice, Red Line pressure, or Burdens. |
+| **Heat** | Public noise, witnesses, recordings, visible miracles, purges, and official panic make the Operation hotter. |
+| **Enemy Awareness** | Opposition learns a specific method, signature, asset, weakness, Patron link, or psychic fingerprint. |
+| **Warp Trace** | Occult residue, dream echo, possession vector, soul impression, or psychic evidence remains after the act. |
+| **Clocks and Burdens** | Delayed consequences track hunger, exposure, audits, possession, dependency, faction response, or rival attention. |
+| **Patron Notice, Patience, and Red Lines** | Institutional judgment follows exposed witchcraft, Radical practice, hidden assets, disobedience, and crossed constraints. |
+
+### Calibration Guidance
+
+Choose the pressure that says what actually went wrong.
+
+| Pressure | Use For |
+|---|---|
+| **Difficulty** | The action is riskier before the roll: hostile wards, active resistance, unstable Warp site, public scrutiny, weak cover, null interference, or a result that cannot be clean. |
+| **Stress** | The acolyte personally pays: corruption, guilt, fear, backlash, exhaustion, legal strain, or damaged cover. |
+| **Heat** | Outsiders notice noise, spectacle, violence, missing people, official movement, public miracle, or panic. |
+| **Enemy Awareness** | The enemy learns the cell's method, signature, tool, route, Patron habit, psychic fingerprint, or forbidden dependency. |
+| **Warp Trace** | The act leaves occult residue that psykers, daemons, witches, wards, machine-spirits, or victims can later read. |
+| **Patron Notice / Patience / Red Lines** | The Patron or rival Inquisition has reason to judge, correct, audit, disavow, or punish the cell. |
+| **Burdens or clocks** | The cost should mature later: dependency, possession, audit, faction retaliation, debt, witness panic, or contaminated clue. |
+
+Avoid stacking every pressure on one use. Most psychic or forbidden actions should have **one base cost** plus **one exposure consequence** if the use is visible, public, compromised, or especially extreme.
+
+### Default Difficulty by Psychic/Forbidden Approach
+
+| Approach | Use When |
+|---|---|
+| **Safe** | Prepared, sanctioned, warded, private, controlled, well-covered, or strongly supported. |
+| **Risky** | Rushed, observed, resisted, emotionally unstable, weakly covered, or using a strained asset. |
+| **Dangerous** | Hostile wards, occult opposition, public miracle, unstable Warp site, forbidden asset under scrutiny, or Untouchable/null interference. |
+| **Impossible** | Success cannot be clean without sacrifice, escalation, exposure, permanent consequence, or accepting a forbidden price. |
+
+Impossible does not mean the method cannot work. It means it cannot work cleanly.
+
+---
+
+## 4. Using Psychic Powers
 
 When a psyker uses a power under pressure, roll the listed Skill + Domain.
 
@@ -61,7 +109,19 @@ Some may use:
 | **Mechanicus** | Psy-tech, limiters, noospheric anomalies, machine-ward interaction |
 | **Xenos** | Alien psychic logic, soul-tech, non-human mental structures |
 
-## Default Psychic Cost
+### Psychic Power Procedure
+
+| Step | Table Call |
+|---|---|
+| **1. Name the effect** | Say exactly what the power solves right now. |
+| **2. Choose the roll** | Use the power's Skill + Domain, or choose the closest Skill + Domain if improvised. |
+| **3. Set Difficulty** | Apply Safe, Risky, Dangerous, or Impossible from the approach table. |
+| **4. Confirm cost** | Use the listed cost, default Corruption stress on 7 or lower, or a sharper cost for Unbound/Forbidden use. |
+| **5. Decide visibility** | If the power is visible, loud, miraculous, or terrifying, decide Heat, witness, Cover, or Patron pressure. |
+| **6. Decide trace** | Choose whether it leaves Warp Trace now or only if a cost, 7 or lower, or Fallout demands it. |
+| **7. Keep the hook** | If stress becomes Fallout, use the power's Fallout Hook or a Psychic Burden. |
+
+### Default Psychic Cost
 
 On a **7 or lower**, the psyker takes **Corruption stress** in addition to any other consequence unless the power says otherwise.
 
@@ -77,7 +137,9 @@ On a **1**, the GM may immediately introduce one:
 - A vulnerable witness becomes marked.
 - A ward, relic, machine-spirit, astropath, daemon, or witch-finder notices.
 
-## Visible Psychic Power
+### Visible Psychic Power
+
+Visible psychic power is about **public exposure**. Warp Trace is about **occult detectability**. A power can be invisible to civilians and still leave Warp Trace, or spectacular in public without giving the enemy a useful psychic signature.
 
 If the power is visible, loud, miraculous, terrifying, or physically impossible, choose one:
 
@@ -87,9 +149,21 @@ If the power is visible, loud, miraculous, terrifying, or physically impossible,
 - Psyker’s Cover is Questioned.
 - Patron Notice if the cell was meant to remain covert.
 
+### Tag Pressure
+
+| Tag | Calibration Note |
+|---|---|
+| **Subtle** | Do not add Heat from spectacle alone, but Warp Trace may still exist. |
+| **Visible** | Heat, witnesses, Cover pressure, faith panic, or Patron Notice is likely if the scene is populated or monitored. |
+| **Invasive** | Mind stress, Corruption stress, witness trauma, clue contamination, or Patron judgment is likely. |
+| **Warded** | Reduce Difficulty, reduce stress, or grant Protection when preparation and proper materials matter. |
+| **Sanctioned** | Reduce Authority risk inside mandate; it does not remove fear, Heat, Warp Trace, or enemy recognition. |
+| **Unbound** | Increase effect, but add Corruption, Perils, Burden, or clock pressure. |
+| **Possession Risk** | On a 1, Severe Corruption Fallout, or reckless repeated use, create possession pressure immediately. |
+
 ---
 
-# 4. Psychic Power Structure
+## 5. Psychic Power Structure
 
 A Psychic Power is written as:
 
@@ -112,14 +186,14 @@ Fallout Hook:
 | **Roll** | Skill + Domain. |
 | **Effect** | What the power accomplishes on success. |
 | **Tags** | Table-facing traits that affect fiction and consequences. |
-| **Cost** | Stress, Heat, Awareness, or step-down. |
+| **Cost** | Stress, Heat, Enemy Awareness, or step-down. |
 | **Tell** | What witnesses notice. |
 | **Trace** | What remains afterward. |
 | **Fallout Hook** | What goes wrong when stress becomes consequence. |
 
 ---
 
-# 5. Psychic Tags
+## 6. Psychic Tags
 
 | Tag | Effect |
 |---|---|
@@ -140,7 +214,7 @@ Fallout Hook:
 
 ---
 
-# 6. Warp Trace
+## 7. Warp Trace
 
 Psychic Powers often leave traces even when nobody sees them.
 
@@ -165,7 +239,7 @@ When Warp Trace matters, choose one:
 
 ---
 
-# 7. Psychic Power Chassis
+## 8. Psychic Power Chassis
 
 Use a Chassis when building a new power.
 
@@ -184,7 +258,7 @@ Use a Chassis when building a new power.
 
 ---
 
-# 8. Psychic Power Modules
+## 9. Psychic Power Modules
 
 Add 0–2 modules to customize a power.
 
@@ -213,7 +287,7 @@ Add 0–2 modules to customize a power.
 
 ---
 
-# 9. Psychic Burdens / Perils
+## 10. Psychic Burdens / Perils
 
 Use this when a Psychic Power rolls a 1, when Corruption Fallout triggers, when a power is overchanneled, or when a Psychic Power is Powerful but Compromised.
 
@@ -242,9 +316,9 @@ Use this when a Psychic Power rolls a 1, when Corruption Fallout triggers, when 
 
 ---
 
-# 10. Example Psychic Powers
+## 11. Example Psychic Powers
 
-## Witch-Sight
+### Witch-Sight
 
 ```text
 Discipline: Sight
@@ -257,7 +331,7 @@ Trace: Soul Impression or Dream Echo.
 Fallout Hook: You see something that sees you back.
 ```
 
-## Soul Hook
+### Soul Hook
 
 ```text
 Discipline: Compulsion
@@ -270,7 +344,7 @@ Trace: Psychic Fingerprint.
 Fallout Hook: You leave a mark in the target, and the target leaves one in you.
 ```
 
-## Telekinetic Rebuke
+### Telekinetic Rebuke
 
 ```text
 Discipline: Force
@@ -283,7 +357,7 @@ Trace: Machine Disruption or visible wreckage.
 Fallout Hook: The force strikes something unintended.
 ```
 
-## Pyroclastic Purge
+### Pyroclastic Purge
 
 ```text
 Discipline: Flame
@@ -296,7 +370,7 @@ Trace: Miracle Rumor or Warp Scent.
 Fallout Hook: The fire consumes evidence, civilians, supplies, or something the cell needed.
 ```
 
-## Mind-Scrape
+### Mind-Scrape
 
 ```text
 Discipline: Telepathy
@@ -309,7 +383,7 @@ Trace: Memory Scar.
 Fallout Hook: You also pull out something implanted, alien, daemonic, or false.
 ```
 
-## Veil of Unnotice
+### Veil of Unnotice
 
 ```text
 Discipline: Veil
@@ -322,7 +396,7 @@ Trace: Memory Scar or Machine Disruption.
 Fallout Hook: Someone remembers you perfectly.
 ```
 
-## Astropathic Needle
+### Astropathic Needle
 
 ```text
 Discipline: Message
@@ -335,7 +409,7 @@ Trace: Dream Echo.
 Fallout Hook: Something else answers.
 ```
 
-## Biomantic Command
+### Biomantic Command
 
 ```text
 Discipline: Flesh
@@ -348,7 +422,7 @@ Trace: Body remembers the touch.
 Fallout Hook: The flesh obeys too literally.
 ```
 
-## Hexagrammic Rebuke
+### Hexagrammic Rebuke
 
 ```text
 Discipline: Ward
@@ -361,7 +435,7 @@ Trace: Warded flare visible to psykers and daemons.
 Fallout Hook: The ward holds by trapping part of the threat nearby.
 ```
 
-## Machine Omen
+### Machine Omen
 
 ```text
 Discipline: Psy-Tech
@@ -376,7 +450,7 @@ Fallout Hook: The machine-spirit reports you.
 
 ---
 
-# 11. Forbidden Method Principles
+## 12. Forbidden Method Principles
 
 Forbidden Methods are actions that cross a line.
 
@@ -394,9 +468,21 @@ A Forbidden Method is not always supernatural.
 
 Sometimes the forbidden thing is paperwork, torture, blackmail, jurisdictional theft, false confession, or sacrificing the innocent to preserve the mission.
 
+If the method is certain, supported, and the only interesting question is cost, do not roll. Let it work and charge the listed cost.
+
+If uncertainty matters, use the result bands below.
+
+| Result | Forbidden Method Outcome |
+|---|---|
+| **10** | The benefit lands cleanly. Add one improvement: reduced trace, faster effect, extra clue, better cover, lower Heat, or less stress. |
+| **8-9** | The benefit lands with the listed cost. |
+| **6-7** | The benefit lands, but choose one meaningful cost: stress, Heat, Enemy Awareness, Patron Notice, Boon/Resource step-down, witness, debt, or clock. |
+| **2-5** | Offer a lesser, delayed, or compromised benefit with a serious cost, or let the method work while creating major evidence. |
+| **1** | The method still reveals something useful if it plausibly could, but trigger major exposure, Liability, Fallout prompt, catastrophic proof, or a hard enemy move. |
+
 ---
 
-# 12. Forbidden Method Structure
+## 13. Forbidden Method Structure
 
 Write a Forbidden Method as:
 
@@ -419,14 +505,32 @@ Fallout Hook:
 | **Roll** | If uncertain or opposed. Some methods simply work and cost. |
 | **Benefit** | What it gives the cell. |
 | **Tags** | Traits that change consequences. |
-| **Cost** | Immediate stress, Heat, Awareness, burden, or Patron Notice. |
+| **Cost** | Immediate stress, Heat, Enemy Awareness, Burden, or Patron Notice. |
 | **Exposure Risk** | What happens if discovered. |
 | **Red Line** | What makes the Patron, Puritans, or rivals judge it. |
 | **Fallout Hook** | How it creates story when stress becomes consequence. |
 
 ---
 
-# 13. Forbidden Method Tags
+### Forbidden Assets
+
+Forbidden Assets are Resource dice, not generic bonus pools.
+
+| Asset Use | Effect |
+|---|---|
+| **Permission** | The asset makes an impossible action possible. |
+| **Mastery** | The asset grants +1D10 when its narrow method applies. |
+| **Leverage** | The asset changes faction, social, technical, occult, or investigative position. |
+| **Temporary Protection** | The asset absorbs stress only when its effect says it can or the fiction clearly supports it. |
+| **Decisive Effect** | The asset solves a logistical, occult, violent, or investigative barrier at a cost. |
+
+A Forbidden Asset may step down when exposed, strained, fed, damaged, inspected, used on a 7 or lower, or used to solve a major problem.
+
+Refresh a Forbidden Asset only when the fiction explains it: secrecy restored, repairs made, debt repaid, specialist help secured, a patron or faction appeased, a containment rite completed, the asset is fed, or the cell accepts a Burden or Liability.
+
+---
+
+## 14. Forbidden Method Tags
 
 | Tag | Effect |
 |---|---|
@@ -448,7 +552,7 @@ Fallout Hook:
 
 ---
 
-# 14. Forbidden Method Chassis
+## 15. Forbidden Method Chassis
 
 Use a Chassis when building a radical shortcut.
 
@@ -472,9 +576,9 @@ Use a Chassis when building a radical shortcut.
 
 ---
 
-# 15. Example Forbidden Methods
+## 16. Example Forbidden Methods
 
-## Flash the Rosette
+### Flash the Rosette
 
 ```text
 Type: Authority
@@ -486,7 +590,7 @@ Red Line: Using Patron authority for personal, Radical, or unauthorized ends.
 Fallout Hook: Someone obeys while notifying a rival, superior, cult handler, or local power.
 ```
 
-## Excruciator Protocol
+### Excruciator Protocol
 
 ```text
 Type: Interrogation
@@ -499,7 +603,7 @@ Red Line: Torturing the innocent, useful, protected, or politically visible.
 Fallout Hook: The target says what you want to hear, implicates someone useful, dies, or reveals a truth you were not prepared for.
 ```
 
-## Daemonological Consultation
+### Daemonological Consultation
 
 ```text
 Type: Daemonology
@@ -512,7 +616,7 @@ Red Line: Bargaining, naming, feeding, preserving, or obeying the entity.
 Fallout Hook: The answer includes a command, invitation, name, or price.
 ```
 
-## Xenos Artefact Exploitation
+### Xenos Artefact Exploitation
 
 ```text
 Type: Xenos
@@ -525,7 +629,7 @@ Red Line: Preserving, spreading, copying, bargaining with, or relying on alien l
 Fallout Hook: The artefact teaches you how to use it better next time.
 ```
 
-## Heretek Bypass
+### Heretek Bypass
 
 ```text
 Type: Heretek
@@ -538,7 +642,7 @@ Red Line: Creating persistent heretek systems, freeing abominable logic, or hidi
 Fallout Hook: The machine remembers you.
 ```
 
-## Unsanctioned Psyker Asset
+### Unsanctioned Psyker Asset
 
 ```text
 Type: Psyker Asset
@@ -550,7 +654,7 @@ Red Line: Protecting the asset over the mission or hiding it from the Patron.
 Fallout Hook: The asset is right, but for the wrong reason.
 ```
 
-## Memory Work
+### Memory Work
 
 ```text
 Type: Psychic / Interrogation
@@ -563,7 +667,7 @@ Red Line: Altering allies, loyal servants, Bonds, or witnesses for convenience.
 Fallout Hook: The false memory grows roots.
 ```
 
-## Political Scapegoat
+### Political Scapegoat
 
 ```text
 Type: Political
@@ -576,7 +680,7 @@ Red Line: Sacrificing a loyal servant of the Imperium for convenience.
 Fallout Hook: The scapegoat survives, confesses falsely, or becomes a martyr.
 ```
 
-## Controlled Purge
+### Controlled Purge
 
 ```text
 Type: Purge
@@ -589,7 +693,7 @@ Red Line: Purging before proof, purging to hide the cell’s mistake, or sparing
 Fallout Hook: Something survives inside the ashes.
 ```
 
-## Forbidden Archive Consultation
+### Forbidden Archive Consultation
 
 ```text
 Type: Archive
@@ -602,7 +706,7 @@ Red Line: Copying, teaching, preserving, or trading the knowledge.
 Fallout Hook: The archive entry references the cell, Patron, or future event.
 ```
 
-## Daemonhost Weapon
+### Daemonhost Weapon
 
 ```text
 Type: Daemonological Asset
@@ -616,7 +720,7 @@ Fallout Hook: The daemon does exactly what you asked, not what you meant.
 
 ---
 
-# 16. Radical Use, Patron Notice, and Red Lines
+## 17. Radical Use, Patron Notice, and Red Lines
 
 Mark **Patron Notice** when a Psychic Power or Forbidden Method:
 
@@ -630,7 +734,7 @@ Mark **Patron Notice** when a Psychic Power or Forbidden Method:
 - Gives a rival faction proof of Radical practice.
 - Creates a new dependency.
 
-## Escalating Radical Pattern
+### Escalating Radical Pattern
 
 If the cell repeatedly uses the same forbidden type, create a clock.
 
@@ -645,11 +749,40 @@ If the cell repeatedly uses the same forbidden type, create a clock.
 
 ---
 
-# 17. Random Psychic / Forbidden Generator
+## 18. Containment, Refresh, and Recovery
+
+Psychic and forbidden pressure should be recoverable, but never casually erased.
+
+| Pressure | Refreshes or Clears When... |
+|---|---|
+| **Psychic tools** | Sanctioning rites, confession, containment, maintenance, reconsecration, specialist examination, or controlled rest. |
+| **Wards and holy protections** | The ward is ritually repaired, reconsecrated, supplied with proper materials, confessed over, or reset in a sanctified place. |
+| **Forbidden assets** | Secrecy is restored, repairs are made, the asset is fed, a debt is repaid, faction help is secured, or the cell accepts a Burden or Liability. |
+| **Warp Trace** | Containment, misdirection, ritual cleansing, witness handling, machine-log correction, false trail, enemy distraction, or a stronger occult event obscures it. |
+| **Radical suspicion** | The cell provides proof, scapegoat, confession, Patron report, rival evidence, or a costly act of loyalty. |
+
+Do not clear Warp Trace just because the scene ends. Clear it when someone does the work or when a later consequence consumes it.
+
+---
+
+## 19. Calibrated Examples
+
+| Example | Calibration |
+|---|---|
+| **Sanctioned Psyker uses Witch-Sight in a sealed shrine.** | Safe if prepared with focus and rites. On 7 or lower, take Corruption or Mind stress. If the trace matters, create Dream Echo or Soul Impression rather than Heat. |
+| **Exorcist draws a circle while the possessed victim is breaking restraints.** | Risky or Dangerous depending on time pressure. Success grants Protection or delays possession. On 7 or lower, the ward burns out, marks the Exorcist, or ticks a possession clock. |
+| **Untouchable enters a ritual chamber.** | Psychic powers nearby become Risky or Dangerous. Use Difficulty for the null interference, then Authority or Mind stress if the blank's nature becomes visible or socially intolerable. |
+| **Radical Asset uses a xenos shard to open a sealed route.** | The shard grants permission and possibly Mastery. Cost should be Corruption, Enemy Awareness, Mechanicus claim, Resource step-down, or Patron Notice if exposed. |
+| **Patron offers daemonological consultation.** | Let the answer work. Charge Corruption stress or Patron Notice, then decide whether the cost is Warp Trace, Red Line pressure, or a future demand. |
+| **Psychic violence in a crowded hab-block.** | The attack may be Risky or Dangerous because of witnesses. Use Body/Corruption stress for backlash, Heat for panic, and Enemy Awareness if the cult recognizes the psyker's signature. |
+
+---
+
+## 20. Random Psychic / Forbidden Generator
 
 Use this when a player asks for a strange power, a radical asset, a black archive tool, or an enemy method.
 
-## Step 1: Roll Type
+### Step 1: Roll Type
 
 | D20 | Type |
 |---:|---|
@@ -660,7 +793,7 @@ Use this when a player asks for a strange power, a radical asset, a black archiv
 | 19 | Enemy method the cell can steal |
 | 20 | Powerful but Compromised story method |
 
-## Step 2A: Psychic Power Chassis
+### Step 2A: Psychic Power Chassis
 
 | D20 | Chassis |
 |---:|---|
@@ -675,7 +808,7 @@ Use this when a player asks for a strange power, a radical asset, a black archiv
 | 17-18 | Ward-Rite |
 | 19-20 | Machine Omen |
 
-## Step 2B: Forbidden Method Chassis
+### Step 2B: Forbidden Method Chassis
 
 | D20 | Chassis |
 |---:|---|
@@ -700,7 +833,7 @@ Use this when a player asks for a strange power, a radical asset, a black archiv
 | 19 | Soulguilt Scan |
 | 20 | Black Archive Method |
 
-## Step 3: Add a Module or Twist
+### Step 3: Add a Module or Twist
 
 | D20 | Module / Twist |
 |---:|---|
@@ -725,7 +858,7 @@ Use this when a player asks for a strange power, a radical asset, a black archiv
 | 19 | It works once cleanly, then hungers |
 | 20 | It solves this problem and creates the next mission |
 
-## Step 4: Add Cost
+### Step 4: Add Cost
 
 | D20 | Cost |
 |---:|---|
@@ -746,27 +879,39 @@ Use this when a player asks for a strange power, a radical asset, a black archiv
 
 ---
 
-# 18. One-Page Reference
+## 21. One-Page Reference
 
-## Psychic Power Quick Use
+### Psychic Power Quick Use
 
 1. Name the power and desired effect.
 2. Choose Skill + Domain.
-3. Apply Difficulty based on exposure, danger, wards, opposition, and Heat.
+3. Apply Difficulty based on preparation, exposure, danger, wards, opposition, null pressure, and impossible clean success.
 4. Roll.
 5. On 7 or lower, apply Corruption stress unless the power says otherwise.
-6. Decide whether the power leaves Heat, Warp Trace, Enemy Awareness, or a witness.
+6. Decide whether the power leaves Heat, Warp Trace, Enemy Awareness, witness pressure, or Patron Notice.
 
-## Forbidden Method Quick Use
+### Forbidden Method Quick Use
 
 1. Name the shortcut.
 2. Say why it works faster than the orthodox method.
 3. Give the cell the benefit if the fiction supports it.
-4. Apply roll only if uncertainty matters.
-5. Charge the cost: Authority, Shadow, Corruption, Mind, Heat, Patron Notice, debt, witness, or clock.
-6. Decide what proof remains.
+4. Roll only if uncertainty matters; otherwise let it work and charge the cost.
+5. On 6-7, give the benefit with one meaningful cost. On 2-5, give a lesser, delayed, or compromised benefit with serious cost.
+6. Decide what proof, trace, debt, Burden, clock, or Patron pressure remains.
 
-## Quick Costs
+### Fast Calibration
+
+| Question | Use |
+|---|---|
+| Is the danger present before the roll? | Difficulty. |
+| Does the acolyte personally pay? | Stress. |
+| Did outsiders see or record it? | Heat. |
+| Did the enemy learn a specific method or signature? | Enemy Awareness. |
+| Did occult residue remain? | Warp Trace. |
+| Would the Patron or rival Inquisition judge this? | Patron Notice, Patience, Red Line, or Authority stress. |
+| Should the cost mature later? | Burden or clock. |
+
+### Quick Costs
 
 | Method | Usually Risks |
 |---|---|
@@ -782,7 +927,7 @@ Use this when a player asks for a strange power, a radical asset, a black archiv
 | Scapegoat | Mind, Authority, future revenge |
 | Rosette abuse | Shadow, Authority, Heat, Patron Notice |
 
-## Best Question
+### Best Question
 
 When a player uses a Psychic Power or Forbidden Method, ask:
 
@@ -790,7 +935,7 @@ When a player uses a Psychic Power or Forbidden Method, ask:
 
 ---
 
-# 19. Design Notes
+## 22. Design Notes
 
 Psychic Powers and Forbidden Methods should not replace investigation.
 
