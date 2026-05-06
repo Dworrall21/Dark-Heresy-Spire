@@ -194,7 +194,7 @@ Low pools need special care:
 |---|---|
 | Strong cover, clear leverage, prepared position, or ordinary access | **Safe** |
 | Scrutiny, time pressure, weak cover, contested access, or an unstable scene | **Risky** |
-| Alert opposition, exposed methods, hostile ground, supernatural danger, or active pursuit | **Dangerous** |
+| Alert opposition, exposed methods, hostile ground, supernatural danger, forced to rely on a negative equipment aspect, or active pursuit | **Dangerous** |
 | Success cannot be clean without sacrifice, exposure, fallout, or escalation | **Impossible** |
 
 ### Calibrated Examples
@@ -374,6 +374,10 @@ What They Do At Heat 9:
 | **Instinct** | What the threat naturally does when not stopped. |
 | **Tell** | What reveals its nature. |
 | **Clue / Resource** | What the cell can gain from it. |
+
+### Inflicting Stress on Threats and Obstacles
+
+When an acolyte inflicts stress to overcome a threat or obstacle, the stress die is determined by the weapon or equipment used (often matching its Resource die). Without a relevant piece of equipment, the stress die is **D4**, assuming the action is possible at all.
 
 ### Threat Scale
 

@@ -442,16 +442,16 @@ Choose one primary weapon:
 
 | Item | Resource | Tags | Effect | Burden |
 |---|---:|---|---|---|
-| **Boltgun** | D8 | Loud, Brutal, Restricted | D8 Body. On a 10, +1 stress or shatter cover/armour. | **Restricted Pattern:** if inspected, logged, or used publicly, take D3 Authority stress or Heat +1. |
-| **Hellgun / Hot-Shot Lasgun** | D8 | Reliable, Restricted, Accurate, Unstable | D8 Body. Gain Mastery when prepared, braced, or firing from a tactical position. | **Unstable:** on 7 or lower, step down, overheat, or mark D3 Body stress. |
+| **Boltgun** | D8 | Ranged, Loud, Bolt, Brutal, Restricted | D8 Body. Against unarmoured targets, roll stress twice and keep the higher result. | **Restricted Pattern:** if inspected, logged, or used publicly, take D3 Authority stress or Heat +1. |
+| **Hellgun / Hot-Shot Lasgun** | D8 | Ranged, Reliable, Restricted, Accurate, Volatile | D8 Body. Gain Mastery when prepared, braced, or firing from a tactical position. | **Volatile:** on failure, increase Heat or mark D6 Shadow stress if exposed. |
 
 Also begin with:
 
 | Item | Resource | Tags | Effect | Burden |
 |---|---:|---|---|---|
 | **Carapace Armour** | D8 | Heavy, Restricted, Reliable | Body Protection 2. May absorb one serious hit per Operation without stepping down. | **Obvious:** civilian, noble, or sacred spaces treat you as a threat. |
-| **Combat Blade** | D6 | Concealable, Reliable | D3 Body; useful for silent violence or last-resort close work. | **Blooded History:** if examined, it may connect to a prior killing. |
-| **Munitorum Ammo / Charge Pack** | D6 | Disposable, Traceable | Burn or step down to avoid an ammo complication or add +1 stress once. | **Paper Trail:** official ammunition links back to a supply chain. |
+| **Combat Blade** | D6 | Close, Concealable, Reliable | D3 Body; useful for silent violence or last-resort close work. | **Blooded History:** if examined, it may connect to a prior killing. |
+| **Munitorum Ammo / Charge Pack** | D6 | Disposable, Reload, Traceable | Burn or step down to avoid an ammo complication or add +1 stress once. Reload or resupply when the fiction demands it. | **Paper Trail:** official ammunition links back to a supply chain. |
 
 **Core Ability — Decisive Application of Force:** When you initiate violence from a position of preparation or surprise, gain Mastery and increase your weapon stress die by one step. Heat increases by 1 if the attack is loud or public.  
 **Refresh:** Remove stress when you end a threat decisively and accept the consequences.

@@ -283,17 +283,23 @@ D10 -> D8 -> D6 -> D3 -> gone / broken / empty / exposed
 
 | Tag | Quick Effect |
 |---|---|
-| **Accurate** | Gain Mastery when prepared, braced, scoped, aimed, or firing from advantage. |
+| **Accurate** | Set up before combat to roll with Mastery. |
 | **Area** | Affects a group, zone, mob, room, or vehicle bay. Usually Loud or Obvious. |
-| **Brutal** | On a 10, inflict +1 stress or force panic, surrender, maiming, or collateral damage. |
-| **Concealable** | Can be hidden from casual inspection; gain Mastery when smuggling or palming it. |
+| **Bolt** | Against unarmoured targets, roll stress twice and keep the higher result. |
+| **Brutal** | Roll inflicted stress twice and keep the higher result. |
+| **Burning** | After inflicting stress, target takes D3 extra stress whenever they next take stress until extinguished. |
+| **Close / Ranged / Far Range** | Defines Melee, Ranged, or Extreme range use. |
+| **Concealable** | Can be hidden from casual inspection and may avoid Heat or evidence. |
+| **Dangerous / Plasma / Wyrd** | Maximum stress creates Body, doubled stress, or Corruption backlash. |
 | **Disposable** | Can be burned for one strong effect, then destroyed or reduced to D3. |
 | **Forbidden** | Use may cause Corruption, Shadow, Patron Notice, faction hostility, or Red Line pressure. |
-| **Heavy** | Hard to conceal and slow to deploy; usually grants stronger stress, Protection, or permission. |
-| **Holy** | Gain Mastery or +1 effect against daemonic, heretical, fear-based, or faith-sensitive threats. |
-| **Loud** | If used in a populated, sacred, noble, monitored, or tense area, Heat +1 unless contained. |
+| **Heavy** | Hard to carry/deploy; take double stress from use complications. |
+| **Holy** | Against Warp-tainted, heretical, or daemonic foes, minimum inflicted stress is 4. |
+| **Limited X / One-Shot / Reload** | Tracks limited uses, single use, or time spent reloading. |
+| **Loud / Volatile** | Maximum stress or failure increases Heat or marks Shadow stress if exposed. |
+| **Melta / Piercing** | Melta ignores Protection; Piercing ignores Body Protection. |
 | **Obvious** | Cannot be hidden without special preparation; Cover or social rolls may become Risky. |
-| **Piercing** | Ignores 1 Protection when fictionally appropriate. |
+| **Point-Blank** | Step stress up at Close range and down beyond Ranged range. |
 | **Reliable** | Ignore the first step-down, jam, misfire, supply issue, or maintenance complication each Operation. |
 | **Restricted** | If inspected by officials, mark D3 Authority stress or create a faction question. |
 | **Sanctioned** | Officially permitted under specific authority; reduces Authority risk until used outside mandate. |
@@ -301,6 +307,8 @@ D10 -> D8 -> D6 -> D3 -> gone / broken / empty / exposed
 | **Traceable** | If left behind, used publicly, scanned, logged, or inspected, it creates evidence. |
 | **Unstable** | On a 7 or lower, the GM may step it down, jam it, overheat it, or inflict D3 stress. |
 | **Warded** | Provides Protection 1 against Corruption, Warp Trace, possession, hexes, or psychic intrusion. |
+
+Unarmed attacks generally deal **1 Body stress**.
 
 ---
 
@@ -338,6 +346,7 @@ Common bites include Heat +1, D3 Shadow stress, D3 Authority stress, D3 Corrupti
 
 | Weapon Scale | Stress |
 |---|---:|
+| Unarmed | 1 Body |
 | Minor / improvised / concealed | D3 |
 | Standard sidearm or melee | D6 |
 | Military, brutal, specialist, or heavy | D8 |

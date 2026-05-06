@@ -17,6 +17,10 @@ A good piece of equipment should answer:
 - What tags change the fiction?
 - What burden follows it into play?
 
+### Using Equipment Aspects
+
+If you take advantage of the positive aspect of the item, you roll with Mastery on checks where you use it. If you’re forced into a situation where you have to rely on the negative aspect of the item, the difficulty of the action increases by 1.
+
 ---
 
 ## 1. Core Equipment Structure
@@ -58,7 +62,7 @@ Gear interacts with the core rules in six main ways.
 | **Mastery** | Adds +1D10 to the pool when the item's narrow condition applies. Mastery does not stack. |
 | **Protection** | Absorbs rolled stress before that stress reaches a Resistance. |
 | **Stress Dice** | Set harm, coercion, exposure, corruption, or effect severity. |
-| **Tags** | Change Difficulty, Heat, Awareness, stress type, consequences, or fictional position. |
+| **Tags** | Change Difficulty, Heat, Enemy Awareness, stress type, consequences, or fictional position. |
 | **Resource Dice** | Track quality, supply, legitimacy, authority, charge, ammo, durability, or how much use remains. |
 
 Gear should usually make the roll better in **one** clear way:
@@ -68,7 +72,7 @@ Gear should usually make the roll better in **one** clear way:
 - Reduce Difficulty.
 - Reduce or absorb stress.
 - Change which Resistance is risked.
-- Reduce Heat, Awareness, or evidence.
+- Reduce Heat, Enemy Awareness, or evidence.
 - Create a stronger effect on success.
 
 Avoid giving every important item all of these benefits at once.
@@ -87,10 +91,10 @@ Examples:
 | **Permission + Mastery** | The item is purpose-built for this exact action. |
 | **Reduced Difficulty** | The item changes the situation: strong cover papers, prepared breaching charge, trusted seal, perfect disguise. |
 | **Protection** | The item absorbs the cost if the action goes badly. |
-| **Lower Heat or Awareness** | The item hides, explains, contains, silences, or redirects evidence. |
+| **Lower Heat or Enemy Awareness** | The item hides, explains, contains, silences, or redirects evidence. |
 | **Burden instead of Difficulty** | The item works well now, but creates a future problem. |
 
-Restricted, Loud, Forbidden, Traceable, Obvious, Patron Marked, and similar tags should often affect **Heat, Awareness, Burdens, clocks, or faction reaction** instead of simply making the roll harder.
+Restricted, Loud, Forbidden, Traceable, Obvious, Patron Marked, and similar tags should often affect **Heat, Enemy Awareness, Burdens, clocks, or faction reaction** instead of simply making the roll harder.
 
 Do not use gear as a quiet +1 for everything. Make the benefit concrete and the risk visible.
 
@@ -135,6 +139,7 @@ A Resource Die may be used to:
 - Avoid a tag consequence once.
 - Resist being damaged, traced, exhausted, or confiscated.
 - Measure how much use remains.
+- Determine the amount of stress inflicted on an obstacle when using that equipment. Without a relevant piece of equipment, the stress die is D4 if the action is possible at all.
 
 When a Resource Die is strained, stepped down, damaged, or partially spent:
 
@@ -212,41 +217,115 @@ On a 20, generate the item normally, then add:
 
 ---
 
-## 7. Equipment Tags
+## 7. What Tags Do
 
-Every tag should have a clear table-facing meaning.
+Tags are table-facing prompts, not passive flavor and not automatic penalties.
 
-| Tag | Effect |
+Use tags to decide:
+
+- What the item makes possible.
+- Which spaces, factions, or witnesses accept or reject it.
+- What kind of evidence it leaves.
+- Whether Difficulty, Heat, Enemy Awareness, stress, Resource step-down, or Burden pressure is appropriate.
+- Whether the item changes fictional position, stress type, protection, refresh route, or exposure.
+
+Tags do not usually grant Mastery by themselves. Mastery should come from a specific item Effect, module Effect, class ability, Boon, or situational advantage. A tag may explain why that Effect applies, why Difficulty drops, or why a cost appears.
+
+### Tag Functions
+
+| Function | Tags | What They Usually Do |
+|---|---|---|
+| **Access tags** | Sanctioned, Restricted, Patron Marked, False Provenance | Define who can carry, inspect, authorize, challenge, or punish the item. |
+| **Exposure tags** | Loud, Obvious, Traceable, Witness-Magnet | Create Heat, evidence, witnesses, scrutiny, or Cover pressure. |
+| **Use tags** | Accurate, Area, Close, Concealable, Far Range, Point-Blank, Ranged, Silent, Reliable | Change how the item is deployed, hidden, aimed, maintained, positioned, or trusted. |
+| **Risk tags** | Dangerous, Forbidden, Unreliable, Unstable, Volatile, Wyrd, Hungry, Suspicious, Contaminated | Point toward stress, Burdens, Resource step-down, Red Lines, or future clocks. |
+| **Threat tags** | Block, Bolt, Brutal, Burning, Debilitating, Dual, Holy, Melta, Piercing, Plasma, Spread, Suppressive, Warded, Xenos Tell, Heretek Signature, Warp Echo | Change what the item can affect, what it bypasses, who recognizes it, or what stress/evidence it creates. |
+| **Cost tags** | Bloodbound, Conduit, Disposable, Heavy, Limited X, One-Shot, Penitent, Reload, Reliquary, Tiring, Debt-Bound, Paper Trail, Faction Claim | Explain why the item is spent, owed for, audited, strained, claimed, or politically entangling. |
+
+### Tag Conflicts
+
+If a tag helps and hurts at the same time, let the item work and charge the visible cost.
+
+If several tags could trigger, choose the one that best expresses the current fictional pressure.
+
+Do not trigger every tag on every use. Tags should sharpen the table call, not bury it.
+
+### Tag Examples
+
+| Tags | Table Call |
 |---|---|
-| **Accurate** | Gain Mastery when prepared, braced, scoped, aimed, or firing from advantage. |
-| **Ancient** | Impresses or alarms Mechanicus, noble, shrine, or archive factions. May create Faction Claim. |
-| **Area** | Affects a group, zone, mob, room, or vehicle bay. Usually Loud or Obvious. |
-| **Blessed** | Gain Mastery when used in a sanctioned rite, public display of faith, or against fear. |
-| **Brutal** | On a 10, inflict +1 stress or force panic, surrender, visible maiming, or collateral damage. |
-| **Concealable** | Can be hidden from casual inspection; gain Mastery when smuggling, palming, or masking it. |
-| **Crude** | Effective but suspicious; social use may become Risky, or Heat may rise if seen. |
-| **Disposable** | Can be burned for one strong effect, then destroyed or reduced to D3. |
-| **Elegant** | Grants social permission in noble, official, ceremonial, or elite spaces. |
-| **Experimental** | Grants unusual effect; on a 7 or lower, trigger Unstable or a Burden. |
-| **Forbidden** | Use may cause Corruption, Shadow, Patron Notice, faction hostility, or Red Line pressure. |
-| **Heavy** | Hard to conceal and slow to deploy; usually grants stronger stress, Protection, or permission. |
-| **Holy** | Gain Mastery or +1 effect against daemonic, heretical, fear-based, or faith-sensitive threats. |
-| **Hungry** | Demands charge, fuel, blood, secrets, pain, prayer, sacrifice, or repeated use. |
-| **Loud** | If used in a populated, sacred, noble, monitored, or tense area, Heat +1 unless contained. |
-| **Obvious** | Cannot be hidden without special preparation; Cover or social rolls may become Risky. |
-| **Piercing** | Ignores 1 Protection when fictionally appropriate. Usually Restricted or Brutal. |
-| **Reliable** | Ignore the first step-down, jam, misfire, supply issue, or maintenance complication each Operation. |
-| **Restricted** | If inspected by officials, mark D3 Authority stress or create a faction question. |
-| **Sanctioned** | Officially permitted under a specific authority; reduces Authority risk until used outside mandate. |
-| **Silent** | Does not raise Heat from noise alone. Bodies, witnesses, traces, and records still matter. |
-| **Suspicious** | The item is not illegal by itself, but invites questions, searches, witnesses, or rumors. |
-| **Traceable** | If left behind, used publicly, scanned, logged, or inspected, it creates evidence. |
-| **Unstable** | On a 7 or lower, the GM may step it down, jam it, overheat it, scream, leak, or inflict D3 stress. |
-| **Warded** | Provides Protection 1 against Corruption, Warp Trace, possession, hexes, or psychic intrusion. |
+| **Loud + Restricted boltgun in a shrine** | The boltgun works as a terrifying weapon. Charge Heat, Authority stress, or faction reaction if the shot is heard, recorded, or politically explosive. |
+| **Concealable + Traceable recorder during infiltration** | It can enter the scene hidden, but if found, scanned, or left behind, it becomes evidence. |
+| **Warded + Restricted hexagrammic chains near a psyker** | The chains can contain or protect against psychic pressure, but inspection creates Authority, Ecclesiarchy, or Inquisition questions. |
+| **Forbidden + Xenos Tell weapon under Mechanicus inspection** | The weapon may do the impossible, but the inspection points toward Corruption, Mechanicus claim, Enemy Awareness, or Patron Notice. |
+| **Sanctioned + Patron Marked writ used outside mandate** | The writ opens doors until someone checks authority. Then it creates Patron Notice, Authority stress, or a faction complaint. |
+| **Reliable + Unstable experimental auspex** | Ignore the first ordinary glitch, but when the Unstable tag finally matters, make the failure strange, loud, or expensive. |
 
 ---
 
-## 8. Burden Profiles
+## 8. Equipment Tags
+
+Every tag should have a clear table-facing meaning.
+
+When a tag says to **roll stress twice**, roll the weapon's stress die twice, apply the tag's instruction, then apply Protection and Fallout checks. Tags that modify inflicted stress apply before Protection unless the tag says otherwise.
+
+| Tag | Effect |
+|---|---|
+| **Accurate** | If you take time to set up before combat, roll with Mastery. |
+| **Ancient** | Impresses or alarms Mechanicus, noble, shrine, or archive factions. May create Faction Claim. |
+| **Area** | Affects a group, zone, mob, room, or vehicle bay. Usually Loud or Obvious. |
+| **Blessed** | Counts as religious permission, witness legitimacy, or protection against fear and taint; may change stress type or reduce spiritual/social consequences. |
+| **Block** | When this weapon causes the user stress from use, roll that stress twice and take the lower result. |
+| **Bloodbound** | Mark D3 Body stress to roll with Mastery with this weapon for the rest of the Situation. |
+| **Bolt** | Against unarmoured targets, roll inflicted stress twice and keep the higher result. |
+| **Brutal** | Roll inflicted stress twice and keep the higher result. Stacks only with effects that explicitly say they stack. |
+| **Burning** | After inflicting stress, the target takes D3 extra stress whenever they next take stress until extinguished or contained. |
+| **Close** | Melee weapon, or range so short it might as well be melee. |
+| **Concealable** | Can be hidden from casual inspection and may avoid Heat or evidence until searched, scanned, or used openly. |
+| **Conduit** | Mark D3 Mind stress, or D3 Authority stress if the strain is religious or institutional, to roll with Mastery with this item for the rest of the Situation. |
+| **Crude** | Effective but suspicious; social use may become Risky, or Heat may rise if seen. |
+| **Dangerous** | If you roll maximum inflicted stress, mark D6 Body stress. |
+| **Debilitating** | Once per Situation, after inflicting stress, the next attack against that target gains Mastery. |
+| **Distressing** | If you roll maximum inflicted stress, mark D6 Mind stress. |
+| **Disposable** | Can be burned for one strong effect, then destroyed or reduced to D3. |
+| **Dual** | When dual-wielding two of this weapon, roll stress twice and add both results. |
+| **Elegant** | Grants social permission in noble, official, ceremonial, or elite spaces. |
+| **Experimental** | Grants unusual effect; on a 7 or lower, trigger Unstable or a Burden. |
+| **Far Range** | Can be used at Extreme range. |
+| **Forbidden** | Use may cause Corruption, Shadow, Patron Notice, faction hostility, or Red Line pressure. |
+| **Heavy** | Hard to conceal, carry, and deploy. Take double stress from use complications with this weapon. |
+| **Holy** | Against Warp-tainted, heretical, or daemonic foes, the minimum stress inflicted is always 4. |
+| **Hungry** | Demands charge, fuel, blood, secrets, pain, prayer, sacrifice, or repeated use. |
+| **Limited X** | Can be used X times per Situation. |
+| **Loud** | If you roll maximum inflicted stress, increase Heat or mark D6 Shadow stress if the noise creates personal exposure. |
+| **Melta** | Ignores Protection. |
+| **Obvious** | Cannot be hidden without special preparation; Cover or social rolls may become Risky. |
+| **One-Shot** | Can only be used once per Situation. |
+| **Penitent** | Mark D3 Body stress when inflicting stress. |
+| **Piercing** | Ignores Body Protection. |
+| **Plasma** | Dangerous. If you roll maximum inflicted stress, deal double stress. |
+| **Point-Blank** | +1 stress die step at Close range; -1 stress die step beyond Ranged range or at long distance. |
+| **Ranged** | Can be used at Ranged range. |
+| **Reliable** | Ignore the first step-down, jam, misfire, supply issue, or maintenance complication each Operation. |
+| **Reliquary** | If you roll maximum inflicted stress, mark D6 Mind stress, or D6 Authority stress if the cost is doctrinal exposure. |
+| **Reload** | Must spend time reloading before reuse. |
+| **Restricted** | If inspected by officials, mark D3 Authority stress or create a faction question. |
+| **Sanctioned** | Officially permitted under a specific authority; reduces Authority risk until used outside mandate. |
+| **Silent** | Does not raise Heat from noise alone. Bodies, witnesses, traces, and records still matter. |
+| **Spread** | Nearby creatures take D3 stress from this weapon. |
+| **Suppressive** | On a success, a second nearby target marks D3 Shadow stress or D3 Mind stress, depending on whether the pressure is exposure or fear. |
+| **Suspicious** | The item is not illegal by itself, but invites questions, searches, witnesses, or rumors. |
+| **Tiring** | On failure, reduce the stress die size you inflict by 1 for the rest of the Situation. |
+| **Traceable** | If left behind, used publicly, scanned, logged, or inspected, it creates evidence. |
+| **Unreliable** | On failure, this item cannot be used for the remainder of the Situation. |
+| **Unstable** | On a 7 or lower, the GM may step it down, jam it, overheat it, scream, leak, or inflict D3 stress. |
+| **Volatile** | On failure, increase Heat or mark D6 Shadow stress if the volatility exposes the user. |
+| **Warded** | Provides Protection 1 against Corruption, Warp Trace, possession, hexes, or psychic intrusion. |
+| **Wyrd** | If you roll maximum inflicted stress, mark D6 Corruption stress. |
+
+---
+
+## 9. Burden Profiles
 
 A Burden Profile is not just a penalty.
 
@@ -314,27 +393,30 @@ Mechanical Bite: Heat +1, D3 Shadow stress, or tick an Evidence Review clock.
 
 ---
 
-## 9. Weapon Chassis
+## 10. Weapon Chassis
 
 Weapons primarily provide **stress dice** and **tags**.
 
+As a baseline, unarmed attacks generally deal 1 Body stress. Improvised, trained, augmented, or especially vicious unarmed attacks may deal D3 Body when the fiction supports it.
+
 | Chassis | Base Stress | Base Tags | Effect |
 |---|---:|---|---|
-| **Improvised Weapon** | D3 Body | Crude, Disposable | Easy to obtain; can be burned to avoid looking armed. |
-| **Knife / Blade** | D3 Body | Concealable, Silent | Useful when hidden, intimate, or used with leverage. |
-| **Shock Maul / Shock Baton** | D6 Body or Mind | Restricted, Brutal | May capture, stun, or control rather than kill. |
-| **Chainsword / Chain Weapon** | D8 Body | Loud, Brutal, Obvious | On a 10, creates fear, gore, or forced movement. |
-| **Laspistol** | D6 Body | Concealable, Reliable | Standard sidearm; good default acolyte weapon. |
-| **Lasgun / Lascarbine** | D6 Body | Reliable, Military | Gain Mastery when used with formation, overwatch, or prepared fire. |
-| **Autopistol / Stub Pistol** | D6 Body | Concealable, Loud, Crude | Easy to source; underworld traces are common. |
-| **Autogun / Stubber** | D6 Body | Loud, Area, Crude | Suppression, mobs, or messy firefights. |
-| **Needle Weapon** | D6 Body or D6 Mind | Silent, Concealable, Restricted | May carry toxins, sedatives, or interrogation agents. |
-| **Bolt Weapon** | D8 Body | Loud, Brutal, Restricted | On a 10, +1 stress or shatter cover/armor. |
-| **Flamer** | D8 Body | Loud, Area, Brutal, Holy | Strong against mobs, fear, cleansing, and denial of space. Heat risk is high. |
-| **Plasma Weapon** | D10 Body | Restricted, Experimental, Unstable | Devastating against armor or monsters; dangerous on 7 or lower. |
-| **Melta Weapon** | D10 Body | Restricted, Heavy, Brutal | Breaches armor, doors, vehicles, and sealed vaults. Always leaves evidence. |
-| **Sniper / Long-Las** | D8 Body | Accurate, Restricted, Traceable | Gain Mastery from preparation, distance, or surveillance. |
-| **Grenade / Explosive** | D8 Body | Loud, Area, Disposable | Alters the whole Situation. Usually Heat +1 or +2. |
+| **Unarmed Attack** | 1 Body | Close | Fists, boots, elbows, teeth, grappling, or improvised bodily force. |
+| **Improvised Weapon** | D3 Body | Close, Crude, Disposable | Easy to obtain; can be burned to avoid looking armed. |
+| **Knife / Blade** | D3 Body | Close, Concealable, Silent | Useful when hidden, intimate, or used with leverage. |
+| **Shock Maul / Shock Baton** | D6 Body or Mind | Close, Restricted, Debilitating | May capture, stun, or control rather than kill. |
+| **Chainsword / Chain Weapon** | D8 Body | Close, Loud, Brutal, Obvious | Creates fear, gore, or forced movement. |
+| **Laspistol** | D6 Body | Ranged, Concealable, Reliable | Standard sidearm; good default acolyte weapon. |
+| **Lasgun / Lascarbine** | D6 Body | Ranged, Reliable, Military | Gain Mastery when used with formation, overwatch, or prepared fire. |
+| **Autopistol / Stub Pistol** | D6 Body | Ranged, Concealable, Loud, Crude | Easy to source; underworld traces are common. |
+| **Autogun / Stubber** | D6 Body | Ranged, Loud, Area, Suppressive, Crude | Suppression, mobs, or messy firefights. |
+| **Needle Weapon** | D6 Body or D6 Mind | Ranged, Silent, Concealable, Restricted | May carry toxins, sedatives, or interrogation agents. |
+| **Bolt Weapon** | D8 Body | Ranged, Loud, Bolt, Brutal, Restricted | Terrifying against unarmoured targets; shatters cover and bodies. |
+| **Flamer** | D8 Body | Ranged, Loud, Spread, Burning, Holy | Strong against mobs, fear, cleansing, and denial of space. Heat risk is high. |
+| **Plasma Weapon** | D10 Body | Ranged, Restricted, Plasma, Volatile | Devastating against armour or monsters; dangerous on maximum stress or failure. |
+| **Melta Weapon** | D10 Body | Ranged, Melta, Heavy, Loud | Breaches armour, doors, vehicles, and sealed vaults. Always leaves evidence. |
+| **Sniper / Long-Las** | D8 Body | Ranged, Far Range, Accurate, Restricted, Traceable | Gain Mastery from preparation, distance, or surveillance. |
+| **Grenade / Explosive** | D8 Body | Ranged, Loud, Area, Spread, One-Shot, Disposable | Alters the whole Situation. Usually Heat +1 or +2. |
 | **Excruciator Kit** | D6 Mind or Authority | Restricted, Obvious, Doctrinally Suspect | Always gets a clue if the subject knows one, but may contaminate truth. |
 | **Psychic Focus** | D6 Mind or Corruption | Warded or Warp Echo | Grants permission or Mastery for psychic work; risks trace. |
 | **Daemonological Implement** | D8 Mind or Corruption | Forbidden, Hungry, Warp Echo | Works on occult targets; may create a new problem. |
@@ -342,36 +424,36 @@ Weapons primarily provide **stress dice** and **tags**.
 
 ---
 
-## 10. Weapon Modules
+## 11. Weapon Modules
 
 Add 0-3 modules to a weapon.
 
 | D20 | Module | Adds Tags | Effect |
 |---:|---|---|---|
-| 1 | **Concealed Frame** | Concealable | Gain Mastery when hiding or smuggling the weapon. |
+| 1 | **Concealed Frame** | Concealable | Hide or smuggle the weapon without a roll unless searched, scanned, or forced through tight security; on a roll, reduce Difficulty or avoid Heat/evidence. |
 | 2 | **Suppression Rig** | Silent or Suspicious | Does not raise Heat from sound once per Situation. |
-| 3 | **Hot-Shot Cell** | Restricted, Unstable | Step stress up once, maximum D10. On 7 or lower, step weapon down. |
-| 4 | **Sanctified Ammunition** | Holy, Disposable | Burn to gain Mastery or +1 stress against daemon, witch, or heretic. |
+| 3 | **Hot-Shot Cell** | Restricted, Limited 3, Volatile | Step stress up once, maximum D10. On failure, increase Heat or mark D6 Shadow stress if exposed. |
+| 4 | **Sanctified Ammunition** | Holy, Disposable | Burn for +1 stress or to affect daemon, witch, or heretic targets as sanctified. |
 | 5 | **Manstopper Rounds** | Brutal, Restricted | On a 10, +1 stress or knock target down/through cover. |
 | 6 | **Toxin Load** | Forbidden or Restricted | May inflict Body, Mind, or Corruption depending on toxin. |
 | 7 | **Auspex Sight** | Accurate, Traceable | Gain Mastery when firing with preparation or data support. |
 | 8 | **Gene-Lock Grip** | Restricted | Prevents easy theft; if inspected, creates Authority questions. |
-| 9 | **Overcharge Circuit** | Experimental, Unstable | Once per Operation, step stress up; on 7 or lower, D3 Body or gear step-down. |
+| 9 | **Overcharge Circuit** | Experimental, Dangerous | Once per Operation, step stress up; on maximum inflicted stress, mark D6 Body stress. |
 | 10 | **Reliquary Housing** | Holy, Obvious | Social permission in faithful spaces; suspicious in covert operations. |
 | 11 | **Underhive Rebuild** | Crude, Black-Market Source | Easy to explain in criminal spaces; harder in official spaces. |
 | 12 | **Memory-Wiped Serial** | False Provenance | Harder to trace casually; dangerous if deeply audited. |
-| 13 | **Self-Destruct Charge** | Disposable, Unstable | Burn to destroy evidence or prevent capture. |
+| 13 | **Self-Destruct Charge** | One-Shot, Volatile, Disposable | Burn to destroy evidence or prevent capture. On failure, increase Heat or mark D6 Shadow stress if exposed. |
 | 14 | **Recoil Bracing** | Heavy, Reliable | Ignore first complication from recoil, load, or sustained fire. |
-| 15 | **Ritual Inscription** | Holy or Warded | Gain Mastery in a rite, ward, exorcism, or public display of faith. |
+| 15 | **Ritual Inscription** | Holy or Warded | Grants permission, Protection, or reduced Difficulty for a rite, ward, exorcism, or public display of faith. |
 | 16 | **Xenos Component** | Xenos Tell, Experimental | Add unusual effect; Mechanicus or Ordo Xenos can identify it. |
 | 17 | **Heretek Machine Link** | Heretek Signature | Can interface with systems; leaves impossible logs. |
-| 18 | **Daemon-Bound Edge** | Forbidden, Hungry | +1 effect against living, psychic, or daemonic targets; demands payment. |
+| 18 | **Daemon-Bound Edge** | Forbidden, Hungry, Wyrd | +1 effect against living, psychic, or daemonic targets; demands payment. |
 | 19 | **Patron Seal** | Patron Marked, Sanctioned | Reduces one Authority cost, but proves Patron involvement. |
 | 20 | **Black Archive Modification** | Restricted, Forbidden | Choose one strong effect; roll a Burden Profile. |
 
 ---
 
-## 11. Armour and Protection Chassis
+## 12. Armour and Protection Chassis
 
 Armour primarily provides **Protection**.
 
@@ -394,7 +476,7 @@ Protection reduces incoming stress to the named Resistance by its rating.
 
 ---
 
-## 12. Protection Refresh
+## 13. Protection Refresh
 
 Protection refreshes when the fiction gives the item, identity, mandate, rite, or supply chain enough time and support to recover.
 
@@ -415,7 +497,7 @@ If Protection was burned to cancel a major consequence, it should not refresh un
 
 ---
 
-## 13. Armour Modules
+## 14. Armour Modules
 
 | D20 | Module | Adds Tags | Effect |
 |---:|---|---|---|
@@ -424,7 +506,7 @@ If Protection was burned to cancel a major consequence, it should not refresh un
 | 3 | **Void-Sealed** | Heavy, Obvious | Grants permission in vacuum, toxins, or hostile atmosphere. |
 | 4 | **Refractor Field** | Restricted, Unstable | Once per Situation, reduce Body stress by D6; on 7 or lower, step down. |
 | 5 | **Hexagrammic Wards** | Warded, Holy | +1 Corruption Protection against Warp/possession. |
-| 6 | **Rite-Inscribed Plates** | Holy, Obvious | Gain Mastery when standing firm against fear, witchcraft, or heresy. |
+| 6 | **Rite-Inscribed Plates** | Holy, Obvious | Grant permission, Protection, or reduced Difficulty when standing firm against fear, witchcraft, or heresy. |
 | 7 | **Servo-Assisted Frame** | Heavy, Experimental | Gain Mastery for force, lifting, breaching, or resisting knockdown. |
 | 8 | **Medicae Auto-Injector** | Traceable | Once per Operation, reduce Body stress by D3 after taking it. |
 | 9 | **Camouflage Mantle** | Concealable, Suspicious | Gain Mastery when hiding while stationary. |
@@ -442,7 +524,7 @@ If Protection was burned to cancel a major consequence, it should not refresh un
 
 ---
 
-## 14. Tools and Investigation Gear
+## 15. Tools and Investigation Gear
 
 Tools primarily provide **Permission** or **Mastery**.
 
@@ -463,7 +545,7 @@ Tools primarily provide **Permission** or **Mastery**.
 
 ---
 
-## 15. General Tool Modules
+## 16. General Tool Modules
 
 | D20 | Module | Adds Tags | Effect |
 |---:|---|---|---|
@@ -490,7 +572,7 @@ Tools primarily provide **Permission** or **Mastery**.
 
 ---
 
-## 16. Requisition Procedure
+## 17. Requisition Procedure
 
 When the cell wants gear, personnel, access, transport, authority, specialists, or cover support during play, use Requisition.
 
@@ -584,7 +666,7 @@ Contested Requisitions should use Difficulty, Burdens, faction clocks, or Patron
 
 ---
 
-## 17. Requisition Types
+## 18. Requisition Types
 
 | Type | Description | Typical Die | Typical Burdens |
 |---|---|---:|---|
@@ -597,7 +679,7 @@ Contested Requisitions should use Difficulty, Burdens, faction clocks, or Patron
 
 ---
 
-## 18. Contested Requisitions
+## 19. Contested Requisitions
 
 A Requisition is Contested when:
 
@@ -620,7 +702,7 @@ When a Requisition is Contested, choose one:
 
 ---
 
-## 19. Random Equipment Generator
+## 20. Random Equipment Generator
 
 Use this when the GM needs fast gear, corpse-loot, black-market stock, suspicious requisitions, Patron rewards, relics, or strange evidence.
 
@@ -658,7 +740,7 @@ Roll or choose:
 
 ---
 
-## 20. Random Name Generator
+## 21. Random Name Generator
 
 Most Imperial equipment names should sound bureaucratic, sacred, archaic, violent, or over-documented.
 
@@ -751,7 +833,7 @@ Ash-marked Compliance Laspistol, Mk III
 
 ---
 
-## 21. Generated Equipment Examples
+## 22. Generated Equipment Examples
 
 ### Ash-marked Compliance Laspistol, Mk III
 
@@ -801,8 +883,8 @@ Mechanical Bite: D3 Shadow stress or a rival acolyte recognizes it.
 Chassis: Bolt Weapon
 Quality: Powerful but Compromised, D10
 Modules: Patron Seal, sanctified ammunition, memory-wiped serial
-Tags: Loud, Brutal, Restricted, Holy, Patron Marked
-Effect: D8 Body. On a 10, +1 stress or shatter cover. Burn sanctified ammunition to gain Mastery against a daemon, witch, or apostate champion.
+Tags: Ranged, Loud, Bolt, Brutal, Restricted, Holy, Patron Marked
+Effect: D8 Body. Against unarmoured targets, roll stress twice and keep the higher result. Burn sanctified ammunition for +1 stress or to affect a daemon, witch, or apostate champion as sanctified.
 Burden Tag: Patron Marked
 Trigger: The weapon is used dramatically, recorded, or recovered by another faction.
 Narrative Power: It proves the Patron armed the cell for an unauthorized purge.
@@ -825,7 +907,7 @@ Mechanical Bite: Create a new Mission hook, tick Evidence Review, or mark D3 Cor
 
 ---
 
-## 22. One-Page Gear Reference
+## 23. One-Page Gear Reference
 
 ### To Build Gear
 
@@ -847,14 +929,38 @@ Ask:
 3. Does it reduce Difficulty?
 4. Does it provide Protection?
 5. Does it inflict stress?
-6. Do its Tags change Heat, Awareness, stress type, or fictional position?
+6. Do its Tags change Heat, Enemy Awareness, stress type, or fictional position?
 7. Is a Resource die strained, stepped down, or burned?
 8. Does a Burden trigger?
+
+### Quick Tag Use
+
+| Question | Use |
+|---|---|
+| Does the tag help the action? | Grant permission, reduce Difficulty, or support a specific item Mastery effect. |
+| Does the tag create exposure? | Add Heat, evidence, Enemy Awareness, faction reaction, or Cover pressure. |
+| Does the tag create personal cost? | Apply stress, change stress type, or let Protection absorb the right kind of stress. |
+| Does the tag create delayed cost? | Trigger a Burden, step down a Resource, tick a clock, or create a future demand. |
+| Do several tags apply? | Choose the tag that best expresses the current pressure. |
+
+### Quick Weapon Tags
+
+| Tag | Quick Use |
+|---|---|
+| **Accurate** | Set up before combat to roll with Mastery. |
+| **Bolt / Brutal** | Roll inflicted stress twice and keep the higher result; Bolt applies against unarmoured targets. |
+| **Burning / Spread** | Burning adds D3 recurring stress until extinguished; Spread gives nearby creatures D3 stress. |
+| **Close / Ranged / Far Range** | Define whether the weapon works in Melee, Ranged, or Extreme range. |
+| **Dangerous / Plasma / Volatile / Wyrd** | Maximum stress or failure creates Body, Shadow/Heat, or Corruption backlash. |
+| **Limited X / One-Shot / Reload** | Track how often the weapon can be used before time, ammo, or reload pressure matters. |
+| **Melta / Piercing** | Melta ignores Protection; Piercing ignores Body Protection. |
+| **Point-Blank** | Step stress up at Close range and down beyond Ranged range. |
 
 ### Quick Stress Dice
 
 | Weapon Scale | Stress |
 |---|---:|
+| Unarmed | 1 Body |
 | Minor / improvised / concealed | D3 |
 | Standard sidearm or melee | D6 |
 | Military, brutal, specialist, or heavy | D8 |
@@ -905,7 +1011,7 @@ A Burden should trigger when the item is:
 
 ---
 
-## 23. Design Notes
+## 24. Design Notes
 
 This gear system is intentionally modular.
 

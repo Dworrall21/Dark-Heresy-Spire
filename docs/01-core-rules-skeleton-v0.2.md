@@ -60,7 +60,7 @@ Add dice as follows:
 |---|---|
 | You have the relevant **Skill** | Fight, Deceive, Investigate, etc. |
 | You have the relevant **Domain** | Heresy, Imperium, Void, etc. |
-| You have **Mastery** | From a class ability, gear, leverage, or preparation |
+| You have **Mastery** | From a class ability, gear (e.g., taking advantage of a positive aspect), leverage, or preparation |
 | A helper assists you | They must have a relevant Skill or Domain |
 | Gear or circumstances grant a bonus | Auspex, forged credentials, ambush position |
 
@@ -94,7 +94,7 @@ For attacks or direct harm, a 10 also adds **+1 stress inflicted** for each 10 r
 
 Difficulty represents how hostile, unstable, exposed, or overwhelming the situation is.
 
-It does **not** represent how skilled an enemy is in a tactical sense. Enemies do not roll. Their danger is expressed by the roll's Difficulty, their Resistance, their Protection, their Stress die, and their fictional position.
+It does **not** represent how skilled an enemy is in a tactical sense. Enemies do not roll. Their danger is expressed by the roll's Difficulty, their Resistance, their Protection, their Stress die, and their fictional position. You may also face increased Difficulty if forced to rely on a negative aspect of your equipment.
 
 | Difficulty | Effect |
 |---|---|
@@ -320,7 +320,7 @@ Domains can apply because of subject matter or location.
 
 ## 14. Mastery
 
-Mastery represents exceptional advantage. You may gain Mastery from class abilities, gear, preparation, Patron support, exploiting a clue, ambush, leverage, a Resource, or a completed Operation objective.
+Mastery represents exceptional advantage. You may gain Mastery from class abilities, gear (including exploiting a positive aspect), preparation, Patron support, exploiting a clue, ambush, leverage, a Resource, or a completed Operation objective.
 
 When you have Mastery, add +1D10. Mastery does not stack.
 
@@ -373,11 +373,128 @@ When a threat takes stress equal to its Resistance, it is defeated in the releva
 
 ## 18. Combat
 
-Combat is not a separate subsystem.
+Combat is not a separate subsystem. It is a dangerous Situation where violence is likely, time is tight, and stress can land fast.
 
 A fight is just a dangerous situation where the likely stress is Body, Mind, Shadow, Authority, or Corruption.
 
+### Making Actions in Combat
+
+When an acolyte acts in combat, roll when the action is dangerous, uncertain, opposed, or costly.
+
+**Fight** is the most common Skill for shooting, stabbing, brawling, dueling, suppressing, and surviving direct violence.
+
+Other Skills apply when the action is not simply trading harm:
+
+| Combat Action | Likely Skill |
+|---|---|
+| Assassinate, ambush, vanish, break line of sight | Skulk |
+| Chase a fleeing target, close distance, dodge through danger, reposition | Move |
+| Intimidate, order surrender, lead troops, hold morale | Command |
+| Disable a weapon, operate a vehicle, trigger a kill-switch | Operate |
+| Read the enemy's formation, spot a weak point, find cover or exit | Investigate |
+| Endure terror, poison, suppression, pain, or psychic pressure | Resist |
+
+Domains apply normally. Use the location, enemy, faction, and method to choose the Domain: **Militarum** for battlefield discipline, **Underworld** for alley violence, **Imperium** for local law, **Heresy** for cult tactics, **Warp** for daemonic violence, **Xenos** for alien combat forms, and so on.
+
+Only one Skill and one Domain apply to any roll. If several seem plausible, choose the pair that best describes what the acolyte is actually doing.
+
+### Enemy Actions
+
+Enemies do not roll to see whether their actions succeed.
+
+Instead, the GM describes what enemies are doing, and the acolytes roll to stop, avoid, endure, exploit, or answer those actions.
+
 There are no enemy turns. If the acolytes do nothing while cultists flee, the cultists escape. If they do nothing while a daemon manifests, the daemon manifests. If they do nothing while the Arbites cordon tightens, the exits close.
+
+Enemy action is expressed through Difficulty, stress, clocks, lost position, Heat, Enemy Awareness, and Fallout.
+
+### Initiative
+
+Combat does not use rounds or fixed turns.
+
+The GM chooses who acts first based on the fiction. If priority is unclear, pick the acolyte whose action seems most urgent or ask the table who they most want to see act first.
+
+After that, the GM is responsible for bringing every player into the fight, including acolytes hanging back, giving orders, protecting civilians, watching exits, or doing something careful while others trade fire.
+
+Use any table rhythm that keeps the fight moving:
+
+- Go around the table.
+- Start with the front line, then move outward.
+- Ask the last acting player who they want to see act next.
+- Cut to whoever is under the sharpest pressure.
+
+A player can act more than once before everyone else acts if the fiction demands it. More actions mean more exposure to rolls, stress, Heat, and Fallout.
+
+### Range
+
+Use three practical ranges:
+
+| Range | Meaning |
+|---|---|
+| **Melee** | Same room, corridor, vehicle, platform, or immediate reach. |
+| **Ranged** | Across a chamber, street, hab-block, courtyard, rooftop, or visible battlefield. |
+| **Extreme** | Beyond ordinary exchange distance; requires line of sight, setup, optics, auspex, sniper gear, artillery, psychic reach, or vehicle weapons. |
+
+If acolytes are outranged, they must change the situation before they can strike effectively: rush cover-to-cover, flank, break line of sight, suppress, smoke the position, seize a vehicle, use psychic reach, or force the enemy to move.
+
+If acolytes outrange the enemy, they have advantage until the enemy closes, finds cover, calls support, escapes, or changes the terms of the fight. During that window, enemy pushback should usually be limited, delayed, or indirect unless the enemy has a clear answer.
+
+### Reloading and Limited Fire
+
+Some weapons, tools, or assets have limited shots, charge, pressure, ammunition, or safe operating cycles.
+
+When an acolyte reloads, vents heat, swaps charge packs, primes a heavy weapon, resets a field, or clears a jam, use that moment to show enemy pressure:
+
+- The enemy closes distance.
+- A target runs.
+- A shooter lines up a clean shot.
+- Civilians scatter.
+- Evidence burns.
+- A door begins to close.
+- A rival claims the objective.
+
+If avoiding that pressure is uncertain, the acolyte rolls. Otherwise, reloading simply gives the enemy time to make the situation worse.
+
+### Armour and Protection
+
+Armour is **Body Protection**. It absorbs Body stress before that stress reaches the acolyte's Body Resistance.
+
+Stress absorbed by Protection does not count toward Fallout. Mark it against the Protection first, then apply any remaining stress to the Resistance.
+
+Armour and similar combat Protection refresh when the fiction supports it: after repair, patching, reloading ablative layers, replacing plates, restoring fields, or getting maintenance time.
+
+Tags can bypass or complicate Protection. **Piercing** ignores Body Protection. **Brutal** rolls inflicted stress twice and keeps the higher result. **Loud**, **Restricted**, **Traceable**, **Obvious**, and **Forbidden** often create Heat, Authority stress, Enemy Awareness, evidence, or Burdens instead of extra Body stress.
+
+Unarmed attacks usually deal **1 Body stress**. Weapon tags such as **Reload**, **Piercing**, **Brutal**, **Loud**, **Ranged**, **Close**, and **Far Range** are defined in [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md).
+
+### Combat Stress
+
+Weapons usually inflict **Body** stress, but combat can hit any Resistance:
+
+| Combat Pressure | Possible Stress |
+|---|---|
+| Gunfire, blades, blast, fire, poison | Body |
+| Terror, humiliation, suppression, gore, psychic intimidation | Mind |
+| Witnesses, pict capture, broken cover, bodies left behind | Shadow |
+| Unlawful force, faction complaint, misuse of mandate | Authority |
+| Daemonic violence, witchfire, xenos contamination, forbidden weapons | Corruption |
+
+Choose the Resistance that best matches what the violence costs.
+
+### Post-Fight
+
+When the fight ends, take stock before moving on.
+
+Ask:
+
+1. Who is hurt, dead, captured, missing, or changed?
+2. What stress and Fallout are still visible?
+3. What evidence remains: bodies, shells, blood, picts, witnesses, Warp Trace, restricted weapons, or official records?
+4. Did Heat or Enemy Awareness rise?
+5. Did the cell protect the core clue, destroy it, contaminate it, or reveal a new lead?
+6. Did any Patron Red Line, Burden, Resource, Bond, or faction clock move?
+
+Violence should leave a scene behind. Make sure the table knows what it cost and what it changed.
 
 Violence is fast, ugly, and consequential.
 
@@ -396,7 +513,8 @@ Chassis + Resource Die + Tags + Effect + Burden
 Gear may:
 
 - Make an action possible.
-- Grant Mastery in a specific situation.
+- Grant Mastery in a specific situation (or when exploiting a positive aspect).
+- Increase Difficulty (when forced to rely on a negative aspect).
 - Provide Protection.
 - Inflict stress.
 - Act as a Resource die.
