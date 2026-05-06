@@ -1,0 +1,1506 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acolyte Character Manager</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f2ea;
+      --panel: #fffdf8;
+      --panel-2: #ebe5da;
+      --ink: #221f1a;
+      --muted: #6e6659;
+      --line: #cfc5b5;
+      --accent: #8f2d2d;
+      --accent-2: #2e5f6e;
+      --good: #27634b;
+      --warn: #9b6b10;
+      --bad: #9a2b24;
+      --shadow: 0 12px 28px rgba(40, 32, 22, .12);
+      --radius: 8px;
+      --field: #fff;
+      --focus: 0 0 0 3px rgba(143, 45, 45, .18);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      border-radius: 6px;
+      min-height: 2.25rem;
+      padding: .42rem .7rem;
+      cursor: pointer;
+    }
+
+    button:hover { border-color: var(--accent); }
+    button:focus-visible,
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      box-shadow: var(--focus);
+      border-color: var(--accent);
+    }
+
+    button.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    button.subtle {
+      background: transparent;
+    }
+
+    button.danger {
+      color: var(--bad);
+      border-color: rgba(154, 43, 36, .35);
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--field);
+      color: var(--ink);
+      padding: .5rem .58rem;
+    }
+
+    textarea {
+      min-height: 4.75rem;
+      resize: vertical;
+    }
+
+    label {
+      display: grid;
+      gap: .28rem;
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 700;
+    }
+
+    label span { color: var(--muted); }
+    label input, label select, label textarea { color: var(--ink); font-weight: 500; }
+
+    .app-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .75rem 1rem;
+      background: rgba(245, 242, 234, .94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      min-width: 13rem;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.28rem;
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .brand p {
+      margin: .12rem 0 0;
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: .45rem;
+      align-items: center;
+    }
+
+    .save-status {
+      color: var(--muted);
+      font-size: .84rem;
+      min-width: 8.5rem;
+      text-align: right;
+    }
+
+    .app-shell {
+      display: grid;
+      grid-template-columns: 15rem minmax(0, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 5.15rem;
+      align-self: start;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: .65rem;
+      max-height: calc(100vh - 6rem);
+      overflow: auto;
+    }
+
+    .sidebar a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      padding: .45rem .55rem;
+      border-radius: 5px;
+      font-size: .92rem;
+    }
+
+    .sidebar a:hover {
+      background: var(--panel-2);
+    }
+
+    main {
+      display: grid;
+      gap: 1rem;
+      min-width: 0;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1rem;
+      scroll-margin-top: 5.25rem;
+    }
+
+    section h2 {
+      margin: 0 0 .85rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.25rem;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 1rem 0 .55rem;
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      margin: -.35rem 0 .85rem;
+      font-size: .93rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: .75rem;
+    }
+
+    .cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .guide-layout {
+      display: grid;
+      grid-template-columns: minmax(18rem, .8fr) minmax(20rem, 1.2fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .guide-box {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbf7ee;
+      padding: .8rem;
+    }
+
+    .guide-box h3:first-child { margin-top: 0; }
+
+    .hint-list {
+      display: grid;
+      gap: .45rem;
+      margin: .6rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .hint-list li {
+      border-left: 3px solid var(--accent-2);
+      padding: .35rem .55rem;
+      background: rgba(46, 95, 110, .08);
+      color: var(--ink);
+      font-size: .9rem;
+    }
+
+    .validation {
+      display: grid;
+      gap: .4rem;
+      margin-top: .75rem;
+    }
+
+    .validation p {
+      margin: 0;
+      padding: .45rem .55rem;
+      border-radius: 6px;
+      font-size: .9rem;
+      border: 1px solid transparent;
+    }
+
+    .validation .ok {
+      color: var(--good);
+      border-color: rgba(39, 99, 75, .25);
+      background: rgba(39, 99, 75, .08);
+    }
+
+    .validation .warn {
+      color: var(--warn);
+      border-color: rgba(155, 107, 16, .25);
+      background: rgba(155, 107, 16, .1);
+    }
+
+    .validation .bad {
+      color: var(--bad);
+      border-color: rgba(154, 43, 36, .25);
+      background: rgba(154, 43, 36, .08);
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: .55rem;
+    }
+
+    .check-card {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: .55rem;
+      align-items: start;
+      padding: .62rem;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+    }
+
+    .check-card input {
+      width: 1.05rem;
+      height: 1.05rem;
+      margin-top: .18rem;
+    }
+
+    .check-card strong {
+      display: block;
+      font-size: .94rem;
+    }
+
+    .check-card small {
+      display: block;
+      color: var(--muted);
+      font-size: .8rem;
+      margin-top: .12rem;
+    }
+
+    .forbidden strong::after {
+      content: " Forbidden";
+      color: var(--bad);
+      font-size: .7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-left: .35rem;
+    }
+
+    .resistance-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+      gap: .75rem;
+    }
+
+    .res-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: .75rem;
+    }
+
+    .res-card h3 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .5rem;
+    }
+
+    .stress-track {
+      display: grid;
+      grid-template-columns: repeat(11, minmax(1.9rem, 1fr));
+      gap: .25rem;
+      margin-bottom: .65rem;
+    }
+
+    .stress-track button {
+      min-height: 2rem;
+      padding: .15rem;
+      font-size: .82rem;
+      background: #f8f4ec;
+    }
+
+    .stress-track button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: .45rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f0e9dd;
+      color: var(--muted);
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+    td.actions { width: 1%; white-space: nowrap; }
+    td.check-cell { text-align: center; }
+    td.check-cell input { width: 1.05rem; height: 1.05rem; }
+
+    .row-actions {
+      display: flex;
+      gap: .35rem;
+      justify-content: flex-end;
+      margin-top: .55rem;
+    }
+
+    .die-control {
+      display: grid;
+      grid-template-columns: 2.2rem minmax(4.3rem, 1fr) 2.2rem;
+      gap: .25rem;
+      align-items: center;
+    }
+
+    .die-control button {
+      padding: .2rem;
+      min-height: 2.15rem;
+      font-weight: 900;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+      margin-top: .55rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.9rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: .25rem .6rem;
+      color: var(--ink);
+      font-size: .85rem;
+    }
+
+    .pill button {
+      border: 0;
+      background: transparent;
+      padding: 0 .1rem;
+      min-height: auto;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .section-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+      justify-content: flex-end;
+      margin-top: -.25rem;
+      margin-bottom: .75rem;
+    }
+
+    .notes-area textarea {
+      min-height: 12rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .92rem;
+    }
+
+    .hidden-input {
+      position: fixed;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .mobile-nav {
+      display: none;
+      margin: 0 1rem 1rem;
+    }
+
+    @media (max-width: 980px) {
+      .app-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .toolbar {
+        justify-content: flex-start;
+      }
+
+      .save-status { text-align: left; }
+
+      .app-shell {
+        grid-template-columns: 1fr;
+        padding-top: 0;
+      }
+
+      .sidebar { display: none; }
+      .mobile-nav { display: block; }
+      .guide-layout, .cols-2, .cols-3, .cols-4 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .toolbar button {
+        flex: 1 1 9rem;
+      }
+
+      section {
+        padding: .75rem;
+      }
+
+      .stress-track {
+        grid-template-columns: repeat(6, minmax(2.1rem, 1fr));
+      }
+    }
+
+    @media print {
+      :root {
+        --bg: #fff;
+        --panel: #fff;
+        --ink: #000;
+        --muted: #333;
+        --line: #888;
+        --shadow: none;
+      }
+
+      body { background: #fff; }
+      .app-header, .sidebar, .mobile-nav, .section-tools, .row-actions, .actions, .no-print {
+        display: none !important;
+      }
+
+      .app-shell {
+        display: block;
+        max-width: none;
+        padding: 0;
+      }
+
+      section {
+        break-inside: avoid;
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0 0 .35in;
+        padding: .15in 0;
+      }
+
+      input, select, textarea {
+        border: 0;
+        padding: 0;
+        min-height: auto;
+      }
+
+      textarea { height: auto; }
+      button { border: 0; padding: 0; }
+      .stress-track button { display: none; }
+      .stress-track button.active { display: inline-block; color: #000; background: #fff; font-weight: 900; }
+      .table-wrap { border: 0; overflow: visible; }
+      table { min-width: 0; font-size: 9pt; }
+      .guide-box, .check-card, .res-card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <h1>Acolyte Character Manager</h1>
+      <p>Dark Heresy Spire standalone sheet</p>
+    </div>
+    <div class="toolbar no-print">
+      <span class="save-status" id="saveStatus">Ready</span>
+      <button type="button" id="saveNow">Save</button>
+      <button type="button" id="exportJson">Export JSON</button>
+      <button type="button" id="importJson">Import JSON</button>
+      <button type="button" id="printSheet">Print</button>
+      <button type="button" class="danger" id="newCharacter">New / Clear</button>
+      <input class="hidden-input" type="file" id="importFile" accept="application/json,.json">
+    </div>
+  </header>
+
+  <select class="mobile-nav no-print" id="mobileNav" aria-label="Jump to section"></select>
+
+  <div class="app-shell">
+    <nav class="sidebar no-print" id="sidebar" aria-label="Sheet sections"></nav>
+    <main id="app"></main>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var STORAGE_KEY = "dhspire.acolyteCharacter.v1";
+      var DICE = ["", "D3", "D6", "D8", "D10"];
+      var RESISTANCES = ["Body", "Mind", "Shadow", "Authority", "Corruption"];
+      var SKILLS = [
+        ["Command", "Intimidate, lead, command troops, invoke rank"],
+        ["Deceive", "Lie, disguise, forge, impersonate, maintain cover"],
+        ["Fight", "Shoot, stab, brawl, suppress, duel, survive violence"],
+        ["Investigate", "Search, examine, interrogate evidence, connect clues"],
+        ["Move", "Chase, flee, climb, dodge, reposition"],
+        ["Operate", "Use machinery, cogitators, auspex, vehicles, systems"],
+        ["Procure", "Requisition, bribe, scrounge, blackmail, acquire assets"],
+        ["Resist", "Endure pain, fear, torture, psychic pressure, exhaustion"],
+        ["Skulk", "Sneak, tail, hide, bypass security, disappear"]
+      ];
+      var DOMAINS = [
+        ["Imperium", "Law, Administratum, hierarchy, nobles, bureaucracy"],
+        ["Inquisition", "Ordos, cells, Rosettes, secrecy, rival acolytes"],
+        ["Ecclesiarchy", "Ministorum, shrines, saints, Imperial faith"],
+        ["Mechanicus", "Tech-priests, machine rites, forge worlds"],
+        ["Militarum", "Warzones, soldiers, logistics, battlefield survival"],
+        ["Underworld", "Gangs, smugglers, black markets, recidivists"],
+        ["Void", "Ships, stations, ports, voidborn culture"],
+        ["Frontier", "Isolated settlements, wastelands, tenuous Imperial control"],
+        ["Heresy", "Cults, sedition, forbidden doctrine, mutants"],
+        ["Warp", "Psykers, daemons, sorcery, possession"],
+        ["Xenos", "Alien artifacts, signs, behavior, contamination"]
+      ];
+      var FORBIDDEN_DOMAINS = ["Heresy", "Warp", "Xenos"];
+      var COVER_STATUSES = [
+        ["Clean", "Cover works normally."],
+        ["Scuffed", "Step down die or take D3 Shadow stress."],
+        ["Questioned", "Next roll relying on Cover is Risky."],
+        ["Flagged", "Cover works, but use raises Heat by 1 until repaired."],
+        ["Compromised", "Cover only works with proof or in limited places."],
+        ["Exposed", "Burn Cover or increase Heat by 1."],
+        ["Burned", "Cover is destroyed."]
+      ];
+
+      var ORIGINS = {
+        "Hive World": { domain: ["Underworld", "Imperium"], bond: "A gang, hab-family, manufactorum crew, or local enforcer", question: "Who still knows the person you used to be?" },
+        "Forge World": { domain: ["Mechanicus"], bond: "A tech-priest, forge guild, servitor-handler, or machine cult", question: "What machine did you once fail, offend, or save?" },
+        "Shrine World": { domain: ["Ecclesiarchy"], bond: "A confessor, relic-keeper, pilgrim family, or local saint cult", question: "What holy story do you no longer fully believe?" },
+        "Voidborn": { domain: ["Void"], bond: "A ship crew, navigator's servant, dock contact, or voidsman", question: "What did you see in the dark between stars?" },
+        "Death World": { domain: ["Militarum", "Frontier"], bond: "A survivor-clan, beast-hunter, or evacuation officer", question: "What killed everyone weaker than you?" },
+        "Warzone": { domain: ["Militarum"], bond: "A squadmate, commissar, medic, or enemy deserter", question: "Which battle should have killed you?" },
+        "Schola Progenium": { domain: ["Imperium", "Ecclesiarchy"], bond: "A drill-abbot, rival cadet, storm trooper, or orphan-sibling", question: "What lesson did they beat into you?" },
+        "Penal World": { domain: ["Underworld"], bond: "A cellmate, handler, former victim, or penal legion contact", question: "What sentence did the Inquisition interrupt?" },
+        "Frontier World": { domain: ["Frontier"], bond: "A settlement elder, smuggler, missionary, or mutant outcast", question: "What did Imperial law fail to understand?" },
+        "Noble House": { domain: ["Imperium"], bond: "A relative, tutor, rival heir, servant, or house spy", question: "What family secret could still ruin you?" }
+      };
+
+      var ALLEGIANCES = {
+        "Adeptus Administratum": { skill: ["Investigate", "Deceive"], gear: "Seal-stamps, ledger access, cogitator slate", complication: "You are still in a system somewhere." },
+        "Adeptus Arbites / Enforcers": { skill: ["Command", "Fight"], gear: "Shock maul, manacles, precinct contact", complication: "Local law thinks you are either competition or deserter." },
+        "Adeptus Mechanicus": { skill: ["Operate"], gear: "Auspex, mechadendrite tool, sacred toolkit", complication: "Flesh-loyal authorities distrust your machine loyalties." },
+        "Adeptus Ministorum": { skill: ["Command", "Resist"], gear: "Censer, reliquary token, preacher's robes", complication: "Your faith has witnesses." },
+        "Astra Militarum": { skill: ["Fight", "Move"], gear: "Lasgun, flak armour, campaign medal", complication: "Someone expects you to still follow orders." },
+        "Astra Telepathica": { skill: ["Resist", "Investigate"], gear: "Psy-focus, sanctioning brand, warded hood", complication: "Everyone is waiting for you to become a liability." },
+        "Navis / Void Guild": { skill: ["Operate", "Skulk"], gear: "Void suit, ship pass, emergency beacon", complication: "Your access depends on old void contracts." },
+        "Rogue Trader Retinue": { skill: ["Procure", "Deceive"], gear: "Exotic trinket, trade writ, xenos rumor", complication: "You know too much about tolerated illegality." },
+        "Underworld Asset": { skill: ["Skulk", "Deceive"], gear: "Hidden blade, false papers, black-market contact", complication: "The law has not forgotten you." },
+        "Noble Household": { skill: ["Command", "Procure"], gear: "Signet, dueling weapon, etiquette training", complication: "Your bloodline can open doors or draw knives." },
+        "Cult Survivor / Penitent": { skill: ["Resist", "Investigate"], gear: "Scarred scripture, old cult token, penance brand", complication: "Someone doubts you were truly cleansed." },
+        "Ordo-Trained Initiate": { skill: ["Investigate", "Command"], gear: "Interrogation notes, cipher-key, restricted primer", complication: "Rival acolytes know your early failures." }
+      };
+
+      var PATRONS = {
+        "Favored Instrument": "Once per Mission, gain Mastery when following direct orders. If you disobey, mark D6 Authority stress.",
+        "Expendable Asset": "Once per Operation, ignore Authority stress from collateral damage. Your Patron will not protect you from fallout.",
+        "Blackmailed Servant": "Gain Shadow Protection 1. Someone has proof of your old sin.",
+        "Potential Interrogator": "Gain Authority Protection 1. You are judged more harshly than the others.",
+        "Redeemed Heretic": "Gain Corruption Protection 1. Any Corruption fallout is treated as evidence.",
+        "Borrowed Specialist": "Gain one extra Skill. Your former faction expects reports.",
+        "Secret Weapon": "Gain one Psychic Power or Forbidden Method. Your existence must remain hidden.",
+        "Political Liability": "Gain one extra Resource at the start of each Mission. If exposed, your Patron may disavow you."
+      };
+
+      var EDGES = {
+        "Warp-Sensitive": "Begin with Witch-Sight. Take +1 Corruption stress from psychic backlash.",
+        "Xenos-Touched": "Gain Xenos as a Domain. Possession of your knowledge is incriminating.",
+        "Former Cultist": "Gain Heresy as a Domain. Cults may recognize you, and authorities may distrust you.",
+        "Radical Training": "Begin with one Forbidden Method. Puritan scrutiny treats you as suspicious.",
+        "Blank Blood": "Gain Corruption Protection 1. Comforting or inspiring others is Risky when your nature is known.",
+        "Hypno-Indoctrinated": "Gain Mind Protection 1. The GM may introduce sealed orders or memory gaps.",
+        "Daemon-Scarred": "Gain Mastery when identifying daemonic influence. Daemons may identify you in return.",
+        "Heretek Exposure": "Gain Mechanicus or Xenos. Machine authorities may want to dissect your knowledge.",
+        "Unregistered Asset Network": "Begin with a D6 Contact. The Contact is illegal, compromised, or hunted.",
+        "Penance Brand": "Gain Authority Protection 1 when confessing guilt. Your brand marks you as previously condemned."
+      };
+
+      var COVERS = [
+        "Administratum tithe auditor", "Munitorum logistics officer", "Pilgrim confessor",
+        "Chartist vessel factor", "Manufactorum safety inspector", "Underhive narcotics buyer",
+        "Rogue Trader factor", "Corpse reclamation officer", "Sanctioned bounty agent",
+        "Ecclesiarchy relic examiner"
+      ];
+
+      var WEAPON_OPTIONS = [
+        ["Laspistol", "D6 Body", "Concealable, Reliable"],
+        ["Stub revolver", "D6 Body", "Concealable, Loud, Common"],
+        ["Autopistol", "D6 Body", "Loud, Burst"],
+        ["Combat knife", "D3 Body", "Silent, Concealable"],
+        ["Shock maul", "D6 Body", "Stun, Obvious"],
+        ["Chainsword", "D6 Body", "Brutal, Loud"],
+        ["Bolt pistol", "D8 Body", "Loud, Brutal, Restricted"],
+        ["Needle pistol", "D6 Body", "Silent, Toxin, Illegal"]
+      ];
+
+      var TOOL_OPTIONS = [
+        ["Auspex", "Mastery when scanning for bio-signs, radiation, or energy traces"],
+        ["Magnoculars", "Mastery when observing distant targets"],
+        ["Pict recorder", "Creates evidence; can also create Shadow risk"],
+        ["Signal jammer", "Grants Shadow Protection 1 during surveillance or intrusion"],
+        ["Medicae kit", "Mastery when treating Body fallout"],
+        ["Excruciator kit", "Enables Excruciator Protocol"],
+        ["Soulguilt scanner", "Enables Soulguilt Scan"],
+        ["Servo-skull", "D6 Resource for scouting, recording, or message delivery"],
+        ["Cipher slate", "Mastery when decoding, storing, or encrypting information"],
+        ["Disguise kit", "Mastery when creating or repairing Cover"]
+      ];
+
+      var HIDDEN_OPTIONS = [
+        ["Cult token", "Proof of infiltration, or sympathy"],
+        ["Xenos shard", "Useful, illegal, corruptive"],
+        ["Unsanctioned weapon", "Effective, indefensible"],
+        ["Private orders", "Contradict the cell's understanding"],
+        ["Memory vial", "Contains testimony someone erased"],
+        ["Daemonological scrap", "Answers one question at a price"],
+        ["Noble signet", "Opens doors and old wounds"],
+        ["Heretek key", "Bypasses sacred machines"],
+        ["Blackmail ledger", "Leverage over the wrong people"],
+        ["False rosette fragment", "Useful until discovered"]
+      ];
+
+      var CLASSES = {
+        "Interrogator": { concept: "The Patron's heir-apparent, trusted but watched.", skill: ["Command"], domain: ["Inquisition"], protection: "Authority Protection 1", gear: "Rosette Cipher-Fragment, Encrypted Orders, Formal Sidearm, Seal Case", core: "Voice of the Master: Once per Operation, when you invoke your Patron's authority without revealing the full Inquisitorial chain, gain Mastery on Command or Procure. Then mark D3 Authority or Shadow stress.", refresh: "Remove stress when you take responsibility for the cell's actions before a superior, rival, tribunal, or dangerous authority.", questions: ["What did your Patron praise you for exactly once?", "Which acolyte do you believe is a liability?", "What order have you been given that the rest of the cell does not know?"] },
+        "Explicator": { concept: "Pattern-reader, clue-breaker, savant investigator.", skill: ["Investigate"], domain: ["Heresy", "Imperium"], protection: "Mind Protection 1", gear: "Cogitator Data-Slate, Mnemonic Engine, Forensic Evidence Kit, Ciphered Notebooks", core: "The Shape of Guilt: When you find a clue, you may ask one extra question: What does this imply that no one wants noticed? Take D3 Mind stress if the answer points toward someone powerful.", refresh: "Remove stress when you explain the truth to someone who does not want to hear it.", questions: ["What pattern do you still see everywhere?", "What truth did you once reveal that ruined someone innocent?", "Which acolyte keeps contaminating your evidence?"] },
+        "Cruciator": { concept: "Torturer, confessor, coercive truth-maker.", skill: ["Command", "Investigate"], domain: ["Inquisition"], protection: "Mind Protection 1", gear: "Excruciator Kit, Restraint Wire, Psycho-Chemical Ampoules, Confession Seals", core: "Pain Is Also Testimony: When you use coercion, torture, fear, or controlled cruelty to extract information, you always get a clue if the target knows one. On 7 or lower, the GM chooses whether the clue is incomplete, contaminated, or costly.", refresh: "Remove stress when you accept moral responsibility for harm done in the name of the mission.", questions: ["Who taught you that mercy can be a weakness?", "Which method do you refuse to use?", "Which acolyte has seen you enjoy your work?"] },
+        "Penumbra": { concept: "Spy, infiltrator, false-face specialist.", skill: ["Deceive", "Skulk"], domain: ["Underworld", "Imperium"], protection: "Shadow Protection 2", gear: "Cover Papers, Disguise Kit, Concealed Weapon, Dead-Drop Token", core: "Burnable Face: You begin each Mission with one extra Cover Identity at D6. You may burn it to ignore one Shadow fallout, but that identity is destroyed and Heat increases by 1.", refresh: "Remove stress when you abandon, repair, or deepen a false identity at personal cost.", questions: ["What is your favorite lie about yourself?", "Who knows one of your true names?", "Which acolyte would ruin your cover first?"] },
+        "Sanctioned Psyker": { concept: "Weaponized liability, occult sensor, warp conduit.", skill: ["Resist", "Investigate"], domain: ["Warp"], protection: "Corruption Protection 1", gear: "Psy-Focus, Sanctioning Brand, Warded Restraints, Sedatives", core: "Licensed Witch: You begin with two Psychic Powers. When you use a Psychic Power and roll a 10, clear D3 Mind or Corruption stress. When you roll a 1, the GM introduces psychic backlash or daemonic attention.", refresh: "Remove stress when you submit to containment, confession, psychic examination, or self-denial.", questions: ["What did sanctioning take from you?", "What phenomenon follows your powers?", "Which acolyte has orders to kill you if necessary?"] },
+        "Exorcist": { concept: "Anti-daemon specialist, ward-maker, ritualist.", skill: ["Resist", "Command"], domain: ["Warp", "Ecclesiarchy"], protection: "Corruption Protection 2", gear: "Hexagrammic Charms, Blessed Blade, Warding Chalk, Censers and Incense", core: "Name the Intruder: When you confront possession, daemonic influence, or warp manifestation, you may ask: What anchors it here? Gain Mastery when acting directly against that anchor.", refresh: "Remove stress when you banish, bind, name, or ritually contain a supernatural threat.", questions: ["What name do you refuse to speak?", "What possession case still haunts you?", "Which acolyte has been touched by something you recognize?"] },
+        "Hierophant": { concept: "Priest, zealot, morale engine, doctrinal judge.", skill: ["Command"], domain: ["Ecclesiarchy"], protection: "Mind Protection 1 or Authority Protection 1", gear: "Scripture and Devotional Icon, Censer / Ritual Kit, Preacher's Robes, Confessor's Seal", core: "The Emperor Demands: When you frame an action as obedience to Imperial faith, grant an ally Mastery. If they roll 7 or lower, you also take D3 Mind or Authority stress.", refresh: "Remove stress when you lead others in prayer, judgment, confession, or penance during danger.", questions: ["What doctrine do you preach but struggle to believe?", "Who confessed something you never reported?", "Which acolyte most needs saving?"] },
+        "Secutor": { concept: "Killer, bodyguard, stormtrooper, raid leader.", skill: ["Fight"], domain: ["Militarum", "Inquisition"], protection: "Body Protection 2", gear: "Boltgun or Hellgun / Hot-Shot Lasgun, Carapace Armour, Combat Blade, Munitorum Ammo / Charge Pack", core: "Decisive Application of Force: When you initiate violence from a position of preparation or surprise, gain Mastery and increase your weapon stress die by one step. Heat increases by 1 if the attack is loud or public.", refresh: "Remove stress when you end a threat decisively and accept the consequences.", questions: ["Who did you fail to protect?", "What target did you enjoy killing?", "Which acolyte keeps standing in your line of fire?"] },
+        "Chirurgeon": { concept: "Medicae, vivisectionist, plague-handler, flesh expert.", skill: ["Operate", "Investigate"], domain: ["Mechanicus", "Heresy"], protection: "Body Protection 1", gear: "Medicae Kit, Bone Saw and Surgical Tools, Toxin Sampler, Auto-Suture Tools", core: "Flesh Remembers: When examining wounds, corpses, disease, mutation, or biological evidence, ask one extra question about what caused it or what it is becoming.", refresh: "Remove stress when you save a life, dissect a truth, or choose which one matters more.", questions: ["What procedure do you regret surviving?", "Whose body did you study without permission?", "Which acolyte is medically doomed in a way they do not know?"] },
+        "Enginseer": { concept: "Tech-priest, machine-speaker, heretek detector.", skill: ["Operate"], domain: ["Mechanicus"], protection: "Body Protection 1 or Corruption Protection 1", gear: "Sacred Toolkit, Auspex, Servo-Skull, Mechadendrite Rig", core: "Machine-Spirit Intercession: Once per Situation, when a device, weapon, door, engine, servo-skull, cogitator, or system would fail, you may keep it functioning. Mark D3 Authority, Body, or Corruption stress depending on what you offended.", refresh: "Remove stress when you repair, sanctify, appease, or meaningfully improve a machine.", questions: ["Which machine-spirit hates you?", "What heretek idea do you secretly understand?", "Which acolyte treats sacred technology like a tool?"] },
+        "Untouchable": { concept: "Blank/pariah, anti-warp anchor, social horror.", skill: ["Resist", "Skulk"], domain: ["Inquisition", "Warp"], protection: "Corruption Protection 3", gear: "Null Collar, Concealing Hood, Compact Weapon, Isolation Orders", core: "Absence: Psychic powers, daemonic influence, and warp phenomena near you become Risky if Safe, or Dangerous if Risky. Allies find your presence disturbing when your nature is obvious.", refresh: "Remove stress when you isolate yourself to protect the cell or let others treat you as a necessary horror.", questions: ["Who first called you soulless?", "What comfort can you never receive?", "Which acolyte treats you like a person anyway?"] },
+        "Radical Asset": { concept: "Former cultist, xenos-touched survivor, sanctioned monster.", skill: SKILLS.map(function (s) { return s[0]; }), domain: ["Heresy", "Warp", "Xenos"], protection: "Corruption Protection 1 or Shadow Protection 1", gear: "Forbidden Token, Handler's Leash, Concealed Relic, Old Enemy Contact", core: "Useful Blasphemy: Choose one Forbidden Method. When you use it, gain Mastery. If you roll 7 or lower, take +D3 Corruption or Authority stress.", refresh: "Remove stress when you prove your forbidden nature was necessary to the mission.", questions: ["Why were you spared?", "What would make the cell execute you?", "Which enemy still thinks you belong to them?"] }
+      };
+
+      var SECTIONS = [
+        ["guide", "Creation Guide"],
+        ["identity", "Identity"],
+        ["skills-domains", "Skills & Domains"],
+        ["resistances", "Resistances"],
+        ["class", "Class Features"],
+        ["advances", "Advances & Beats"],
+        ["cover", "Cover"],
+        ["bonds", "Bonds"],
+        ["gear", "Gear & Resources"],
+        ["powers", "Powers & Methods"],
+        ["fallout", "Fallout"],
+        ["notes", "Notes"]
+      ];
+
+      var state = loadState();
+      var autosaveTimer = null;
+      var fieldCounter = 0;
+
+      function defaultCharacter() {
+        var skills = {};
+        var domains = {};
+        SKILLS.forEach(function (s) { skills[s[0]] = { have: false, notes: "" }; });
+        DOMAINS.forEach(function (d) { domains[d[0]] = { have: false, notes: "" }; });
+        var resistances = {};
+        RESISTANCES.forEach(function (name) {
+          resistances[name] = { stress: 0, protection: "", fallout: "" };
+        });
+        var coverStatus = {};
+        COVER_STATUSES.forEach(function (item) { coverStatus[item[0]] = { checked: false, notes: item[1] }; });
+        return {
+          identity: {
+            name: "", pronouns: "", player: "", origin: "", formerAllegiance: "", className: "",
+            patronRelationship: "", coverIdentity: "", forbiddenEdge: ""
+          },
+          questions: {
+            chosen: "", useful: "", dangerous: "",
+            publicFace: "", privateShame: "", suspicion: "", whoSuspects: "", whoProtects: ""
+          },
+          skills: skills,
+          domains: domains,
+          resistances: resistances,
+          protectionSources: RESISTANCES.map(function (r) { return { resistance: r, source: "", rating: "", notes: "" }; }),
+          classFeatures: {
+            className: "", coreAbility: "", refreshAction: "",
+            questions: [{ prompt: "", answer: "" }, { prompt: "", answer: "" }, { prompt: "", answer: "" }]
+          },
+          advances: [
+            { type: "Minor", ability: "", notes: "" },
+            { type: "Minor", ability: "", notes: "" },
+            { type: "Minor", ability: "", notes: "" },
+            { type: "Major", ability: "", notes: "" },
+            { type: "Major", ability: "", notes: "" },
+            { type: "Severe", ability: "", notes: "" }
+          ],
+          beats: [
+            { type: "Duty", beat: "", completed: false },
+            { type: "Humanity", beat: "", completed: false },
+            { type: "Radical", beat: "", completed: false }
+          ],
+          cover: {
+            primary: "", die: "D6", explains: "", supports: "", exposes: "", burn: "",
+            status: coverStatus,
+            additional: [
+              { identity: "", die: "D6", use: "", status: "" },
+              { identity: "", die: "D6", use: "", status: "" },
+              { identity: "", die: "D6", use: "", status: "" }
+            ]
+          },
+          bonds: [
+            { bond: "Acolyte Bond", die: "D6", why: "", provide: "", risk: "" },
+            { bond: "External Bond", die: "D6", why: "", provide: "", risk: "" },
+            { bond: "Faction / Secret Bond", die: "D6", why: "", provide: "", risk: "" }
+          ],
+          gear: {
+            weapons: [{ weapon: "", stress: "", tags: "", notes: "" }, { weapon: "", stress: "", tags: "", notes: "" }],
+            armour: [{ item: "", rating: "", protects: "", notes: "" }],
+            tools: [{ tool: "", benefit: "", notes: "" }, { tool: "", benefit: "", notes: "" }],
+            hidden: [{ item: "", danger: "", find: "" }, { item: "", danger: "", find: "" }],
+            resources: [{ resource: "", die: "D6", use: "", risk: "" }, { resource: "", die: "D6", use: "", risk: "" }]
+          },
+          powers: {
+            psychic: [{ power: "", roll: "", effect: "", cost: "" }, { power: "", roll: "", effect: "", cost: "" }],
+            forbidden: [{ method: "", benefit: "", cost: "", risk: "" }, { method: "", benefit: "", cost: "", risk: "" }]
+          },
+          fallout: [{ session: "", consequence: "", cleared: false, lingering: "" }, { session: "", consequence: "", cleared: false, lingering: "" }],
+          notes: ""
+        };
+      }
+
+      function loadState() {
+        try {
+          var raw = localStorage.getItem(STORAGE_KEY);
+          if (raw) {
+            var parsed = JSON.parse(raw);
+            if (parsed && parsed.character) {
+              return mergeCharacter(defaultCharacter(), parsed.character);
+            }
+          }
+        } catch (err) {
+          console.warn("Could not load character", err);
+        }
+        return defaultCharacter();
+      }
+
+      function mergeCharacter(base, saved) {
+        Object.keys(saved || {}).forEach(function (key) {
+          if (Array.isArray(saved[key])) {
+            base[key] = saved[key];
+          } else if (saved[key] && typeof saved[key] === "object" && base[key] && typeof base[key] === "object" && !Array.isArray(base[key])) {
+            base[key] = mergeCharacter(base[key], saved[key]);
+          } else {
+            base[key] = saved[key];
+          }
+        });
+        return base;
+      }
+
+      function saveState(manual) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 1, updatedAt: new Date().toISOString(), character: state }));
+        setSaveStatus(manual ? "Saved now" : "Auto-saved");
+      }
+
+      function scheduleSave() {
+        setSaveStatus("Unsaved changes");
+        clearTimeout(autosaveTimer);
+        autosaveTimer = setTimeout(function () { saveState(false); }, 350);
+      }
+
+      function setSaveStatus(text) {
+        document.getElementById("saveStatus").textContent = text;
+      }
+
+      function pathGet(path) {
+        return path.split(".").reduce(function (obj, key) { return obj ? obj[key] : undefined; }, state);
+      }
+
+      function pathSet(path, value) {
+        var parts = path.split(".");
+        var obj = state;
+        for (var i = 0; i < parts.length - 1; i++) obj = obj[parts[i]];
+        obj[parts[parts.length - 1]] = value;
+        scheduleSave();
+        renderDynamicBits();
+      }
+
+      function escapeHtml(value) {
+        return String(value == null ? "" : value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function slug(value) {
+        return String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      }
+
+      function selectOptions(options, selected, blank) {
+        var html = blank ? '<option value=""></option>' : "";
+        options.forEach(function (option) {
+          var value = Array.isArray(option) ? option[0] : option;
+          var label = Array.isArray(option) ? option[1] : option;
+          html += '<option value="' + escapeHtml(value) + '"' + (value === selected ? " selected" : "") + ">" + escapeHtml(label) + "</option>";
+        });
+        return html;
+      }
+
+      function field(label, path, type, options) {
+        var value = pathGet(path) || "";
+        var id = "f-" + slug(path) + "-" + fieldCounter++;
+        if (type === "textarea") {
+          return '<label for="' + id + '"><span>' + escapeHtml(label) + '</span><textarea id="' + id + '" data-path="' + escapeHtml(path) + '">' + escapeHtml(value) + '</textarea></label>';
+        }
+        if (type === "select") {
+          return '<label for="' + id + '"><span>' + escapeHtml(label) + '</span><select id="' + id + '" data-path="' + escapeHtml(path) + '">' + selectOptions(options, value, true) + '</select></label>';
+        }
+        return '<label for="' + id + '"><span>' + escapeHtml(label) + '</span><input id="' + id + '" data-path="' + escapeHtml(path) + '" value="' + escapeHtml(value) + '"></label>';
+      }
+
+      function renderShell() {
+        fieldCounter = 0;
+        var sidebar = document.getElementById("sidebar");
+        var mobile = document.getElementById("mobileNav");
+        sidebar.innerHTML = SECTIONS.map(function (s) { return '<a href="#' + s[0] + '">' + s[1] + '</a>'; }).join("");
+        mobile.innerHTML = '<option value="">Jump to section</option>' + SECTIONS.map(function (s) { return '<option value="' + s[0] + '">' + s[1] + '</option>'; }).join("");
+        document.getElementById("app").innerHTML =
+          renderGuide() +
+          renderIdentity() +
+          renderSkillsDomains() +
+          renderResistances() +
+          renderClassFeatures() +
+          renderAdvancesBeats() +
+          renderCover() +
+          renderBonds() +
+          renderGear() +
+          renderPowers() +
+          renderFallout() +
+          renderNotes();
+        renderDynamicBits();
+        bindEvents();
+      }
+
+      function renderGuide() {
+        return '<section id="guide"><h2>Creation Guide</h2><p class="section-intro">Choose starting anchors, review suggestions, then apply the pieces you want. Manual edits always remain available.</p>' +
+          '<div class="guide-layout">' +
+          '<div class="grid">' +
+          field("Origin", "identity.origin", "select", Object.keys(ORIGINS)) +
+          field("Former Allegiance", "identity.formerAllegiance", "select", Object.keys(ALLEGIANCES)) +
+          field("Class", "identity.className", "select", Object.keys(CLASSES)) +
+          field("Patron Relationship", "identity.patronRelationship", "select", Object.keys(PATRONS)) +
+          field("Forbidden Edge", "identity.forbiddenEdge", "select", Object.keys(EDGES)) +
+          field("Suggested Cover", "identity.coverIdentity", "select", COVERS) +
+          '<div class="section-tools"><button type="button" class="primary" data-action="apply-guide">Apply Safe Suggestions</button><button type="button" data-action="add-starter-rows">Add Suggested Gear Rows</button></div>' +
+          '</div><div class="guide-box"><h3>Current Suggestions</h3><div id="guideHints"></div><div id="validation" class="validation"></div></div>' +
+          '</div></section>';
+      }
+
+      function renderIdentity() {
+        return '<section id="identity"><h2>Identity</h2>' +
+          '<div class="grid cols-4">' +
+          field("Name", "identity.name") + field("Pronouns", "identity.pronouns") + field("Player", "identity.player") + field("Class", "classFeatures.className") +
+          field("Origin", "identity.origin") + field("Former Allegiance", "identity.formerAllegiance") + field("Patron Relationship", "identity.patronRelationship") + field("Forbidden Edge", "identity.forbiddenEdge") +
+          '</div><h3>Character Questions</h3><div class="grid cols-3">' +
+          field("Why did the Inquisition choose you?", "questions.chosen", "textarea") +
+          field("What makes you useful?", "questions.useful", "textarea") +
+          field("What makes you dangerous to keep alive?", "questions.dangerous", "textarea") +
+          '</div><h3>Public and Private Self</h3><div class="grid cols-3">' +
+          field("Public Face", "questions.publicFace", "textarea") +
+          field("Private Shame", "questions.privateShame", "textarea") +
+          field("Known Heresy / Suspicion", "questions.suspicion", "textarea") +
+          field("Who suspects you?", "questions.whoSuspects", "textarea") +
+          field("Who protects you?", "questions.whoProtects", "textarea") +
+          '</div></section>';
+      }
+
+      function renderSkillsDomains() {
+        return '<section id="skills-domains"><h2>Skills & Domains</h2><h3>Skills</h3><div class="check-grid">' +
+          SKILLS.map(function (s) { return renderCheckCard("skills", s[0], s[1], false); }).join("") +
+          '</div><h3>Domains</h3><div class="check-grid">' +
+          DOMAINS.map(function (d) { return renderCheckCard("domains", d[0], d[1], FORBIDDEN_DOMAINS.indexOf(d[0]) >= 0); }).join("") +
+          '</div></section>';
+      }
+
+      function renderCheckCard(kind, name, notes, forbidden) {
+        var data = state[kind][name] || { have: false, notes: "" };
+        return '<div class="check-card ' + (forbidden ? "forbidden" : "") + '">' +
+          '<input type="checkbox" data-check="' + kind + "." + escapeHtml(name) + '.have"' + (data.have ? " checked" : "") + '>' +
+          '<div><strong>' + escapeHtml(name) + '</strong><small>' + escapeHtml(notes) + '</small>' +
+          '<input data-path="' + kind + "." + escapeHtml(name) + '.notes" value="' + escapeHtml(data.notes || "") + '" placeholder="Notes"></div></div>';
+      }
+
+      function renderResistances() {
+        return '<section id="resistances"><h2>Resistances</h2><div class="resistance-grid">' +
+          RESISTANCES.map(function (name) {
+            var r = state.resistances[name];
+            return '<div class="res-card"><h3>' + name + '<span>' + r.stress + (r.stress >= 10 ? "+" : "") + '</span></h3>' +
+              '<div class="stress-track" data-resistance="' + name + '">' +
+              Array.from({ length: 11 }, function (_, i) {
+                return '<button type="button" data-stress="' + i + '" class="' + (Number(r.stress) === i ? "active" : "") + '">' + (i === 10 ? "10+" : i) + '</button>';
+              }).join("") + '</div>' +
+              field("Protection", "resistances." + name + ".protection") +
+              field("Current Fallout", "resistances." + name + ".fallout", "textarea") +
+              '</div>';
+          }).join("") + '</div><h3>Protection Sources</h3>' +
+          renderTable("protectionSources", [
+            ["resistance", "Resistance", "select", RESISTANCES],
+            ["source", "Protection Source"],
+            ["rating", "Rating"],
+            ["notes", "Notes"]
+          ], { add: "Add Protection Source" }) + '</section>';
+      }
+
+      function renderClassFeatures() {
+        return '<section id="class"><h2>Class Features</h2><div class="grid cols-3">' +
+          field("Class", "classFeatures.className") +
+          field("Core Ability", "classFeatures.coreAbility", "textarea") +
+          field("Refresh Action", "classFeatures.refreshAction", "textarea") +
+          '</div><h3>Class Questions</h3>' +
+          renderTable("classFeatures.questions", [
+            ["prompt", "Question"],
+            ["answer", "Answer", "textarea"]
+          ], { add: "Add Class Question" }) + '</section>';
+      }
+
+      function renderAdvancesBeats() {
+        return '<section id="advances"><h2>Advances & Beats</h2><h3>Advances</h3>' +
+          renderTable("advances", [
+            ["type", "Advance Type", "select", ["Minor", "Major", "Severe"]],
+            ["ability", "Ability / Advance"],
+            ["notes", "Notes"]
+          ], { add: "Add Advance" }) +
+          '<h3>Current Beats</h3>' +
+          renderTable("beats", [
+            ["type", "Beat Type", "select", ["Duty", "Humanity", "Radical"]],
+            ["beat", "Current Beat"],
+            ["completed", "Completed?", "checkbox"]
+          ], { add: "Add Beat" }) + '</section>';
+      }
+
+      function renderCover() {
+        return '<section id="cover"><h2>Cover</h2><div class="grid cols-3">' +
+          field("Primary Cover Identity", "cover.primary") +
+          dieField("Cover Die", "cover.die") +
+          field("What this Cover explains", "cover.explains", "textarea") +
+          field("Who supports this Cover", "cover.supports", "textarea") +
+          field("Who might expose this Cover", "cover.exposes", "textarea") +
+          field("What happens if this Cover burns", "cover.burn", "textarea") +
+          '</div><h3>Cover Status</h3><div class="check-grid">' +
+          COVER_STATUSES.map(function (item) {
+            var data = state.cover.status[item[0]] || { checked: false, notes: item[1] };
+            return '<div class="check-card"><input type="checkbox" data-check="cover.status.' + item[0] + '.checked"' + (data.checked ? " checked" : "") + '>' +
+              '<div><strong>' + item[0] + '</strong><input data-path="cover.status.' + item[0] + '.notes" value="' + escapeHtml(data.notes || "") + '"></div></div>';
+          }).join("") + '</div><h3>Additional Covers</h3>' +
+          renderTable("cover.additional", [
+            ["identity", "Cover Identity"],
+            ["die", "Die", "die"],
+            ["use", "Use"],
+            ["status", "Status", "select", COVER_STATUSES.map(function (s) { return s[0]; })]
+          ], { add: "Add Cover" }) + '</section>';
+      }
+
+      function renderBonds() {
+        return '<section id="bonds"><h2>Bonds</h2><p class="section-intro">Step a Bond down when it is harmed, exhausted, compromised, or endangered. Below D3, it breaks or becomes a threat.</p>' +
+          renderTable("bonds", [
+            ["bond", "Bond"],
+            ["die", "Die", "die"],
+            ["why", "Why They Matter"],
+            ["provide", "What They Provide"],
+            ["risk", "What Puts Them at Risk"]
+          ], { add: "Add Bond" }) + '</section>';
+      }
+
+      function renderGear() {
+        return '<section id="gear"><h2>Gear & Resources</h2><div class="section-tools">' +
+          '<button type="button" data-action="add-weapon-option">Add Weapon Option</button>' +
+          '<button type="button" data-action="add-tool-option">Add Tool Option</button>' +
+          '<button type="button" data-action="add-hidden-option">Add Hidden Item Option</button>' +
+          '</div><h3>Weapons</h3>' +
+          renderTable("gear.weapons", [["weapon", "Weapon"], ["stress", "Stress"], ["tags", "Tags"], ["notes", "Notes"]], { add: "Add Weapon" }) +
+          '<h3>Armour / Protection</h3>' +
+          renderTable("gear.armour", [["item", "Armour / Protection"], ["rating", "Rating"], ["protects", "Protects"], ["notes", "Notes"]], { add: "Add Armour" }) +
+          '<h3>Investigative Tools</h3>' +
+          renderTable("gear.tools", [["tool", "Tool"], ["benefit", "Benefit"], ["notes", "Notes"]], { add: "Add Tool" }) +
+          '<h3>Hidden / Incriminating Items</h3>' +
+          renderTable("gear.hidden", [["item", "Item"], ["danger", "Why It Is Dangerous"], ["find", "Who Must Not Find It"]], { add: "Add Hidden Item" }) +
+          '<h3>Resources</h3>' +
+          renderTable("gear.resources", [["resource", "Resource"], ["die", "Die", "die"], ["use", "Use"], ["risk", "Risk"]], { add: "Add Resource" }) +
+          '</section>';
+      }
+
+      function renderPowers() {
+        return '<section id="powers"><h2>Psychic Powers & Forbidden Methods</h2><h3>Psychic Powers</h3>' +
+          renderTable("powers.psychic", [["power", "Power"], ["roll", "Roll"], ["effect", "Effect"], ["cost", "Cost / Fallout Hook"]], { add: "Add Psychic Power" }) +
+          '<h3>Forbidden Methods</h3>' +
+          renderTable("powers.forbidden", [["method", "Method"], ["benefit", "Benefit"], ["cost", "Cost"], ["risk", "Exposure Risk"]], { add: "Add Forbidden Method" }) +
+          '</section>';
+      }
+
+      function renderFallout() {
+        return '<section id="fallout"><h2>Fallout History</h2>' +
+          renderTable("fallout", [["session", "Session / Mission"], ["consequence", "Fallout / Consequence"], ["cleared", "Cleared?", "checkbox"], ["lingering", "Lingering Effect"]], { add: "Add Fallout" }) +
+          '</section>';
+      }
+
+      function renderNotes() {
+        return '<section id="notes" class="notes-area"><h2>Notes</h2>' + field("Freeform notes", "notes", "textarea") + '</section>';
+      }
+
+      function dieField(label, path) {
+        var value = pathGet(path) || "";
+        return '<label><span>' + escapeHtml(label) + '</span><div class="die-control">' +
+          '<button type="button" data-die-step="' + escapeHtml(path) + '" data-dir="-1">-</button>' +
+          '<select data-path="' + escapeHtml(path) + '">' + selectOptions(DICE, value, false) + '</select>' +
+          '<button type="button" data-die-step="' + escapeHtml(path) + '" data-dir="1">+</button>' +
+          '</div></label>';
+      }
+
+      function renderTable(path, columns, opts) {
+        var rows = pathGet(path) || [];
+        var html = '<div class="table-wrap"><table data-table="' + escapeHtml(path) + '"><thead><tr>' +
+          columns.map(function (c) { return '<th>' + escapeHtml(c[1]) + '</th>'; }).join("") +
+          '<th class="actions">Actions</th></tr></thead><tbody>';
+        rows.forEach(function (row, index) {
+          html += '<tr>' + columns.map(function (col) {
+            var key = col[0], title = col[1], type = col[2] || "input", options = col[3] || [];
+            var cellPath = path + "." + index + "." + key;
+            var value = row[key];
+            if (type === "checkbox") {
+              return '<td class="check-cell"><input type="checkbox" data-check="' + escapeHtml(cellPath) + '"' + (value ? " checked" : "") + ' aria-label="' + escapeHtml(title) + '"></td>';
+            }
+            if (type === "select") {
+              return '<td><select data-path="' + escapeHtml(cellPath) + '">' + selectOptions(options, value || "", true) + '</select></td>';
+            }
+            if (type === "die") {
+              return '<td>' + dieCell(cellPath, value || "") + '</td>';
+            }
+            if (type === "textarea") {
+              return '<td><textarea data-path="' + escapeHtml(cellPath) + '">' + escapeHtml(value || "") + '</textarea></td>';
+            }
+            return '<td><input data-path="' + escapeHtml(cellPath) + '" value="' + escapeHtml(value || "") + '"></td>';
+          }).join("") + '<td class="actions"><button type="button" class="danger" data-remove-row="' + escapeHtml(path) + '" data-index="' + index + '">Remove</button></td></tr>';
+        });
+        html += '</tbody></table></div><div class="row-actions"><button type="button" data-add-row="' + escapeHtml(path) + '">' + escapeHtml((opts && opts.add) || "Add Row") + '</button></div>';
+        return html;
+      }
+
+      function dieCell(path, value) {
+        return '<div class="die-control"><button type="button" data-die-step="' + escapeHtml(path) + '" data-dir="-1">-</button>' +
+          '<select data-path="' + escapeHtml(path) + '">' + selectOptions(DICE, value, false) + '</select>' +
+          '<button type="button" data-die-step="' + escapeHtml(path) + '" data-dir="1">+</button></div>';
+      }
+
+      function bindEvents() {
+        document.querySelectorAll("[data-path]").forEach(function (el) {
+          el.addEventListener("input", function () {
+            pathSet(el.getAttribute("data-path"), el.value);
+          });
+          el.addEventListener("change", function () {
+            pathSet(el.getAttribute("data-path"), el.value);
+          });
+        });
+        document.querySelectorAll("[data-check]").forEach(function (el) {
+          el.addEventListener("change", function () {
+            pathSet(el.getAttribute("data-check"), el.checked);
+          });
+        });
+        document.querySelectorAll("[data-stress]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var res = btn.closest("[data-resistance]").getAttribute("data-resistance");
+            state.resistances[res].stress = Number(btn.getAttribute("data-stress"));
+            scheduleSave();
+            renderShell();
+          });
+        });
+        document.querySelectorAll("[data-die-step]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            stepDie(btn.getAttribute("data-die-step"), Number(btn.getAttribute("data-dir")));
+          });
+        });
+        document.querySelectorAll("[data-add-row]").forEach(function (btn) {
+          btn.addEventListener("click", function () { addRow(btn.getAttribute("data-add-row")); });
+        });
+        document.querySelectorAll("[data-remove-row]").forEach(function (btn) {
+          btn.addEventListener("click", function () { removeRow(btn.getAttribute("data-remove-row"), Number(btn.getAttribute("data-index"))); });
+        });
+        document.querySelectorAll("[data-action]").forEach(function (btn) {
+          if (btn.closest("#guideHints")) return;
+          btn.addEventListener("click", function () { handleAction(btn.getAttribute("data-action")); });
+        });
+      }
+
+      function renderDynamicBits() {
+        renderGuideHints();
+        renderValidation();
+        bindGuideActionButtons();
+      }
+
+      function bindGuideActionButtons() {
+        var guideHints = document.getElementById("guideHints");
+        if (!guideHints) return;
+        guideHints.querySelectorAll("[data-action]").forEach(function (btn) {
+          btn.addEventListener("click", function () { handleAction(btn.getAttribute("data-action")); });
+        });
+      }
+
+      function renderGuideHints() {
+        var hints = [];
+        var id = state.identity;
+        if (id.origin && ORIGINS[id.origin]) {
+          var origin = ORIGINS[id.origin];
+          hints.push("Origin domain: " + origin.domain.join(" or ") + ". Suggested Bond: " + origin.bond + ". Question: " + origin.question);
+        }
+        if (id.formerAllegiance && ALLEGIANCES[id.formerAllegiance]) {
+          var allegiance = ALLEGIANCES[id.formerAllegiance];
+          hints.push("Former Allegiance skill: " + allegiance.skill.join(" or ") + ". Gear: " + allegiance.gear + ". Complication: " + allegiance.complication);
+        }
+        if (id.className && CLASSES[id.className]) {
+          var cls = CLASSES[id.className];
+          hints.push("Class: " + cls.concept + " Skill: " + cls.skill.join(" or ") + ". Domain: " + cls.domain.join(" or ") + ". Protection: " + cls.protection + ".");
+          hints.push("Core Ability: " + cls.core);
+          hints.push("Refresh: " + cls.refresh);
+          hints.push("Class questions: " + cls.questions.join(" / "));
+          hints.push("Class gear: " + cls.gear);
+        }
+        if (id.patronRelationship && PATRONS[id.patronRelationship]) hints.push("Patron: " + PATRONS[id.patronRelationship]);
+        if (id.forbiddenEdge && EDGES[id.forbiddenEdge]) hints.push("Forbidden Edge: " + EDGES[id.forbiddenEdge]);
+        if (id.coverIdentity) hints.push("Starting Cover: " + id.coverIdentity + ". Most starting characters use D6 unless the setup centers on cover.");
+        if (!hints.length) hints.push("Select creation choices to see suggested Skills, Domains, gear, risks, class questions, and protection.");
+        document.getElementById("guideHints").innerHTML = '<ul class="hint-list">' + hints.map(function (h) { return "<li>" + escapeHtml(h) + "</li>"; }).join("") + '</ul>' + renderSuggestionPills();
+      }
+
+      function renderSuggestionPills() {
+        var suggestions = collectSuggestions();
+        if (!suggestions.skills.length && !suggestions.domains.length) return "";
+        var pills = suggestions.skills.map(function (name) {
+          return '<span class="pill">' + escapeHtml(name) + ' skill <button type="button" data-action="skill:' + escapeHtml(name) + '">Add</button></span>';
+        }).join("") + suggestions.domains.map(function (name) {
+          return '<span class="pill">' + escapeHtml(name) + ' domain <button type="button" data-action="domain:' + escapeHtml(name) + '">Add</button></span>';
+        }).join("");
+        return '<div class="pill-row">' + pills + '</div>';
+      }
+
+      function renderValidation() {
+        var messages = [];
+        var id = state.identity;
+        var skillCount = countChecked(state.skills);
+        var domainCount = countChecked(state.domains);
+        var forbiddenCount = FORBIDDEN_DOMAINS.filter(function (d) { return state.domains[d] && state.domains[d].have; }).length;
+        if (!id.name) messages.push(["warn", "Name is empty."]);
+        if (!id.origin) messages.push(["warn", "Origin is not selected."]);
+        if (!id.formerAllegiance) messages.push(["warn", "Former Allegiance is not selected."]);
+        if (!id.className && !state.classFeatures.className) messages.push(["warn", "Class is not selected."]);
+        if (!state.cover.die) messages.push(["warn", "Primary Cover die is missing."]);
+        if (skillCount < 3) messages.push(["bad", "Starting acolytes normally have 3 Skills. Current: " + skillCount + "."]);
+        if (domainCount < 3) messages.push(["bad", "Starting acolytes normally have 3 Domains. Current: " + domainCount + "."]);
+        if (forbiddenCount > 2) messages.push(["warn", "Forbidden Domains marked: " + forbiddenCount + ". Starting acolytes should not usually begin with more than 2."]);
+        if (!messages.length) messages.push(["ok", "Starter checks look solid."]);
+        document.getElementById("validation").innerHTML = messages.map(function (m) { return '<p class="' + m[0] + '">' + escapeHtml(m[1]) + '</p>'; }).join("");
+      }
+
+      function collectSuggestions() {
+        var id = state.identity;
+        var skills = [];
+        var domains = [];
+        if (id.formerAllegiance && ALLEGIANCES[id.formerAllegiance]) skills = skills.concat(ALLEGIANCES[id.formerAllegiance].skill);
+        if (id.className && CLASSES[id.className]) {
+          skills = skills.concat(CLASSES[id.className].skill);
+          domains = domains.concat(CLASSES[id.className].domain);
+        }
+        if (id.origin && ORIGINS[id.origin]) domains = domains.concat(ORIGINS[id.origin].domain);
+        if (id.forbiddenEdge === "Xenos-Touched") domains.push("Xenos");
+        if (id.forbiddenEdge === "Former Cultist") domains.push("Heresy");
+        if (id.forbiddenEdge === "Heretek Exposure") domains.push("Mechanicus", "Xenos");
+        return {
+          skills: unique(skills).filter(function (s) { return state.skills[s] && !state.skills[s].have; }),
+          domains: unique(domains).filter(function (d) { return state.domains[d] && !state.domains[d].have; })
+        };
+      }
+
+      function unique(items) {
+        return items.filter(function (item, index) { return items.indexOf(item) === index; });
+      }
+
+      function countChecked(map) {
+        return Object.keys(map).filter(function (key) { return map[key] && map[key].have; }).length;
+      }
+
+      function handleAction(action) {
+        if (action.indexOf("skill:") === 0) {
+          setSkill(action.slice(6));
+          return;
+        }
+        if (action.indexOf("domain:") === 0) {
+          setDomain(action.slice(7));
+          return;
+        }
+        if (action === "apply-guide") applyGuide();
+        if (action === "add-starter-rows") addStarterRows();
+        if (action === "add-weapon-option") addWeaponOption();
+        if (action === "add-tool-option") addToolOption();
+        if (action === "add-hidden-option") addHiddenOption();
+      }
+
+      function setSkill(name) {
+        if (state.skills[name]) state.skills[name].have = true;
+        scheduleSave();
+        renderShell();
+      }
+
+      function setDomain(name) {
+        if (state.domains[name]) state.domains[name].have = true;
+        scheduleSave();
+        renderShell();
+      }
+
+      function applyGuide() {
+        var id = state.identity;
+        state.classFeatures.className = state.classFeatures.className || id.className;
+        state.cover.primary = state.cover.primary || id.coverIdentity;
+        if (!state.cover.die) state.cover.die = "D6";
+
+        var suggestions = collectSuggestions();
+        suggestions.skills.slice(0, Math.max(0, 3 - countChecked(state.skills))).forEach(setSkillSilent);
+        suggestions.domains.slice(0, Math.max(0, 3 - countChecked(state.domains))).forEach(setDomainSilent);
+
+        if (id.className && CLASSES[id.className]) {
+          var cls = CLASSES[id.className];
+          if (!state.classFeatures.coreAbility) state.classFeatures.coreAbility = cls.core;
+          if (!state.classFeatures.refreshAction) state.classFeatures.refreshAction = cls.refresh;
+          cls.questions.forEach(function (question, index) {
+            if (state.classFeatures.questions[index] && !state.classFeatures.questions[index].prompt) {
+              state.classFeatures.questions[index].prompt = question;
+            }
+          });
+          applyProtectionText(cls.protection);
+        }
+        if (id.patronRelationship === "Blackmailed Servant") applyProtectionText("Shadow Protection 1");
+        if (id.patronRelationship === "Potential Interrogator") applyProtectionText("Authority Protection 1");
+        if (id.patronRelationship === "Redeemed Heretic") applyProtectionText("Corruption Protection 1");
+        if (id.forbiddenEdge === "Blank Blood") applyProtectionText("Corruption Protection 1");
+        if (id.forbiddenEdge === "Hypno-Indoctrinated") applyProtectionText("Mind Protection 1");
+        if (id.forbiddenEdge === "Penance Brand") applyProtectionText("Authority Protection 1");
+        scheduleSave();
+        renderShell();
+      }
+
+      function setSkillSilent(name) {
+        if (state.skills[name]) state.skills[name].have = true;
+      }
+
+      function setDomainSilent(name) {
+        if (state.domains[name]) state.domains[name].have = true;
+      }
+
+      function applyProtectionText(text) {
+        if (!text) return;
+        RESISTANCES.forEach(function (res) {
+          if (text.indexOf(res + " Protection") >= 0) {
+            var match = text.match(new RegExp(res + " Protection (\\d+)"));
+            var rating = match ? match[1] : "";
+            var current = state.resistances[res].protection;
+            if (!current) state.resistances[res].protection = rating ? "Protection " + rating : text;
+            var empty = state.protectionSources.find(function (row) { return !row.source && row.resistance === res; });
+            if (empty) {
+              empty.source = text;
+              empty.rating = rating;
+            }
+          }
+        });
+      }
+
+      function addStarterRows() {
+        var id = state.identity;
+        if (id.formerAllegiance && ALLEGIANCES[id.formerAllegiance]) {
+          state.gear.resources.push({ resource: id.formerAllegiance + " gear", die: "D6", use: ALLEGIANCES[id.formerAllegiance].gear, risk: ALLEGIANCES[id.formerAllegiance].complication });
+        }
+        if (id.className && CLASSES[id.className]) {
+          state.gear.resources.push({ resource: id.className + " starting package", die: "D6", use: CLASSES[id.className].gear, risk: "Class burden or scrutiny when exposed." });
+        }
+        scheduleSave();
+        renderShell();
+      }
+
+      function addWeaponOption() {
+        var option = WEAPON_OPTIONS.find(function (w) { return !state.gear.weapons.some(function (row) { return row.weapon === w[0]; }); }) || WEAPON_OPTIONS[0];
+        state.gear.weapons.push({ weapon: option[0], stress: option[1], tags: option[2], notes: "" });
+        scheduleSave();
+        renderShell();
+      }
+
+      function addToolOption() {
+        var option = TOOL_OPTIONS.find(function (t) { return !state.gear.tools.some(function (row) { return row.tool === t[0]; }); }) || TOOL_OPTIONS[0];
+        state.gear.tools.push({ tool: option[0], benefit: option[1], notes: "" });
+        scheduleSave();
+        renderShell();
+      }
+
+      function addHiddenOption() {
+        var option = HIDDEN_OPTIONS.find(function (h) { return !state.gear.hidden.some(function (row) { return row.item === h[0]; }); }) || HIDDEN_OPTIONS[0];
+        state.gear.hidden.push({ item: option[0], danger: option[1], find: "" });
+        scheduleSave();
+        renderShell();
+      }
+
+      function rowTemplate(path) {
+        var templates = {
+          "protectionSources": { resistance: "Body", source: "", rating: "", notes: "" },
+          "classFeatures.questions": { prompt: "", answer: "" },
+          "advances": { type: "Minor", ability: "", notes: "" },
+          "beats": { type: "Duty", beat: "", completed: false },
+          "cover.additional": { identity: "", die: "D6", use: "", status: "" },
+          "bonds": { bond: "", die: "D6", why: "", provide: "", risk: "" },
+          "gear.weapons": { weapon: "", stress: "", tags: "", notes: "" },
+          "gear.armour": { item: "", rating: "", protects: "", notes: "" },
+          "gear.tools": { tool: "", benefit: "", notes: "" },
+          "gear.hidden": { item: "", danger: "", find: "" },
+          "gear.resources": { resource: "", die: "D6", use: "", risk: "" },
+          "powers.psychic": { power: "", roll: "", effect: "", cost: "" },
+          "powers.forbidden": { method: "", benefit: "", cost: "", risk: "" },
+          "fallout": { session: "", consequence: "", cleared: false, lingering: "" }
+        };
+        return JSON.parse(JSON.stringify(templates[path] || {}));
+      }
+
+      function addRow(path) {
+        pathGet(path).push(rowTemplate(path));
+        scheduleSave();
+        renderShell();
+      }
+
+      function removeRow(path, index) {
+        pathGet(path).splice(index, 1);
+        scheduleSave();
+        renderShell();
+      }
+
+      function stepDie(path, dir) {
+        var current = pathGet(path) || "";
+        var index = DICE.indexOf(current);
+        if (index < 0) index = 0;
+        index = Math.max(0, Math.min(DICE.length - 1, index + dir));
+        pathSet(path, DICE[index]);
+        renderShell();
+      }
+
+      function exportJson() {
+        saveState(true);
+        var payload = JSON.stringify({ version: 1, updatedAt: new Date().toISOString(), character: state }, null, 2);
+        var blob = new Blob([payload], { type: "application/json" });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a");
+        var name = state.identity.name ? state.identity.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") : "acolyte-character";
+        a.href = url;
+        a.download = name + ".json";
+        a.click();
+        URL.revokeObjectURL(url);
+      }
+
+      function importJson(file) {
+        var reader = new FileReader();
+        reader.onload = function () {
+          try {
+            var parsed = JSON.parse(reader.result);
+            var character = parsed.character || parsed;
+            state = mergeCharacter(defaultCharacter(), character);
+            saveState(true);
+            renderShell();
+          } catch (err) {
+            alert("Import failed: this does not look like valid character JSON.");
+          }
+        };
+        reader.readAsText(file);
+      }
+
+      document.getElementById("saveNow").addEventListener("click", function () { saveState(true); });
+      document.getElementById("exportJson").addEventListener("click", exportJson);
+      document.getElementById("importJson").addEventListener("click", function () { document.getElementById("importFile").click(); });
+      document.getElementById("importFile").addEventListener("change", function (event) {
+        if (event.target.files && event.target.files[0]) importJson(event.target.files[0]);
+        event.target.value = "";
+      });
+      document.getElementById("printSheet").addEventListener("click", function () { window.print(); });
+      document.getElementById("newCharacter").addEventListener("click", function () {
+        if (confirm("Clear this character from the browser and start fresh? Export first if you want a backup.")) {
+          state = defaultCharacter();
+          saveState(true);
+          renderShell();
+        }
+      });
+      document.getElementById("mobileNav").addEventListener("change", function (event) {
+        if (event.target.value) document.getElementById(event.target.value).scrollIntoView();
+        event.target.value = "";
+      });
+
+      renderShell();
+      saveState(false);
+    })();
+  </script>
+</body>
+</html>

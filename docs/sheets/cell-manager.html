@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cell Manager</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f0e7;
+      --panel: #fffdf8;
+      --panel-2: #eee7dc;
+      --ink: #211f1b;
+      --muted: #6d6559;
+      --line: #cec2b0;
+      --accent: #7d2b28;
+      --accent-2: #2e6070;
+      --good: #2a654d;
+      --warn: #94620d;
+      --bad: #9a2822;
+      --field: #fff;
+      --shadow: 0 12px 28px rgba(40, 32, 22, .12);
+      --radius: 8px;
+      --focus: 0 0 0 3px rgba(125, 43, 40, .18);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+
+    button, input, select, textarea { font: inherit; }
+    button {
+      min-height: 2.25rem;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--ink);
+      padding: .42rem .72rem;
+      cursor: pointer;
+    }
+    button:hover { border-color: var(--accent); }
+    button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    button.danger { color: var(--bad); border-color: rgba(154, 40, 34, .35); }
+    button:focus-visible, input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: var(--focus);
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--field);
+      color: var(--ink);
+      padding: .5rem .58rem;
+    }
+    textarea { min-height: 4.5rem; resize: vertical; }
+    label {
+      display: grid;
+      gap: .28rem;
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 700;
+    }
+    label input, label select, label textarea { color: var(--ink); font-weight: 500; }
+
+    .app-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: .75rem 1rem;
+      background: rgba(244, 240, 231, .95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+    .brand h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.28rem;
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+    .brand p { margin: .12rem 0 0; color: var(--muted); font-size: .82rem; }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .save-status {
+      min-width: 8.5rem;
+      color: var(--muted);
+      font-size: .84rem;
+      text-align: right;
+    }
+
+    .app-shell {
+      display: grid;
+      grid-template-columns: 15rem minmax(0, 1fr);
+      gap: 1rem;
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .sidebar {
+      position: sticky;
+      top: 5.15rem;
+      align-self: start;
+      max-height: calc(100vh - 6rem);
+      overflow: auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: .65rem;
+    }
+    .sidebar a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      padding: .45rem .55rem;
+      border-radius: 5px;
+      font-size: .92rem;
+    }
+    .sidebar a:hover { background: var(--panel-2); }
+    .mobile-nav { display: none; margin: 0 1rem 1rem; }
+
+    main { display: grid; gap: 1rem; min-width: 0; }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1rem;
+      scroll-margin-top: 5.25rem;
+    }
+    section h2 {
+      margin: 0 0 .85rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.25rem;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    h3 { margin: 1rem 0 .55rem; font-size: 1rem; letter-spacing: 0; }
+    .section-intro { margin: -.35rem 0 .85rem; color: var(--muted); font-size: .93rem; }
+    .grid { display: grid; gap: .75rem; }
+    .cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .track-layout {
+      display: grid;
+      grid-template-columns: minmax(18rem, .8fr) minmax(22rem, 1.2fr);
+      gap: 1rem;
+      align-items: start;
+    }
+    .track-card, .guide-box {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbf7ee;
+      padding: .8rem;
+    }
+    .track-card h3, .guide-box h3 { margin-top: 0; }
+    .track-state {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: .75rem;
+      margin-bottom: .7rem;
+    }
+    .track-state strong {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.4rem;
+    }
+    .track-state span {
+      color: var(--muted);
+      font-weight: 800;
+    }
+    .number-track {
+      display: grid;
+      gap: .25rem;
+      margin-bottom: .7rem;
+    }
+    .heat-track { grid-template-columns: repeat(10, minmax(2rem, 1fr)); }
+    .awareness-track { grid-template-columns: repeat(8, minmax(2rem, 1fr)); }
+    .clock-track { grid-template-columns: repeat(10, minmax(1.7rem, 1fr)); }
+    .number-track button {
+      min-height: 2rem;
+      padding: .15rem;
+      background: #f8f4ec;
+      font-size: .84rem;
+    }
+    .number-track button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      font-weight: 900;
+    }
+    .number-track button.hidden-segment {
+      display: none;
+    }
+
+    .reference-list {
+      display: grid;
+      gap: .45rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .reference-list li {
+      border-left: 3px solid var(--accent-2);
+      background: rgba(46, 96, 112, .08);
+      padding: .4rem .55rem;
+      font-size: .9rem;
+    }
+    .reference-list strong { display: block; }
+    .validation {
+      display: grid;
+      gap: .4rem;
+      margin-top: .75rem;
+    }
+    .validation p {
+      margin: 0;
+      padding: .45rem .55rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      font-size: .9rem;
+    }
+    .validation .ok { color: var(--good); border-color: rgba(42, 101, 77, .25); background: rgba(42, 101, 77, .08); }
+    .validation .warn { color: var(--warn); border-color: rgba(148, 98, 13, .25); background: rgba(148, 98, 13, .1); }
+    .validation .bad { color: var(--bad); border-color: rgba(154, 40, 34, .25); background: rgba(154, 40, 34, .08); }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: .55rem;
+    }
+    .check-card {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: .55rem;
+      align-items: start;
+      padding: .62rem;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+    }
+    .check-card input[type="checkbox"] {
+      width: 1.05rem;
+      height: 1.05rem;
+      margin-top: .18rem;
+    }
+    .check-card strong { display: block; font-size: .94rem; }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: .45rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f0e9dd;
+      color: var(--muted);
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+    tr:last-child td { border-bottom: 0; }
+    td.actions { width: 1%; white-space: nowrap; }
+    td.check-cell { text-align: center; }
+    td.check-cell input { width: 1.05rem; height: 1.05rem; }
+    .row-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: .4rem;
+      margin-top: .55rem;
+    }
+    .section-tools {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: .45rem;
+      margin: -.25rem 0 .75rem;
+    }
+    .die-control {
+      display: grid;
+      grid-template-columns: 2.2rem minmax(4.3rem, 1fr) 2.2rem;
+      gap: .25rem;
+      align-items: center;
+    }
+    .die-control button {
+      min-height: 2.15rem;
+      padding: .2rem;
+      font-weight: 900;
+    }
+    .notes-area textarea {
+      min-height: 12rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .92rem;
+    }
+    .hidden-input {
+      position: fixed;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    @media (max-width: 980px) {
+      .app-header { align-items: flex-start; flex-direction: column; }
+      .toolbar { justify-content: flex-start; }
+      .save-status { text-align: left; }
+      .app-shell { grid-template-columns: 1fr; padding-top: 0; }
+      .sidebar { display: none; }
+      .mobile-nav { display: block; }
+      .track-layout, .cols-2, .cols-3, .cols-4 { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 620px) {
+      .toolbar button { flex: 1 1 9rem; }
+      section { padding: .75rem; }
+      .heat-track { grid-template-columns: repeat(5, minmax(2.1rem, 1fr)); }
+      .awareness-track { grid-template-columns: repeat(4, minmax(2.1rem, 1fr)); }
+      .clock-track { grid-template-columns: repeat(5, minmax(2.1rem, 1fr)); }
+    }
+
+    @media print {
+      :root {
+        --bg: #fff;
+        --panel: #fff;
+        --ink: #000;
+        --muted: #333;
+        --line: #888;
+        --shadow: none;
+      }
+      body { background: #fff; }
+      .app-header, .sidebar, .mobile-nav, .section-tools, .row-actions, .actions, .no-print { display: none !important; }
+      .app-shell { display: block; max-width: none; padding: 0; }
+      section {
+        break-inside: avoid;
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0 0 .35in;
+        padding: .15in 0;
+      }
+      input, select, textarea { border: 0; padding: 0; min-height: auto; }
+      textarea { height: auto; }
+      .number-track button { display: none; }
+      .number-track button.active { display: inline-block; color: #000; background: #fff; font-weight: 900; }
+      .table-wrap { border: 0; overflow: visible; }
+      table { min-width: 0; font-size: 9pt; }
+      .track-card, .guide-box, .check-card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <h1>Cell Manager</h1>
+      <p>Dark Heresy Spire shared operation sheet</p>
+    </div>
+    <div class="toolbar no-print">
+      <span class="save-status" id="saveStatus">Ready</span>
+      <button type="button" id="saveNow">Save</button>
+      <button type="button" id="exportJson">Export JSON</button>
+      <button type="button" id="importJson">Import JSON</button>
+      <button type="button" id="printSheet">Print</button>
+      <button type="button" class="danger" id="newCell">New / Clear</button>
+      <input class="hidden-input" type="file" id="importFile" accept="application/json,.json">
+    </div>
+  </header>
+
+  <select class="mobile-nav no-print" id="mobileNav" aria-label="Jump to section"></select>
+  <div class="app-shell">
+    <nav class="sidebar no-print" id="sidebar" aria-label="Sheet sections"></nav>
+    <main id="app"></main>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var STORAGE_KEY = "dhspire.cell.v1";
+      var DICE = ["", "D3", "D6", "D8", "D10"];
+      var COVER_STATUSES = [
+        ["Clean", "Cover works normally."],
+        ["Questioned", "Cover is being checked or challenged."],
+        ["Flagged", "Use raises Heat by 1 until repaired."],
+        ["Compromised", "Cover only works with proof or in limited places."],
+        ["Collapsed", "Cover is no longer usable."]
+      ];
+      var COVER_SUGGESTIONS = [
+        "Tithe auditors", "Relic examiners", "Corpse reclamation officers", "Void factors",
+        "Munitorum inspectors", "Pilgrim confessors", "Sanctioned bounty agents",
+        "Manufactorum safety inspectors", "Chartist vessel factors", "Ecclesiarchy investigators"
+      ];
+      var HEAT_STATES = [
+        { min: 0, max: 2, name: "Ghosts", meaning: "Hidden. The cell chooses the moment." },
+        { min: 3, max: 5, name: "Rumors", meaning: "Someone noticed. Cover is being tested." },
+        { min: 6, max: 8, name: "Hunted", meaning: "Enemies, authorities, or rivals are moving." },
+        { min: 9, max: 99, name: "Burned", meaning: "Quiet completion is no longer possible without major sacrifice." }
+      ];
+      var AWARENESS = [
+        "Nothing. The cell is invisible.",
+        "Something is wrong.",
+        "Someone is investigating.",
+        "A covert cell is active.",
+        "The Inquisition may be involved.",
+        "They know the cell's methods.",
+        "They know names, faces, aliases, gene-signs, or soul-impressions.",
+        "They strike first."
+      ];
+      var HEAT_TRIGGERS = [
+        ["Public violence", "+1"],
+        ["Heavy weapons, explosives, or mass casualties", "+2"],
+        ["Witnesses survive and can talk", "+1"],
+        ["Evidence connects the cell to Inquisition methods", "+2"],
+        ["Rosette or Patron authority is revealed", "+1 or +2"],
+        ["Psychic, daemonic, xenos, or heretek phenomena are witnessed", "+1 or +2"],
+        ["Cover Identity burns or is exposed", "+1 or +2"],
+        ["Local authorities or rival factions are dragged in", "+1 or +2"],
+        ["A Patron Boon is used dramatically", "+1"],
+        ["A Red Line is approached or crossed", "+1 or +2"]
+      ];
+      var HEAT_MOVES = {
+        Rumors: [
+          "A witness talks to the wrong person.",
+          "A local official asks for paperwork, proof, or explanation.",
+          "The enemy notices interference and tightens security.",
+          "A Contact asks whether the cell is bringing danger to their door."
+        ],
+        Hunted: [
+          "Local law begins looking for the cell, aliases, or methods.",
+          "The enemy accelerates their timetable.",
+          "A rival acolyte cell, faction agent, or hostile investigator appears.",
+          "A safehouse, dead drop, Bond, or Contact is watched."
+        ],
+        Burned: [
+          "The enemy knows the cell is Inquisition or Inquisition-adjacent.",
+          "The quiet objective becomes impossible without retreat or sacrifice.",
+          "Authorities, nobles, Arbites, Mechanicus, Ecclesiarchy, or military forces intervene.",
+          "A Bond, Contact, Cover, Resource, or Boon must be sacrificed to keep operating."
+        ]
+      };
+      var COLLAPSE_COSTS = [
+        "Heat +2.",
+        "All individual Covers tied to it become Risky.",
+        "Mark Patron Notice.",
+        "A local faction becomes hostile.",
+        "A Contact, Bond, or Resource is exposed.",
+        "The next Requisition from the relevant institution is Contested."
+      ];
+      var SECTIONS = [
+        ["guide", "Operation Guide"],
+        ["identity", "Cell Identity"],
+        ["members", "Members"],
+        ["cover", "Cell Cover"],
+        ["assets", "Shared Assets"],
+        ["heat", "Heat"],
+        ["awareness", "Enemy Awareness"],
+        ["clocks", "Clocks"],
+        ["questions", "Cell Questions"],
+        ["notes", "Group Notes"]
+      ];
+
+      var state = loadState();
+      var autosaveTimer = null;
+      var fieldCounter = 0;
+
+      function defaultCell() {
+        var status = {};
+        COVER_STATUSES.forEach(function (item) { status[item[0]] = { checked: false, notes: item[1] }; });
+        return {
+          identity: {
+            cellName: "", patron: "", currentMission: "", currentOperation: "",
+            officialCover: "", realSuspicion: "", mandateObjective: "", forbiddenTemptation: ""
+          },
+          members: [
+            { acolyte: "", className: "", cover: "", risk: "" },
+            { acolyte: "", className: "", cover: "", risk: "" },
+            { acolyte: "", className: "", cover: "", risk: "" },
+            { acolyte: "", className: "", cover: "", risk: "" }
+          ],
+          cover: {
+            story: "", die: "D6", explains: "", supports: "", disproves: "", burns: "",
+            status: status,
+            collapseChoices: COLLAPSE_COSTS.map(function (text) { return { text: text, checked: false }; })
+          },
+          resources: [
+            { resource: "", die: "D6", use: "", riskOwner: "" },
+            { resource: "", die: "D6", use: "", riskOwner: "" },
+            { resource: "", die: "D6", use: "", riskOwner: "" }
+          ],
+          contacts: [
+            { contact: "", die: "D6", provide: "", risk: "" },
+            { contact: "", die: "D6", provide: "", risk: "" },
+            { contact: "", die: "D6", provide: "", risk: "" }
+          ],
+          heat: {
+            current: 0,
+            notes: [{ change: "", cause: "", consequence: "" }, { change: "", cause: "", consequence: "" }]
+          },
+          awareness: {
+            current: 0,
+            notes: [{ change: "", learned: "", how: "" }, { change: "", learned: "", how: "" }]
+          },
+          clocks: [
+            { clock: "", segments: 4, current: 0, advances: "", full: "" },
+            { clock: "", segments: 6, current: 0, advances: "", full: "" },
+            { clock: "", segments: 8, current: 0, advances: "", full: "" }
+          ],
+          questions: {
+            patron: [
+              { question: "Who is your Patron?", answer: "" },
+              { question: "Which Ordo do they claim?", answer: "" },
+              { question: "What Philosophy do they publicly follow?", answer: "" },
+              { question: "What method do they privately tolerate?", answer: "" },
+              { question: "What is their Red Line?", answer: "" },
+              { question: "What would make them disavow you?", answer: "" }
+            ],
+            cell: [
+              { question: "How long have you worked together?", answer: "" },
+              { question: "Which acolyte has saved another's life?", answer: "" },
+              { question: "Which acolyte knows another's secret?", answer: "" },
+              { question: "Which acolyte distrusts the Patron most?", answer: "" },
+              { question: "Which acolyte is most likely to cross the line?", answer: "" },
+              { question: "What mission still haunts the cell?", answer: "" }
+            ],
+            mission: [
+              { question: "What world, hive, shrine, station, or warzone are you entering?", answer: "" },
+              { question: "What is the official reason you are there?", answer: "" },
+              { question: "What is the real suspicion?", answer: "" },
+              { question: "Why can't the Patron intervene directly?", answer: "" },
+              { question: "What local authority must not learn the truth?", answer: "" },
+              { question: "What happens if the cell fails?", answer: "" }
+            ]
+          },
+          notes: ""
+        };
+      }
+
+      function loadState() {
+        try {
+          var raw = localStorage.getItem(STORAGE_KEY);
+          if (raw) {
+            var parsed = JSON.parse(raw);
+            if (parsed && parsed.cell) return merge(defaultCell(), parsed.cell);
+          }
+        } catch (err) {
+          console.warn("Could not load cell", err);
+        }
+        return defaultCell();
+      }
+
+      function merge(base, saved) {
+        Object.keys(saved || {}).forEach(function (key) {
+          if (Array.isArray(saved[key])) base[key] = saved[key];
+          else if (saved[key] && typeof saved[key] === "object" && base[key] && typeof base[key] === "object" && !Array.isArray(base[key])) base[key] = merge(base[key], saved[key]);
+          else base[key] = saved[key];
+        });
+        return base;
+      }
+
+      function saveState(manual) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 1, updatedAt: new Date().toISOString(), cell: state }));
+        setSaveStatus(manual ? "Saved now" : "Auto-saved");
+      }
+
+      function scheduleSave() {
+        setSaveStatus("Unsaved changes");
+        clearTimeout(autosaveTimer);
+        autosaveTimer = setTimeout(function () { saveState(false); }, 350);
+      }
+
+      function setSaveStatus(text) {
+        document.getElementById("saveStatus").textContent = text;
+      }
+
+      function pathGet(path) {
+        return path.split(".").reduce(function (obj, key) { return obj ? obj[key] : undefined; }, state);
+      }
+
+      function pathSet(path, value) {
+        var parts = path.split(".");
+        var obj = state;
+        for (var i = 0; i < parts.length - 1; i++) obj = obj[parts[i]];
+        obj[parts[parts.length - 1]] = value;
+        scheduleSave();
+        renderDynamic();
+      }
+
+      function escapeHtml(value) {
+        return String(value == null ? "" : value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function slug(value) {
+        return String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      }
+
+      function selectOptions(options, selected, blank) {
+        var html = blank ? '<option value=""></option>' : "";
+        options.forEach(function (option) {
+          var value = Array.isArray(option) ? option[0] : option;
+          var label = Array.isArray(option) ? option[1] : option;
+          html += '<option value="' + escapeHtml(value) + '"' + (String(value) === String(selected) ? " selected" : "") + ">" + escapeHtml(label) + "</option>";
+        });
+        return html;
+      }
+
+      function field(label, path, type, options) {
+        var value = pathGet(path) || "";
+        var id = "f-" + slug(path) + "-" + fieldCounter++;
+        if (type === "textarea") return '<label for="' + id + '"><span>' + escapeHtml(label) + '</span><textarea id="' + id + '" data-path="' + escapeHtml(path) + '">' + escapeHtml(value) + '</textarea></label>';
+        if (type === "select") return '<label for="' + id + '"><span>' + escapeHtml(label) + '</span><select id="' + id + '" data-path="' + escapeHtml(path) + '">' + selectOptions(options, value, true) + '</select></label>';
+        return '<label for="' + id + '"><span>' + escapeHtml(label) + '</span><input id="' + id + '" data-path="' + escapeHtml(path) + '" value="' + escapeHtml(value) + '"></label>';
+      }
+
+      function dieField(label, path) {
+        var value = pathGet(path) || "";
+        return '<label><span>' + escapeHtml(label) + '</span><div class="die-control">' +
+          '<button type="button" data-die-step="' + escapeHtml(path) + '" data-dir="-1">-</button>' +
+          '<select data-path="' + escapeHtml(path) + '">' + selectOptions(DICE, value, false) + '</select>' +
+          '<button type="button" data-die-step="' + escapeHtml(path) + '" data-dir="1">+</button>' +
+          '</div></label>';
+      }
+
+      function renderShell() {
+        fieldCounter = 0;
+        document.getElementById("sidebar").innerHTML = SECTIONS.map(function (s) { return '<a href="#' + s[0] + '">' + s[1] + '</a>'; }).join("");
+        document.getElementById("mobileNav").innerHTML = '<option value="">Jump to section</option>' + SECTIONS.map(function (s) { return '<option value="' + s[0] + '">' + s[1] + '</option>'; }).join("");
+        document.getElementById("app").innerHTML =
+          renderGuide() +
+          renderIdentity() +
+          renderMembers() +
+          renderCover() +
+          renderAssets() +
+          renderHeat() +
+          renderAwareness() +
+          renderClocks() +
+          renderQuestions() +
+          renderNotes();
+        bindEvents();
+        renderDynamic();
+      }
+
+      function renderGuide() {
+        return '<section id="guide"><h2>Operation Guide</h2><p class="section-intro">Use this as the table dashboard for shared cover, exposure, opposition knowledge, clocks, and obligations.</p>' +
+          '<div class="track-layout"><div class="guide-box"><h3>Quick Setup</h3><div class="grid">' +
+          field("Cell Cover Suggestion", "identity.officialCover", "select", COVER_SUGGESTIONS) +
+          '<div class="section-tools"><button type="button" class="primary" data-action="apply-cover">Apply Cover to Sheet</button><button type="button" data-action="add-core-assets">Add Core Assets</button></div>' +
+          '</div><div id="validation" class="validation"></div></div>' +
+          '<div class="guide-box"><h3>Heat Triggers</h3><ul class="reference-list">' +
+          HEAT_TRIGGERS.map(function (t) { return '<li><strong>' + escapeHtml(t[1]) + ' ' + escapeHtml(t[0]) + '</strong></li>'; }).join("") +
+          '</ul></div></div></section>';
+      }
+
+      function renderIdentity() {
+        return '<section id="identity"><h2>Cell Identity</h2><div class="grid cols-4">' +
+          field("Cell Name", "identity.cellName") +
+          field("Patron", "identity.patron") +
+          field("Current Mission", "identity.currentMission") +
+          field("Current Operation", "identity.currentOperation") +
+          field("Official Cover", "identity.officialCover") +
+          field("Real Suspicion", "identity.realSuspicion") +
+          field("Mandate Objective", "identity.mandateObjective") +
+          field("Forbidden Temptation", "identity.forbiddenTemptation") +
+          '</div></section>';
+      }
+
+      function renderMembers() {
+        return '<section id="members"><h2>Cell Members</h2>' +
+          renderTable("members", [["acolyte", "Acolyte"], ["className", "Class"], ["cover", "Cover"], ["risk", "Suspicion / Risk"]], { add: "Add Member" }) +
+          '</section>';
+      }
+
+      function renderCover() {
+        return '<section id="cover"><h2>Cell Cover</h2><div class="grid cols-3">' +
+          field("Cell Cover Story", "cover.story") +
+          dieField("Cell Cover Die", "cover.die") +
+          field("What the Cover explains", "cover.explains", "textarea") +
+          field("Who supports it", "cover.supports", "textarea") +
+          field("Who can disprove it", "cover.disproves", "textarea") +
+          field("What happens if it burns", "cover.burns", "textarea") +
+          '</div><h3>Cover Status</h3><div class="check-grid">' +
+          COVER_STATUSES.map(function (item) {
+            var data = state.cover.status[item[0]] || { checked: false, notes: item[1] };
+            return '<div class="check-card"><input type="checkbox" data-check="cover.status.' + item[0] + '.checked"' + (data.checked ? " checked" : "") + '>' +
+              '<div><strong>' + item[0] + '</strong><input data-path="cover.status.' + item[0] + '.notes" value="' + escapeHtml(data.notes || "") + '"></div></div>';
+          }).join("") + '</div><h3>When Cell Cover Collapses, Choose Two</h3><div class="check-grid">' +
+          state.cover.collapseChoices.map(function (choice, index) {
+            return '<div class="check-card"><input type="checkbox" data-check="cover.collapseChoices.' + index + '.checked"' + (choice.checked ? " checked" : "") + '>' +
+              '<div><strong>' + escapeHtml(choice.text) + '</strong></div></div>';
+          }).join("") + '</div></section>';
+      }
+
+      function renderAssets() {
+        return '<section id="assets"><h2>Shared Assets</h2><h3>Shared Resources</h3>' +
+          renderTable("resources", [["resource", "Resource"], ["die", "Die", "die"], ["use", "Use"], ["riskOwner", "Risk / Owner"]], { add: "Add Resource" }) +
+          '<h3>Shared Contacts</h3>' +
+          renderTable("contacts", [["contact", "Contact"], ["die", "Die", "die"], ["provide", "What They Provide"], ["risk", "What Puts Them at Risk"]], { add: "Add Contact" }) +
+          '</section>';
+      }
+
+      function renderHeat() {
+        var heat = Number(state.heat.current) || 0;
+        var current = heatState(heat);
+        return '<section id="heat"><h2>Current Operation Heat</h2><div class="track-layout"><div class="track-card">' +
+          '<div class="track-state"><strong>' + heat + (heat >= 9 ? "+" : "") + '</strong><span>' + current.name + '</span></div>' +
+          '<div class="number-track heat-track">' + Array.from({ length: 10 }, function (_, i) {
+            return '<button type="button" data-set-number="heat.current" data-value="' + i + '" class="' + (heat === i ? "active" : "") + '">' + (i === 9 ? "9+" : i) + '</button>';
+          }).join("") + '</div><p class="section-intro">' + escapeHtml(current.meaning) + '</p>' +
+          '</div><div class="guide-box"><h3>Threshold Moves</h3><ul class="reference-list" id="heatMoves"></ul></div></div>' +
+          '<h3>Heat Notes</h3>' +
+          renderTable("heat.notes", [["change", "Heat Change"], ["cause", "Cause"], ["consequence", "Consequence"]], { add: "Add Heat Note" }) +
+          '</section>';
+      }
+
+      function renderAwareness() {
+        var aware = Number(state.awareness.current) || 0;
+        return '<section id="awareness"><h2>Enemy Awareness</h2><div class="track-layout"><div class="track-card">' +
+          '<div class="track-state"><strong>' + aware + '</strong><span>Awareness</span></div>' +
+          '<div class="number-track awareness-track">' + Array.from({ length: 8 }, function (_, i) {
+            return '<button type="button" data-set-number="awareness.current" data-value="' + i + '" class="' + (aware === i ? "active" : "") + '">' + i + '</button>';
+          }).join("") + '</div><p class="section-intro">' + escapeHtml(AWARENESS[aware]) + '</p>' +
+          '</div><div class="guide-box"><h3>Awareness Scale</h3><ul class="reference-list">' +
+          AWARENESS.map(function (text, index) { return '<li><strong>' + index + '</strong>' + escapeHtml(text) + '</li>'; }).join("") +
+          '</ul></div></div><h3>Enemy Awareness Notes</h3>' +
+          renderTable("awareness.notes", [["change", "Awareness Change"], ["learned", "What They Learned"], ["how", "How They Learned It"]], { add: "Add Awareness Note" }) +
+          '</section>';
+      }
+
+      function renderClocks() {
+        return '<section id="clocks"><h2>Shared Clocks</h2><p class="section-intro">Set a segment total, then click the current value for each clock. Use clocks for investigations, faction pressure, rituals, audits, escape windows, and Patron demands.</p>' +
+          renderTable("clocks", [["clock", "Clock"], ["segments", "Segments", "select", [4, 6, 8, 10]], ["current", "Current", "clock"], ["advances", "What Advances It"], ["full", "What Happens When Full"]], { add: "Add Clock" }) +
+          '</section>';
+      }
+
+      function renderQuestions() {
+        return '<section id="questions"><h2>Cell Questions</h2><h3>The Patron</h3>' +
+          renderTable("questions.patron", [["question", "Question"], ["answer", "Answer", "textarea"]], { add: "Add Patron Question" }) +
+          '<h3>The Cell</h3>' +
+          renderTable("questions.cell", [["question", "Question"], ["answer", "Answer", "textarea"]], { add: "Add Cell Question" }) +
+          '<h3>The Current Mission</h3>' +
+          renderTable("questions.mission", [["question", "Question"], ["answer", "Answer", "textarea"]], { add: "Add Mission Question" }) +
+          '</section>';
+      }
+
+      function renderNotes() {
+        return '<section id="notes" class="notes-area"><h2>Group Notes</h2>' + field("Notes", "notes", "textarea") + '</section>';
+      }
+
+      function renderTable(path, columns, opts) {
+        var rows = pathGet(path) || [];
+        var html = '<div class="table-wrap"><table data-table="' + escapeHtml(path) + '"><thead><tr>' +
+          columns.map(function (c) { return '<th>' + escapeHtml(c[1]) + '</th>'; }).join("") +
+          '<th class="actions">Actions</th></tr></thead><tbody>';
+        rows.forEach(function (row, index) {
+          html += '<tr>' + columns.map(function (col) {
+            var key = col[0], title = col[1], type = col[2] || "input", options = col[3] || [];
+            var cellPath = path + "." + index + "." + key;
+            var value = row[key];
+            if (type === "checkbox") return '<td class="check-cell"><input type="checkbox" data-check="' + escapeHtml(cellPath) + '"' + (value ? " checked" : "") + ' aria-label="' + escapeHtml(title) + '"></td>';
+            if (type === "select") return '<td><select data-path="' + escapeHtml(cellPath) + '">' + selectOptions(options, value || "", false) + '</select></td>';
+            if (type === "die") return '<td>' + dieCell(cellPath, value || "") + '</td>';
+            if (type === "textarea") return '<td><textarea data-path="' + escapeHtml(cellPath) + '">' + escapeHtml(value || "") + '</textarea></td>';
+            if (type === "clock") return '<td>' + clockCell(path, index, Number(row.segments) || 4, Number(value) || 0) + '</td>';
+            return '<td><input data-path="' + escapeHtml(cellPath) + '" value="' + escapeHtml(value || "") + '"></td>';
+          }).join("") + '<td class="actions"><button type="button" class="danger" data-remove-row="' + escapeHtml(path) + '" data-index="' + index + '">Remove</button></td></tr>';
+        });
+        html += '</tbody></table></div><div class="row-actions"><button type="button" data-add-row="' + escapeHtml(path) + '">' + escapeHtml((opts && opts.add) || "Add Row") + '</button></div>';
+        return html;
+      }
+
+      function dieCell(path, value) {
+        return '<div class="die-control"><button type="button" data-die-step="' + escapeHtml(path) + '" data-dir="-1">-</button>' +
+          '<select data-path="' + escapeHtml(path) + '">' + selectOptions(DICE, value, false) + '</select>' +
+          '<button type="button" data-die-step="' + escapeHtml(path) + '" data-dir="1">+</button></div>';
+      }
+
+      function clockCell(path, index, segments, current) {
+        return '<div class="number-track clock-track">' + Array.from({ length: 11 }, function (_, i) {
+          var hidden = i > segments ? " hidden-segment" : "";
+          return '<button type="button" data-clock-path="' + escapeHtml(path) + '" data-index="' + index + '" data-value="' + i + '" class="' + (current === i ? "active" : "") + hidden + '">' + i + '</button>';
+        }).join("") + '</div>';
+      }
+
+      function bindEvents() {
+        document.querySelectorAll("[data-path]").forEach(function (el) {
+          el.addEventListener("input", function () { pathSet(el.getAttribute("data-path"), el.value); });
+          el.addEventListener("change", function () { pathSet(el.getAttribute("data-path"), el.value); renderShell(); });
+        });
+        document.querySelectorAll("[data-check]").forEach(function (el) {
+          el.addEventListener("change", function () { pathSet(el.getAttribute("data-check"), el.checked); });
+        });
+        document.querySelectorAll("[data-set-number]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            pathSet(btn.getAttribute("data-set-number"), Number(btn.getAttribute("data-value")));
+            renderShell();
+          });
+        });
+        document.querySelectorAll("[data-clock-path]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var rows = pathGet(btn.getAttribute("data-clock-path"));
+            rows[Number(btn.getAttribute("data-index"))].current = Number(btn.getAttribute("data-value"));
+            scheduleSave();
+            renderShell();
+          });
+        });
+        document.querySelectorAll("[data-die-step]").forEach(function (btn) {
+          btn.addEventListener("click", function () { stepDie(btn.getAttribute("data-die-step"), Number(btn.getAttribute("data-dir"))); });
+        });
+        document.querySelectorAll("[data-add-row]").forEach(function (btn) {
+          btn.addEventListener("click", function () { addRow(btn.getAttribute("data-add-row")); });
+        });
+        document.querySelectorAll("[data-remove-row]").forEach(function (btn) {
+          btn.addEventListener("click", function () { removeRow(btn.getAttribute("data-remove-row"), Number(btn.getAttribute("data-index"))); });
+        });
+        document.querySelectorAll("[data-action]").forEach(function (btn) {
+          btn.addEventListener("click", function () { handleAction(btn.getAttribute("data-action")); });
+        });
+      }
+
+      function renderDynamic() {
+        var validation = document.getElementById("validation");
+        if (validation) validation.innerHTML = validationMessages().map(function (m) { return '<p class="' + m[0] + '">' + escapeHtml(m[1]) + '</p>'; }).join("");
+        var heatMoves = document.getElementById("heatMoves");
+        if (heatMoves) {
+          var stateName = heatState(Number(state.heat.current) || 0).name;
+          var moves = HEAT_MOVES[stateName] || ["No threshold move yet. Keep watching for the first rise to 3, 6, or 9."];
+          heatMoves.innerHTML = moves.map(function (move) { return '<li>' + escapeHtml(move) + '</li>'; }).join("");
+        }
+      }
+
+      function validationMessages() {
+        var messages = [];
+        if (!state.identity.cellName) messages.push(["warn", "Cell Name is empty."]);
+        if (!state.identity.patron) messages.push(["warn", "Patron is not set."]);
+        if (!state.identity.currentOperation) messages.push(["warn", "Current Operation is not set."]);
+        if (!state.cover.story && !state.identity.officialCover) messages.push(["warn", "Shared cover is empty."]);
+        if (!state.cover.die) messages.push(["warn", "Cell Cover die is missing."]);
+        if ((Number(state.heat.current) || 0) >= 3) messages.push(["warn", "Heat has reached a threshold. Consider a Heat Move if this is the first time at this level."]);
+        if ((Number(state.awareness.current) || 0) >= 4) messages.push(["bad", "Enemy Awareness suggests the opposition may suspect Inquisition involvement."]);
+        if (!messages.length) messages.push(["ok", "Cell dashboard checks look solid."]);
+        return messages;
+      }
+
+      function heatState(value) {
+        return HEAT_STATES.find(function (item) { return value >= item.min && value <= item.max; }) || HEAT_STATES[0];
+      }
+
+      function handleAction(action) {
+        if (action === "apply-cover") {
+          state.cover.story = state.cover.story || state.identity.officialCover;
+          state.cover.explains = state.cover.explains || "Why the cell is present, asking questions, moving through restricted places, or requisitioning local cooperation.";
+          if (!state.cover.die) state.cover.die = "D6";
+          scheduleSave();
+          renderShell();
+        }
+        if (action === "add-core-assets") {
+          state.resources.push({ resource: "Limitless Authority", die: "D8", use: "Invoke Inquisitorial mandate for permission, Mastery, requisition, compliance, or seizure.", riskOwner: "Cost: Authority/Shadow stress, Heat +1, Liability trigger, or Patron Notice." });
+          state.resources.push({ resource: "Cover Story", die: state.cover.die || "D6", use: "Create shared permission and Shadow protection while the official cover holds.", riskOwner: "If burned, Heat rises and tied individual covers become Risky." });
+          scheduleSave();
+          renderShell();
+        }
+      }
+
+      function rowTemplate(path) {
+        var templates = {
+          "members": { acolyte: "", className: "", cover: "", risk: "" },
+          "resources": { resource: "", die: "D6", use: "", riskOwner: "" },
+          "contacts": { contact: "", die: "D6", provide: "", risk: "" },
+          "heat.notes": { change: "", cause: "", consequence: "" },
+          "awareness.notes": { change: "", learned: "", how: "" },
+          "clocks": { clock: "", segments: 4, current: 0, advances: "", full: "" },
+          "questions.patron": { question: "", answer: "" },
+          "questions.cell": { question: "", answer: "" },
+          "questions.mission": { question: "", answer: "" }
+        };
+        return JSON.parse(JSON.stringify(templates[path] || {}));
+      }
+
+      function addRow(path) {
+        pathGet(path).push(rowTemplate(path));
+        scheduleSave();
+        renderShell();
+      }
+
+      function removeRow(path, index) {
+        pathGet(path).splice(index, 1);
+        scheduleSave();
+        renderShell();
+      }
+
+      function stepDie(path, dir) {
+        var current = pathGet(path) || "";
+        var index = DICE.indexOf(current);
+        if (index < 0) index = 0;
+        index = Math.max(0, Math.min(DICE.length - 1, index + dir));
+        pathSet(path, DICE[index]);
+        renderShell();
+      }
+
+      function exportJson() {
+        saveState(true);
+        var payload = JSON.stringify({ version: 1, updatedAt: new Date().toISOString(), cell: state }, null, 2);
+        var blob = new Blob([payload], { type: "application/json" });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a");
+        var name = state.identity.cellName ? state.identity.cellName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") : "cell";
+        a.href = url;
+        a.download = name + ".json";
+        a.click();
+        URL.revokeObjectURL(url);
+      }
+
+      function importJson(file) {
+        var reader = new FileReader();
+        reader.onload = function () {
+          try {
+            var parsed = JSON.parse(reader.result);
+            state = merge(defaultCell(), parsed.cell || parsed);
+            saveState(true);
+            renderShell();
+          } catch (err) {
+            alert("Import failed: this does not look like valid cell JSON.");
+          }
+        };
+        reader.readAsText(file);
+      }
+
+      document.getElementById("saveNow").addEventListener("click", function () { saveState(true); });
+      document.getElementById("exportJson").addEventListener("click", exportJson);
+      document.getElementById("importJson").addEventListener("click", function () { document.getElementById("importFile").click(); });
+      document.getElementById("importFile").addEventListener("change", function (event) {
+        if (event.target.files && event.target.files[0]) importJson(event.target.files[0]);
+        event.target.value = "";
+      });
+      document.getElementById("printSheet").addEventListener("click", function () { window.print(); });
+      document.getElementById("newCell").addEventListener("click", function () {
+        if (confirm("Clear this cell from the browser and start fresh? Export first if you want a backup.")) {
+          state = defaultCell();
+          saveState(true);
+          renderShell();
+        }
+      });
+      document.getElementById("mobileNav").addEventListener("change", function (event) {
+        if (event.target.value) document.getElementById(event.target.value).scrollIntoView();
+        event.target.value = "";
+      });
+
+      renderShell();
+      saveState(false);
+    })();
+  </script>
+</body>
+</html>
