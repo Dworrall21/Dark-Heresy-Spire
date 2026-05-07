@@ -42,7 +42,8 @@ You are not an Inquisitor. Not yet. But you have been given enough authority to 
 
 **Skill:** Command  
 **Domain:** Inquisition  
-**Protection:** Authority Protection 1
+**Protection — Borrowed Weight** (Authority Protection 2): Your mandate is someone else's authority on loan. When this Protection absorbs stress, name whose patience, standing, or political capital you just spent. When it breaks, your next invocation of authority requires proof you may not be able to provide.
+**Protection — The Patron's Shadow** (Shadow Protection 1): You operate behind a name that is not yours. When this Protection absorbs stress, the Patron's apparatus absorbs the scrutiny — your face is lost behind the mandate. When it breaks, someone starts looking past the orders to the person delivering them.
 
 **Starting Gear:**
 
@@ -98,7 +99,8 @@ You are the one who sees the shape of guilt in receipts, wounds, prayer schedule
 
 **Skill:** Investigate  
 **Domain:** Heresy or Imperium  
-**Protection:** Mind Protection 1
+**Protection — Pattern Discipline** (Mind Protection 2): Your mind files horror under "evidence." When this Protection absorbs stress, describe the clinical frame that kept you functional — the measurement, the categorization, the refusal to feel it yet. When it breaks, the pattern becomes the obsession.
+**Protection — Quiet Methodology** (Shadow Protection 1): Investigators who survive learn to work without being noticed. When this Protection absorbs stress, your methods pass for routine — just another clerk, another auditor, another question. When it breaks, someone realizes you've been asking the wrong kind of questions.
 
 **Starting Gear:**
 
@@ -154,7 +156,8 @@ You know pain is a language. You know fear is a key. You know the problem is not
 
 **Skill:** Command or Investigate  
 **Domain:** Inquisition  
-**Protection:** Mind Protection 1
+**Protection — Professional Dissociation** (Mind Protection 2): You learned to stand one step outside what your hands are doing. When this Protection absorbs stress, describe the ritual distance that held — the breathing, the counting, the clinical focus. When it breaks, something from today follows you into sleep.
+**Protection — Scars of the Trade** (Body Protection 1): Subjects fight back, and you've learned to take it. When this Protection absorbs stress, describe the old injury that taught you to move — the bite mark, the broken finger, the chemical burn from a subject who got loose. When it breaks, a new wound finds the gap the old ones left.
 
 **Starting Gear:**
 
@@ -210,7 +213,8 @@ You are the person who was never there. The clerk with the right stamp. The pilg
 
 **Skill:** Deceive or Skulk  
 **Domain:** Underworld or Imperium  
-**Protection:** Shadow Protection 2
+**Protection — Layered Lives** (Shadow Protection 2): Every identity you wear is another skin between you and exposure. When this Protection absorbs stress, a detail slips — someone almost recognizes you, a cover frays at the seam, or a lie needs patching. When it breaks, someone has a name or a face that shouldn't exist.
+**Protection — Compartmentalized Self** (Mind Protection 1): Living as someone else requires a fortress inside. When this Protection absorbs stress, you retreat behind trained identity separation — the lie doesn't touch the liar. When it breaks, you're no longer certain which reaction belongs to which name.
 
 **Starting Gear:**
 
@@ -266,7 +270,8 @@ You are legal because someone signed the right execution delay. You are useful b
 
 **Skill:** Resist or Investigate  
 **Domain:** Warp  
-**Protection:** Corruption Protection 1
+**Protection — Sanctioning Scars** (Corruption Protection 2): The brand and the conditioning hold the worst of the Warp at arm's length — barely. When this Protection absorbs stress, the brand aches, the old scars flicker, or a trained litany fires without thought. When it breaks, something behind the conditioning stirs and you remember what sanctioning tried to make you forget.
+**Protection — Conditioned Resilience** (Mind Protection 1): Sanctioning broke and rebuilt your mind. What remains is harder than it was. When this Protection absorbs stress, a conditioned reflex fires — a mantra, a focus exercise, a trained flinch away from the thought. When it breaks, the conditioning reveals itself as what it is: a scar pretending to be armour.
 
 **Starting Gear:**
 
@@ -322,7 +327,8 @@ You know the grammar of the dark: how it enters, how it anchors, how it bargains
 
 **Skill:** Resist or Command  
 **Domain:** Warp or Ecclesiarchy  
-**Protection:** Corruption Protection 2
+**Protection — Rites of Refusal** (Corruption Protection 2): Your faith and training form a practised wall of scripture, gesture, and will. When this Protection absorbs stress, your wards flare, your prayers grow louder, or incense smoke thickens against nothing visible. When it breaks, the dark notices the silence where your prayers used to be.
+**Protection — Witness's Resolve** (Mind Protection 1): You have seen the worst and kept praying. When this Protection absorbs stress, your training holds — you name what frightens you and it loses power. When it breaks, something you saw today did not lose power when you named it.
 
 **Starting Gear:**
 
@@ -378,7 +384,11 @@ You are the voice that makes fear kneel. You are comfort, accusation, scripture,
 
 **Skill:** Command  
 **Domain:** Ecclesiarchy  
-**Protection:** Mind Protection 1 or Authority Protection 1
+**Protection — choose one as primary; the other becomes secondary:**
+
+**Doctrinal Certainty** (Mind Protection 2, or Mind Protection 1 if secondary): Your faith is your fortress — doubt breaks against scripture. When this Protection absorbs stress, you quote canon reflexively, find comfort in litany, or refuse to see what contradicts doctrine. When it breaks, doubt enters through the crack that faith left.
+
+**Ministorum Standing** (Authority Protection 2, or Authority Protection 1 if secondary): The Ecclesiarchy's weight stands behind your collar. When this Protection absorbs stress, someone in the hierarchy absorbs the complaint, the report is filed under "spiritual jurisdiction," or a priest's word outweighs a bureaucrat's. When it breaks, you have spent more of the Church's goodwill than it will quietly tolerate.
 
 **Starting Gear:**
 
@@ -434,7 +444,8 @@ You are the moment subtlety ends. You are applied force: timed, aimed, and justi
 
 **Skill:** Fight  
 **Domain:** Militarum or Inquisition  
-**Protection:** Body Protection 2
+**Protection — Combat Conditioning** (Body Protection 2): Drill, reflex, and scar tissue. Your body knows how to absorb what should have dropped you. When this Protection absorbs stress, describe the trained response — the dodge that was muscle memory, the armour that caught it, the hit you rolled with because someone once beat it into you. When it breaks, you're still standing, but something you've been ignoring demands attention.
+**Protection — Stress Inoculation** (Mind Protection 1): You have been trained to function under fire, horror, and loss. When this Protection absorbs stress, the drill holds — the breathing, the muscle memory, the voice of someone who trained you harder than this. When it breaks, the drill stops working and everything you've been suppressing arrives at once.
 
 **Starting Gear:**
 
@@ -498,7 +509,8 @@ You know the body as testimony. Wounds confess. Organs remember. Disease has a m
 
 **Skill:** Operate or Investigate  
 **Domain:** Mechanicus or Heresy  
-**Protection:** Body Protection 1
+**Protection — Clinical Self-Awareness** (Body Protection 2): You know exactly what your body can take because you've measured it in others. When this Protection absorbs stress, you diagnose the damage in real time — you know the bruise depth, the fracture risk, the margin you have left. When it breaks, your own body stops being a patient you can assess calmly.
+**Protection — Clinical Detachment** (Mind Protection 1): You process suffering as data. When this Protection absorbs stress, you observe what should horrify you with professional distance — pulse rate, tissue damage, survival probability. When it breaks, the patient becomes a person and you cannot look away.
 
 **Starting Gear:**
 
@@ -554,7 +566,11 @@ You are the treaty between flesh and mechanism. You know the machine is not loya
 
 **Skill:** Operate  
 **Domain:** Mechanicus  
-**Protection:** Body Protection 1 or Corruption Protection 1
+**Protection — choose one as primary; the other becomes secondary:**
+
+**Augmetic Resilience** (Body Protection 2, or Body Protection 1 if secondary): Implanted systems and replacement parts absorb what flesh alone could not. When this Protection absorbs stress, something mechanical takes the strain — a subdermal plate flexes, a pain-inhibitor kicks, a replacement joint locks. When it breaks, the augmetic needs repair, replacement, or rites, and your flesh remembers it is still underneath.
+
+**Doctrinal Purity Filters** (Corruption Protection 2, or Corruption Protection 1 if secondary): The Omnissiah's logic gates stand between your cognition and the irrational. When this Protection absorbs stress, a trained subroutine quarantines the input — you flag it, isolate it, refuse to process it as anything but data. When it breaks, something got past the filter and is running in background processes you cannot name.
 
 **Starting Gear:**
 
@@ -610,7 +626,8 @@ You are absence made flesh. Psykers recoil. Daemons hate you. Ordinary people ma
 
 **Skill:** Resist or Skulk  
 **Domain:** Inquisition or Warp  
-**Protection:** Corruption Protection 3
+**Protection — Soulless Void** (Corruption Protection 3): The Warp cannot find a handhold in you. Its influence slides off like oil on null-metal. When this Protection absorbs stress, the corruption simply *fails to stick* — daemons flinch, sorcery sputters, warp-stuff recoils from the space where your soul should be. When it breaks, something found a way in that has nothing to do with the Warp — and you have no defences against it.
+**Protection — Forgettable Presence** (Shadow Protection 1): People instinctively look away from you. When this Protection absorbs stress, witnesses struggle to recall your face, your name, whether you were even there. When it breaks, someone remembers you clearly — and that memory is full of revulsion they cannot explain.
 
 **Starting Gear:**
 
@@ -666,7 +683,11 @@ You are what the Inquisition usually burns. But someone decided you were more us
 
 **Skill:** Choose one  
 **Domain:** Heresy, Warp, or Xenos  
-**Protection:** Corruption Protection 1 or Shadow Protection 1
+**Protection — choose one as primary; the other becomes secondary:**
+
+**Familiar Stain** (Corruption Protection 2, or Corruption Protection 1 if secondary): You have already been touched by this. The corruption doesn't shock you — you've seen worse in the mirror. When this Protection absorbs stress, you recognize what's happening because you *lived it*. Describe the old scar, the old ritual, or the old hunger that makes this feel almost routine. When it breaks, the familiarity becomes a door and something remembers you were once on the other side.
+
+**Buried Past** (Shadow Protection 2, or Shadow Protection 1 if secondary): Your old life is so deeply compartmentalized that exposure peels back layers before reaching anything true. When this Protection absorbs stress, a false trail, dead alias, or outdated connection absorbs the scrutiny. When it breaks, someone is digging in the right direction and has not stopped.
 
 **Starting Gear:**
 
