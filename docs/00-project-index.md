@@ -33,7 +33,7 @@ The project is currently in a **v0.1 playtest chassis** state. The core loop, ch
 | 07 | [Mission and Operation Template v0.1](07-mission-operation-template-v0.1.md) | Campaign, Mission, Operation, Situation, clue, opposition, and clock templates | Current |
 | 08 | [GM Toolkit v0.1](08-gm-toolkit-v0.1.md) | GM agenda, moves, threats, factions, clue design, clocks, NPCs, procedures | Current |
 | 09 | [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md) | Modular equipment, tags, burdens, requisition procedure, random gear/name tables | Current |
-| 10 | [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md) | Psychic powers, Warp trace, forbidden methods, radical costs, generators | Current |
+| 10 | [Forbidden Methods v0.1](10-forbidden-methods-v0.1.md) | Forbidden methods, forbidden assets, Warp Trace, Possession clocks, radical costs, generators | Current |
 | 11 | [The Saint with the Wrong Shadow v0.1](11-the-saint-with-the-wrong-shadow-v0.1.md) | First playtest mission testing investigation, Heat, Requisition, Patron pressure, psychic threats, and forbidden shortcuts | Current |
 | 12 | [System Progress Tracker v0.1](12-system-progress-tracker-v0.1.md) | Playtest chassis status, design commitments, immediate next steps, and design status | Current |
 
@@ -68,6 +68,6 @@ For a GM running a first test:
 6. Run pressure using [Heat and Subtlety v0.1](06-heat-subtlety-v0.1-outline.md).
 7. Use [GM Toolkit v0.1](08-gm-toolkit-v0.1.md) during prep and play.
 8. Use [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md) for equipment, assets, and rewards.
-9. Use [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md) for psykers, Warp Trace, radical shortcuts, and forbidden assets.
+9. Use [Complete Classes v0.1](04-complete-classes-v0.1.md#5-sanctioned-psyker) for Sanctioned Psyker powers, and [Forbidden Methods v0.1](10-forbidden-methods-v0.1.md) for Warp Trace, radical shortcuts, and forbidden assets.
 10. Run or adapt [The Saint with the Wrong Shadow v0.1](11-the-saint-with-the-wrong-shadow-v0.1.md) as the first playtest mission.
 11. Keep [Quick Reference Sheet](sheets/05-quick-reference-sheet-v0.1.md) open at the table.

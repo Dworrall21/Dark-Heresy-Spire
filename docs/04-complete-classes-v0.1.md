@@ -72,7 +72,7 @@ You are not an Inquisitor. Not yet. But you have been given enough authority to 
 | **Encrypted Orders** *(Registry-Linked)* | D6 | Traceable, Restricted, Paper Trail | Establishes official mission cover, limited jurisdiction, or proof of tasking. | **Paper Trail:** if audited, take D3 Authority stress or tick an Audit clock. |
 | **Formal Sidearm** *(Steadfast Compact Laspistol)* | D6 | Concealable, Reliable, Sanctioned | D6 Body. Socially acceptable in many official spaces if the cover supports it. | **Restricted Pattern:** if inspected outside mandate, take D3 Authority stress. |
 | **Seal Case** *(Compact, Logged)* | D6 | Concealable, Traceable | Holds writs, ciphers, stamps, and identity seals; grants permission for soft authority. | **False Provenance:** if the seals are checked deeply, take D3 Shadow stress. |
-| **Signet Blade** *(Noble-Forged Compact Knife)* | D6 | Close, Concealable, Silent, Elegant | D3 Body. A dignified weapon — more threat than tool, but it fits in a formal sleeve. | **Blooded History:** if examined, it may connect to a prior killing. |
+| **Signet Blade** *(Noble-Forged Compact Knife)* | D3 | Close, Concealable, Silent, Elegant | D3 Body. A dignified weapon — more threat than tool, but it fits in a formal sleeve. | **Blooded History:** if examined, it may connect to a prior killing. |
 
 > **Core Ability — Voice of the Master**
 >
@@ -153,7 +153,7 @@ You are the one who sees the shape of guilt in receipts, wounds, prayer schedule
 | **Mnemonic Engine** *(Beta-Pattern, Demanding)* | D6 | Restricted, Experimental, Hungry | Lets you retain patterns, recall details, or compare clues beyond normal memory. | **Hungry:** after major use, take D3 Mind stress or step it down. |
 | **Forensic Evidence Kit** *(Tried-and-Tested)* | D8 | Reliable, Suspicious | Permission and Mastery to preserve, test, or interpret physical evidence, residues, blood, ash, fibers, or wounds. | **Witness-Magnet:** obvious use in public draws questions or Heat +1. |
 | **Ciphered Notebooks** *(Pilgrim-Pocket)* | D6 | Concealable, Traceable | Keeps personal case patterns hidden from ordinary search. | **False Provenance:** if decoded, reveals what the Explicator already suspected. |
-| **Evidence Knife** *(Trench-Pattern Folding Blade)* | D6 | Close, Concealable, Silent | D3 Body. Useful for opening sealed containers, cutting samples, or last-resort close work. | **Contaminated:** trace evidence may linger on the blade. |
+| **Evidence Knife** *(Trench-Pattern Folding Blade)* | D3 | Close, Concealable, Silent | D3 Body. Useful for opening sealed containers, cutting samples, or last-resort close work. | **Contaminated:** trace evidence may linger on the blade. |
 
 > **Core Ability — The Shape of Guilt**
 >
@@ -234,7 +234,7 @@ You know pain is a language. You know fear is a key. You know the problem is not
 | **Restraint Wire** *(Holdout, Gore-Edged)* | D6 | Concealable, Brutal, Restricted | Permission to bind, control, or transport a prisoner discreetly. | **Witness-Magnet:** public use creates a witness or Heat +1. |
 | **Psycho-Chemical Ampoules** *(Expendable, Cracked-Core)* | D6 | Restricted, Disposable, Unstable | Burn or step down to sedate, heighten pain, force lucidity, or prevent collapse. | **Contaminated:** on 7 or lower, the subject suffers harm, false memory, or medical evidence remains. |
 | **Confession Seals** *(Mandate-Stamped)* | D6 | Sanctioned, Traceable | Officially marks a subject, testimony, or secured chamber as under Inquisitorial examination. | **Paper Trail:** if logged, the Imperium knows who requested custody. |
-| **Interrogator's Blade** *(Shock-Tipped Folding Knife)* | D6 | Close, Concealable, Debilitating | D3 Body. Designed to hurt precisely without killing. | **Witness-Magnet:** the blade's purpose is obvious to anyone who recognizes it. |
+| **Interrogator's Blade** *(Shock-Tipped Folding Knife)* | D3 | Close, Concealable, Debilitating | D3 Body. Designed to hurt precisely without killing. | **Witness-Magnet:** the blade's purpose is obvious to anyone who recognizes it. |
 
 > **Core Ability — Pain Is Also Testimony**
 >
@@ -315,7 +315,7 @@ You are the person who was never there. The clerk with the right stamp. The pilg
 | **Disguise Kit** *(Compact, Expendable)* | D6 | Concealable, Disposable | Gain Mastery when altering appearance, costume, gait, or surface identity. | **Traceable:** residue, fabric, or witness memory can connect identities. |
 | **Concealed Weapon** *(Holdout Gutter-Forged Blade)* | D6 | Concealable, Silent or Loud, Crude | D3 or D6 Body depending on form. Useful when smuggled into a restricted place. | **Black-Market Source:** if traced, criminals know where it came from. |
 | **Dead-Drop Token** *(Pilgrim-Pocket, Questionable)* | D6 | Concealable, Suspicious | Permission to access one hidden cache, message route, or fallback contact per Operation. | **Debt-Bound:** if leaned on hard, someone expects payment. |
-| **Holdout Blade** *(Gutter-Forged Compact Knife)* | D6 | Close, Concealable, Silent, Crude | D3 Body. Cheap, anonymous, and disposable — the perfect backup when the cover is blown. | **Black-Market Source:** if traced, criminals know where it came from. |
+| **Holdout Blade** *(Gutter-Forged Compact Knife)* | D3 | Close, Concealable, Silent, Crude | D3 Body. Cheap, anonymous, and disposable — the perfect backup when the cover is blown. | **Black-Market Source:** if traced, criminals know where it came from. |
 
 > **Core Ability — Burnable Face**
 >
@@ -396,7 +396,7 @@ You are legal because someone signed the right execution delay. You are useful b
 | **Sanctioning Brand** *(Mandate-Stamped, Banner-Bright)* | D6 | Sanctioned, Obvious, Traceable | Reduces Authority risk when the psyker's legal status is challenged. | **Witness-Magnet:** civilians, priests, and officials remember the brand. |
 | **Warded Restraints** *(Rune-Carved, Classified)* | D6 | Warded, Restricted, Obvious | Permission to contain the psyker, suppress escalation, or survive transport under suspicion. | **Sacred Obligation:** if used improperly, take D3 Mind or Authority stress. |
 | **Sedatives** *(Expendable, Cracked-Core)* | D6 | Disposable, Restricted, Unstable | Burn or step down to suppress panic, vision, seizure, or uncontrolled manifestation. | **Contaminated:** on 7 or lower, take D3 Body or Corruption stress. |
-| **Wyrd-Edge** *(Sigil-Bound Compact Blade)* | D6 | Close, Concealable, Wyrd | D3 Body. The blade hums with faint warp resonance — an anchor for focus, or a last resort when powers fail. | **Warp Echo:** if used near wards or relics, it leaves a psychic impression. |
+| **Wyrd-Edge** *(Sigil-Bound Compact Blade)* | D3 | Close, Concealable, Wyrd | D3 Body. The blade hums with faint warp resonance — an anchor for focus, or a last resort when powers fail. | **Warp Echo:** if used near wards or relics, it leaves a psychic impression. |
 
 > **Core Ability — Licensed Witch**
 >
@@ -405,6 +405,34 @@ You are legal because someone signed the right execution delay. You are useful b
 > **Refresh**
 >
 > Remove stress when you submit to containment, confession, psychic examination, or self-denial.
+
+### Psychic Powers
+
+Psychic powers are class-facing tools for the **Sanctioned Psyker**. They are not a general shopping list. A Sanctioned Psyker begins with two powers and can learn more through class advances.
+
+When you use a psychic power under pressure:
+
+1. Name the effect you want right now.
+2. Roll the listed Skill + Domain, usually **Warp**.
+3. Set Difficulty from the situation: Safe if prepared and contained, Risky if rushed or watched, Dangerous near wards/null fields/public exposure, Impossible if it cannot be clean.
+4. On a 7 or lower, take the listed cost or default to D3 Corruption stress if no cost is clearer.
+5. If the power is Visible, Area, Echoing, or used recklessly, decide whether it creates Heat, Warp Trace, witness pressure, Patron Notice, or Enemy Awareness.
+6. On a 1, the GM may introduce psychic backlash, daemonic attention, Possession pressure, collateral harm, or a Warp Trace tick.
+
+| Power | Roll | Effect | Tags | Cost / Trace |
+|---|---|---|---|---|
+| **Witch-Sight** | Investigate + Warp | Perceive psychic residue, daemonic traces, emotional imprints, possession scars, or warp-thin places. Ask one direct question about immaterial influence; on a 10, ask two. | Subtle, Echoing | On 7 or lower, D3 Corruption or Mind stress. Trace: Soul Impression or Dream Echo. |
+| **Soul Hook** | Command + Warp | Seize a target's attention through psychic pressure. They must answer one question, freeze, obey a short command, or reveal their strongest surface emotion. | Invasive, Predatory | On 7 or lower, D6 Mind stress, or D6 Corruption if the target is tainted. Trace: Psychic Fingerprint. |
+| **Telekinetic Rebuke** | Fight + Warp | Hurl, crush, pin, or disarm a target. Inflict D6 Body stress, or D8 if the environment is full of dangerous debris. | Violent, Visible | On 7 or lower, D3 Body and D3 Corruption stress. Trace: Machine Disruption or visible wreckage. |
+| **Pyroclastic Purge** | Fight + Warp | Ignite a target, zone, infestation, corpse-pile, ritual circle, or swarm. Inflict D8 Body or Corruption stress against vulnerable targets. | Violent, Area, Visible, Miraculous | Always mark D3 Corruption stress. On 7 or lower, the fire spreads. Trace: Miracle Rumor or Warp Scent. |
+| **Mind-Scrape** | Investigate + Warp | Tear a useful image, phrase, route, face, password, or emotional truth from a target's mind. | Invasive, Forbidden | Take D3 Mind stress. On 7 or lower, also take D3 Corruption stress. Trace: Memory Scar. |
+| **Veil of Unnotice** | Skulk + Warp | Ordinary witnesses overlook you unless you draw direct attention. Cameras blur, memory softens, and casual observers rationalize your presence. | Subtle, Sustained | On 7 or lower, D6 Shadow or Corruption stress. Trace: Memory Scar or Machine Disruption. |
+| **Astropathic Needle** | Operate + Warp or Command + Warp | Send a short message through hostile psychic conditions without normal astropathic infrastructure. | Echoing, Invasive | Always take D3 Mind stress. On 7 or lower, take D6 Corruption stress. Trace: Dream Echo. |
+| **Biomantic Command** | Resist + Warp or Fight + Warp | Force a body to endure, heal, spasm, bleed, purge toxin, or rupture. Heal or reduce D6 Body stress, or inflict D6 Body stress. | Invasive, Visible | D3 Body or Corruption stress. Trace: the body remembers the touch. |
+| **Hexagrammic Rebuke** | Resist + Warp or Resist + Ecclesiarchy | Resist, reveal, delay, or repel a daemonic, psychic, or possession effect. Reduce incoming Corruption stress by one die size, or grant Protection 1 for one exchange. | Warded, Holy | If rushed, D3 Mind or Authority stress. On 7 or lower, the ward burns out. |
+| **Machine Omen** | Operate + Mechanicus or Investigate + Warp | Read psychic disturbance through machine behavior, auspex static, noospheric distortion, or servitor hesitation. Ask one question about hidden psychic or occult influence. | Echoing, Heretek Risk | On 7 or lower, D3 Corruption or Authority stress. Trace: Machine Disruption. |
+
+The Forbidden Methods chapter still defines radical shortcuts, forbidden assets, Warp Trace clocks, Possession clocks, and occult consequences. Psychic powers live here because they are part of the Sanctioned Psyker's class kit.
 
 ### Class Questions
 
@@ -481,7 +509,7 @@ You know the grammar of the dark: how it enters, how it anchors, how it bargains
 | **Blessed Blade** *(Consecrated Melee-Forged Blade)* | D6 | Holy, Concealable or Obvious | D6 Body. Against daemonic or warp-touched threats, may inflict Corruption stress instead. | **Blooded History:** the blade has a prior case, victim, or grudge attached. |
 | **Warding Chalk** *(Burn-After, Rune-Carved)* | D6 | Disposable, Warded, Holy | Burn or step down to create a warded circle, seal, barrier, or diagnostic rite. | **Paper Trail:** rare marks identify the exorcistic tradition or Patron source. |
 | **Censers and Incense** *(Saint-Touched, Unmistakable)* | D6 | Holy, Obvious, Witness-Magnet | Gain Mastery when purifying, revealing, calming, or preparing a ritual space. | **Miracle Rumor:** public use may turn into fear, faith, or Heat +1. |
-| **Consecrated Knife** *(Shrine-Forged Compact Blade)* | D6 | Close, Concealable, Holy | D3 Body. Against daemonic or warp-touched threats, may inflict Corruption stress instead. | **Sacred Obligation:** if used for anything other than the Emperor's work, take D3 Mind stress. |
+| **Consecrated Knife** *(Shrine-Forged Compact Blade)* | D3 | Close, Concealable, Holy | D3 Body. Against daemonic or warp-touched threats, may inflict Corruption stress instead. | **Sacred Obligation:** if used for anything other than the Emperor's work, take D3 Mind stress. |
 
 > **Core Ability — Name the Intruder**
 >
@@ -521,7 +549,7 @@ You know the grammar of the dark: how it enters, how it anchors, how it bargains
 
 **Seal the Vessel:** When someone is being possessed, you may bind the entity in place. The victim is not saved, but the possession cannot progress until the end of the Situation unless the seal breaks. If the victim has an active Possession clock, reduce it by 1 segment on success, 2 on a 10.
 
-**Binding Chains:** You may attempt to bind a warp entity, psychic projection, or possessing spirit into a physical object. Roll Resist + Warp. On success, the entity is trapped until the object is destroyed. On 7 or lower, the object becomes dangerous and hungry. This is one of the few ways to intervene in a Possession clock at 3/4 or 4/4 — the entity is trapped, but the host still bears the mark. See Possession clock rules in Psychic Powers and Forbidden Methods v0.1.
+**Binding Chains:** You may attempt to bind a warp entity, psychic projection, or possessing spirit into a physical object. Roll Resist + Warp. On success, the entity is trapped until the object is destroyed. On 7 or lower, the object becomes dangerous and hungry. This is one of the few ways to intervene in a Possession clock at 3/4 or 4/4 — the entity is trapped, but the host still bears the mark. See Possession clock rules in Forbidden Methods v0.1.
 
 **Exorcism Clock Advanced:** When you perform a full exorcism (extended action, Resist + Warp/Ecclesiarchy, Dangerous) on a character with a Possession clock, reduce the clock by 1 on success, 2 on a 10. If the clock reaches 0, the entity is expelled. On a failure, the clock advances +1. On a 1, the clock advances +2 and the entity lashes out — everyone present takes D6 Mind or Corruption stress.
 
@@ -567,7 +595,7 @@ You are the voice that makes fear kneel. You are comfort, accusation, scripture,
 | **Censer / Ritual Kit** *(Anointed, Banner-Bright)* | D6 | Holy, Obvious | Mastery in purification, public devotion, ward preparation, or calming faithful witnesses. | **Witness-Magnet:** public ritual gathers attention quickly. |
 | **Preacher's Robes** *(Heraldic, Authorized)* | D6 | Elegant, Obvious, Sanctioned | Social permission in shrines, pilgrim lines, confessionals, and Ministorum spaces. | **Traceable:** witnesses remember the priest. |
 | **Confessor's Seal** *(Approval-Sealed, Classified)* | D6 | Sanctioned, Restricted, Paper Trail | Permission to hear confession, request privacy, or claim spiritual jurisdiction. | **Paper Trail:** if invoked officially, Ecclesiarchy records may follow. |
-| **Penitent's Knife** *(Self-Flagellant Compact Blade)* | D6 | Close, Concealable, Penitent | D3 Body. Mark D3 Body stress when inflicting stress — the blade demands sacrifice. | **Doctrinally Suspect:** the self-harm aspect disturbs orthodox observers. |
+| **Penitent's Knife** *(Self-Flagellant Compact Blade)* | D3 | Close, Concealable, Penitent | D3 Body. Mark D3 Body stress when inflicting stress — the blade demands sacrifice. | **Doctrinally Suspect:** the self-harm aspect disturbs orthodox observers. |
 
 > **Core Ability — The Emperor Demands**
 >
@@ -656,7 +684,7 @@ Also begin with:
 | **Carapace Armour** *(Bulkhead-Pattern, Dependable)* | D8 | Heavy, Restricted, Reliable | Body Protection 2. May absorb one serious hit per Operation without stepping down. | **Obvious:** civilian, noble, or sacred spaces treat you as a threat. |
 | **Combat Blade** *(Trench-Pattern Compact Blade)* | D6 | Close, Concealable, Reliable | D3 Body; useful for silent violence or last-resort close work. | **Blooded History:** if examined, it may connect to a prior killing. |
 | **Munitorum Ammo / Charge Pack** *(Expendable, Logged)* | D6 | Disposable, Reload, Traceable | Burn or step down to avoid an ammo complication or add +1 stress once. Reload or resupply when the fiction demands it. | **Paper Trail:** official ammunition links back to a supply chain. |
-| **Trench Knife** *(Trench-Pattern Compact Blade)* | D6 | Close, Concealable, Reliable | D3 Body. Standard-issue close combat backup. Nothing fancy — just steel that works. | **Blooded History:** if examined, it may connect to a prior killing. |
+| **Trench Knife** *(Trench-Pattern Compact Blade)* | D3 | Close, Concealable, Reliable | D3 Body. Standard-issue close combat backup. Nothing fancy — just steel that works. | **Blooded History:** if examined, it may connect to a prior killing. |
 
 > **Core Ability — Decisive Application of Force**
 >
@@ -737,7 +765,7 @@ You know the body as testimony. Wounds confess. Organs remember. Disease has a m
 | **Bone Saw and Surgical Tools** *(Unmistakable, Eviscerating)* | D6 | Obvious, Brutal, Restricted | Permission for field surgery, dissection, autopsy, or invasive extraction. | **Witness-Magnet:** public use creates fear, rumors, or Heat +1. |
 | **Toxin Sampler** *(Clearance-Required)* | D6 | Restricted, Contaminated | Identify, preserve, or apply toxins, plagues, mutagens, residues, or unknown biological material. | **Contaminated:** on 7 or lower, take D3 Body or Corruption stress. |
 | **Auto-Suture Tools** *(Dependable, Expendable)* | D6 | Reliable, Disposable | Step down or burn to reduce Body stress by D3 after an injury or stabilize fallout until later. | **Machine-Spirit Temper:** failure demands maintenance, parts, or rites. |
-| **Scalpel Blade** *(Surgical Compact Knife)* | D6 | Close, Concealable, Silent | D3 Body. Designed for precision cutting — tissue, sutures, or threats. | **Witness-Magnet:** the surgical design marks the wielder as medical personnel. |
+| **Scalpel Blade** *(Surgical Compact Knife)* | D3 | Close, Concealable, Silent | D3 Body. Designed for precision cutting — tissue, sutures, or threats. | **Witness-Magnet:** the surgical design marks the wielder as medical personnel. |
 
 > **Core Ability — Flesh Remembers**
 >
@@ -821,7 +849,7 @@ You are the treaty between flesh and mechanism. You know the machine is not loya
 | **Auspex** *(Dependable, Serial-Stamped)* | D6 | Reliable, Traceable | Mastery when scanning for bio-signs, radiation, energy, void leaks, relic residue, or hidden machinery. | **Traceable:** scans can be logged, detected, or reconstructed. |
 | **Servo-Skull** *(Unmistakable, Dependable)* | D6 | Obvious, Traceable, Reliable | Scout, record, carry a small tool, illuminate, observe, or assist Operate rolls. | **False Provenance:** if its origin is checked, someone recognizes the skull or its former owner. |
 | **Mechadendrite Rig** *(Banner-Bright, Sealed-Armoury)* | D8 | Obvious, Restricted, Heavy | Permission and Mastery for technical work requiring reach, strength, precision, or simultaneous manipulation. | **Restricted Pattern:** if inspected by Mechanicus rivals, they may claim, question, or sanction it. |
-| **Mechanicus Blade** *(Shrine-Forged Compact Knife)* | D6 | Close, Concealable, Reliable | D3 Body. Blessed by the Omnissiah — as much ritual tool as weapon. | **Machine-Spirit Temper:** if used without proper rites, the blade's spirit resists. |
+| **Mechanicus Blade** *(Shrine-Forged Compact Knife)* | D3 | Close, Concealable, Reliable | D3 Body. Blessed by the Omnissiah — as much ritual tool as weapon. | **Machine-Spirit Temper:** if used without proper rites, the blade's spirit resists. |
 
 > **Core Ability — Machine-Spirit Intercession**
 >
@@ -902,7 +930,7 @@ You are absence made flesh. Psykers recoil. Daemons hate you. Ordinary people ma
 | **Concealing Hood** *(Pilgrim-Pocket, Questionable)* | D6 | Concealable, Suspicious | Helps hide signs of discomfort, identity, or abnormal presence; may absorb one scrutiny complication by stepping down. | **Witness-Magnet:** people remember the discomfort even if they do not know why. |
 | **Compact Weapon** *(Holdout Workhorse Pistol)* | D6 | Concealable, Reliable | D6 Body or D3 Body if very small; usable while isolated, restrained, or undercover. | **Black-Market Source:** if traced, it creates underworld questions. |
 | **Isolation Orders** *(Mandate-Stamped, Registry-Linked)* | D6 | Patron Marked, Sanctioned, Traceable | Permission to demand distance, containment, special transport, or private quarters. | **Paper Trail:** if checked, the orders reveal the cell is handling a classified liability. |
-| **Null Blade** *(Sealed-Armoury Compact Knife)* | D6 | Close, Concealable, Warded | D3 Body. The blade is warded against warp influence — for when the Untouchable needs to cut something that shouldn't be touched. | **Doctrinally Suspect:** the warding marks it as Inquisitorial-issue. |
+| **Null Blade** *(Sealed-Armoury Compact Knife)* | D3 | Close, Concealable, Warded | D3 Body. The blade is warded against warp influence — for when the Untouchable needs to cut something that shouldn't be touched. | **Doctrinally Suspect:** the warding marks it as Inquisitorial-issue. |
 
 > **Core Ability — Absence**
 >
@@ -994,7 +1022,7 @@ You are what the Inquisition usually burns. But someone decided you were more us
 | **Handler's Leash** *(Mandate-Stamped, Classified)* | D6 | Patron Marked, Restricted, Sanctioned | Explains why the asset is alive and under control. May absorb one Authority or Shadow scrutiny complication by stepping down. | **Patron Marked:** if revealed, mark Patron Notice or create a faction question. |
 | **Concealed Relic** *(Damned, Holdout)* | D6 | Forbidden, Concealable, Unstable | Grants permission for one narrow impossible effect tied to Heresy, Warp, or Xenos. | **Unstable:** on 7 or lower, take +D3 Corruption or Authority stress. |
 | **Old Enemy Contact** *(Questionable)* | D6 | Debt-Bound, Suspicious, Secret-Keeper | A dangerous contact from the asset's former life who can provide rumors, access, or warning. | **Debt-Bound:** when used for major benefit, create a Debt clock or owe a favor. |
-| **Old Blade** *(Questionable Compact Knife)* | D6 | Close, Concealable, Suspicious | D3 Body. A weapon from the asset's former life — familiar, trusted, and incriminating. | **Faction Claim:** if examined, it may connect to the asset's old allegiance. |
+| **Old Blade** *(Questionable Compact Knife)* | D3 | Close, Concealable, Suspicious | D3 Body. A weapon from the asset's former life — familiar, trusted, and incriminating. | **Faction Claim:** if examined, it may connect to the asset's old allegiance. |
 
 > **Core Ability — Useful Blasphemy**
 >

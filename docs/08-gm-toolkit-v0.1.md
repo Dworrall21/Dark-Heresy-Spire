@@ -687,8 +687,8 @@ Do not use a clock when the consequence should happen immediately.
 | **Ritual Completion** | 8 | Delays, sacrifices, failed containment | The daemon manifests. |
 | **Public Panic** | 4 | Psychic phenomena, bodies, rumors | Riot, purge, or mass confession. |
 | **Patron Judgment** | 6 | Red Lines, Patron Notice, hidden evidence | The Patron issues correction. |
-| **Warp Trace** | 6 | Psychic powers with Echoing/Visible/Area tags, rolls ≤7, daemon manifestation, Warp breaches | Daemon can track the cell's location; or a Warp rift opens at the site; or enemy with occult knowledge reads the trace (EA +2); or Patron Notice +1; or all present take D3 Corruption stress. See Psychic Powers and Forbidden Methods v0.1. |
-| **Possession** | 4 | Possession Risk power rolls 1, Severe/Critical Corruption Fallout near daemons, entity feeds or grows stronger | 1/4: Whispers (voice, D3 Corruption if listened). 2/4: Blackouts (lost time, D6 Corruption, entity acts through host). 3/4: Body Hijack (entity seizes control briefly, D6 Corruption + D6 Mind). 4/4: Full Possession (entity in control, cell must exorcise/bind/kill). See Psychic Powers and Forbidden Methods v0.1. |
+| **Warp Trace** | 6 | Psychic powers with Echoing/Visible/Area tags, rolls ≤7, daemon manifestation, Warp breaches | Daemon can track the cell's location; or a Warp rift opens at the site; or enemy with occult knowledge reads the trace (EA +2); or Patron Notice +1; or all present take D3 Corruption stress. See Forbidden Methods v0.1. |
+| **Possession** | 4 | Possession Risk power rolls 1, Severe/Critical Corruption Fallout near daemons, entity feeds or grows stronger | 1/4: Whispers (voice, D3 Corruption if listened). 2/4: Blackouts (lost time, D6 Corruption, entity acts through host). 3/4: Body Hijack (entity seizes control briefly, D6 Corruption + D6 Mind). 4/4: Full Possession (entity in control, cell must exorcise/bind/kill). See Forbidden Methods v0.1. |
 
 ### Advancing Clocks
 
@@ -1004,7 +1004,7 @@ When a player proposes a Forbidden Method, ask:
 | **Clock** | The method creates future hunger or exposure |
 | **Debt** | The tool, entity, or informant wants payment |
 
-For full procedure, result bands, Forbidden Assets, Warp Trace, and refresh guidance, use [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md). At the table, pick the pressure that best expresses the cost instead of adding every cost at once.
+For full procedure, result bands, Forbidden Assets, Warp Trace, and refresh guidance, use [Forbidden Methods v0.1](10-forbidden-methods-v0.1.md). At the table, pick the pressure that best expresses the cost instead of adding every cost at once.
 
 ---
 

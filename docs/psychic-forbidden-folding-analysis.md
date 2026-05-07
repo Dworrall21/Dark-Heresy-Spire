@@ -51,7 +51,7 @@ The 49-line interaction rule is really two things:
 
 ### Warp Trace Clock → Keep as-is
 
-The Warp Trace clock is a **shared resource** — it's not owned by any class. It's a consequence of using psychic powers, like Heat. It belongs in the GM Toolkit (where GMs look up what clocks do) with a reference in the psychic powers doc (where the mechanic is introduced). The fill effects should stay in both places.
+The Warp Trace clock is a **shared resource** — it's not owned by any class. It's a consequence of using psychic powers, like Heat. It belongs in the GM Toolkit (where GMs look up what clocks do) with a reference in the Forbidden Methods doc (where the shared clock is introduced). The fill effects should stay in both places.
 
 **No change needed.** This is correctly distributed.
 
@@ -61,9 +61,9 @@ Same reasoning as Warp Trace. The Possession clock is a consequence engine, not 
 
 **Add a reference in the Exorcist class** to the Possession clock:
 
-> **Clock Interaction:** When you use Seal the Vessel or Binding Chains on a character with an active Possession clock, reduce the clock by 1 segment on success, 2 on a 10. See Psychic Powers and Forbidden Methods v0.1 for full Possession clock rules.
+> **Clock Interaction:** When you use Seal the Vessel or Binding Chains on a character with an active Possession clock, reduce the clock by 1 segment on success, 2 on a 10. See Forbidden Methods v0.1 for full Possession clock rules.
 
-**Keep the full definition** in the psychic powers doc and the GM Toolkit.
+**Keep the full definition** in the Forbidden Methods doc and the GM Toolkit.
 
 ### Mind-Scrape Scenario → Keep in Mission
 
@@ -79,7 +79,7 @@ Confirmed as intentional. Patron writs protect authorized use. Unauthorized use 
 
 ## Summary of Changes
 
-### Remove from Psychic Powers and Forbidden Methods doc
+### Remove from the old combined psychic/forbidden methods doc
 - "Visible Powers and Cover" section (21 lines) — moved to Sanctioned Psyker class
 - "Psyker and Blank Interaction" section (43 lines) — split between Blank class and Sanctioned Psyker class
 

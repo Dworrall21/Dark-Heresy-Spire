@@ -12,7 +12,7 @@ Other chapters expand the subsystems:
 - Heat, Shadow, Cover, and Enemy Awareness: [Heat and Subtlety v0.1](06-heat-subtlety-v0.1-outline.md)
 - Mission structure: [Mission and Operation Template v0.1](07-mission-operation-template-v0.1.md)
 - Gear and Requisition: [Requisition and Gear v0.1](09-requisition-and-gear-v0.1.md)
-- Psychic powers and forbidden methods: [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md)
+- Psychic powers: [Complete Classes v0.1](04-complete-classes-v0.1.md#5-sanctioned-psyker); forbidden methods: [Forbidden Methods v0.1](10-forbidden-methods-v0.1.md)
 
 > Working premise: you are doomed agents of an oppressive empire trying to prevent something worse.
 
@@ -693,7 +693,7 @@ When a psychic power is used under pressure, roll the listed Skill + Domain. Mos
 
 On a 7 or lower, the psyker takes Corruption stress in addition to any other consequences unless the power says otherwise. On a 1, the GM may immediately introduce psychic phenomena, daemonic attention, possession pressure, collateral harm, Warp Trace, Heat, or Enemy Awareness.
 
-Use [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md) for core-rule calibration, power structure, tags, Warp Trace, Psychic Burdens, containment, and example powers.
+Use the [Sanctioned Psyker class](04-complete-classes-v0.1.md#5-sanctioned-psyker) for psychic power procedure, power list, and psyker-specific advances. Use [Forbidden Methods v0.1](10-forbidden-methods-v0.1.md) for Warp Trace, Possession clocks, forbidden assets, and radical consequences.
 
 ---
 
@@ -701,11 +701,11 @@ Use [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-
 
 Forbidden Methods solve problems by crossing lines. They should be tempting because they work.
 
-When a Psychic Power or Forbidden Method would solve a problem faster, cleaner, or more completely than orthodox methods, the GM should make that true. Do not make forbidden tools weak to balance them. Instead, make them costly.
+When a class psychic power or Forbidden Method would solve a problem faster, cleaner, or more completely than orthodox methods, the GM should make that true. Do not make forbidden tools weak to balance them. Instead, make them costly.
 
 Forbidden Methods may simply work and charge a cost when uncertainty is not the interesting question. If a roll matters, use the normal result bands and choose one meaningful pressure rather than stacking every cost at once.
 
-Use [Psychic Powers and Forbidden Methods v0.1](10-psychic-powers-and-forbidden-methods-v0.1.md) for method structure, forbidden assets, Resource dice, radical doctrine, containment, examples, and generators.
+Use [Forbidden Methods v0.1](10-forbidden-methods-v0.1.md) for method structure, forbidden assets, Resource dice, radical doctrine, containment, examples, and generators.
 
 ---
 
