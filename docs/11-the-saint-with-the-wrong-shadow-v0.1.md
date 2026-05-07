@@ -295,32 +295,53 @@ Clue / Resource: Surveillance records, crowd maps, emergency cordon.
 
 ## Overseer Cale Vex
 
-```text
+```
 Type: Cult Collaborator
 Objective: Recover the relic or silence anyone who knows he had it.
 Instinct: Blame labor agitators, mutants, or chapel corruption.
 Tell: His shadow flickers half a second late.
 Difficulty: Risky to investigate; Dangerous once confronted.
-Resistance: 8
+Resistance: 8 (see Weakness below)
 Stress Die: D6 Body or Shadow; D8 if cult backup arrives.
 Protection: Body 1
 Tags: Cult, Coward, Connected, Traceable
 Clue / Resource: Manufactorum ledger, cult courier route, black-glass residue.
+
+Weakness — Coward: If the cell confronts Cale directly with evidence
+of his cult involvement (the black-glass residue, the manufactorum
+ledger, or Mira's testimony), his Resistance drops to 4. He will
+surrender, bargain, or flee rather than fight. Discovered by:
+interrogating the marked pilgrim, finding the ledger, or Mira's
+testimony about her mother stealing the bead.
 ```
 
 ## The Wrong Shadow
 
-```text
+```
 Type: Embryonic Warp Echo
 Objective: Become a public miracle.
 Instinct: Answer prayers in the most costly way.
 Tell: It always knows what the faithful most want.
 Difficulty: Dangerous; Impossible if fully awakened in front of crowd.
-Resistance: 10
+Resistance: 10 (see Weakness below)
 Stress Die: D8 Mind or Corruption.
 Protection: Corruption 2 while fed by mass devotion.
 Tags: Warp Echo, Miraculous, Predatory, Hungry, Possession Risk
 Clue / Resource: Can answer one true question at terrible cost.
+
+Weakness — Warded Containment: If the cell requisitions a warded
+containment case (Requisition, Risky) and uses it during the
+extraction, the Wrong Shadow's Resistance drops to 6 and it loses
+its Corruption Protection. The case can hold the Noctilith Tear
+safely once extracted. Discovered by: the Restricted Archive Boon,
+an Explicator's Reconstruction Engine, or a Mechanicus consult.
+
+Weakness — Sever the Devotion: If the cell disrupts the mass vigil
+before the shadow fully awakens (scatters the crowd, silences the
+hymn, destroys the candles), the shadow loses its Corruption
+Protection and its Resistance drops by 2. Discovered by: Lys's
+infiltration of the cult meeting, or Kael's Shape of Guilt
+ability ("What does this imply that no one wants noticed?").
 ```
 
 ---

@@ -21,6 +21,7 @@ When running the game, aim to:
 5. **Make fallout create story, not dead ends.**
 6. **Make the Patron necessary, frightening, and compromised.**
 7. **Make the Imperium feel too large to fully control.**
+8. **Make combat costly for the unprepared.** Acolytes who fight without stacking advantages first should pay in stress, Fallot, and clocks. Acolytes who prepare properly should feel the payoff in every roll.
 
 Acolytes should not feel like ordinary investigators.
 
@@ -791,16 +792,112 @@ Use:
 
 ## 14. Running Violence
 
-Combat is a Situation, not a separate game mode.
+Combat is a Situation, not a separate game mode. But it is a Situation with special stakes: violence is loud, violent is costly, and violence leaves marks — on the acolytes, on their Cover, on Heat, and on their souls.
 
-Start with:
+### The Principle: Prepare or Suffer
 
-1. What does the cell want?
-2. What does the opposition want?
-3. What makes the violence costly?
-4. Who might see it?
-5. What evidence will remain?
-6. What changes if the cell wins loudly?
+**Unprepared combat will be dangerous and will hurt.**
+
+Acolytes who kick down doors and roll 3D10 at Dangerous are gambling with their bodies, their minds, and their souls. The odds are against them. They will take stress. They will suffer Fallout. They will be changed by it.
+
+This is by design. The game is not about winning fights. It is about making sure that when the fighting starts, you have already won.
+
+**The cell should be trying to reduce combat's difficulty narratively and stack more dice through Mastery and help.** Every scene before the combat is a chance to tilt the odds:
+
+| Preparation | Mechanical Effect |
+|---|---|
+| Investigate the enemy (find a weakness) | Mastery (+1D10) on relevant rolls |
+| Requisition the right gear | Better stress dice, Protection, tags |
+| Set up an ambush or positioning | Step down Difficulty (Dangerous -> Risky) |
+| Use Cover to get close | Step down Difficulty, gain surprise |
+| Coordinate with allies | Help (+1D10 per helper) |
+| Exploit a known vulnerability | Reduce enemy Resistance, add tags |
+
+A cell that does none of this rolls 3D10 at Dangerous. They will probably fail, and failure in combat means stress, Fallout, and clocks ticking.
+
+A cell that prepares properly rolls 5D10 at Safe or Risky. They will probably succeed, and success means they control the cost.
+
+**Neither outcome is "wrong."** The unprepared cell gets a desperate, costly fight that leaves scars. The prepared cell gets a controlled, efficient operation. Both are good stories. But the players should understand the difference before they choose.
+
+### When Players Want to Fight
+
+When the cell initiates violence, ask:
+
+1. **What does the cell want?** (Kill, capture, drive off, destroy, contain?)
+2. **What does the opposition want?** (Survive, complete the ritual, escape, call for help?)
+3. **What makes the violence costly?** (Witnesses, sacred ground, civilians, evidence?)
+4. **Who might see it?** (Heat trigger)
+5. **What evidence will remain?** (Bodies, shells, picts, Warp Trace?)
+6. **What changes if the cell wins loudly?** (Clocks, faction response, Patron Notice?)
+
+Then ask the key question:
+
+7. **Did the cell prepare for this?**
+
+If yes — reward the preparation. Step down Difficulty, grant Mastery, let Cover work. The combat should feel like the payoff for good investigation and planning.
+
+If no — the combat is Dangerous or worse. The cell is improvising. Stress will land. Fallout will trigger. This is the cost of acting without preparation.
+
+### The Combat Prep Procedure
+
+Before any significant combat, briefly walk through:
+
+```
+GM: "The cult is in the candle-vault. You've tracked them here.
+     What do you do before you breach?"
+
+Players might:
+- Send Lys in disguised (Cover step-down)
+- Requisition warded gear (gear advantage)
+- Review what they know about the cult (clue -> Mastery)
+- Coordinate with Arbites (help, but Heat)
+- Set up a chokepoint (positioning -> step-down)
+
+Each "yes" improves the odds.
+No prep = Dangerous with 3D10. Full prep = Safe with 5D10+.
+```
+
+This should take 2-3 minutes, not 20. It's a quick checklist, not a separate scene. The point is to make the players consciously invest in preparation, then reward that investment when the dice hit the table.
+
+### Designing Enemies That Reward Preparation
+
+Enemies should have **discoverable weaknesses** that the cell can find through investigation. These weaknesses should meaningfully change the combat math.
+
+| Weakness Type | How to Discover | Combat Effect |
+|---|---|---|
+| **Coward** | Interrogation, witness testimony | Resistance reduced by 2 if threatened directly |
+| **Vulnerable to wards** | Occult research, Mechanicus consult | Warded weapons inflict double stress |
+| **Dependent on a ritual component** | Investigating the rite | Destroying the component halves Resistance |
+| **Bound to a location** | Tracing the warp signature | Luring them away reduces their Protection |
+| **Has a handler** | Following the command chain | Capturing the handler forces surrender |
+| **Marked by a previous cell** | Finding old case files | Mastery on all rolls against them |
+
+Without discovering the weakness, the enemy is at full strength. With the weakness, the fight becomes manageable. This makes investigation mechanically meaningful — it's not just flavor, it's the difference between a desperate brawl and a controlled takedown.
+
+### Ambushes and Survival Fights
+
+Sometimes the cell doesn't get to prepare. The cult strikes first. A daemon manifests. The Arbites raid the safehouse. The cell is caught in the open.
+
+**This is good.** Unprepared combat should feel desperate. The cell should be fighting to survive, to escape, to hold on long enough to turn the tables. These are the moments that define acolytes -- not the clean operations, but the times everything went wrong and they endured.
+
+**When does an ambush happen?** Ambushes are triggered by the **Conditional Ambush** rules tied to Heat Moves (see Heat and Subtlety, section 5). The GM doesn't decide arbitrarily -- the fiction and the Heat level determine when the enemy strikes:
+
+- **Heat 3 (Rumors):** No ambush. The enemy is watching but doesn't know enough to strike. Heat Moves at this tier are about scrutiny and pressure, not violence.
+- **Heat 6 (Hunted):** On enemy-action Heat Moves, check if the cell is in a vulnerable position. If yes, the enemy strikes -- Dangerous, no prep bonuses on the first round.
+- **Heat 9 (Burned):** Ambushes escalate. At Enemy Awareness 4+, most enemy moves trigger automatic ambushes. At 6+, the enemy knows where the cell will be -- Impossible difficulty.
+
+The key question is always: **"Is the cell in a vulnerable position right now?"** If they're traveling, meeting contacts, entering compromised locations, or approaching watched sites, the ambush triggers. If they're in a secure position or have set their own counter-ambush, they react normally.
+
+**Ambushes start at Hunted.** At Rumors, the enemy is watching but doesn't know enough to set an effective ambush. At Hunted, they're acting -- and if the cell is in a vulnerable position when an enemy-action move triggers, the ambush fires. At Burned with high Awareness, ambushes are nearly unavoidable.
+
+When the cell is ambushed:
+- Set Difficulty at Dangerous or Impossible
+- Let the first round be about survival, not victory
+- Give them a way out -- a clock to fill, a position to reach, a ritual to disrupt
+- Make the cost real: stress, Fallout, burned Cover, ticking clocks
+- Let them survive, but changed
+
+**Fighting a daemon should mean you are changed by the Fallout.** Corruption is not abstract. It is the warp touching your soul. A cell that fights a daemon and walks away clean hasn't understood what they survived. The Fallout is the story.
 
 ### Violence Outcomes
 
@@ -833,6 +930,17 @@ When an NPC or threat takes stress equal to its Resistance, choose what defeat m
 - Made useful.
 
 Defeat does not have to mean death.
+
+### Calibrated Combat Examples
+
+| Situation | Likely Pool | Difficulty | Why |
+|---|---|---|---|
+| Secutor ambushes cult guards with Mastery, help, and positioning | 5D10 | Safe or Risky | Full prep. The ambush is the payoff. |
+| Legate kicks down the door with no intel, no backup | 3D10 | Dangerous | Unprepared. The Legate is gambling. |
+| Cell assaults a daemonhost after requisitioning warded chains and researching its true name | 5D10 | Risky | Good prep but the daemon is still deadly. |
+| Penumbra is ambushed by cult assassins while alone | 3D10 | Dangerous or Impossible | No prep, no help. Survival, not victory. |
+| Cell raids the candle-vault after Lys infiltrated and mapped it | 4D10 | Risky | Partial prep. Cover gave them the layout. |
+| Psyker confronts a warp manifestation with no wards, no preparation | 3D10 | Impossible | The warp does not care about your courage. |
 
 ---
 

@@ -195,6 +195,12 @@ Choose or roll:
 
 At Hunted, the cell is still functional, but no longer controls the tempo.
 
+**Conditional Ambush (Hunted):** At Heat 6+, the enemy is actively working against the cell. On moves 1-5 above (the enemy-action moves), add the following tag:
+
+> **AMBUSH TAG:** If the cell is in a vulnerable position (traveling, meeting a contact, entering a compromised location, or approaching a watched site), the enemy strikes. Set the ambush at Dangerous difficulty. The cell is caught off-guard -- no prep bonuses apply to the first round. If the cell is in a secure position or has set their own counter-ambush, the move still happens but the cell gets to react normally.
+
+This means that at Hunted, the GM should be thinking "where is the cell vulnerable right now?" every time an enemy-action move triggers. The ambush isn't automatic -- it's conditional on the fiction. But the threat should be present.
+
 ### Heat 9: Burned
 
 The Operation cannot continue in the same mode.
@@ -214,11 +220,19 @@ Choose or roll:
 | 9 | A public story forms. It is wrong, dangerous, and politically useful to someone. |
 | 10 | The Operation becomes a crisis: purge, flee, expose, negotiate, sacrifice, or finish the job loud. |
 
-At Burned, the question is no longer “Can we stay hidden?”
+At Burned, the question is no longer "Can we stay hidden?"
 
 The question is:
 
 **What do we save before the whole Operation collapses?**
+
+**Conditional Ambush (Burned):** At Heat 9+, the enemy is in active strike mode. The ambush rules escalate:
+
+- **Moves 1-3:** Automatic ambush if Enemy Awareness is 4+. The enemy knows enough to strike. Set at Dangerous. If Enemy Awareness is 6+, set at Impossible -- they know where the cell will be.
+- **Move 6:** This is already an ambush. At Burned, it's automatic -- no roll needed. The enemy strikes first. Set at Dangerous, or Impossible if Enemy Awareness is 5+.
+- **Moves 4, 7-10:** These are catastrophic but not ambush-specific. However, if Enemy Awareness is 5+, add: "The enemy has prepared for this. They counter the cell's next move."
+
+The key principle: **at Burned, the cell should not be able to operate without facing an ambush or counter-strike.** If they've let Heat reach 9, the enemy has had time to prepare. Every move the cell makes should carry the risk of walking into a trap.
 
 ---
 
@@ -365,6 +379,21 @@ Use a Cover Identity when it helps you:
 - Redirect suspicion.
 - Absorb Shadow stress.
 - Gain Mastery on a Deceive, Command, Procure, Investigate, or Skulk roll.
+- **Step down Difficulty by 1 level** (see below).
+
+#### Cover Step-Down
+
+When you attempt a roll where your Cover Identity is relevant to the situation, you may spend your Cover to reduce the Difficulty by one level:
+
+| Spend | Effect |
+|---|---|
+| Step down your Cover die by one size | Reduce Difficulty by one tier: Dangerous → Risky → Safe, or Impossible → Dangerous → Risky → Safe |
+
+The Cover must be *relevant* — your "pilgrim confessor" Cover steps down Difficulty at a shrine, but not when interrogating a cultist in a manufactorum. The GM decides relevance.
+
+You may only spend one Cover die to step down Difficulty per roll. The Cover die steps down immediately after use (D10 → D8 → D6 → D3 → gone). If Cover drops below D3, it is burned (destroyed, Heat +1).
+
+This is in addition to all other Cover uses. You may step down Difficulty *and* gain Mastery from the same Cover on the same roll, but the Cover only steps down once.
 
 When a Cover is actively tested, roll the relevant action normally. The Cover can add a Resource die, provide Mastery, or absorb stress if the fiction supports it.
 
@@ -435,6 +464,7 @@ The cell may use Cell Cover to:
 - Lower starting Heat by 1.
 - Create individual D6 Covers for the Operation.
 - Reduce Heat by 1 when the cover story takes blame.
+- **Step down Difficulty by 1 level** on a relevant roll for one acolyte. The Cell Cover die steps down by one size.
 
 ### Cell Cover Fallout
 

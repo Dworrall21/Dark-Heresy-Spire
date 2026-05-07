@@ -139,7 +139,7 @@ Choose why your Patron keeps you.
 
 Every acolyte begins with one Cover Identity.
 
-A Cover Identity is a Resource die that can be used when it helps you pass as someone else, access locations, avoid questions, or explain your presence.
+A Cover Identity is a Resource die that can be used when it helps you pass as someone else, access locations, avoid questions, explain your presence, or step down Difficulty by reducing risk.
 
 Choose a die:
 
@@ -169,6 +169,7 @@ You may burn your Cover Identity to:
 - Ignore one Shadow fallout.
 - Gain automatic access to a place your cover could plausibly reach.
 - Convert a failed Deceive or Skulk roll into success at cost.
+- Step down Difficulty by one level on a relevant roll (Dangerous → Risky → Safe, Impossible → Dangerous → Risky → Safe). Your Cover die steps down by one size.
 
 When you burn Cover:
 

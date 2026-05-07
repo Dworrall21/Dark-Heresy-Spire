@@ -125,6 +125,20 @@ Heat rises when the cell leaves:
 - Compromised cover
 - Factional complaints
 
+## Conditional Ambushes
+
+When a Heat Move triggers, check the Enemy Awareness level to determine if the enemy strikes:
+
+| Heat | Enemy Awareness | Ambush Rule |
+|---|---|---|
+| **3 (Rumors)** | Any | No ambush. The enemy is watching but doesn't know enough to strike. |
+| **6 (Hunted)** | Any | On enemy-action moves (1-5), add Ambush Tag: if the cell is in a vulnerable position, the enemy strikes. Dangerous, no prep bonuses on first round. |
+| **9 (Burned)** | 0-3 | Move 6 is an automatic ambush (Dangerous). Other moves as written. |
+| **9 (Burned)** | 4+ | Moves 1-3 trigger automatic ambush (Dangerous). Move 6 is Impossible if EA 5+. |
+| **9 (Burned)** | 6+ | Moves 1-3 are Impossible. The enemy knows where the cell will be. |
+
+**Principle:** Ambushes are conditional on the fiction. The GM asks: "Is the cell in a vulnerable position?" If yes, the ambush triggers. If the cell is secure or has set a counter-ambush, they react normally. At Burned with high Enemy Awareness, ambushes are nearly unavoidable -- the enemy has had time to prepare.
+
 ---
 
 # Enemy Awareness
@@ -139,6 +153,23 @@ Heat rises when the cell leaves:
 | **5** | They know the cell's methods. |
 | **6** | They know names, faces, aliases, gene-signs, or soul-impressions. |
 | **7** | They strike first. |
+
+---
+
+# Cover Step-Down
+
+Spend your Cover die to reduce Difficulty by one tier on a relevant roll:
+
+| From | To |
+|---|---|
+| Impossible | Dangerous |
+| Dangerous | Risky |
+| Risky | Safe |
+
+- The Cover must be **relevant** to the situation (GM decides).
+- Your Cover die steps down one size after use: D10 → D8 → D6 → D3 → gone.
+- If Cover drops below D3, it is burned (destroyed, Heat +1).
+- One Cover die per roll. You may combine with Mastery from the same Cover.
 
 ---
 
@@ -413,6 +444,7 @@ At the end of each Situation, ask:
 8. Did any faction gain a reason to intervene?
 9. Did any evidence remain unsecured?
 10. Did the cell cross or approach a Red Line?
+11. **Was the combat prepared or improvised?** (If improvised, expect worse outcomes.)
 
 Then:
 
@@ -423,3 +455,21 @@ Then:
 5. Mark Patron Notice if appropriate.
 6. Tick any Operation clocks.
 7. Announce what the players can perceive changing.
+
+---
+
+# Combat Prep
+
+Before violence, ask what the cell did to prepare:
+
+| If they... | Then... |
+|---|---|
+| Investigated the enemy | Grant Mastery (+1D10) from clues |
+| Requisitioned gear | Grant gear advantages (Protection, stress dice, tags) |
+| Set up ambush/positioning | Step down Difficulty one tier |
+| Used Cover to approach | Step down Difficulty one tier |
+| Coordinated with allies | Grant Help (+1D10) per helper |
+| Found a weakness | Reduce enemy Resistance or add vulnerability |
+| Did nothing | Dangerous or worse. They're gambling. |
+
+**Unprepared combat will hurt.** That's the point. The cell should be working every scene to make sure that when the fighting starts, they've already won.

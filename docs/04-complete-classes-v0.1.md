@@ -279,7 +279,7 @@ You are the person who was never there. The clerk with the right stamp. The pilg
 | **Concealed Weapon** *(Holdout Gutter-Forged Blade)* | D6 | Concealable, Silent or Loud, Crude | D3 or D6 Body depending on form. Useful when smuggled into a restricted place. | **Black-Market Source:** if traced, criminals know where it came from. |
 | **Dead-Drop Token** *(Pilgrim-Pocket, Questionable)* | D6 | Concealable, Suspicious | Permission to access one hidden cache, message route, or fallback contact per Operation. | **Debt-Bound:** if leaned on hard, someone expects payment. |
 
-**Core Ability — Burnable Face:** You begin each Mission with one extra Cover Identity at D6. You may burn it to ignore one Shadow fallout, but that identity is destroyed and Heat increases by 1.  
+**Core Ability — Burnable Face:** You begin each Mission with one extra Cover Identity at D6. You may burn it to ignore one Shadow fallout, step down Difficulty by one level on a relevant roll, or gain automatic access. The identity is destroyed and Heat increases by 1.  
 **Refresh:** Remove stress when you abandon, repair, or deepen a false identity at personal cost.
 
 ### Class Questions
