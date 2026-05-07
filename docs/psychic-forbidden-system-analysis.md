@@ -410,11 +410,16 @@ costly, sometimes optional to roll.
 
 ## Gaps and Recommendations
 
-1. **Authority Protection gap.** There is no Protection that absorbs the Authority
-   stress from forbidden methods. Consider adding a "Patron's Shadow" mechanic:
-   when acting under explicit Patron authority, the first D3 of Authority stress
-   is absorbed (representing institutional cover). This would create a meaningful
-   distinction between authorized and unauthorized forbidden use.
+1. **Authority Protection gap (partial).** The core rules list "Patron writs" as
+   Authority Protection, which covers the case of acting under explicit Patron
+   authorization. However, there is no general Authority Protection for characters
+   using forbidden methods *without* explicit Patron backing. The existing "Patron
+   writs" entry is narrow — it absorbs institutional stress from *authorized* use,
+   not from rogue radicalism. Consider: no additional mechanical fix needed, but
+   GMs should be aware that forbidden method users always eat Authority stress from
+   unauthorized use. This is intentional — the Imperium doesn't protect you from
+   its own judgment when you act without authorization. The design is correct; the
+   gap is more of a clarifying note than a missing rule.
 
 2. **Warp Trace clock cross-reference.** The Warp Trace clock definition now lives
    in the psychic powers doc but should also be referenced in the GM Toolkit's

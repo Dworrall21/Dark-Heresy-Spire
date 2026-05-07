@@ -552,7 +552,61 @@ Exit Condition: The relic is contained, destroyed, stolen, exploited, or allowed
 | **Likely Rolls** | Command + Ecclesiarchy, Investigate + Warp, Fight + Warp, Resist + Corruption, Procure + Inquisition |
 | **Stress Sources** | D8 Mind or Corruption from manifestation; D6 Shadow from public action; D6 Authority if overriding clergy. |
 | **Heat Triggers** | Any weapon, panic, Rosette, psychic power, relic extraction, corpse destruction. |
-| **Clues Available** | Relic visible in wound, Sella’s last memory, cult chant embedded in hymn. |
+| **Clues Available** | Relic visible in wound, Sella's last memory, cult chant embedded in hymn. |
+
+---
+
+### Situation: The Marked Pilgrim
+
+This situation can appear at any point after the cell learns the cult exists.
+
+A pilgrim named **Dren Solas** has been touched by the wrong shadow during a healing
+vigil. His cancerous growth vanished — but the shadow left something behind. Dren
+knows the cult's inner meeting location and the name of their ritual leader. He will
+never speak it voluntarily. The shadow has burned the knowledge behind a wall of
+terror and false memory. He believes his healing was a pure miracle. If pressed, he
+becomes distressed, then hostile. Friendly coercion (Command) fails — the block is
+psychic, not social.
+
+**The only way to extract the memory cleanly is Mind-Scrape** (Investigate + Warp,
+Forbidden). Without it, the cell must find the cult through other means: tailing
+Cale, tracing the ledger, or extracting the information from a cultist.
+
+This is the forbidden shortcut that exists specifically for this mission.
+
+```text
+NPC: Dren Solas, The Marked Pilgrim
+Type: Locked Witness / Victim
+Objective: Protect the memory of his miracle.
+Instinct: Deflect questions about the healing. Become hostile if pushed.
+Tell: His shadow sometimes flickers half a second late. He flinches at the smell
+  of candle wax. Answers about the healing are rehearsed — too smooth, too bright.
+Difficulty: Safe to approach as a well-wisher; Risky to ask about the healing;
+  Dangerous to accuse or pressure. Mind-Scrape is Forbidden difficulty.
+Resistance: 3 (Dren himself) / 5 (the psychic block protecting the memory)
+Stress Die: D3 Mind to Dren if pressured; D3 Corruption to the psyker on ≤7.
+Protection: None (Dren) / Corruption Protection 1 (the shadow's false memory)
+Tags: Forbidden Shortcut, Witness, Warp-Touched, Human Cost
+
+Mind-Scrape Result:
+ 10 — Clean extraction. Dren remembers the meeting location and the leader's name
+     clearly. No additional cost. He feels only a brief headache.
+  8-9 — The memory comes through, but Dren also remembers the shadow touching his
+     mind during the healing. He is shaken and frightened. D3 Mind to Dren.
+  6-7 — The memory is extracted, but you also pull out something the shadow left
+     behind — a fragment of its hunger, a sense of what it wants. D3 Corruption
+     to the psyker. D6 Mind to Dren.
+  2-5 — The false memory resists. Dren convulses. The shadow notices. D6 Mind to
+     Dren. D3 Corruption to the psyker. The Possession clock for Dren advances +1.
+  1 — The shadow fights back through the connection. D8 Mind to Dren. D6 Corruption
+     to the psyker. The Possession clock for Dren advances +2. Dren's eyes go black
+     for one terrible second. The shadow now knows the cell is looking.
+
+Clue Extracted: Cult meeting location (under the old manufactorum cooling stacks).
+  Ritual leader name (Sister Ashen, a former choir mistress who feeds the shadow).
+  The shadow's next intended sacrifice (Mira Vorn — it wants the daughter of the
+  woman whose body houses it).
+```
 
 ---
 
