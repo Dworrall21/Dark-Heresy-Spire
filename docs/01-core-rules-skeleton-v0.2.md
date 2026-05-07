@@ -220,157 +220,102 @@ Fallout is the pressure valve. The cost becomes real, so the abstract stress cle
 
 ## 10. Example Fallout
 
-These are models, not closed lists. Fallout should fit the fiction first. Each entry below includes a brief description of what it looks like at the table — use these as inspiration, not prescription.
-
-### Body Fallout
-
-**Minor — Concussive Shock:** A blow to the head leaves you ringing. You're clumsy and slow for the rest of the scene. Clear Body stress when you rest.
-
-**Minor — Hemorrhaging Wound:** Deep laceration, spurting blood. Someone needs to act fast or it gets worse. Clear Body stress when you receive medical attention.
-
-**Minor — Burn Trauma Lesser:** Flesh seared by Promethium, plasma flash, or chemical splash. Painful, scarring, but functional. Clear Body stress after treatment.
-
-**Minor — Dislocated Joint:** Shoulder, knee, or finger wrenched out of socket. Agonizing; you fight one-handed until it's reset. Clear Body stress once healed.
-
-**Moderate — Blinded or Half-Blinded:** Acid, flash-blast, or a blade across the eye. You permanently lose vision in one eye, or both until the Chirurgeon works. Moderate Body Fallout changes how you see — literally.
-
-**Moderate — Crushed Limb:** Arm or leg shattered under impact. The limb is useless until surgery. You fight with one arm, limp, or need a replacement.
-
-**Moderate — Arterial Bleed:** A major vessel is severed. Without immediate intervention, you die. Even after salvation, the weakness remains.
-
-**Moderate — Radiation Sickness:** Absorbed a lethal dose of gamma or particle radiation. You will vomit, hemorrhage, and sicken over the coming hours. The Chirurgeon may save you — if you reach one.
-
-**Severe — Critical Organ Trauma:** A vital organ — heart, liver, lung — is pierced or ruptured. You are dying. Only the most advanced medicae intervention in time can save you, and the scar — physical and spiritual — never fully heals.
-
-**Severe — Quarantine Case:** A contagion, parasitic infection, or bio-weapon payload has taken hold. You are placed under medical isolation. The cell must decide: break quarantine to use you, or leave you behind.
-
-**Severe — Mutilated Beyond Function:** A limb is lost. A hand, a leg, an augmetic interface is destroyed beyond repair. The Imperium does not waste useful tools — you will be fitted with a replacement, or found a new role.
-
-**Critical — Last Breath:** You are dying. Your body has failed. Moments remain. The Chirurgeon might pull you back, but what returns may not be entirely what you were.
-
-**Critical — Servitor Fate:** Your body is too broken to repair — but your mind is intact. The Mechanicus offers a service: they will preserve your cognition in a serviteur chassis. You will continue to serve. You will not be human anymore.
-
-**Critical — Martyr-Remains:** You are dead, but your remains are relics. The Ecclesiarchy or your Patron claim what's left. Your name is recorded. Your body becomes evidence, warning, or inspiration.
-
-### Mind Fallout
-
-**Minor — Intrusive Litany:** A prayer, phrase, or image plays on loop in your thoughts. You can't shake it. It flares at quiet moments, distracting you when you need clarity.
-
-**Minor — Panic Response:** Terror has rewired something. Now, in loud or sudden situations, your body reacts before your mind — freeze, flight, or fight without choosing.
-
-**Minor — Compulsive Patterning:** You count things. Arrange things. Perform small rituals. You know it's irrational. You cannot stop without enormous effort.
-
-**Minor — Shaken Certainty:** Something you saw shook your faith — in the Emperor, in the mission, in your own judgment. You hesitate where you once acted. You question orders that would have been reflex before.
-
-**Moderate — Memory Hole:** A period of time is simply gone. Hours, days — or a specific person, conversation, or event. The hole is permanent. Someone knows something you don't.
-
-**Moderate — Phobia:** A specific trigger — darkness, daemons, crowds, blood, the void, enclosed spaces — now causes paralyzing terror. You can face it, but it costs you.
-
-**Moderate — Obsessive Certainty:** You have become fixated on a person, theory, or goal. You prioritize it above the mission, above safety, above your cell-mates. Reason does not persuade you.
-
-**Moderate — Interrogation Scar:** You broke once under questioning — or the memory of it broke you. You now carry a vulnerability: your threshold for coercion is lower, or something you said under torture is a liability.
-
-**Severe — Broken Loyalty:** Your faith in the Inquisition, your Patron, or the mission has shattered. You no longer believe in the cause — but you may still follow orders from habit, fear, or lack of alternatives.
-
-**Severe — Revelatory Mania:** A conviction has taken root that cannot be shaken. The Emperor speaks to you. The cult was right. There is a pattern only you can see. This belief overrides all contradiction, evidence, or reason.
-
-**Severe — False Memory Implant:** A memory that isn't yours has been placed in your mind — a conversation that never happened, a name you never learned, a loyalty you never chose. You act on information that isn't real.
-
-**Critical — Total Collapse:** Your mind has broken. Catatonia, uncontrollable weeping, or violent dissociation. You are non-functional. Recovery, if it comes, takes weeks — and you are not the same.
-
-**Critical — Enemy Within:** Another consciousness, daemon, or psychic imprint inhabits your mind. Sometimes it speaks. Sometimes it acts. You are not alone in your own skull.
-
-**Critical — Living Cipher:** You have become an unwitting vessel for encoded data — a psychic message, a navigational coordinate, a heretical truth encoded in your neural pathways. Others can extract it. You cannot.
-
-### Shadow Fallout
-
-**Minor — Witness Chatter:** Someone saw something and is talking about it. Rumors spread. The wrong person might hear.
-
-**Minor — Pict Capture:** A pict-feed, servitor recording, or data-slate captured your face or methods. If reviewed, it becomes evidence.
-
-**Minor — Cover Inconsistency:** A small detail of your alias doesn't hold up under scrutiny — wrong seal, outdated credentials, a name mismatch. Fixable, but noticeable.
-
-**Minor — Wrong Eyes:** The wrong person noticed you — a sharp clerk, a paranoid neighbor, a rival agent. They don't know who you are, but they remember your face.
-
-**Moderate — Alias Compromised:** Your cover identity is known to at least one hostile party. It can still be used, but it's fragile — every use risks exposure.
-
-**Moderate — Safehouse Watched:** Your safehouse, stash, or rendezvous point is under surveillance. Using it will expose you or the people hiding there.
-
-**Moderate — Enemy Counter-Infiltration:** The enemy has turned one of your Contacts, informants, or Bonds. Information you trusted is now flowing to the opposition.
-
-**Moderate — Local Law Alerted:** Local enforcers, Arbites, or PDF are actively looking for someone matching your description. Low-level, but persistent.
-
-**Severe — Cell Exposed:** The enemy knows a covert cell is operating against them. Every member is at risk. Every operation is compromised. The cell must scatter, go dark, or accelerate the timeline.
-
-**Severe — Operation Burned:** The specific Operation is compromised. Safehouses are blown, Contacts are burned, objectives are no longer reachable by stealth.
-
-**Severe — Identity Cascade:** Your cover identity has unraveled in a chain reaction — one alias led to another, documents trace back to a forger who talks, or a pict-feed connects multiple covers. Everything built on that fiction is now suspect.
-
-**Critical — Full Inquisitorial Exposure:** Your identities, methods, faces, and allegiances are public knowledge in the relevant theater. You cannot operate covertly here again.
-
-**Critical — Disavowed:** Your Patron has formally disowned you — or the Imperium has declared you rogue. You have no authority, no backing, no allies who can acknowledge you publicly.
-
-**Critical — The Enemy Has Your Names:** Every acolyte, Contact, Bond, and safehouse the cell has is known. The enemy can strike at will. Extraction or fight — no middle ground.
-
-### Authority Fallout
-
-**Minor — Filed Incident:** A report has been lodged somewhere in the Imperial bureaucracy. It may never be read. Or it may surface at the worst possible moment.
-
-**Minor — Unwritten Rule:** You've broken protocol that isn't codified but everyone knows. People will be resentful, suspicious, or quietly obstructive.
-
-**Minor — Name Quietly Flagged:** Your name has been entered in a watch-list or incident file. Low-level, but it means extra scrutiny at checkpoints, requisitions, and inspections.
-
-**Minor — Mandate Questioned:** Someone — a local official, a rival, a bureaucrat — has begun questioning whether your authority actually covers what you're doing.
-
-**Moderate — Administrative Seizure:** Imperial authorities have confiscated gear, prisoners, or evidence you were holding. Getting it back requires paperwork, leverage, or force.
-
-**Moderate — Chaperoned:** You are assigned an observer, handler, or "assistant" by a faction or authority. They watch your every move and report back.
-
-**Moderate — Requisition Denied:** A formal requisition has been refused. The item, personnel, or access you need is being withheld — by bureaucracy, politics, or quiet sabotage.
-
-**Moderate — Factional Complaint:** A faction — Mechanicus, Ecclesiarchy, noble house, Arbites — has formally complained about your methods. This creates political pressure and may trigger an audit or investigation.
-
-**Severe — Patron's Ire:** Your Patron is angry. Not just disappointed — angry. They may recall you, reassign you, or send someone to "assist" (supervise) you. Your next report had better be good.
-
-**Severe — Rival Inquisitorial Interest:** Another Inquisitor or acolyte cell has taken an interest in your Operation — and their agenda conflicts with yours. Jurisdictional disputes in the Inquisition are resolved by politics, power, or violence.
-
-**Severe — Declared Liability:** A powerful faction or authority has formally declared you a liability. Your access is revoked, your authority is contested, and allies begin distancing themselves.
-
-**Critical — Excommunicate Traitoris:** You have been declared excommunicate traitoris — a traitor to the Imperium. Every loyal servant of the Emperor is authorized to kill you on sight. There is no appeal.
-
-**Critical — Sequestration:** You have been seized by Imperial authorities — Inquisition, Arbites, or Mechanicus — for questioning, trial, or "processing." Your cell must decide: break you out, negotiate, or write you off.
-
-**Critical — Bureaucratic Abyss:** You have been lost in the Imperium's administrative machinery — declared dead, reassigned to a warzone on the other side of the galaxy, or filed under the wrong name. Reclaiming your identity will take months or years of paperwork, bribes, and favors.
-
-### Corruption Fallout
-
-**Minor — Daemon's Whisper:** You hear a voice at the edge of perception. It knows things. It offers things. It is not real. (It is absolutely real.)
-
-**Minor — Warp-Touched Tell:** A small physical sign — your shadow moves wrong, your reflection is delayed, your touch leaves frost or warmth. Subtle, but noticeable to those who know what to look for.
-
-**Minor — Machine-Spirit Revulsion:** Machines react badly to your presence — auspex glitches, cogitators crash, weapons jam. The machine-spirits sense something wrong.
-
-**Minor — Unclean Dream:** Every night, the same dream. A place, a voice, a symbol. You wake unrested. The dream is getting more vivid.
-
-**Moderate — Warp-Touched Flesh:** Your body has been altered by warp exposure — a mark that won't fade, skin that shifts color in darkness, eyes that reflect light wrong. It's visible. It's permanent. People will ask questions.
-
-**Moderate — Chronal Echo:** Time stutters around you. You experience moments out of sequence — a conversation before it happens, a wound before the blow. Disorienting and deeply unsettling to those nearby.
-
-**Moderate — Possession Attempt:** Something tried to enter you — and partially succeeded. You have gaps in your memory, find yourself in places you don't remember going, or hear your own voice saying things you didn't choose.
-
-**Moderate — Xenos Logic Infection:** Exposure to xenotech or alien thought-patterns has altered your cognition. You think in ways that aren't quite human anymore. You see patterns others don't — or can't.
-
-**Severe — Angel of the Warp:** A warp entity has attached itself to you — not possession, but symbiosis. It manifests visibly: unnatural phenomena follow you, psykers recoil, wards flare in your presence. You are a beacon in the warp.
-
-**Severe — Warp Spill:** Warp energy has bled into the material world around you. Reality is thin here. Daemonic whispers are audible. The area is tainted and will require purification.
-
-**Severe — Soul-Stain Evidence:** Your soul has been marked by the warp in a way that is detectable by psykers, exorcists, and daemons. You register as "tainted" to any warp-sensitive detection. This cannot be hidden.
-
-**Critical — Possessed:** A daemon, warp entity, or alien intelligence has taken control of your body. You are still in there — somewhere — but you are not in control. Your cell must decide: save you, bind you, or end you.
-
-**Critical — The Summoned:** You have become a vessel for something vast — a greater daemon, a warp entity of terrible power, or a xenos intelligence beyond comprehension. Your body is the anchor. Destroying you may release it. Keeping you alive feeds it.
-
-**Critical — Irredeemable Mark:** The corruption has gone too far. Your soul is permanently stained. No rite, no purgation, no penance can cleanse you. You are, by definition, an enemy of the Imperium. The only question is what you do with the time you have left.
+These are models, not closed lists. Fallout should fit the fiction first. Each entry includes a brief description for use at the table — treat them as inspiration, not prescription.
+
+### Body
+
+| Severity | Fallout | Description |
+|---|---|---|
+| **Minor** | Concussive Shock | Blow to the head. Clumsy and slow for the scene. Clears with rest. |
+| | Hemorrhaging Wound | Deep laceration, spurting blood. Someone must act fast or it worsens. Clears with medical attention. |
+| | Burn Trauma Lesser | Seared by Promethium, plasma flash, or chemical splash. Painful and scarring but functional. Clears after treatment. |
+| | Dislocated Joint | Shoulder, knee, or finger wrenched out of socket. Fight one-handed until reset. Clears once healed. |
+| **Moderate** | Blinded or Half-Blinded | Acid, flash-blast, or blade across the eye. Lose vision permanently in one eye, or both until the Chirurgeon works. Changes how you see — literally. |
+| | Crushed Limb | Arm or leg shattered. Useless until surgery. You limp or need a prosthetic. |
+| | Arterial Bleed | Major vessel severed. Die without immediate intervention. Even saved, the weakness lingers. |
+| | Radiation Sickness | Lethal dose of gamma or particle radiation. Vomiting and hemorrhaging over hours. The Chirurgeon may save you — if you reach one. |
+| **Severe** | Critical Organ Trauma | Heart, liver, or lung pierced. You are dying. Only rapid advanced medicae can save you, and the scar — physical and spiritual — never fully heals. |
+| | Quarantine Case | Contagion, parasite, or bio-weapon payload has taken hold. Placed under isolation. Cell decides: break quarantine or leave you behind. |
+| | Mutilated Beyond Function | Limb destroyed beyond repair. The Imperium does not waste useful tools — you get a replacement or a new role. |
+| **Critical** | Last Breath | Body failed. Moments remain. The Chirurgeon might pull you back, but what returns may not be entirely what you were. |
+| | Servitor Fate | Body too broken to repair — mind intact. Mechanicus preserves your cognition in a serviteur chassis. You serve on. You are not human anymore. |
+| | Martyr-Remains | You are dead. Your remains are relics. Ecclesiarchy or Patron claim what's left. Your name is recorded — body becomes evidence, warning, or inspiration. |
+
+### Mind
+
+| Severity | Fallout | Description |
+|---|---|---|
+| **Minor** | Intrusive Litany | A prayer, phrase, or image loops in your thoughts. Flares at quiet moments, distracting you when you need clarity. |
+| | Panic Response | Terror rewired something. In sudden or loud situations, your body reacts before your mind — freeze, flight, or fight without choosing. |
+| | Compulsive Patterning | You count, arrange, perform small rituals. You know it's irrational. You cannot stop without enormous effort. |
+| | Shaken Certainty | Something you saw shook faith in the Emperor, the mission, or your own judgment. You hesitate where you once acted. Reflexive orders now get questioned. |
+| **Moderate** | Memory Hole | A period is simply gone — hours, days, or a specific person or event. The hole is permanent. Someone knows something you don't. |
+| | Phobia | A trigger — darkness, daemons, crowds, blood, the void, enclosed spaces — causes paralyzing terror. You can face it, but it costs you. |
+| | Obsessive Certainty | Fixated on a person, theory, or goal. Prioritize it above the mission, safety, cell-mates. Reason does not persuade you. |
+| | Interrogation Scar | You broke under questioning — or the memory of it broke you. Lower coercion threshold, or something you said under torture is a liability. |
+| **Severe** | Broken Loyalty | Faith in the Inquisition, Patron, or mission has shattered. You no longer believe — but may still follow from habit, fear, or lack of alternatives. |
+| | Revelatory Mania | A conviction that cannot be shaken. The Emperor speaks to you. The cult was right. A pattern only you see. Overrides all contradiction. |
+| | False Memory Implant | A memory that isn't yours — a conversation that never happened, a name you never learned, a loyalty you never chose. You act on information that isn't real. |
+| **Critical** | Total Collapse | Catatonia, uncontrollable weeping, or violent dissociation. Non-functional. Recovery takes weeks, and you are not the same. |
+| | Enemy Within | Another consciousness, daemon, or psychic imprint inhabits your mind. Sometimes it speaks. Sometimes it acts. You are not alone in your own skull. |
+| | Living Cipher | Unwitting vessel for encoded data — psychic message, navigational coordinate, heretical truth in your neural pathways. Others can extract it. You cannot. |
+
+### Shadow
+
+| Severity | Fallout | Description |
+|---|---|---|
+| **Minor** | Witness Chatter | Someone saw something and is talking. Rumors spread. The wrong person might hear. |
+| | Pict Capture | Pict-feed, servitor recording, or data-slate captured your face or methods. If reviewed, it becomes evidence. |
+| | Cover Inconsistency | A small alias detail doesn't hold — wrong seal, outdated credentials, name mismatch. Fixable, but noticeable. |
+| | Wrong Eyes | The wrong person noticed you — sharp clerk, paranoid neighbor, rival agent. They don't know who you are, but they remember your face. |
+| **Moderate** | Alias Compromised | Cover identity known to a hostile party. Still usable, but fragile — every use risks exposure. |
+| | Safehouse Watched | Safehouse, stash, or rendezvous is under surveillance. Using it will expose you or the people hiding there. |
+| | Enemy Counter-Infiltration | The enemy turned one of your Contacts, informants, or Bonds. Trusted information now flows to the opposition. |
+| | Local Law Alerted | Enforcers, Arbites, or PDF are actively looking for someone matching your description. Low-level, but persistent. |
+| **Severe** | Cell Exposed | Enemy knows a covert cell operates against them. Every member at risk. Every operation compromised. Scatter, go dark, or accelerate the timeline. |
+| | Operation Burned | The specific Operation is compromised. Safehouses blown, Contacts burned, objectives unreachable by stealth. |
+| | Identity Cascade | Cover identity unravels in a chain reaction — one alias leads to another, forger talks, pict-feed connects multiple covers. Everything built on that fiction is suspect. |
+| **Critical** | Full Inquisitorial Exposure | Identities, methods, faces, and allegiances are public knowledge in the theater. You cannot operate covertly here again. |
+| | Disavowed | Patron formally disowned you — or Imperium declared you rogue. No authority, no backing, no allies who can acknowledge you publicly. |
+| | The Enemy Has Your Names | Every acolyte, Contact, Bond, and safehouse is known. Enemy can strike at will. Extraction or fight — no middle ground. |
+
+### Authority
+
+| Severity | Fallout | Description |
+|---|---|---|
+| **Minor** | Filed Incident | A report lodged in Imperial bureaucracy. May never be read. Or surfaces at the worst possible moment. |
+| | Unwritten Rule | You broke protocol everyone knows but no one codified. People become resentful, suspicious, or quietly obstructive. |
+| | Name Quietly Flagged | Your name entered a watch-list or incident file. Low-level, but means extra scrutiny at checkpoints, requisitions, and inspections. |
+| | Mandate Questioned | Someone — local official, rival, bureaucrat — is questioning whether your authority covers what you're doing. |
+| **Moderate** | Administrative Seizure | Imperial authorities confiscated gear, prisoners, or evidence you held. Getting it back requires paperwork, leverage, or force. |
+| | Chaperoned | Assigned an observer, handler, or "assistant" by a faction or authority. They watch every move and report back. |
+| | Requisition Denied | Formal requisition refused. The item, personnel, or access you need is withheld — by bureaucracy, politics, or quiet sabotage. |
+| | Factional Complaint | Mechanicus, Ecclesiarchy, noble house, or Arbites formally complained about your methods. Creates political pressure; may trigger audit or investigation. |
+| **Severe** | Patron's Ire | Your Patron is angry. They may recall you, reassign you, or send someone to "assist" (supervise). Your next report had better be good. |
+| | Rival Inquisitorial Interest | Another Inquisitor or cell has taken interest in your Operation — with a conflicting agenda. Jurisdictional disputes resolve by politics, power, or violence. |
+| | Declared Liability | A powerful faction formally declared you a liability. Access revoked, authority contested, allies distance themselves. |
+| **Critical** | Excommunicate Traitoris | Declared traitor to the Imperium. Every loyal servant of the Emperor is authorized to kill you on sight. No appeal. |
+| | Sequestration | Seized by Imperial authorities — Inquisition, Arbites, or Mechanicus — for questioning, trial, or "processing." Cell decides: break you out, negotiate, or write you off. |
+| | Bureaucratic Abyss | Lost in Imperial machinery — declared dead, reassigned to a warzone across the galaxy, or filed under the wrong name. Reclaiming your identity takes months or years of paperwork, bribes, and favors. |
+
+### Corruption
+
+| Severity | Fallout | Description |
+|---|---|---|
+| **Minor** | Daemon's Whisper | A voice at the edge of perception. It knows things. It offers things. It is not real. *(It is absolutely real.)* |
+| | Warp-Touched Tell | A small physical sign — shadow moves wrong, reflection delayed, touch leaves frost or warmth. Subtle, but noticeable to those who know. |
+| | Machine-Spirit Revulsion | Machines react badly to you — auspex glitches, cogitators crash, weapons jam. The machine-spirits sense something wrong. |
+| | Unclean Dream | Every night, the same dream. A place, a voice, a symbol. You wake unrested. The dream is getting more vivid. |
+| **Moderate** | Warp-Touched Flesh | Body altered by warp exposure — mark that won't fade, skin shifts color in darkness, eyes reflect light wrong. Visible. Permanent. People will ask questions. |
+| | Chronal Echo | Time stutters around you. Experience moments out of sequence — a conversation before it happens, a wound before the blow. Disorienting and deeply unsettling to nearby people. |
+| | Possession Attempt | Something tried to enter you — and partially succeeded. Gaps in memory, find yourself in places you don't remember going, hear your own voice saying things you didn't choose. |
+| | Xenos Logic Infection | Exposure to xenotech or alien thought-patterns altered your cognition. You think in ways that aren't quite human. You see patterns others don't — or can't. |
+| **Severe** | Angel of the Warp | A warp entity attached to you — symbiosis, not possession. Manifests visibly: unnatural phenomena follow you, psykers recoil, wards flare. You are a beacon in the warp. |
+| | Warp Spill | Warp energy bled into the material world. Reality is thin. Daemonic whispers are audible. The area is tainted and requires purification. |
+| | Soul-Stain Evidence | Your soul is marked detectably by psykers, exorcists, and daemons. You register as "tainted" to any warp-sensitive detection. This cannot be hidden. |
+| **Critical** | Possessed | A daemon, warp entity, or alien intelligence controls your body. You are still in there — somewhere — but not in control. Cell decides: save you, bind you, or end you. |
+| | The Summoned | Vessel for something vast — greater daemon, warp entity of terrible power, or xenos intelligence beyond comprehension. Your body is the anchor. Destroy you and it may release. Keep you alive and it feeds. |
+| | Irredeemable Mark | Corruption has gone too far. Soul permanently stained. No rite, purgation, or penance can cleanse you. You are, by definition, an enemy of the Imperium. The only question is what you do with the time you have left. |
 
 ---
 
