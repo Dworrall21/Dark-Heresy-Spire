@@ -237,6 +237,22 @@ When Warp Trace matters, choose one:
 - Create or tick a Warp Trace clock.
 - Mark a witness, victim, or location.
 
+### Warp Trace Clock
+
+The Warp Trace clock is a shared 6-segment clock that tracks how much occult residue the cell has left in the current Operation area. It advances when psychic powers leave detectable traces, when daemonic phenomena occur, or when the GM determines the Warp has been disturbed.
+
+**When to tick:** +1 segment each time a psychic power with Echoing, Visible, or Area tags is used; each time a power rolls 7 or lower; each time a daemonic entity manifests or is banished; each time a Warp breach opens or is sealed.
+
+**When the clock fills (6/6):** The accumulated trace becomes a beacon. Choose one or more:
+
+- **Daemon Tracking:** A daemonic entity can now locate the cell's position within the Operation area without needing line of sight or investigation. It knows where they are.
+- **Warp Rift:** A thin place opens at the site of the most recent psychic use. Minor warp phenomena begin: whispers, shadows moving wrong, electronics failing, dreams bleeding into waking. The rift persists until sanctified.
+- **Enemy Occult Detection:** Any enemy with psykers, astropaths, or daemonological knowledge can read the trace and learn the cell's methods, signatures, and approximate numbers. Enemy Awareness +2.
+- **Patron Notice:** If the Patron has reason to monitor the cell's psychic activity, the beacon is visible to their agents. Patron Notice +1.
+- **Corruption Surge:** The accumulated trace presses on everyone present. Each character in the area takes D3 Corruption stress.
+
+The clock can be reduced by sanctification (Ecclesiarchy rites, hexagrammic wards, Mechanicus purification) at a rate of –1 segment per full Operation spent on cleansing, or –2 if a sanctioned psyker or exorcist leads the rite.
+
 ---
 
 ## 8. Psychic Power Chassis
@@ -313,6 +329,23 @@ Use this when a Psychic Power rolls a 1, when Corruption Fallout triggers, when 
 | 18 | **Soul Debt** | Power prevents death or reveals impossible truth | A dead, daemonic, or forgotten intelligence claims payment. | Debt clock or Patron Notice. |
 | 19 | **Open Door** | Power overreaches | The psyker opens a way in. | Possession pressure or Severe Corruption prompt. |
 | 20 | **The Warp Answers** | Power solves a major problem | The answer is correct and catastrophic. | New Mission hook, Severe Fallout prompt, or major enemy move. |
+
+### Possession Clock
+
+The Possession clock is a 4-segment clock that tracks how close a character (or location) is to being fully taken over by a daemonic entity, warp intelligence, or psychic intruder. It advances when possession pressure enters play and the entity makes progress.
+
+**When to tick:** +1 segment each time a psychic power with Possession Risk rolls a 1; each time a character suffers Severe or Critical Corruption Fallout in the presence of a daemonic entity; each time a possession attempt succeeds on a resistance check; each time the GM determines the entity has fed or grown stronger.
+
+**Segment effects:**
+
+| Segment | State | Effect |
+|---|---|---|
+| **1/4** | Whispers | The character hears a voice at the edge of perception. It knows things. It offers things. No mechanical effect yet, but the GM should roleplay the intrusion. The character takes D3 Corruption stress if they listen. |
+| **2/4** | Blackouts | The character loses time. Minutes or hours vanish. They find themselves in places they don't remember going, with no account of how they got there. D6 Corruption stress. The GM may reveal the entity acted through them in small ways — a door opened, a name spoken, a weapon drawn. |
+| **3/4** | Body Hijack | The entity can seize control of the character's body for brief moments — a single action, a few seconds. The character is aware but cannot resist. The GM controls the hijacked action. D6 Corruption + D6 Mind stress. The character's allies can see something is wrong. |
+| **4/4** | Full Possession | The entity is in control. The character is still in there — somewhere — but they are not driving. The cell must decide: attempt an exorcism (Resist + Warp or Ecclesiarchy, Dangerous, with consequences for failure), bind the host (Seal the Vessel or similar ability), or end the host (kill the body to banish the entity). The Patron will have opinions. |
+
+**Reducing the clock:** An exorcism (successful Resist + Warp or Ecclesiarchy roll at Dangerous or harder) reduces the clock by 1 segment on success, 2 on a 10. Sanctified wards, hexagrammic chains, or a Null Anchor ability can suppress advancement for one situation but do not reduce existing segments. If the host is killed, the entity is banished but not destroyed — it returns to the Warp and may seek a new anchor.
 
 ---
 
