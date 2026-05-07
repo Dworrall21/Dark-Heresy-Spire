@@ -101,6 +101,16 @@ The project is built around a few assumptions:
 
 ---
 
+## Reference Material
+
+The mechanics and design philosophy of Dark Heresy Spire are heavily inspired by the following systems. The core rulebooks are included in the repository for reference:
+
+- [Spire: The City Must Fall (5th Anniversary Edition)](docs/Spire_The_City_Must_Fall_RRD_Core_Rulebook_5th_Anniversary_Edition.pdf)
+- [Heart: The City Beneath (v3)](docs/Heart%20-%20The%20City%20Beneath%20-%20Core%20Rulebook%20(v3).pdf)
+- [Lex Ecclesiastica (v2)](docs/Lex%20Ecclesiastica%20spreads%20v2.pdf)
+
+---
+
 ## Legal / Fan Project Note
 
 This is an unofficial fan design project. It is not affiliated with or endorsed by Games Workshop, Cubicle 7, Rowan, Rook and Decard, or any other rights holder.
