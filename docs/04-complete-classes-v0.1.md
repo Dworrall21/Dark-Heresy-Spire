@@ -379,6 +379,10 @@ You are legal because someone signed the right execution delay. You are useful b
 
 **Contained Burst:** When you use a Psychic Power and it would cause collateral damage, you may take D3 Body stress to contain the effect to its intended target. The containment is visible and frightening.
 
+**Disciplined Casting:** When you use a Visible or Area psychic power in a location where you have an active Cover identity, you may choose to step down your Cover die by one size (D10→D8→D6→D3) instead of taking the Heat and witness consequences the power would normally cause. The power works, but your Cover story now has a gap — something happened that doesn't quite fit. Once per Situation.
+
+**Null Adaptation:** You have learned to operate near Blanks and null fields. When a Blank ally is present, your psychic powers are stepped up by only one Difficulty level (Safe→Risky, Risky→Dangerous, Dangerous→Impossible) instead of the full Absence effect. On a 7 or lower, take +D10 Corruption stress from the field disruption. You can still use powers near Blanks — it just costs more.
+
 ### Major Advances
 
 **Push Beyond Sanction:** Before rolling a Psychic Power, mark D3 Corruption stress to gain Mastery and increase its effect. On 7 or lower, the fallout hook becomes immediate.
@@ -460,9 +464,11 @@ You know the grammar of the dark: how it enters, how it anchors, how it bargains
 
 **The True Name Cuts:** When you learn a daemon's name, your next successful action against it inflicts +D6 stress or removes one special protection.
 
-**Seal the Vessel:** When someone is being possessed, you may bind the entity in place. The victim is not saved, but the possession cannot progress until the end of the Situation unless the seal breaks.
+**Seal the Vessel:** When someone is being possessed, you may bind the entity in place. The victim is not saved, but the possession cannot progress until the end of the Situation unless the seal breaks. If the victim has an active Possession clock, reduce it by 1 segment on success, 2 on a 10.
 
-**Binding Chains:** You may attempt to bind a warp entity, psychic projection, or possessing spirit into a physical object. Roll Resist + Warp. On success, the entity is trapped until the object is destroyed. On 7 or lower, the object becomes dangerous and hungry.
+**Binding Chains:** You may attempt to bind a warp entity, psychic projection, or possessing spirit into a physical object. Roll Resist + Warp. On success, the entity is trapped until the object is destroyed. On 7 or lower, the object becomes dangerous and hungry. This is one of the few ways to intervene in a Possession clock at 3/4 or 4/4 — the entity is trapped, but the host still bears the mark. See Possession clock rules in Psychic Powers and Forbidden Methods v0.1.
+
+**Exorcism Clock Advanced:** When you perform a full exorcism (extended action, Resist + Warp/Ecclesiarchy, Dangerous) on a character with a Possession clock, reduce the clock by 1 on success, 2 on a 10. If the clock reaches 0, the entity is expelled. On a failure, the clock advances +1. On a 1, the clock advances +2 and the entity lashes out — everyone present takes D6 Mind or Corruption stress.
 
 **Exorcist's Archive:** Gain a D8 restricted Resource: case files, banishment records, entity catalogs, and ritual notes from previous exorcisms. It can answer questions about daemonic hierarchy, possession vectors, or ritual logic. Using it publicly risks Authority stress.
 
@@ -818,7 +824,15 @@ You are absence made flesh. Psykers recoil. Daemons hate you. Ordinary people ma
 | **Compact Weapon** *(Holdout Workhorse Pistol)* | D6 | Concealable, Reliable | D6 Body or D3 Body if very small; usable while isolated, restrained, or undercover. | **Black-Market Source:** if traced, it creates underworld questions. |
 | **Isolation Orders** *(Mandate-Stamped, Registry-Linked)* | D6 | Patron Marked, Sanctioned, Traceable | Permission to demand distance, containment, special transport, or private quarters. | **Paper Trail:** if checked, the orders reveal the cell is handling a classified liability. |
 
-**Core Ability — Absence:** Psychic powers, daemonic influence, and warp phenomena near you become Risky if Safe, Dangerous if Risky, or remain Dangerous with an added null complication if already Dangerous. Allies also find your presence disturbing; social rolls to comfort, inspire, or blend in become Risky when your nature is obvious.  
+**Core Ability — Absence:** Psychic powers, daemonic influence, and warp phenomena near you become Risky if Safe, Dangerous if Risky, or remain Dangerous with an added null complication if already Dangerous. Allies also find your presence disturbing; social rolls to comfort, inspire, or blend in become Risky when your nature is obvious.
+
+**Absence and Psychic Powers (detailed):** Your null field disrupts psychic powers but does not nullify them entirely. When a psyker uses a power and you are present:
+- **Difficulty steps up by one level** (Safe→Risky, Risky→Dangerous, Dangerous→Impossible). If already Impossible, the "consequence on clean success" clause remains.
+- **The psyker's Mastery (+1D10) still applies.** Mastery represents training and discipline, not raw psychic force. Your field disrupts the power, not the practitioner's skill.
+- **If a power targets you directly,** your Corruption Protection 3 (Soulless Void) absorbs any Corruption stress the power would inflict. Mind stress is NOT absorbed — your null field is anti-Corruption, not anti-Mind.
+- **Cut the Thread / Null Anchor:** When you use these abilities to suppress or interrupt a power, the psyker's roll still happens mechanically, but the visible/measurable effect is suppressed. Stress is still triggered — the power was initiated.
+- **Soulless Collapse:** Your ultimate ability ends all psychic effects in range. Powers in progress are terminated. Psykers still take stress from the attempt, but the effect does not land.
+- **Ally psyker interaction:** A psyker ally with the Null Adaptation advance is only stepped up by one Difficulty level (instead of the normal two), but takes +D10 Corruption stress on 7 or lower from the field disruption.  
 **Refresh:** Remove stress when you isolate yourself to protect the cell or let others treat you as a necessary horror.
 
 ### Class Questions

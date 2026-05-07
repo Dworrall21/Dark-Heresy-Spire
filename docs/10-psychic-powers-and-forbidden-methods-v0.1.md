@@ -149,26 +149,17 @@ If the power is visible, loud, miraculous, terrifying, or physically impossible,
 - Psyker's Cover is Questioned.
 - Patron Notice if the cell was meant to remain covert.
 
-### Visible Powers and Cover
+**Visible powers and Cover:** Using a Visible or Area power where a Cover identity
+is active creates a tension between power and secrecy. The general rule is that
+Cover is stepped down by one die size (once per Situation). The Sanctioned Psyker
+class has an advance — Disciplined Casting — that lets the player choose to step
+down Cover *instead of* taking Heat and witness consequences, turning a penalty
+into a tactical choice. See Sanctioned Psyker class.
 
-When a Visible (or Area, Miraculous) psychic power is used in a location where
-the cell's Cover identity is active, the Cover identity is **stepped down by one
-die size** (D10→D8→D6→D3→gone) in addition to any other consequences. Something
-happened that the Cover story doesn't explain. Witnesses remember the event even
-if they can't name what they saw.
-
-This step-down happens once per Situation, not per power use. A psyker who lashes
-out multiple times in one scene degrades their Cover once — but the Heat and
-witness consequences stack as normal.
-
-If the character has no Cover identity active (operating overtly, or in a location
-where they have no cover), this rule does not apply — only the standard Heat and
-witness consequences occur.
-
-**Design intent:** Cover represents the cell's ability to move through the world
-under a false identity. Visible psychic powers are inherently difficult to explain
-within a normal cover story. The step-down creates resource tension: the psyker's
-power works, but the cell's ability to operate covertly in that location degrades.
+**Psyker and Blank interaction:** The Blank's Absence ability steps up Difficulty
+for psychic powers. Edge cases (Mastery, Corruption Protection, Cut the Thread,
+Soulless Collapse) are defined in the Blank class and the Sanctioned Psyker's
+Null Adaptation advance. See Blank class and Sanctioned Psyker class.
 
 ### Tag Pressure
 
@@ -181,49 +172,6 @@ power works, but the cell's ability to operate covertly in that location degrade
 | **Sanctioned** | Reduce Authority risk inside mandate; it does not remove fear, Heat, Warp Trace, or enemy recognition. |
 | **Unbound** | Increase effect, but add Corruption, Perils, Burden, or clock pressure. |
 | **Possession Risk** | On a 1, Severe Corruption Fallout, or reckless repeated use, create possession pressure immediately. |
-
-### Psyker and Blank Interaction
-
-Characters with the **Absence** ability (Blank/Pariah class) project a null field
-that disrupts psychic powers. This creates a direct interaction between the psyker
-and Blank that the core rules do not fully specify.
-
-**When a psyker uses a power and a Blank is present:**
-
-1. **The Blank's Absence applies first.** The power's Difficulty is stepped up:
-   Safe→Risky, Risky→Dangerous, Dangerous→Impossible. If already Impossible, the
-   "consequence on clean success" clause of Impossible remains in effect.
-
-2. **The psyker's Mastery (+1D10) still applies.** Mastery is not a psychic effect
-   — it represents training and discipline. The null field disrupts the power, not
-   the practitioner's skill. The extra die is added to the pool before Difficulty
-   removal.
-
-3. **If the power targets the Blank directly**, the Blank's Corruption Protection 3
-   (Soulless Void) absorbs any Corruption stress the power would inflict. If the
-   power inflicts Mind stress, the Blank's Corruption Protection does NOT absorb it
-   — the null field is anti-Corruption, not anti-Mind.
-
-4. **If the Blank uses Cut the Thread or Null Anchor** to suppress or interrupt a
-   psychic power, the psyker's roll still happens but the effect is suppressed
-   (no visible phenomena, no effect on targets). Stress is still rolled — the power
-   was still attempted.
-
-5. **Soulless Collapse** (Blank's ultimate ability) ends all psychic effects in
-   range. Any psychic power in progress is terminated. The psyker still takes any
-   stress from the attempt (the power was initiated), but the effect does not land.
-
-**Net result:** A psyker operating near a Blank is less effective but not hamstrung.
-The Blank's null field raises the Difficulty ceiling, making Clean/Crit success
-harder, but the psyker's Mastery partially compensates. This creates interesting
-tactical choices: the Blank is the cell's best defense against enemy psykers, but
-also hampers their own psyker.
-
-**GM guidance:** Don't use the Blank as a veto on the psyker's abilities. The Absence
-field makes powers harder, not impossible. A psyker with Mastery rolling 5D10 at
-Dangerous (after Absence) still has a ~40% chance of Clean/Crit success. The cost
-is that the psyker absorbs Corruption stress on the same roll — the null field
-disrupts the power's flow back through the caster.
 
 ---
 
