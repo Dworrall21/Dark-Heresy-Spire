@@ -73,6 +73,12 @@ You are not an Inquisitor. Not yet. But you have been given enough authority to 
 
 **Field Mandate:** You may create a D6 temporary Requisition by issuing orders to local Imperial personnel. It disappears at the end of the Operation or when it suffers fallout.
 
+**Diplomatic Immunity:** When you present credentials to an Imperial official, they must either comply or escalate to someone who outranks you. Either way, you learn something about the local power structure.
+
+**Calculated Concession:** When you deliberately let an ally, rival, or faction win a minor argument or claim, ask the GM: "What do they now feel they owe me?" Gain a D6 Leverage Resource that lasts until used.
+
+**Need-to-Know Doctrine:** When you withhold mission-critical information from the cell, mark D3 Authority stress. The next time that information becomes relevant, gain Mastery on your action if you reveal it at the right moment.
+
 ### Major Advances
 
 **Legate's Seal:** Gain a persistent D8 Authority Resource representing clearance, codes, writs, or old favors. Whenever you use it publicly, increase Heat by 1.
@@ -81,11 +87,23 @@ You are not an Inquisitor. Not yet. But you have been given enough authority to 
 
 **Strategic Override:** Once per Mission, declare that the official objective was always broader than stated. Reframe one Operation objective without taking Authority stress, but mark Patron Notice.
 
+**Second Rosette:** Gain a D6 Contact in a rival or allied Inquisitor's network. You may call on them once per Mission for intelligence, extraction, or political cover. Each use risks Heat or Authority stress as two chains of command cross.
+
+**Inquisitorial Proxy:** Once per Operation, designate an ally or NPC as acting under your Patron's authority. They gain Mastery on one Command or Procure roll. If they fail, the fallout lands on your Authority, not theirs.
+
 ### Severe Advances
 
 **Rosette-Bearer:** You are entrusted with a true Rosette or equivalent authority. Gain Authority Protection 2 and a D10 Inquisition Resource. If you suffer Severe Authority fallout, the Rosette becomes evidence against you.
 
 **Prime Witness:** When your Patron crosses a line, you may declare yourself witness and judge. Gain Mastery on actions to expose, oppose, or inherit from them. Afterward, the campaign must answer whether you remain loyal, rebel, or become the next monster.
+
+**The Weight of the Throne:** When you make a decision that will irreversibly change an entire community, settlement, or faction, gain Mastery on all actions to enforce it for the remainder of the Operation. Afterward, take D8 Mind stress as the reality of what you've done settles.
+
+### Class Beats
+
+- **Minor:** Issue an order you know is wrong because the chain of command demands it.
+- **Major:** Sacrifice a Contact, Cover, or political asset to shield the cell from institutional consequences.
+- **Severe:** Assume full responsibility for something the Patron did, absorbing all fallout personally.
 
 ---
 
@@ -130,6 +148,12 @@ You are the one who sees the shape of guilt in receipts, wounds, prayer schedule
 
 **Preserve the Scene:** When you prevent allies, authorities, or enemies from destroying evidence, clear D3 Mind or Shadow stress.
 
+**Cold Read:** When you first meet an NPC, ask one: "What are they most afraid of right now?" or "What do they want from this conversation?" The GM answers honestly but may be incomplete.
+
+**Evidence Chain:** When you connect two separate clues, gain a D6 Resource: case file, forensic analysis, or witness corroboration. It can be used once to provide Mastery or answer a question.
+
+**Document Everything:** Gain Shadow Protection 1 against a single source of exposure, because you have proof that someone else was involved too. This lasts until the evidence is destroyed.
+
 ### Major Advances
 
 **Reconstruction Engine:** Given enough traces, you may reconstruct a past event in broad strokes. Roll Investigate + relevant Domain. On a success, the GM tells you what happened. On 7 or lower, the reconstruction includes a dangerous gap or false assumption.
@@ -138,11 +162,23 @@ You are the one who sees the shape of guilt in receipts, wounds, prayer schedule
 
 **Casefile Authority:** Gain a persistent D8 Resource: restricted archive, savant network, forensic servitor, or sealed case history. When used, it can answer one question, grant Mastery, or implicate someone.
 
+**Analyst's Network:** Gain a D8 Contact: a savant, data-analyst, librarian, or retired investigator who can process information you cannot. Each use takes time and risks Shadow or Authority stress if the contact is watched.
+
+**Deductive Certainty:** Once per Mission, when you have at least three connected clues, declare a theory. The GM must tell you which parts are correct and which are wrong or missing. Take D3 Mind stress.
+
 ### Severe Advances
 
 **The Whole Pattern:** Once per Mission, when enough clues are on the table, name the hidden structure: cult hierarchy, conspiracy route, ritual logic, political cover, or xenos infiltration pattern. The GM must confirm, correct, or complicate it. Then take D6 Mind or Shadow stress.
 
 **Living Index:** Your mind becomes an archive of heresy. Gain Mastery when connecting current events to past threats. Any Mind or Corruption fallout may also reveal something true and dangerous.
+
+**The Case Is the Acolyte:** Your mind is an archive. You gain Mastery when connecting current evidence to any previous case. If you suffer Mind fallout, the GM may reveal a connection you didn't want to find — one that implicates an ally, your Patron, or yourself.
+
+### Class Beats
+
+- **Minor:** Connect two separate clues into a case file or theory.
+- **Major:** Present evidence that changes the cell's understanding of the mission — and forces them to choose a harder path.
+- **Severe:** Solve the case, but the answer implicates someone the cell cannot afford to accuse.
 
 ---
 
@@ -187,6 +223,12 @@ You know pain is a language. You know fear is a key. You know the problem is not
 
 **Clean Instruments:** Gain Authority Protection 1 when justifying interrogation, detention, or coercive methods through official procedure.
 
+**The Room Remembers:** When you enter a space where interrogation, torture, or imprisonment has occurred, ask: "What happened here that someone tried to hide?" The space itself tells you.
+
+**Controlled Escalation:** When you increase the severity of an interrogation, the subject must either reveal something true or physically resist. If they resist, you gain Mastery on your next action against them.
+
+**Reputation Precedes:** When an NPC learns your role or reputation, they become either terrified or defiant. Either way, you learn which — and the GM tells you what the reaction reveals about them.
+
 ### Major Advances
 
 **Action VI: Psychic Interrogation:** You may conduct or assist a psychic interrogation even if you are not a psyker. Roll Investigate + Inquisition or Warp. You get the answer if it exists, but on 7 or lower both interrogator and subject take Mind or Corruption stress.
@@ -195,11 +237,23 @@ You know pain is a language. You know fear is a key. You know the problem is not
 
 **Useful Monster:** When another acolyte refuses to do what must be done, you may do it in their place. They clear D3 Mind stress. You take D3 Mind or Authority stress.
 
+**The Mercy Option:** When you offer a subject genuine mercy after breaking them, ask: "What would they do for me now?" The answer is true but the subject's compliance creates a Bond at D6. If you betray the mercy, the Bond becomes a threat.
+
+**Systematic Catalog:** Gain a D8 Resource: your accumulated records of interrogation subjects, methods, and results. It can answer questions about cult structures, criminal networks, or individual weaknesses. Each use risks Authority stress if audited.
+
 ### Severe Advances
 
 **Ninth Action:** You possess a forbidden interrogation method. It always produces a true answer if the subject knows one. Then choose two: the subject dies, the subject becomes useless, you take D8 Mind stress, you take D8 Authority stress, or you mark Patron Notice.
 
 **The Emperor Will Know His Own:** When you condemn someone through extracted testimony, gain Mastery on the next action taken to purge, arrest, or expose them. If the testimony was false or incomplete, you suffer Moderate or Severe Mind fallout when the truth emerges.
+
+**They All Talk Eventually:** Once per Mission, when you have a prisoner and uninterrupted time, declare they will break. The GM tells you everything they know. Then choose two: the subject is permanently damaged, you take D8 Mind stress, a witness becomes a future problem, or your Patron questions your methods.
+
+### Class Beats
+
+- **Minor:** Extract a confession you know is false but still useful.
+- **Major:** Break someone who genuinely did not deserve it because the mission required it.
+- **Severe:** Interrogate a fellow acolyte, Bond, or ally — and learn something you both wish you hadn't.
 
 ---
 
@@ -244,6 +298,12 @@ You are the person who was never there. The clerk with the right stamp. The pilg
 
 **Borrowed Uniform:** Gain a D6 Cover tied to a local faction. It lasts until burned, exposed, or the Operation ends.
 
+**Gray Man Protocol:** In a crowd or public space, you can choose to become unmemorable. Witnesses cannot describe you without rolling, and even then only in vague terms. This breaks if you take a notable action.
+
+**Overheard:** Once per Situation, when you are in a crowd, market, hab-block, or social gathering, you overhear something useful. Ask the GM: "What is someone here worried about?" or "Who is being talked about?"
+
+**Pocket Litter:** You always have the right small items for a cover — transit passes, work orders, prayer beads, union cards. Gain Mastery on the first Deceive roll to support a cover per Situation, as long as the cover is improvised and local.
+
 ### Major Advances
 
 **Deep Cover:** Create a D8 Cover Identity with supporting witnesses, paperwork, and history. While using it, gain Shadow Protection 1.
@@ -252,11 +312,23 @@ You are the person who was never there. The clerk with the right stamp. The pilg
 
 **Counter-Surveillance Instinct:** Once per Situation, ask: “Who is watching this?” If someone is, you notice the method before they notice your response.
 
+**Identity Broker:** You know people who sell lives. Gain a D8 Contact in a forger, fixer, or data-ghost network. They can create cover identities, erase records, or provide safe transit. Each use risks Shadow stress and creates a Debt clock.
+
+**Mirror Walk:** When you are using a Cover Identity and someone you know encounters you, you may mark D3 Mind stress to remain in character without breaking. If you fail a roll while doing this, the Cover cracks but the relationship survives — barely.
+
 ### Severe Advances
 
 **No True Face:** You may maintain two active Cover Identities at once. When one takes fallout, the other gains +1 die step temporarily, as suspicion moves away from it.
 
 **Burn the Life:** Destroy a true identity, Bond, or past affiliation. Clear all Shadow stress and create a D10 Cover or Shadow Resource. Someone from the destroyed life becomes a future threat.
+
+**The Person You Were:** Once per Mission, reveal that a past cover identity you inhabited has become a real person in the world — with a life, contacts, and history that continued after you left. You can call on that life's resources (D10), but the person you pretended to be has their own agenda now.
+
+### Class Beats
+
+- **Minor:** Burn a cover identity to protect someone, or adopt a new one under pressure.
+- **Major:** Sacrifice a real relationship to maintain a false one — or vice versa.
+- **Severe:** Discover that one of your cover identities has done something terrible while you weren't wearing it.
 
 ---
 
@@ -301,6 +373,12 @@ You are legal because someone signed the right execution delay. You are useful b
 
 **New Discipline:** Learn one additional Psychic Power.
 
+**Warp Whisper:** You can sense strong emotions in a room — fear, grief, rage, devotion, deception — without reading minds. Ask the GM: "What is the strongest emotion here?" The answer does not identify the source.
+
+**Feedback Loop:** When a Psychic Power fails (7 or lower), you may choose to take +D3 Mind stress to learn one thing about the warp influence, entity, or psychic phenomenon that interfered.
+
+**Contained Burst:** When you use a Psychic Power and it would cause collateral damage, you may take D3 Body stress to contain the effect to its intended target. The containment is visible and frightening.
+
 ### Major Advances
 
 **Push Beyond Sanction:** Before rolling a Psychic Power, mark D3 Corruption stress to gain Mastery and increase its effect. On 7 or lower, the fallout hook becomes immediate.
@@ -309,11 +387,23 @@ You are legal because someone signed the right execution delay. You are useful b
 
 **Soul Brand:** When you touch a target's mind, you may leave a hidden psychic mark. Later in the same Mission, you can locate or recognize them across ordinary distance and disguise.
 
+**Sympathetic Bond:** When you have touched someone's mind, you may maintain a D6 Psychic Bond with them. You can sense their general emotional state and direction across ordinary distance. If they die or are possessed, you know immediately — and take D6 Mind or Corruption stress.
+
+**Warp Scar Reading:** When you examine a place where psychic powers, rituals, or warp phenomena occurred, ask two questions: "What was done here?" "How long ago?" "What was the caster's emotional state?" "Did it succeed?" Take D3 Corruption stress.
+
 ### Severe Advances
 
 **Open the Eye:** Once per Mission, ask the GM one true question about a warp influence, daemon, possession, ritual, or psychic conspiracy. Then take D8 Corruption or Mind stress.
 
 **Barely Contained:** You may use Psychic Powers in impossible circumstances. Every time you do, choose one: Heat +1, Patron Notice, D6 Corruption stress, or a nearby innocent is touched by the backlash.
+
+**Channel the Storm:** Once per Mission, when a warp phenomenon, psychic attack, or daemonic manifestation threatens the area, you may absorb it into yourself. The external effect ends. Take D10 Corruption or Mind stress. If this causes fallout, the phenomenon becomes part of you.
+
+### Class Beats
+
+- **Minor:** Push a power slightly too far to achieve a mundane task.
+- **Major:** Risk possession or severe warp backlash to save the cell.
+- **Severe:** Voluntarily succumb to a warp manifestation to defeat an enemy.
 
 ---
 
@@ -358,6 +448,12 @@ You know the grammar of the dark: how it enters, how it anchors, how it bargains
 
 **Steady the Soul:** When an ally suffers Minor Corruption fallout, mark D3 Mind stress to let them delay its visible effects until the end of the Situation.
 
+**Litany of Grounding:** When an ally is panicking, confused, or under psychic influence, recite a grounding litany. They clear D3 Mind stress, but you take D3 Mind stress if the influence was real and you felt it through the prayer.
+
+**Consecrated Ground:** A space where you have performed rites becomes resistant to casual warp influence. Minor psychic phenomena, hauntings, or daemonic whispers cannot enter it until the wards are broken or the Situation ends.
+
+**Corpus of Signs:** When you encounter a warp-touched environment, entity, or victim, ask: "Have I seen this particular pattern before?" If yes, the GM tells you what happened last time and what worked.
+
 ### Major Advances
 
 **Exorcism Under Fire:** You may attempt a banishment or containment ritual during active danger. Roll Resist + Warp or Command + Ecclesiarchy. On success, reduce the entity's Resistance or Protection. On 7 or lower, it marks you.
@@ -366,11 +462,23 @@ You know the grammar of the dark: how it enters, how it anchors, how it bargains
 
 **Seal the Vessel:** When someone is being possessed, you may bind the entity in place. The victim is not saved, but the possession cannot progress until the end of the Situation unless the seal breaks.
 
+**Binding Chains:** You may attempt to bind a warp entity, psychic projection, or possessing spirit into a physical object. Roll Resist + Warp. On success, the entity is trapped until the object is destroyed. On 7 or lower, the object becomes dangerous and hungry.
+
+**Exorcist's Archive:** Gain a D8 restricted Resource: case files, banishment records, entity catalogs, and ritual notes from previous exorcisms. It can answer questions about daemonic hierarchy, possession vectors, or ritual logic. Using it publicly risks Authority stress.
+
 ### Severe Advances
 
 **Daemonological License:** You are permitted to know what others are killed for knowing. Gain a D10 restricted daemonology Resource. Each use risks Corruption or Authority stress.
 
 **Cast Out and Carry:** When you banish or sever a possessing entity, you may take part of the stain into yourself to save the victim. Clear their Corruption stress; take D8 Corruption stress yourself.
+
+**The Sin-Eater:** When you perform a full exorcism and succeed, you may choose to take the entity's knowledge into yourself. Learn everything it knew about its summoner, its purpose, and its masters. Take D8 Corruption stress. If this causes fallout, the knowledge changes how you see the world — permanently.
+
+### Class Beats
+
+- **Minor:** Perform a time-consuming ritual instead of acting immediately.
+- **Major:** Trap a possessing entity at the cost of the victim's life or sanity.
+- **Severe:** Take an entity into yourself to save someone else.
 
 ---
 
@@ -418,6 +526,12 @@ You are the voice that makes fear kneel. You are comfort, accusation, scripture,
 
 **Mercy Has a Shape:** When you argue for mercy using doctrine rather than sentiment, gain Mastery on Command or Deceive.
 
+**Confessional Silence:** When someone confesses to you, you learn one thing they did not intend to reveal. The confession is still sacred — using this knowledge publicly costs D6 Authority or Mind stress.
+
+**Righteous Indignation:** When you are genuinely angry about an injustice, gain Mastery on Command. If the anger is performed rather than felt, you do not gain Mastery — and the GM tells you if anyone noticed.
+
+**Shepherd's Instinct:** You can tell when someone in a crowd is about to break — from fear, grief, despair, rage, or faith. Ask the GM: "Who here is closest to breaking, and which way will they fall?"
+
 ### Major Advances
 
 **Sermon as Weapon:** Address a crowd, squad, congregation, or mob. On success, redirect their fear, anger, or obedience toward a target or away from the cell. On 7 or lower, their reaction becomes excessive.
@@ -426,11 +540,23 @@ You are the voice that makes fear kneel. You are comfort, accusation, scripture,
 
 **Icon of Authority:** Gain a persistent D8 Ecclesiarchy Resource: shrine access, confessors, pilgrims, relic custodians, or Ministorum pressure.
 
+**Congregation:** Gain a D8 Resource: a growing group of faithful followers, witnesses, or converts. They can shelter the cell, spread rumors, or refuse to cooperate with enemies. If you betray their faith, they become a mob.
+
+**Trial by Doctrine:** Once per Mission, you may formally accuse someone of heresy, apostasy, or moral failure using Ecclesiarchy procedure. If your accusation is supported by evidence, gain Mastery on all actions against them. If it is false or politically motivated, take D6 Authority and Mind stress when the truth emerges.
+
 ### Severe Advances
 
 **Saint in the Smoke:** Once per Mission, perform an unmistakable act of faith under impossible pressure. Allies who witness it gain Mastery on their next roll. Then choose: Heat +1, D6 Mind stress, or someone starts believing you are holy.
 
 **Doctrine Above Patron:** When your Patron's orders contradict sacred doctrine, you may defy them with religious authority. Gain Mastery on the defiance, but mark Patron Notice and D6 Authority stress.
+
+**Miracle or Madness:** Once per Mission, declare a miracle. Something impossible happens: the wounded rise, the fire does not burn, the daemon recoils from a word. The GM decides whether it is a genuine act of the Emperor's will, a psychic echo, or something else entirely. Either way, it works — and the consequences of what it *actually* was arrive later.
+
+### Class Beats
+
+- **Minor:** Condemn someone for a minor sin when they were helping you.
+- **Major:** Foment a riot, mob, or mass panic using religious authority.
+- **Severe:** Declare a miracle that directly challenges the authority of the local Ecclesiarchy.
 
 ---
 
@@ -483,6 +609,12 @@ Also begin with:
 
 **Ammo and Angles:** Once per Situation, ignore the first complication caused by reloads, ammunition, positioning, or lack of cover.
 
+**Tactical Assessment:** When you enter a space where violence is likely, ask the GM two: "Where is the best cover?" "Where is the kill zone?" "How many hostiles?" "What's the fastest exit?" You must act on the information or lose it.
+
+**Controlled Pairs:** When you shoot to wound instead of kill, you may choose exactly where the shot lands. The target takes D3 Body stress instead of your weapon's full stress die, but the shot achieves a specific effect: disarms, pins, or forces movement.
+
+**Last Mag Discipline:** When your ammunition, charge, or weapon resource would step down or be exhausted, mark D3 Mind stress to keep it at its current level for one more Situation. Describe the rationing, the single-shot discipline, the calm.
+
 ### Major Advances
 
 **Kill Box:** If you have time to prepare terrain, choose a zone. The first time enemies enter it, the cell gains Mastery on actions against them.
@@ -491,11 +623,23 @@ Also begin with:
 
 **Shock Assault:** When you lead a raid or violent entry, all allies acting immediately with you gain Mastery. If any roll 7 or lower, Heat increases by 1.
 
+**Fire Team Leader:** When you and at least one ally act in coordinated violence, both of you gain +1 stress die step on your first attack. If either of you rolls 7 or lower, the coordination breaks and Heat increases by 1.
+
+**Veteran's Scars:** Gain Body Protection 1 and Mind Protection 1. Each is tied to a specific past engagement — name it. When someone asks about the scar, you may tell the story to clear D3 Mind stress, but the story always reveals something about what the Inquisition does.
+
 ### Severe Advances
 
 **Authorized Massacre:** Once per Mission, declare a target group kill-cleared. Against them, your attacks inflict +D6 stress and ignore 1 Protection. Afterward, take D6 Authority or Mind stress.
 
 **The Last One Standing:** When the cell would be overrun, captured, or wiped out by violence, you may hold the line alone. Allies escape or complete one immediate objective. You take Severe Body fallout or burn a major Bond/Resource.
+
+**Total Commitment:** Once per Mission, declare that you will hold a position, protect a person, or complete an objective regardless of personal cost. For the remainder of the Situation, you cannot be moved, incapacitated, or killed by anything short of Severe Body fallout. Afterward, take D8 Body stress and D6 Mind stress as everything you absorbed catches up.
+
+### Class Beats
+
+- **Minor:** Escalate a tense situation into violence before the cell is ready.
+- **Major:** Absorb a potentially lethal blow meant for another acolyte.
+- **Severe:** Hold a position against overwhelming odds, knowing you will likely not survive.
 
 ---
 
@@ -540,6 +684,12 @@ You know the body as testimony. Wounds confess. Organs remember. Disease has a m
 
 **Keep Them Moving:** When an ally would suffer a penalty from Body fallout, mark D3 Body or Mind stress to let them ignore it until the end of the Situation.
 
+**Triage Protocol:** At the start of a dangerous Situation, assess the cell. Ask the GM: "Who is in the most physical danger?" Gain Mastery on your first Operate roll to help that person.
+
+**Pharmaceutical Improvisation:** Once per Operation, create a D6 drug, stimulant, sedative, or toxin from available materials. It does one specific thing well. On 7 or lower when used, it has a side effect the GM chooses.
+
+**Read the Wound:** When examining an injured person, ask: "Was this wound inflicted by someone they knew?" The body tells you.
+
 ### Major Advances
 
 **Vivisectionist's Certainty:** When you dissect a living or fresh subject, ask one true biological question: species, mutation source, disease vector, implant function, or cause of transformation. Then take Mind or Authority stress.
@@ -548,11 +698,23 @@ You know the body as testimony. Wounds confess. Organs remember. Disease has a m
 
 **Replace What Was Lost:** Install crude augmetics, grafts, vat-grown tissue, or field bionics. This can downgrade Severe Body fallout to Moderate, but creates a dependency, debt, or visible mark.
 
+**Walking Pharmacopoeia:** Gain a D8 Resource: your accumulated pharmaceutical supplies, compounds, and formulas. It can provide combat drugs, sedatives, truth serums, inoculations, or poisons. Each use risks Body, Authority, or Corruption stress depending on what you dispense.
+
+**Mortuary Cartography:** When you perform a full autopsy, learn the victim's cause of death, approximate time, last meal, recent exposures, and one thing the killer tried to hide. Take D3 Mind stress for the intimacy of the knowledge.
+
 ### Severe Advances
 
 **Life Is a Resource:** Once per Mission, save someone who should die. Choose two costs: D8 Body stress to them, D8 Mind stress to you, a forbidden component, a permanent change, or someone else must die.
 
 **The Body Heretical:** You understand mutation, xenos biology, or warp-warped flesh too well. Gain Mastery when exploiting biological corruption. Each use risks Corruption or Authority stress.
+
+**The Flesh Is Testimony:** Once per Mission, perform an extended examination of a living subject. You learn everything their body can tell you: old injuries, chemical exposure, genetic markers, augmetic history, warp-touch, disease vectors, diet, and physical origin. Take D6 Mind stress. The subject may not consent to what you now know about them.
+
+### Class Beats
+
+- **Minor:** Perform a field procedure that leaves a permanent, visible scar.
+- **Major:** Keep someone alive and functioning long past when their body should have failed.
+- **Severe:** Use forbidden or xenos biological components to "save" someone.
 
 ---
 
@@ -600,6 +762,12 @@ You are the treaty between flesh and mechanism. You know the machine is not loya
 
 **Blessed Maintenance:** At the start of each Operation, choose one ally's weapon, armour, or tool. It ignores its first equipment-based complication.
 
+**Binary Communion:** You can speak to machine-spirits in their own language. When you commune with a machine before using it, gain Mastery on your first Operate roll. If the machine-spirit is hostile, you learn why before it acts.
+
+**Salvage Rites:** When a piece of equipment, weapon, or system is destroyed or broken beyond use, you may recover one useful component (D6 Resource). The component is blessed and functional but marked by its origin.
+
+**Data Liturgy:** When you access a cogitator, data-slate, or archive system, you may ask: "What was the last thing someone tried to delete from this?" The machine remembers, but the answer may be fragmentary.
+
 ### Major Advances
 
 **Scrapcode Exorcism:** You can confront hostile machine-code, data-ghosts, corrupted cogitators, or heretek systems. Roll Operate + Mechanicus or Heresy. On success, purge, trap, or redirect it. On 7 or lower, it learns you.
@@ -608,11 +776,23 @@ You are the treaty between flesh and mechanism. You know the machine is not loya
 
 **Augmetic Authority:** Gain a D8 Mechanicus Resource: forge access, repair servitors, sacred parts, cyber-familiar, or tech-priest contact.
 
+**Techno-Lingua Franca:** You can communicate basic concepts to any machine system, even xenos or heretek technology. This does not grant control — it grants understanding. Ask two questions about what the device does, wants, or fears. Take D3 Corruption stress if the device is forbidden.
+
+**Blessed Redundancy:** Choose one piece of cell equipment. You install backup systems, sacred relays, and machine-spirit appeasement rites. The item ignores its first fallout per Mission. If it would suffer a second fallout, both fallouts trigger at once.
+
 ### Severe Advances
 
 **Heretek Fluency:** You can use forbidden machine logic. Gain Mastery when operating xenos, scrapcode, or heretek systems. Each use risks Corruption or Authority stress.
 
 **Awaken the God in the Machine:** Once per Mission, ask a major machine-spirit for a miracle: open all doors, kill the lights, overload the plasma grid, move the train, awaken the guns. It works. Then it wants something.
+
+**Communion of Iron:** Once per Mission, merge your consciousness with a major machine system — a ship, a manufactorum, a defense grid, a hive's life support. You perceive through its sensors, direct its functions, and understand its pain. While merged, you cannot act physically. When you separate, take D8 Body or Mind stress. The machine remembers you were inside it.
+
+### Class Beats
+
+- **Minor:** Prioritize the safety of a machine over the comfort of a person.
+- **Major:** Awaken a dormant, dangerous, or heretical machine-spirit to solve a problem.
+- **Severe:** Merge your consciousness with a machine to take direct control, risking your humanity.
 
 ---
 
@@ -657,6 +837,12 @@ You are absence made flesh. Psykers recoil. Daemons hate you. Ordinary people ma
 
 **Witch-Hunter's Shadow:** When you follow or observe a psyker, daemonhost, cult oracle, or warp-touched target, gain Mastery on Skulk.
 
+**Discomfort Radius:** You can deliberately intensify your null-field in a small area. Everyone nearby (including allies) finds it harder to concentrate, lie, or maintain composure. Social rolls in the area become Risky for everyone — including you.
+
+**The Space Between:** When you are present during a psychic phenomenon, ritual, or warp manifestation, you can feel the shape of the effect by the way reality bends around your absence. Ask: "What is this trying to reach?" or "Where is it weakest?"
+
+**Practiced Solitude:** You have learned to function in isolation. When you are alone and acting without support, gain Mastery on Resist or Skulk. If an ally arrives, the Mastery ends.
+
 ### Major Advances
 
 **Blank Zone:** Once per Situation, declare a small area around you spiritually dead. Psychic powers and daemonic effects inside it have reduced effect; any roll to use them becomes Dangerous. You also become impossible to ignore.
@@ -665,11 +851,23 @@ You are absence made flesh. Psykers recoil. Daemons hate you. Ordinary people ma
 
 **Weaponized Revulsion:** When your nature is revealed, you may inflict D6 Mind stress on psykers, warp-touched beings, or ordinary people already under occult pressure.
 
+**Null Anchor:** When you touch an ally who is under psychic influence, possession attempt, or warp-induced madness, you may suppress the effect for the duration of contact. They take D3 Mind stress from the null exposure. You take D3 Body stress from maintaining the connection.
+
+**The Wrongness Endures:** When someone encounters you and recoils, you may ask the GM: "What does their reaction tell me about what they are?" Ordinary people are simply uncomfortable. Psykers are obvious. But things that should react and don't — that tells you something too.
+
 ### Severe Advances
 
 **No Soul to Take:** Once per Mission, ignore a Severe or Critical Corruption effect from a warp source. The effect collapses around you, but everyone nearby feels the wrongness. Heat or Authority fallout may follow.
 
 **The Cell's Cage:** You can contain a psyker, daemonhost, ritual site, or possessed ally by remaining near them. They cannot escalate while contained. You cannot leave without releasing them.
+
+**Soulless Collapse:** Once per Mission, push your null field to its absolute limit. All psychic effects, daemonic manifestations, and warp phenomena within close range simply *end*. Psykers in the area take D8 Mind stress. Ordinary people take D6 Mind stress. You take D8 Body stress as your body rebels against what you are doing. The area remains spiritually dead until the end of the Situation.
+
+### Class Beats
+
+- **Minor:** Use your aura to deliberately discomfort or isolate an ally.
+- **Major:** Push your null field to its limit, causing physical harm to yourself to stop a warp threat.
+- **Severe:** Become the focal point of a psychic attack to drain the caster completely.
 
 ---
 
@@ -717,6 +915,12 @@ You are what the Inquisition usually burns. But someone decided you were more us
 
 **Contraband Cache:** Gain a D6 forbidden Resource. It is useful, illegal, and incriminating.
 
+**They Speak My Language:** When dealing with members of a forbidden faction (cult, xenos, heretek, etc.), you can code-switch into their idiom, body language, and social conventions. Gain Mastery on Deceive or Command when communicating with them. On 7 or lower, someone on your side notices.
+
+**Contamination Memory:** When you encounter a heretical, xenos, or warp-touched artifact, you may touch it safely enough to learn one thing: "What was this made for?" Take D3 Corruption stress regardless.
+
+**Handler's Sixth Sense:** You can tell when you are being watched, followed, or evaluated by Inquisitorial assets. Ask the GM: "Am I being monitored right now?" The answer is always honest.
+
 ### Major Advances
 
 **Enemy's Courtesy:** Members of one forbidden faction hesitate before harming you. Gain Mastery when negotiating with them. On 7 or lower, they demand proof of loyalty.
@@ -725,11 +929,23 @@ You are what the Inquisition usually burns. But someone decided you were more us
 
 **I Know a Door:** Once per Mission, reveal access to a hidden cult route, smuggler path, xenos gate, heretek channel, or forbidden archive. It works, but someone may see you use it.
 
+**Double Agent's Leverage:** Gain a D8 Contact in your former faction (cult, xenos network, heretek ring). They believe you are still sympathetic. You can extract intelligence, safe passage, or resources — but each use advances a Betrayal clock. When it fills, your cover in the cell is threatened.
+
+**Forbidden Resonance:** When you use a Forbidden Method and it succeeds, you may choose to push it further. The effect is doubled or expanded. Take +D6 Corruption stress. If this causes fallout, the extra effect becomes permanent and visible.
+
 ### Severe Advances
 
 **Sanctioned Monster:** Your Patron formally tolerates what you are. Gain a D10 forbidden Resource or power. If your Patron falls, dies, or disavows you, that protection disappears.
 
 **I Was Never Cured:** Choose Heresy, Warp, or Xenos. When acting through that Domain, gain Mastery if you accept D3 Corruption stress. If this causes fallout, it reveals your true nature to someone important.
+
+**I Am What They Made Me:** Once per Mission, fully embrace your forbidden nature. For the remainder of the Situation, you gain Mastery on all actions related to your Heresy, Warp, or Xenos domain. You ignore Corruption stress from your own abilities. Afterward, the GM asks you one question: "What did you enjoy?" Your answer determines whether someone in the cell begins to doubt you.
+
+### Class Beats
+
+- **Minor:** Use a forbidden method in front of someone who doesn't know what you are.
+- **Major:** Call upon your old faction for help, indebting yourself to them.
+- **Severe:** Fully embrace your forbidden nature to solve a problem, confirming everyone's worst fears about you.
 
 ---
 

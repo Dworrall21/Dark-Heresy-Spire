@@ -15,11 +15,11 @@ Every advance should answer one of these questions:
 
 ## 1. Beat Categories
 
-At the start of each session, each player chooses **three Beats**:
+At the start of each session, each player chooses **three Beats** from the lists below (or from their class-specific beats, see class entries).
 
-1. One **Duty Beat**
-2. One **Humanity Beat**
-3. One **Radical Beat**
+**At least one Beat must come from a different category than the other two.** Beyond that, you choose the mix. A Puritan might take 2 Duty and 1 Radical. A heretic-in-waiting might take 2 Radical and 1 Humanity. The combination tells the table who the acolyte is becoming.
+
+You may substitute a **class-specific Beat** for any slot. Class beats are printed in your class entry.
 
 | Beat Type | Theme |
 |---|---|
@@ -381,11 +381,13 @@ They may continue, but the game should acknowledge that they are no longer merel
 
 ## 13. Example Advancement
 
-Mara's player chooses:
+Mara (an Explicator) chooses:
 
-- **Duty Beat:** Report a fellow acolyte's questionable behavior.
 - **Humanity Beat:** Treat a heretic as a person with a history.
 - **Radical Beat:** Hide evidence from your Patron or cell.
+- **Class Beat:** Connect two separate clues into a case file. *(Explicator class-specific beat, replacing her third slot.)*
+
+Note that Mara picked 1 Humanity, 1 Radical, and 1 class beat — this satisfies the rule that at least one Beat must come from a different category than the others.
 
 During the session, Mara interrogates a captured cult courier and realizes the courier joined the cult after the Administratum falsified famine records. Mara treats him humanely and learns the cult's route through the corpse-starch office.
 
@@ -393,6 +395,6 @@ She completes her **Humanity Beat** and gains a **Minor Advance**.
 
 Later, she pockets the courier's old cult token instead of logging it as evidence. She completes her **Radical Beat** and takes a **D6 Requisition** instead of a Minor Advance: the token can be used once as a D6 Resource to pass as cult-adjacent.
 
-She does not complete her Duty Beat.
+She does not complete her class Beat this session.
 
-At the start of next session, she may choose new Beats. The uncompleted Duty Beat returns to the pool.
+At the start of next session, she may choose new Beats. The uncompleted class Beat returns to the pool.
