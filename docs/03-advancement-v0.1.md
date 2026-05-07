@@ -13,6 +13,24 @@ Every advance should answer one of these questions:
 
 ---
 
+## Table of Contents
+
+1. [Beat Categories](#1-beat-categories)
+2. [Completing Beats](#2-completing-beats)
+3. [Advancement Rewards](#3-advancement-rewards)
+4. [Spending Advances](#4-spending-advances)
+5. [Cross-Class Advancement](#5-cross-class-advancement)
+6. [Requisitions as Advancement](#6-requisitions-as-advancement)
+7. [Patron Notice](#7-patron-notice)
+8. [Duty Beats](#8-duty-beats)
+9. [Humanity Beats](#9-humanity-beats)
+10. [Radical Beats](#10-radical-beats)
+11. [End-of-Mission Change Awards](#11-end-of-mission-change-awards)
+12. [Advancement Limits](#12-advancement-limits)
+13. [Example Advancement](#13-example-advancement)
+
+---
+
 ## 1. Beat Categories
 
 At the start of each session, each player chooses **three Beats** from the lists below (or from their class-specific beats, see class entries).

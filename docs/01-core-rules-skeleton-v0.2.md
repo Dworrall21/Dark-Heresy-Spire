@@ -16,6 +16,35 @@ Other chapters expand the subsystems:
 
 > Working premise: you are doomed agents of an oppressive empire trying to prevent something worse.
 
+## Table of Contents
+
+1. [What This Game Is About](#1-what-this-game-is-about)
+2. [The Basic Conversation](#2-the-basic-conversation)
+3. [Core Roll](#3-core-roll)
+4. [Result Table](#4-result-table)
+5. [Difficulty](#5-difficulty)
+6. [Stress Dice](#6-stress-dice)
+7. [Resistances](#7-resistances)
+8. [Taking Stress](#8-taking-stress)
+9. [Fallout](#9-fallout)
+10. [Example Fallout](#10-example-fallout)
+11. [Protection](#11-protection)
+12. [Skills](#12-skills)
+13. [Domains](#13-domains)
+14. [Mastery](#14-mastery)
+15. [Helping](#15-helping)
+16. [Investigation Rule: Never Hide the Core Clue](#16-investigation-rule-never-hide-the-core-clue)
+17. [NPCs and Threats](#17-npcs-and-threats)
+18. [Combat](#18-combat)
+19. [Gear](#19-gear)
+20. [Requisition](#20-requisition)
+21. [Flashing the Rosette](#21-flashing-the-rosette)
+22. [Shadow, Heat, and Enemy Awareness](#22-shadow-heat-and-enemy-awareness)
+23. [Psychic Powers](#23-psychic-powers)
+24. [Forbidden Methods](#24-forbidden-methods)
+25. [Method Risk Matrix](#25-method-risk-matrix)
+26. [Mission Structure](#26-mission-structure)
+
 ---
 
 ## 1. What This Game Is About
