@@ -139,7 +139,7 @@ Choose why your Patron keeps you.
 
 Every acolyte begins with one Cover Identity.
 
-A Cover Identity is a Resource die that can be used when it helps you pass as someone else, access locations, avoid questions, explain your presence, or step down Difficulty by reducing risk.
+A Cover Identity is a Resource die that can be used when it helps you pass as someone else, access locations, avoid questions, explain your presence, or reduce risk. You can spend Cover to step down Difficulty, or burn Cover for a stronger one-time effect (see below).
 
 Choose a die:
 
@@ -162,6 +162,19 @@ Most starting characters should begin with **D6 Cover**.
 | Sanctioned bounty agent | Violence, warrants, low-level authority |
 | Ecclesiarchy relic examiner | Reliquaries, saints, cults, archives |
 
+### Using Cover
+
+When you attempt a roll where your Cover Identity is relevant to the situation, you may spend your Cover to reduce the Difficulty by one level:
+
+- Dangerous → Risky → Safe
+- Impossible → Dangerous → Risky → Safe
+
+The Cover must be *relevant* — your "pilgrim confessor" Cover steps down Difficulty at a shrine, but not when interrogating a cultist in a manufactorum. The GM decides relevance.
+
+You may only spend one Cover die to step down Difficulty per roll. The Cover die steps down immediately after use (D10 → D8 → D6 → D3 → gone). If Cover drops below D3, it is burned (destroyed, Heat +1).
+
+This is in addition to all other Cover uses. You may step down Difficulty *and* gain Mastery from the same Cover on the same roll, but the Cover only steps down once.
+
 ### Burning Cover
 
 You may burn your Cover Identity to:
@@ -169,7 +182,6 @@ You may burn your Cover Identity to:
 - Ignore one Shadow fallout.
 - Gain automatic access to a place your cover could plausibly reach.
 - Convert a failed Deceive or Skulk roll into success at cost.
-- Step down Difficulty by one level on a relevant roll (Dangerous → Risky → Safe, Impossible → Dangerous → Risky → Safe). Your Cover die steps down by one size.
 
 When you burn Cover:
 
@@ -310,7 +322,7 @@ Each acolyte begins with:
 | Autopistol | D6 Body, Loud, Burst |
 | Combat knife | D3 Body, Silent, Concealable |
 | Shock maul | D6 Body, Stun, Obvious |
-| Chainsword | D6 Body, Brutal, Loud |
+| Chainsword | D8 Body, Brutal, Loud, Obvious |
 | Bolt pistol | D8 Body, Loud, Brutal, Restricted |
 | Needle pistol | D6 Body, Silent, Toxin, Illegal |
 

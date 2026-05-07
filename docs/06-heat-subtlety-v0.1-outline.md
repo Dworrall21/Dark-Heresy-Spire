@@ -739,15 +739,7 @@ When an acolyte flashes the Rosette or equivalent authority, choose one immediat
 - Seize jurisdiction from a local faction.
 - Freeze a scene long enough for the cell to act.
 
-Then choose one cost:
-
-- Heat +1 if private or contained.
-- Heat +2 if public, recorded, or politically explosive.
-- D6 Authority stress.
-- D6 Shadow stress.
-- Mark Patron Notice.
-- Trigger a Patron Liability.
-- Create a factional enemy.
+Then take **D6 Shadow or Authority stress**, or the stress specified by the ability or asset. If done publicly, also increase Operation Heat.
 
 If the Rosette is used at Heat 6+, the GM should also ask:
 

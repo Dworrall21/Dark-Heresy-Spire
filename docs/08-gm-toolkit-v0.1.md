@@ -256,7 +256,9 @@ Sneaking out afterward is probably Dangerous.
 
 ## 5. Assigning Stress
 
-When a roll causes stress, choose the Resistance that best represents what is being risked.
+When a roll causes stress, the GM chooses the relevant Resistance and rolls the stress die. The GM always rolls stress dice inflicted on a player — unless the stress is inflicted by that player or another player (e.g., a Brutal weapon backlash, a Dangerous tag, or a self-inflicted cost). In those cases, the inflicting player rolls.
+
+Choose the Resistance that best represents what is being risked.
 
 | Resistance | Use When the Cost Is… |
 |---|---|

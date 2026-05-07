@@ -198,15 +198,7 @@ When an acolyte flashes the Rosette or equivalent authority, choose one benefit:
 - Seize jurisdiction from a local faction.
 - Freeze a scene long enough for the cell to act.
 
-Then choose one cost:
-
-- Heat +1 if private or contained.
-- Heat +2 if public, recorded, or politically explosive.
-- D6 Authority stress.
-- D6 Shadow stress.
-- Mark Patron Notice.
-- Trigger a Patron Liability.
-- Create a factional enemy.
+Then take **D6 Shadow or Authority stress**, or the stress specified by the ability or asset. If done publicly, also increase Operation Heat.
 
 ---
 
@@ -297,7 +289,7 @@ Equipment = Chassis + Modules + Tags + Effect + Resource Die + Burden Profile
 |---|---|
 | **Positive aspect** | Roll with Mastery when exploiting what the item is designed for. |
 | **Negative aspect** | Difficulty +1 when forced to rely on the item’s weakness. |
-| **Obstacle stress** | Use the weapon/equipment stress die. Without relevant gear: **D3**. |
+| **Inflicting stress on threats** | Use the weapon/equipment stress die. Without relevant gear: **D3**. |
 | **Naming** | Choose flavor adjectives from tag aspect names to name equipment. |
 
 ---
@@ -327,8 +319,8 @@ D10 -> D8 -> D6 -> D3 -> gone / broken / empty / exposed
 |---|---|
 | **Accurate** | Set up before combat to roll with Mastery. |
 | **Area** | Affects a group, zone, mob, room, or vehicle bay. Usually Loud or Obvious. |
-| **Bolt** | Against unarmoured targets, roll stress twice and keep the higher result. |
-| **Brutal** | Roll inflicted stress twice and keep the higher result. |
+| **Bolt** | Against unarmoured targets, inflict +2 stress. Against armoured targets, inflict +1 stress. |
+| **Brutal** | Roll inflicted stress twice and keep the higher result. Stacks only with effects that explicitly say they stack. |
 | **Burning** | After inflicting stress, target takes D3 extra stress whenever they next take stress until extinguished. |
 | **Close / Ranged / Far Range** | Defines Melee, Ranged, or Extreme range use. |
 | **Concealable** | Can be hidden from casual inspection and may avoid Heat or evidence. |

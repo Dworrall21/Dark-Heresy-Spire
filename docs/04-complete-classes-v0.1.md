@@ -279,7 +279,7 @@ You are the person who was never there. The clerk with the right stamp. The pilg
 | **Concealed Weapon** *(Holdout Gutter-Forged Blade)* | D6 | Concealable, Silent or Loud, Crude | D3 or D6 Body depending on form. Useful when smuggled into a restricted place. | **Black-Market Source:** if traced, criminals know where it came from. |
 | **Dead-Drop Token** *(Pilgrim-Pocket, Questionable)* | D6 | Concealable, Suspicious | Permission to access one hidden cache, message route, or fallback contact per Operation. | **Debt-Bound:** if leaned on hard, someone expects payment. |
 
-**Core Ability — Burnable Face:** You begin each Mission with one extra Cover Identity at D6. You may burn it to ignore one Shadow fallout, step down Difficulty by one level on a relevant roll, or gain automatic access. The identity is destroyed and Heat increases by 1.  
+**Core Ability — Burnable Face:** You begin each Mission with one extra Cover Identity at D6. You may **spend** it to step down Difficulty by one level on a relevant roll (the Cover die steps down but is not destroyed). You may also **burn** it to ignore one Shadow fallout or gain automatic access. When you burn it, the identity is destroyed and Heat increases by 1.  
 **Refresh:** Remove stress when you abandon, repair, or deepen a false identity at personal cost.
 
 ### Class Questions
@@ -492,11 +492,11 @@ You are the voice that makes fear kneel. You are comfort, accusation, scripture,
 
 **Skill:** Command  
 **Domain:** Ecclesiarchy  
-**Protection — choose one as primary; the other becomes secondary:**
+**Protection — choose one as primary (Protection 2) and the other as secondary (Protection 1):**
 
-**Doctrinal Certainty** (Mind Protection 2, or Mind Protection 1 if secondary): Your faith is your fortress — doubt breaks against scripture. When this Protection absorbs stress, you quote canon reflexively, find comfort in litany, or refuse to see what contradicts doctrine. When it breaks, doubt enters through the crack that faith left.
+**Doctrinal Certainty** (Mind Protection 2 if primary, Mind Protection 1 if secondary): Your faith is your fortress — doubt breaks against scripture. When this Protection absorbs stress, you quote canon reflexively, find comfort in litany, or refuse to see what contradicts doctrine. When it breaks, doubt enters through the crack that faith left.
 
-**Ministorum Standing** (Authority Protection 2, or Authority Protection 1 if secondary): The Ecclesiarchy's weight stands behind your collar. When this Protection absorbs stress, someone in the hierarchy absorbs the complaint, the report is filed under "spiritual jurisdiction," or a priest's word outweighs a bureaucrat's. When it breaks, you have spent more of the Church's goodwill than it will quietly tolerate.
+**Ministorum Standing** (Authority Protection 2 if primary, Authority Protection 1 if secondary): The Ecclesiarchy's weight stands behind your collar. When this Protection absorbs stress, someone in the hierarchy absorbs the complaint, the report is filed under "spiritual jurisdiction," or a priest's word outweighs a bureaucrat's. When it breaks, you have spent more of the Church's goodwill than it will quietly tolerate.
 
 **Starting Gear:**
 
@@ -579,7 +579,7 @@ Choose one primary weapon:
 
 | Item | Resource | Tags | Effect | Burden |
 |---|---:|---|---|---|
-| **Boltgun** *(Thundercrack Godwyn-Pattern)* | D8 | Ranged, Loud, Bolt, Brutal, Restricted | D8 Body. Against unarmoured targets, roll stress twice and keep the higher result. | **Restricted Pattern:** if inspected, logged, or used publicly, take D3 Authority stress or Heat +1. |
+|| **Boltgun** *(Thundercrack Godwyn-Pattern)* | D8 | Ranged, Loud, Bolt, Brutal, Restricted | D8 Body. +2 stress against unarmoured targets, +1 against armoured. Roll stress twice (Brutal) and keep the higher result. | **Restricted Pattern:** if inspected, logged, or used publicly, take D3 Authority stress or Heat +1. |
 | **Hellgun / Hot-Shot Lasgun** *(Calibrated Steadfast)* | D8 | Ranged, Reliable, Restricted, Accurate, Volatile | D8 Body. Gain Mastery when prepared, braced, or firing from a tactical position. | **Volatile:** on failure, increase Heat or mark D6 Shadow stress if exposed. |
 
 Also begin with:
@@ -728,11 +728,11 @@ You are the treaty between flesh and mechanism. You know the machine is not loya
 
 **Skill:** Operate  
 **Domain:** Mechanicus  
-**Protection — choose one as primary; the other becomes secondary:**
+**Protection — choose one as primary (Protection 2) and the other as secondary (Protection 1):**
 
-**Augmetic Resilience** (Body Protection 2, or Body Protection 1 if secondary): Implanted systems and replacement parts absorb what flesh alone could not. When this Protection absorbs stress, something mechanical takes the strain — a subdermal plate flexes, a pain-inhibitor kicks, a replacement joint locks. When it breaks, the augmetic needs repair, replacement, or rites, and your flesh remembers it is still underneath.
+**Augmetic Resilience** (Body Protection 2 if primary, Body Protection 1 if secondary): Implanted systems and replacement parts absorb what flesh alone could not. When this Protection absorbs stress, something mechanical takes the strain — a subdermal plate flexes, a pain-inhibitor kicks, a replacement joint locks. When it breaks, the augmetic needs repair, replacement, or rites, and your flesh remembers it is still underneath.
 
-**Doctrinal Purity Filters** (Corruption Protection 2, or Corruption Protection 1 if secondary): The Omnissiah's logic gates stand between your cognition and the irrational. When this Protection absorbs stress, a trained subroutine quarantines the input — you flag it, isolate it, refuse to process it as anything but data. When it breaks, something got past the filter and is running in background processes you cannot name.
+**Doctrinal Purity Filters** (Corruption Protection 2 if primary, Corruption Protection 1 if secondary): The Omnissiah's logic gates stand between your cognition and the irrational. When this Protection absorbs stress, a trained subroutine quarantines the input — you flag it, isolate it, refuse to process it as anything but data. When it breaks, something got past the filter and is running in background processes you cannot name.
 
 **Starting Gear:**
 
@@ -881,11 +881,11 @@ You are what the Inquisition usually burns. But someone decided you were more us
 
 **Skill:** Choose one  
 **Domain:** Heresy, Warp, or Xenos  
-**Protection — choose one as primary; the other becomes secondary:**
+**Protection — choose one as primary (Protection 2) and the other as secondary (Protection 1):**
 
-**Familiar Stain** (Corruption Protection 2, or Corruption Protection 1 if secondary): You have already been touched by this. The corruption doesn't shock you — you've seen worse in the mirror. When this Protection absorbs stress, you recognize what's happening because you *lived it*. Describe the old scar, the old ritual, or the old hunger that makes this feel almost routine. When it breaks, the familiarity becomes a door and something remembers you were once on the other side.
+**Familiar Stain** (Corruption Protection 2 if primary, Corruption Protection 1 if secondary): You have already been touched by this. The corruption doesn't shock you — you've seen worse in the mirror. When this Protection absorbs stress, you recognize what's happening because you *lived it*. Describe the old scar, the old ritual, or the old hunger that makes this feel almost routine. When it breaks, the familiarity becomes a door and something remembers you were once on the other side.
 
-**Buried Past** (Shadow Protection 2, or Shadow Protection 1 if secondary): Your old life is so deeply compartmentalized that exposure peels back layers before reaching anything true. When this Protection absorbs stress, a false trail, dead alias, or outdated connection absorbs the scrutiny. When it breaks, someone is digging in the right direction and has not stopped.
+**Buried Past** (Shadow Protection 2 if primary, Shadow Protection 1 if secondary): Your old life is so deeply compartmentalized that exposure peels back layers before reaching anything true. When this Protection absorbs stress, a false trail, dead alias, or outdated connection absorbs the scrutiny. When it breaks, someone is digging in the right direction and has not stopped.
 
 **Starting Gear:**
 

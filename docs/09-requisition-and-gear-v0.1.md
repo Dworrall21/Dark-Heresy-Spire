@@ -214,12 +214,13 @@ A Resource Die measures how strong, reliable, well-supported, supplied, or legit
 A Resource Die may be used to:
 
 - Grant Mastery when the item is central to the action.
-- Absorb stress appropriate to the item.
 - Establish permission to attempt an action.
 - Avoid a tag consequence once.
 - Resist being damaged, traced, exhausted, or confiscated.
 - Measure how much use remains.
 - Determine the amount of stress inflicted on an obstacle when using that equipment. Without a relevant piece of equipment, the stress die is D3 if the action is possible at all.
+
+A Resource may absorb stress only when its effect explicitly says it can, when it is being burned for that purpose, or when the fiction clearly supports it. Otherwise, Resource dice should be strained, stepped down, damaged, exposed, or tested when the item's reliability, access, authority, or supply is under pressure.
 
 When a Resource Die is strained, stepped down, damaged, or partially spent:
 
@@ -254,8 +255,6 @@ Resource dice and Protection are related, but they are not the same thing.
 Protection is a rating: **Protection 1**, **Protection 2**, **Protection 3**, and so on.
 
 A Resource is a die: **D3**, **D6**, **D8**, or **D10**.
-
-A Resource may absorb stress only when its effect says it can, when it is being burned for that purpose, or when the fiction clearly supports it. Otherwise, Resource dice should be strained, stepped down, damaged, exposed, or tested when the item's reliability, access, authority, or supply is under pressure.
 
 Examples:
 
@@ -357,7 +356,7 @@ When a tag says to **roll stress twice**, roll the weapon's stress die twice, ap
 | **Blessed** | Counts as religious permission, witness legitimacy, or protection against fear and taint; may change stress type or reduce spiritual/social consequences. |
 | **Block** | When this weapon causes the user stress from use, roll that stress twice and take the lower result. |
 | **Bloodbound** | Mark D3 Body stress to roll with Mastery with this weapon for the rest of the Situation. |
-| **Bolt** | Against unarmoured targets, roll inflicted stress twice and keep the higher result. |
+| **Bolt** | Against unarmoured targets, inflict +2 stress. Against armoured targets, inflict +1 stress. |
 | **Brutal** | Roll inflicted stress twice and keep the higher result. Stacks only with effects that explicitly say they stack. |
 | **Burning** | After inflicting stress, the target takes D3 extra stress whenever they next take stress until extinguished or contained. |
 | **Close** | Melee weapon, or range so short it might as well be melee. |
@@ -1028,7 +1027,8 @@ Ask:
 | Tag | Quick Use |
 |---|---|
 | **Accurate** | Set up before combat to roll with Mastery. |
-| **Bolt / Brutal** | Roll inflicted stress twice and keep the higher result; Bolt applies against unarmoured targets. |
+|| **Bolt** | Against unarmoured targets, inflict +2 stress. Against armoured targets, inflict +1 stress. |
+| **Brutal** | Roll inflicted stress twice and keep the higher result. Stacks only with effects that explicitly say they stack. |
 | **Burning / Spread** | Burning adds D3 recurring stress until extinguished; Spread gives nearby creatures D3 stress. |
 | **Close / Ranged / Far Range** | Define whether the weapon works in Melee, Ranged, or Extreme range. |
 | **Dangerous / Plasma / Volatile / Wyrd** | Maximum stress or failure creates Body, Shadow/Heat, or Corruption backlash. |

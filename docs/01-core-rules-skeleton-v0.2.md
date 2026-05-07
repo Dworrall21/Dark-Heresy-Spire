@@ -88,6 +88,12 @@ Resolve a roll in this order:
 
 For attacks or direct harm, a 10 also adds **+1 stress inflicted** for each 10 rolled.
 
+### Partial Stress
+
+Sometimes you are rolling purely to avoid harm rather than trying to achieve anything — testing whether you can hold onto your mind after seeing something horrific, dodging a blow, or escaping a burning building. On a **6-7 result** on such a defensive action, you still take stress, but the stress die is **one step lower** than usual (D10 → D8 → D6 → D3 → 1).
+
+The same reduction applies when you are trying to buy something for cheap or cut a corner on a Procure roll — on a 6-7, the stress die steps down by one.
+
 ---
 
 ## 5. Difficulty
@@ -130,12 +136,14 @@ When a roll causes stress, the GM assigns a stress die.
 | **Dangerous** | D8 | Heavy weapons, psychic threat, noble exposure |
 | **Catastrophic** | D10 | Daemonhost, orbital politics, public Inquisitorial scandal |
 
+Whenever a rule says "mark D[X] stress," roll that die and mark the result. "Mark D3 stress" means roll a D3 and add the result to the relevant Resistance — it is not a flat 3. Similarly, "D3 stress" from the Incidental threat level is a die to be rolled, not a fixed number.
+
 Weapons, enemies, environments, psychic powers, and forbidden methods often specify their stress die.
 
 | Source | Stress |
 |---|---|
 | Laspistol | D6 Body |
-| Boltgun | D8 Body, Loud, Brutal |
+| Boltgun | D8 Body, Loud, Bolt, Brutal |
 | Daemon's gaze | D8 Mind or Corruption |
 | Publicly invoking Inquisitorial authority | D6 Shadow or Authority |
 | Reading a proscribed grimoire | D3-D8 Corruption |
@@ -166,11 +174,13 @@ Resources are handled through Requisition, Contacts, Cover Identities, Patron Bo
 
 When you take stress:
 
-1. The GM chooses the relevant Resistance.
+1. The GM chooses the relevant Resistance. If it is not clear which Resistance fits, the GM and player work it out together.
 2. The GM rolls the stress die.
 3. Mark the rolled stress against available Protection first.
 4. Add any remaining stress to that Resistance.
 5. If stress was added to a Resistance, immediately check for Fallout.
+
+When the GM assigns stress, describe it in fiction terms — not just "take D6 Body" but what is happening to the character. If a player asks how much stress they have, the GM can answer with a narrative description instead of (or alongside) a number.
 
 ---
 
@@ -266,7 +276,7 @@ These are models, not closed lists. Fallout should fit the fiction first.
 
 ## 11. Protection
 
-Protection represents stress you can absorb before it counts toward Fallout.
+Protection represents stress you can absorb before it counts toward Fallout. Stress marked against Protection is "free" — it does not count toward your total stress for the purposes of determining Fallout. Only stress that gets through Protection to your Resistance triggers a Fallout check.
 
 | Protection Source | Protects Against |
 |---|---|
@@ -328,7 +338,13 @@ When you have Mastery, add +1D10. Mastery does not stack.
 
 ## 15. Helping
 
-Another acolyte may help if they have a relevant Skill or Domain you do not have. They add +1D10 to your pool. If the roll causes stress, the helper also takes stress, either to the same Resistance or another one that fits the fiction.
+Another acolyte may help if they have a relevant Skill or Domain. For each character that assists you, add +1D10 to your pool. There is a limit to how many characters can aid you on any given action — the GM decides based on the fiction.
+
+If the roll causes stress, every helper also takes stress. The GM rolls the stress die once and applies the same amount to the primary roller and all helpers, against the same Resistance.
+
+### Group Actions
+
+For group skill actions — sneaking into a location, coordinating an assault, searching a large area — choose one player to lead the group. The leader rolls normally with all helpers adding +1D10 each. If the leader succeeds, every other player in the group rolls with Mastery on their individual follow-up actions. If the leader fails, the group fails together and all members take stress.
 
 ---
 
@@ -380,6 +396,10 @@ When an acolyte acts to damage, overcome, expose, or defeat a threat, the stress
 Combat is not a separate subsystem. It is a dangerous Situation where violence is likely, time is tight, and stress can land fast.
 
 A fight is just a dangerous situation where the likely stress is Body, Mind, Shadow, Authority, or Corruption.
+
+### Multiple Enemies
+
+If you are fighting multiple enemies at once and suffer stress, take **+1 stress for each enemy after the first**. Three cultists shooting at you means the stress die +2. A full mob means the stress die +5 or more. This is why preparation, positioning, and picking your fights matters.
 
 ### Making Actions in Combat
 
