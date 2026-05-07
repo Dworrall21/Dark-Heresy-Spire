@@ -354,20 +354,20 @@ When a tag says to **roll stress twice**, roll the weapon's stress die twice, ap
 | **Ancient** | Impresses or alarms Mechanicus, noble, shrine, or archive factions. May create Faction Claim. |
 | **Area** | Affects a group, zone, mob, room, or vehicle bay. Usually Loud or Obvious. |
 | **Blessed** | Counts as religious permission, witness legitimacy, or protection against fear and taint; may change stress type or reduce spiritual/social consequences. |
-| **Block** | When this weapon causes the user stress from use, roll that stress twice and take the lower result. |
-| **Bloodbound** | Mark D3 Body stress to roll with Mastery with this weapon for the rest of the Situation. |
+| **Block** | When using this weapon to deal damage, roll the Stress you gain twice and take the lowest result. |
+| **Bloodbound** | Mark D4 Body stress to roll with Mastery for the rest of the situation. |
 | **Bolt** | Against unarmoured targets, inflict +2 stress. Against armoured targets, inflict +1 stress. |
-| **Brutal** | Roll inflicted stress twice and keep the higher result. Stacks only with effects that explicitly say they stack. |
-| **Burning** | After inflicting stress, the target takes D3 extra stress whenever they next take stress until extinguished or contained. |
+| **Brutal** | Roll stress twice, keep the highest. Stacks. |
+| **Burning** | On inflicting stress: target takes an extra D4 stress every time they take Stress unless extinguished. |
 | **Close** | Melee weapon, or range so short it might as well be melee. |
 | **Concealable** | Can be hidden from casual inspection and may avoid Heat or evidence until searched, scanned, or used openly. |
-| **Conduit** | Mark D3 Mind stress, or D3 Authority stress if the strain is religious or institutional, to roll with Mastery with this item for the rest of the Situation. |
+| **Conduit** | Mark D4 Faith stress to roll with Mastery for the rest of the situation. |
 | **Crude** | Effective but suspicious; social use may become Risky, or Heat may rise if seen. |
-| **Dangerous** | If you roll maximum inflicted stress, mark D6 Body stress. |
-| **Debilitating** | Once per Situation, after inflicting stress, the next attack against that target gains Mastery. |
-| **Distressing** | If you roll maximum inflicted stress, mark D6 Mind stress. |
+| **Dangerous** | If you roll maximum stress, mark D6 Body stress. |
+| **Debilitating** | Once per situation: on inflicting stress, the next attack against the target is rolled with Mastery. |
+| **Distressing** | If you roll maximum stress, mark D6 Mind stress. |
 | **Disposable** | Can be burned for one strong effect, then destroyed or reduced to D3. |
-| **Dual** | When dual-wielding two of this weapon, roll stress twice and add both results. |
+| **Dual** | Roll Stress twice and add the results if dual-wielding two of this weapon. |
 | **Elegant** | Grants social permission in noble, official, ceremonial, or elite spaces. |
 | **Experimental** | Grants unusual effect; on a 7 or lower, trigger Unstable or a Burden. |
 | **Far Range** | Can be used at Extreme range. |
@@ -376,31 +376,31 @@ When a tag says to **roll stress twice**, roll the weapon's stress die twice, ap
 | **Holy** | Against Warp-tainted, heretical, or daemonic foes, the minimum stress inflicted is always 4. |
 | **Hungry** | Demands charge, fuel, blood, secrets, pain, prayer, sacrifice, or repeated use. |
 | **Limited X** | Can be used X times per Situation. |
-| **Loud** | If you roll maximum inflicted stress, increase Heat or mark D6 Shadow stress if the noise creates personal exposure. |
+| **Loud** | If you roll maximum stress, mark D6 Fortune stress. |
 | **Melta** | Ignores Protection. |
 | **Obvious** | Cannot be hidden without special preparation; Cover or social rolls may become Risky. |
 | **One-Shot** | Can only be used once per Situation. |
 | **Penitent** | Mark D3 Body stress when inflicting stress. |
 | **Piercing** | Ignores Body Protection. |
-| **Plasma** | Dangerous. If you roll maximum inflicted stress, deal double stress. |
-| **Point-Blank** | +1 stress die step at Close range; -1 stress die step beyond Ranged range or at long distance. |
+| **Plasma** | Dangerous; if you roll maximum stress, deal double stress. |
+| **Point-Blank** | +1 stress die step at close range; -1 at long range. |
 | **Ranged** | Can be used at Ranged range. |
 | **Reliable** | Ignore the first step-down, jam, misfire, supply issue, or maintenance complication each Operation. |
-| **Reliquary** | If you roll maximum inflicted stress, mark D6 Mind stress, or D6 Authority stress if the cost is doctrinal exposure. |
+| **Reliquary** | If you roll maximum stress, mark D6 Mind stress or D6 Corruption stress. |
 | **Reload** | Must spend time reloading before reuse. |
 | **Restricted** | If inspected by officials, mark D3 Authority stress or create a faction question. |
 | **Sanctioned** | Officially permitted under a specific authority; reduces Authority risk until used outside mandate. |
 | **Silent** | Does not raise Heat from noise alone. Bodies, witnesses, traces, and records still matter. |
-| **Spread** | Nearby creatures take D3 stress from this weapon. |
-| **Suppressive** | On a success, a second nearby target marks D3 Shadow stress or D3 Mind stress, depending on whether the pressure is exposure or fear. |
+| **Spread** | Nearby creatures take D4 stress from this weapon. |
+| **Suppressive** | On a success: a second nearby target marks D3 Fortune stress. |
 | **Suspicious** | The item is not illegal by itself, but invites questions, searches, witnesses, or rumors. |
-| **Tiring** | On failure, reduce the stress die size you inflict by 1 for the rest of the Situation. |
+| **Tiring** | On failure, reduce the stress dice size you inflict by 1 for the situation. |
 | **Traceable** | If left behind, used publicly, scanned, logged, or inspected, it creates evidence. |
-| **Unreliable** | On failure, this item cannot be used for the remainder of the Situation. |
+| **Unreliable** | On failure, cannot be used for the remainder of the situation. |
 | **Unstable** | On a 7 or lower, the GM may step it down, jam it, overheat it, scream, leak, or inflict D3 stress. |
-| **Volatile** | On failure, increase Heat or mark D6 Shadow stress if the volatility exposes the user. |
+| **Volatile** | On failure, mark D6 Fortune stress. |
 | **Warded** | Provides Protection 1 against Corruption, Warp Trace, possession, hexes, or psychic intrusion. |
-| **Wyrd** | If you roll maximum inflicted stress, mark D6 Corruption stress. |
+| **Wyrd** | If you roll maximum stress, take D6 Corruption stress. |
 
 ---
 
