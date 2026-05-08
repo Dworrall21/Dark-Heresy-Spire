@@ -674,8 +674,8 @@ Choose one primary weapon:
 
 | Item | Resource | Tags | Effect | Burden |
 |---|---:|---|---|---|
-|| **Boltgun** *(Thundercrack Godwyn-Pattern)* | D8 | Ranged, Loud, Bolt, Brutal, Restricted | D8 Body. +2 stress against unarmoured targets, +1 against armoured. Roll stress twice (Brutal) and keep the higher result. | **Restricted Pattern:** if inspected, logged, or used publicly, take D3 Authority stress or Heat +1. |
-| **Hellgun / Hot-Shot Lasgun** *(Calibrated Steadfast)* | D8 | Ranged, Reliable, Restricted, Accurate, Volatile | D8 Body. Gain Mastery when prepared, braced, or firing from a tactical position. | **Volatile:** on failure, increase Heat or mark D6 Shadow stress if exposed. |
+| **Boltgun** *(Thundercrack Godwyn-Pattern)* | D8 | Ranged, Loud, Bolt, Brutal, Restricted | D8 Body. Against unarmoured targets, inflict +2 stress; against armoured targets, inflict +1 stress. Brutal: roll stress twice and keep the highest. | **Restricted Pattern:** if inspected, logged, or used publicly, take D3 Authority stress or Heat +1. |
+| **Hellgun / Hot-Shot Lasgun** *(Calibrated Steadfast)* | D8 | Ranged, Reliable, Restricted, Accurate, Volatile | D8 Body. Gain Mastery when prepared, braced, or firing from a tactical position. | **Volatile:** on failure, mark D6 Fortune stress. |
 
 Also begin with:
 
