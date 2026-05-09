@@ -1,0 +1,834 @@
+{
+  "mission": "The Saint with the Wrong Shadow",
+  "heat": 6,
+  "enemy_awareness": 2,
+  "patron_notice": 2,
+  "warp_trace": 5,
+  "clocks": {
+    "Wrong Shadow Awakens": {
+      "current": 6,
+      "max": 6
+    },
+    "Public Panic": {
+      "current": 2,
+      "max": 6
+    },
+    "Ecclesiarchy Complaint": {
+      "current": 1,
+      "max": 4
+    },
+    "Cult Escape Route": {
+      "current": 0,
+      "max": 4
+    }
+  },
+  "friction_log": [
+    "Failed psychic roll still advances Warp Trace and Wrong Shadow. The cost of trying is real.",
+    "Lys got the clue but triggered Ecclesiarchy Complaint. The quiet path has costs too.",
+    "Using forbidden methods on a corpse in a chapel \u2014 this is exactly the kind of choice the system should create."
+  ],
+  "narrative_log": [
+    "================================================================================",
+    "DARK HERESY SPIRE \u2014 PLAYTEST 9",
+    "Seed: 42 | GM + 4 PCs",
+    "Mission: The Saint with the Wrong Shadow",
+    "================================================================================",
+    "",
+    "## PATRON",
+    "  Inquisitor Vael Draven \u2014 Ordo Hereticus",
+    "  Public: Puritan | Private: Containment",
+    "  Patience: 4/6 | Notice: 0/3",
+    "",
+    "## CELL ROSTER",
+    "  Kael Mourn \u2014 Explicator (Tragic)",
+    "    Skills: Investigate, Deceive, Resist | Domains: Underworld, Imperium, Heresy",
+    "    Cover: Administratum tithe auditor D6",
+    "    Protection: Body 0, Mind 1, Shadow 0, Authority 1, Corruption 0",
+    "    Motivation: Kael wants to prove his redemption is real. He'll push into moral danger to find the truth, and he'll take stress to protect others from learning what he did.",
+    "",
+    "  Seren Vale \u2014 Secutor (Winner)",
+    "    Skills: Fight, Move, Command | Domains: Militarum, Imperium, Frontier",
+    "    Cover: Sanctioned bounty agent D6",
+    "    Protection: Body 2, Mind 1, Shadow 0, Authority 0, Corruption 0",
+    "    Motivation: Seren wants the cell to survive and the mission to succeed with minimal casualties. She'll stack advantages before combat and use authority efficiently.",
+    "",
+    "  Lys Thane \u2014 Penumbra (Combo-seeker)",
+    "    Skills: Skulk, Deceive, Procure | Domains: Void, Underworld, Imperium",
+    "    Cover: Chartist vessel factor D8",
+    "    Protection: Body 0, Mind 0, Shadow 1, Authority 0, Corruption 0",
+    "    Motivation: Lys wants to find the optimal solution \u2014 maximum effect for minimum cost. She'll look for Cover synergies, tag interactions, and creative uses of gear.",
+    "",
+    "  Pyra Voss \u2014 Sanctioned Psyker (Wildcard)",
+    "    Skills: Resist, Investigate, Command | Domains: Ecclesiarchy, Warp, Heresy",
+    "    Cover: Pilgrim confessor D6",
+    "    Protection: Body 0, Mind 1, Shadow 0, Authority 0, Corruption 1",
+    "    Psychic Powers: Witch-Sight, Veil of Unnotice, Hexagrammic Rebuke",
+    "    Forbidden Methods: Mind-Scrape",
+    "    Motivation: Pyra wants to use her powers to help the cell, even at personal cost. She'll take Corruption stress to gain advantages, creating interesting chaos.",
+    "",
+    "## STARTING STATE",
+    "  Heat: 2 | Enemy Awareness: 1 | Patron Notice: 0 | Warp Trace: 0",
+    "  Clock \u2014 Wrong Shadow Awakens: 1/6",
+    "  Clock \u2014 Public Panic: 0/6",
+    "  Clock \u2014 Ecclesiarchy Complaint: 0/4",
+    "  Clock \u2014 Cult Escape Route: 0/4",
+    "",
+    "================================================================================",
+    "OPERATION 1: Audit of Saint Septima's Ashes",
+    "Objective: Establish cover, access the chapel, and observe the miracle.",
+    "Starting Heat: 2 | Enemy Awareness: 1",
+    "================================================================================",
+    "",
+    "--- Situation: The Pilgrim Queue ---",
+    "Rain-slick devotional plaza outside the chapel. Hundreds of pilgrims wait in line.",
+    "A blind pilgrim claims the saint whispered her name. The crowd is fervent, hopeful, and fragile.",
+    "",
+    "Lys Thane approaches the pilgrim queue under her Chartist vessel factor cover,",
+    "looking for the candle seller using coded phrases.",
+    "Lys loses the candle seller in the crowd. She'll need another approach.",
+    "",
+    "Kael Mourn approaches the blind pilgrir who claims the saint whispered her name.",
+    "The pilgrim becomes frightened and clams up. Kael gets nothing useful.",
+    "However, he notices the shadow behavior himself \u2014 the core clue is never hidden.",
+    "He observes Sella's shadow moving toward prayer from a distance. D3 Corruption from the wrongness.",
+    "",
+    "Seren Vale positions herself to watch the chapel exits, ready for trouble.",
+    "Seren maps the entire plaza. She notes Marshal Rork's sniper positions and identifies",
+    "three exit routes. She also spots a cult lookout pretending to be a pilgrim.",
+    "Seren's preparation will give the cell an advantage in any future combat here.",
+    "",
+    "Pyra Voss activates Witch-Sight to observe the chapel from the plaza edge.",
+    "Psychic power use: Investigate + Warp, Dangerous (warp risk in a public place).",
+    "The Witch-Sight flickers. Pyra gets a sense of wrongness but no clear image.",
+    "The shadow still notices the attempt.",
+    "  Clock \u2014 Wrong Shadow Awakens: 1/6 \u2192 2/6",
+    "",
+    "--- Situation: First Viewing of the Corpse ---",
+    "The cell enters the chapel reliquary alcove. Frater Loam watches nervously.",
+    "Sella's body lies on a stone slab, surrounded by candles. Her shadow moves wrong.",
+    "",
+    "Kael Mourn approaches the corpse to examine it. Frater Loam hovers anxiously.",
+    "Kael finds black glass residue in Sella's chest wound \u2014 a shard or bead is inside her body.",
+    "The shadow bends toward the nearest praying pilgrim, not toward the chapel lamps.",
+    "",
+    "Lys Thane approaches Frater Loam privately, threatening donation fraud charges.",
+    "Loam cooperates but warns Canoness-Adjunct Vale that the auditors are asking hard questions.",
+    "  Clock \u2014 Ecclesiarchy Complaint: 0/4 \u2192 1/4",
+    "",
+    "--- End of Operation 1 ---",
+    "",
+    "End-of-Operation Checklist:",
+    "  1. Did anyone see what happened? Yes \u2014 Frater Loam, cult lookout, pilgrims.",
+    "  2. Did anyone record it? Possible \u2014 chapel may have pict-feeds.",
+    "  3. Did anyone survive with useful information? Yes \u2014 Loam cooperated (partially).",
+    "  4. Was there loud violence? No.",
+    "  5. Did Cover hold? Mostly \u2014 audit cover is plausible but being tested.",
+    "  6. Did the enemy learn something? Yes \u2014 cult knows outsiders are investigating.",
+    "  7. Did the Patron have reason to notice? Not yet \u2014 no public authority used.",
+    "  8. Did any faction gain reason to intervene? Ecclesiarchy \u2014 Loam may have warned Vale.",
+    "  9. Did evidence remain unsecured? The black glass residue sample Kael took.",
+    " 10. Was a Red Line approached? No.",
+    "",
+    "  Heat: 2",
+    "  Enemy Awareness: 1",
+    "  Patron Notice: 0",
+    "  Warp Trace: 1/6",
+    "  Clock \u2014 Wrong Shadow Awakens: 2/6",
+    "  Clock \u2014 Public Panic: 0/6",
+    "  Clock \u2014 Ecclesiarchy Complaint: 1/4",
+    "  Clock \u2014 Cult Escape Route: 0/4",
+    "",
+    "  Kael Mourn: Body=0, Mind=0, Shadow=0, Authority=0, Corruption=6",
+    "  Seren Vale: Body=0, Mind=0, Shadow=0, Authority=0, Corruption=0",
+    "  Lys Thane: Body=0, Mind=0, Shadow=0, Authority=0, Corruption=0",
+    "  Pyra Voss: Body=0, Mind=0, Shadow=0, Authority=0, Corruption=1",
+    "",
+    "",
+    "================================================================================",
+    "OPERATION 2: Sella Vorn's Last Day",
+    "Objective: Reconstruct Sella's movements and identify who wanted the corpse in the chapel.",
+    "Starting Heat: 2 | Enemy Awareness: 1",
+    "================================================================================",
+    "",
+    "--- Situation: The Dormitory Search ---",
+    "Sella's hab-block dormitory, sealed for sanitation. The room has been searched badly already.",
+    "A cult lookout watches from the corridor.",
+    "",
+    "Seren Vale spots the cult lookout and moves to intercept quietly.",
+    "Seren disarms and restrains the lookout silently. He's a low-level cultist \u2014 frightened.",
+    "She gags him and ties him to a pipe. He'll be found eventually, but not soon.",
+    "",
+    "Kael Mourn searches Sella's dormitory for clues about her last day.",
+    "Kael finds the black dust and transit chit, but the search takes too long.",
+    "A hab neighbor sees him and demands to know if Sella is really a saint or a heretic.",
+    "",
+    "Lys Thane uses her Underworld contacts to trace the transit chit.",
+    "The trail is cold. Lys can't trace the chit through official channels.",
+    "She'll need to find another way to identify Sella's connections.",
+    "",
+    "--- Situation: Finding Mira Vorn ---",
+    "The cell learns Mira is hiding in an abandoned ration lift beneath the manufactorum district.",
+    "She thinks officials killed her mother. A cult hunter is also looking for her.",
+    "",
+    "Pyra Voss uses Veil of Unnotice to scout the ration lift area without being seen.",
+    "Psychic power: Skulk + Warp, Risky (subtle power, but still warp-touched).",
+    "The Veil fails. Pyra is visible. The cult hunter spots her and raises the alarm.",
+    "  Enemy Awareness: 1 \u2192 2",
+    "  Pyra can still reach Mira, but the cult hunter is coming.",
+    "",
+    "Kael Mourn approaches Mira Vorn. She's a frightened child who thinks officials killed her mother.",
+    "Mira runs. She's too frightened. The cell will need to find another way to get her testimony.",
+    "However, Pyra's earlier scouting means they know where she is. They can try again.",
+    "",
+    "",
+    "--- End of Operation 2 ---",
+    "",
+    "End-of-Operation Checklist:",
+    "  1. Did anyone see what happened? Yes \u2014 hab neighbors, cult lookout, cult hunter.",
+    "  2. Did anyone record it? Unlikely in the underhive.",
+    "  3. Did anyone survive with useful information? Yes \u2014 captured cult lookout/hunter.",
+    "  4. Was there loud violence? Minor \u2014 Seren's fight with the cult hunter.",
+    "  5. Did Cover hold? The audit cover is weakening \u2014 Cale knows outsiders are asking questions.",
+    "  6. Did the enemy learn something? Yes \u2014 Cale knows someone is investigating Sella.",
+    "  7. Did the Patron have reason to notice? Not yet.",
+    "  8. Did any faction gain reason to intervene? The cult is now actively hunting the cell.",
+    "  9. Did evidence remain unsecured? The cult hunter's token, Mira's testimony.",
+    " 10. Was a Red Line approached? No.",
+    "",
+    "  Heat: 2",
+    "  Enemy Awareness: 2",
+    "  Patron Notice: 0",
+    "  Warp Trace: 2/6",
+    "  Clock \u2014 Wrong Shadow Awakens: 2/6",
+    "  Clock \u2014 Public Panic: 0/6",
+    "  Clock \u2014 Ecclesiarchy Complaint: 1/4",
+    "  Clock \u2014 Cult Escape Route: 0/4",
+    "",
+    "  Kael Mourn: Body=0, Mind=1, Shadow=0, Authority=0, Corruption=6",
+    "  Seren Vale: Body=0, Mind=0, Shadow=0, Authority=0, Corruption=0",
+    "  Lys Thane: Body=0, Mind=0, Shadow=0, Authority=0, Corruption=0",
+    "  Pyra Voss: Body=0, Mind=0, Shadow=0, Authority=0, Corruption=1",
+    "",
+    "",
+    "================================================================================",
+    "OPERATION 3: The Last Candle",
+    "Objective: Identify and disrupt the Choir of the Last Candle before the mass vigil.",
+    "Starting Heat: 2 | Enemy Awareness: 2",
+    "================================================================================",
+    "",
+    "--- Situation: Cult Meeting in the Candle-Vault ---",
+    "Wax storage chamber beneath the manufactorum chapel annex. Cale, three cult faithful,",
+    "one marked pilgrim, and a hidden worker. The cult is deciding whether to kill Mira or use her.",
+    "",
+    "Lys Thane infiltrates the candle-vault during the cult meeting, disguised as a new recruit.",
+    "Lys's cover is blown. Cale recognizes her as an outsider. The cult moves to seize her.",
+    "  Heat: 2 \u2192 3 (cover blown)",
+    "  Lys fights her way out \u2014 the cult meeting becomes a combat.",
+    "",
+    "Kael Mourn interrogates the captured cult lookout about the Choir's structure.",
+    "The lookout refuses to talk. He's too afraid of Sister Ashen.",
+    "Kael learns nothing from this source.",
+    "",
+    "Pyra Voss uses Witch-Sight on the marked pilgrim found in the candle-vault.",
+    "Psychic power: Investigate + Warp, Dangerous.",
+    "The Witch-Sight is blocked \u2014 the shadow has warded the pilgrim.",
+    "Pyra learns nothing but the attempt still feeds the shadow.",
+    "",
+    "Seren Vale plans the cell's approach to disrupting the mass vigil.",
+    "Seren identifies: the chapel has three exits, the cult has four enforcers in the crowd,",
+    "and the mass vigil will pack 200+ pilgrims into a space meant for 80.",
+    "She plans a two-pronged approach: Lys infiltrates, Seren handles enforcers,",
+    "Kael secures Mira, Pyra contains the shadow.",
+    "",
+    "--- End of Operation 3 ---",
+    "",
+    "End-of-Operation Checklist:",
+    "  1. Did anyone see what happened? Yes \u2014 cult members, marked pilgrim.",
+    "  2. Did anyone recorded it? Possible \u2014 cult may have pict records.",
+    "  3. Did anyone survive with useful information? Yes \u2014 captured lookout, marked pilgrim.",
+    "  4. Was there loud violence? Minor \u2014 Lys's escape if cover was blown.",
+    "  5. Did Cover hold? Barely \u2014 Cale is suspicious, cult knows outsiders are close.",
+    "  6. Did the enemy learn something? Yes \u2014 cult knows the cell is closing in.",
+    "  7. Did the Patron have reason to notice? Not yet \u2014 no public authority used.",
+    "  8. Did any faction gain reason to intervene? The cult is now in active defense mode.",
+    "  9. Did evidence remain unsecured? The marked pilgrim, cult tokens, second fragment clue.",
+    " 10. Was a Red Line approached? No.",
+    "",
+    "  Heat: 3",
+    "  Enemy Awareness: 2",
+    "  Patron Notice: 0",
+    "  Warp Trace: 3/6",
+    "  Clock \u2014 Wrong Shadow Awakens: 2/6",
+    "  Clock \u2014 Public Panic: 0/6",
+    "  Clock \u2014 Ecclesiarchy Complaint: 1/4",
+    "  Clock \u2014 Cult Escape Route: 0/4",
+    "",
+    "  Kael Mourn: Body=0, Mind=1, Shadow=0, Authority=0, Corruption=6",
+    "  Seren Vale: Body=0, Mind=0, Shadow=0, Authority=0, Corruption=0",
+    "  Lys Thane: Body=0, Mind=0, Shadow=4, Authority=0, Corruption=0",
+    "  Pyra Voss: Body=0, Mind=0, Shadow=0, Authority=0, Corruption=5",
+    "",
+    "  Heat 3 Threshold \u2014 Heat Move (rolled 10): A Patron Liability twitches: someone asks why the cell is making noise.",
+    "",
+    "================================================================================",
+    "OPERATION 4: The Wrong Shadow",
+    "Objective: Contain, destroy, exploit, or bury the miracle.",
+    "Starting Heat: 3 | Enemy Awareness: 2",
+    "================================================================================",
+    "",
+    "--- Situation: The Mass Vigil ---",
+    "Chapel nave, packed beyond safety limits. 200+ pilgrims crowd the space.",
+    "The wrong shadow stirs beneath Sella's skin. The cult begins the rite.",
+    "Canoness-Adjunct Vale presides. Marshal Rork's Arbites wait outside.",
+    "",
+    "Lys Thane, positioned among the pilgrims, moves to disrupt the cult's devotional focus.",
+    "Lys is caught by the cult enforcer. The rite proceeds unhindered.",
+    "  Clock \u2014 Wrong Shadow Awakens: 2/6 \u2192 4/6",
+    "  Heat: 3 \u2192 4",
+    "",
+    "Seren Vale engages the cult enforcers before they can stop Lys.",
+    "The enforcers overwhelm Seren. She's pinned. The cult's rite continues.",
+    "  Clock \u2014 Wrong Shadow Awakens: 4/6 \u2192 5/6",
+    "",
+    "Kael Mourn reaches Mira, who's been brought to the chapel by the cult as a 'prayer anchor.'",
+    "The crowd is too thick. Kael can't reach Mira in time.",
+    "The cult uses her blood in the rite. The wrong shadow awakens.",
+    "  Clock \u2014 Wrong Shadow Awakens: 5/6 \u2192 6/6",
+    "  *** CLOCK FULL: Wrong Shadow Awakens \u2014 CONSEQUENCE TRIGGERS ***",
+    "",
+    "Pyra Voss uses Hexagrammic Rebuke to contain the wrong shadow.",
+    "Psychic power: Fight + Warp, Dangerous. This is the big one.",
+    "The Rebuke fails. The wrong shadow surges through the chapel.",
+    "Sella's corpse sits up. The shadow speaks: 'I am the saint you wanted.'",
+    "  Clock \u2014 Wrong Shadow Awakens: 6/6 \u2192 6/6",
+    "  *** CLOCK FULL: Wrong Shadow Awakens \u2014 CONSEQUENCE TRIGGERS ***",
+    "  Clock \u2014 Public Panic: 0/6 \u2192 2/6",
+    "  Heat: 4 \u2192 6 (mass psychic event)",
+    "  *** The wrong shadow speaks publicly. This is the disaster route. ***",
+    "",
+    "--- The Relic Extraction ---",
+    "With the shadow contained (or not), the cell must extract the Noctilith Tear.",
+    "",
+    "Kael Mourn cuts into Sella's corpse to extract the Noctilith Tear.",
+    "The Tear resists extraction. It's fused with Sella's ribcage.",
+    "Kael must choose: leave it, destroy the corpse, or use a forbidden method.",
+    "He chooses to use the Excruciator Protocol on the corpse to loosen the relic.",
+    "",
+    "--- End of Operation 4 ---",
+    "",
+    "End-of-Operation Checklist:",
+    "  1. Did anyone see what happened? Yes \u2014 the entire chapel witnessed the psychic battle.",
+    "  2. Did anyone record it? Almost certainly \u2014 pilgrims with pict-recorders.",
+    "  3. Did anyone survive with useful information? Yes \u2014 Mira, captured cultists.",
+    "  4. Was there loud violence? Yes \u2014 psychic battle, cult enforcer fight, possible corpse desecration.",
+    "  5. Did Cover hold? No \u2014 the audit cover is burned.",
+    "  6. Did the enemy learn something? Yes \u2014 the cult knows the cell's capabilities.",
+    "  7. Did the Patron have reason to notice? Yes \u2014 psychic phenomena, possible public exposure.",
+    "  8. Did any faction gain reason to intervene? Ecclesiarchy, Arbites, possibly Mechanicus.",
+    "  9. Did evidence remain unsecured? The Noctilith Tear (contained), Sella's corpse, cult tokens.",
+    " 10. Was a Red Line approached? Possibly \u2014 depending on how the extraction was handled.",
+    "",
+    "--- Patron Debrief ---",
+    "Patron Notice: 0 \u2192 2",
+    "",
+    "================================================================================",
+    "FINAL STATE",
+    "================================================================================",
+    "",
+    "  Heat: 6",
+    "  Enemy Awareness: 2",
+    "  Patron Notice: 2",
+    "  Warp Trace: 5/6",
+    "  Clock \u2014 Wrong Shadow Awakens: 6/6",
+    "    *** FULL ***",
+    "  Clock \u2014 Public Panic: 2/6",
+    "  Clock \u2014 Ecclesiarchy Complaint: 1/4",
+    "  Clock \u2014 Cult Escape Route: 0/4",
+    "",
+    "  Character Stress:",
+    "    Kael Mourn: Body=0, Mind=8, Shadow=0, Authority=0, Corruption=8 | Total: 16 | Fallout: Mind(MINOR), Corruption(MINOR)",
+    "    Seren Vale: Body=2, Mind=0, Shadow=0, Authority=0, Corruption=0 | Total: 2 | Fallout: None",
+    "    Lys Thane: Body=6, Mind=0, Shadow=4, Authority=0, Corruption=0 | Total: 10 | Fallout: None",
+    "    Pyra Voss: Body=0, Mind=5, Shadow=0, Authority=0, Corruption=10 | Total: 15 | Fallout: Corruption(MINOR)",
+    "",
+    "  Clues Found: ['mira_spotted', 'shadow_bends_to_prayer', 'black_glass_residue', 'shadow_bends_to_prayer', 'loam_cooperation', 'cale_visited_chapel', 'black_dust', 'transit_chit', 'mira_fled', 'relic_extracted_forbidden']",
+    "  Captures: ['cult_lookout']",
+    "  Tactical Notes: ['arbites_snipers', 'cult_lookout_spotted']",
+    "  Debts: []",
+    "",
+    "================================================================================",
+    "MISSION OUTCOME",
+    "================================================================================",
+    "",
+    "PARTIAL FAILURE \u2014 The relic was not fully contained or the shadow escaped.",
+    "The wrong shadow's influence remains in the district.",
+    "The Patron is displeased. The next mission starts at higher Heat.",
+    "",
+    "================================================================================",
+    "END OF PLAYTEST 9",
+    "================================================================================"
+  ],
+  "roll_log": [
+    {
+      "who": "Lys",
+      "skill": "Skulk",
+      "domain": "Underworld",
+      "pool": [
+        5,
+        4,
+        2,
+        1
+      ],
+      "difficulty": "Safe",
+      "removed": [],
+      "remaining": [
+        5,
+        4,
+        2,
+        1
+      ],
+      "highest": 5,
+      "result": "FAIL",
+      "fiction": "Lys slips through the crowd, signal jammer active, scanning for the candle seller.",
+      "mechanical": null
+    },
+    {
+      "who": "Kael",
+      "skill": "Investigate",
+      "domain": "Heresy",
+      "pool": [
+        4,
+        3,
+        2
+      ],
+      "difficulty": "Risky",
+      "removed": [
+        4
+      ],
+      "remaining": [
+        3,
+        2
+      ],
+      "highest": 3,
+      "result": "FAIL",
+      "fiction": "Kael kneels beside the blind pilgrim, asking gentle questions about what the saint said.",
+      "mechanical": null
+    },
+    {
+      "who": "Seren",
+      "skill": "Command",
+      "domain": "Militarum",
+      "pool": [
+        10,
+        9,
+        2
+      ],
+      "difficulty": "Safe",
+      "removed": [],
+      "remaining": [
+        10,
+        9,
+        2
+      ],
+      "highest": 10,
+      "result": "CRIT_SUCCESS",
+      "fiction": "Seren identifies sight lines, exit routes, and notes the Arbites snipers watching the pilgrim line.",
+      "mechanical": null
+    },
+    {
+      "who": "Pyra",
+      "skill": "Investigate",
+      "domain": "Warp",
+      "pool": [
+        7,
+        2,
+        1,
+        1
+      ],
+      "difficulty": "Dangerous",
+      "removed": [
+        7,
+        2
+      ],
+      "remaining": [
+        1,
+        1
+      ],
+      "highest": 1,
+      "result": "CRIT_FAIL",
+      "fiction": "Pyra's inner eye opens. She sees the warp-echo coiled inside Sella's corpse like a black flame.",
+      "mechanical": null
+    },
+    {
+      "who": "Kael",
+      "skill": "Investigate",
+      "domain": "Heresy",
+      "pool": [
+        10,
+        9,
+        4,
+        1
+      ],
+      "difficulty": "Risky",
+      "removed": [
+        10
+      ],
+      "remaining": [
+        9,
+        4,
+        1
+      ],
+      "highest": 9,
+      "result": "SUCCESS",
+      "fiction": "Kael uses his evidence kit to examine Sella's wounds while Frater Loam prays nearby.",
+      "mechanical": null
+    },
+    {
+      "who": "Lys",
+      "skill": "Deceive",
+      "domain": "Imperium",
+      "pool": [
+        9,
+        7,
+        4
+      ],
+      "difficulty": "Risky",
+      "removed": [
+        9
+      ],
+      "remaining": [
+        7,
+        4
+      ],
+      "highest": 7,
+      "result": "SUCCESS_COST",
+      "fiction": "Lys implies she's found irregularities in the chapel's donation records and can make them go away.",
+      "mechanical": null
+    },
+    {
+      "who": "Seren",
+      "skill": "Fight",
+      "domain": "Militarum",
+      "pool": [
+        10,
+        8,
+        4
+      ],
+      "difficulty": "Risky",
+      "removed": [
+        10
+      ],
+      "remaining": [
+        8,
+        4
+      ],
+      "highest": 8,
+      "result": "SUCCESS",
+      "fiction": "Seren moves to neutralize the cult lookout before he can raise an alarm.",
+      "mechanical": null
+    },
+    {
+      "who": "Kael",
+      "skill": "Investigate",
+      "domain": "Imperium",
+      "pool": [
+        7,
+        5,
+        3,
+        1
+      ],
+      "difficulty": "Safe",
+      "removed": [],
+      "remaining": [
+        7,
+        5,
+        3,
+        1
+      ],
+      "highest": 7,
+      "result": "SUCCESS_COST",
+      "fiction": "Kael goes through Sella's belongings with his evidence kit.",
+      "mechanical": null
+    },
+    {
+      "who": "Lys",
+      "skill": "Procure",
+      "domain": "Underworld",
+      "pool": [
+        5,
+        4,
+        3
+      ],
+      "difficulty": "Risky",
+      "removed": [
+        5
+      ],
+      "remaining": [
+        4,
+        3
+      ],
+      "highest": 4,
+      "result": "FAIL",
+      "fiction": "Lys calls in a favor with her underhive fixer to trace the transit chit's origin.",
+      "mechanical": null
+    },
+    {
+      "who": "Pyra",
+      "skill": "Skulk",
+      "domain": "Warp",
+      "pool": [
+        6,
+        2
+      ],
+      "difficulty": "Risky",
+      "removed": [
+        6
+      ],
+      "remaining": [
+        2
+      ],
+      "highest": 2,
+      "result": "FAIL",
+      "fiction": "Pyra wraps herself in the Veil and slips through the abandoned manufactorum.",
+      "mechanical": null
+    },
+    {
+      "who": "Kael",
+      "skill": "Command",
+      "domain": "Imperium",
+      "pool": [
+        7,
+        2
+      ],
+      "difficulty": "Risky",
+      "removed": [
+        7
+      ],
+      "remaining": [
+        2
+      ],
+      "highest": 2,
+      "result": "FAIL",
+      "fiction": "Kael kneels to Mira's level and tells her he wants to help find out what really happened to Sella.",
+      "mechanical": null
+    },
+    {
+      "who": "Lys",
+      "skill": "Deceive",
+      "domain": "Heresy",
+      "pool": [
+        6,
+        6
+      ],
+      "difficulty": "Dangerous",
+      "removed": [
+        6,
+        6
+      ],
+      "remaining": [],
+      "highest": 0,
+      "result": "CRIT_FAIL",
+      "fiction": "Lys uses the cult phrase and her forged credentials to pose as a sympathizer.",
+      "mechanical": null
+    },
+    {
+      "who": "Kael",
+      "skill": "Investigate",
+      "domain": "Heresy",
+      "pool": [
+        8,
+        5,
+        1
+      ],
+      "difficulty": "Risky",
+      "removed": [
+        8
+      ],
+      "remaining": [
+        5,
+        1
+      ],
+      "highest": 5,
+      "result": "FAIL",
+      "fiction": "Kael questions the frightened cultist about the Choir's leadership and plans.",
+      "mechanical": null
+    },
+    {
+      "who": "Pyra",
+      "skill": "Investigate",
+      "domain": "Warp",
+      "pool": [
+        9,
+        7,
+        2,
+        2
+      ],
+      "difficulty": "Dangerous",
+      "removed": [
+        9,
+        7
+      ],
+      "remaining": [
+        2,
+        2
+      ],
+      "highest": 2,
+      "result": "FAIL",
+      "fiction": "Pyra examines the marked pilgrim's warp signature.",
+      "mechanical": null
+    },
+    {
+      "who": "Seren",
+      "skill": "Command",
+      "domain": "Militarum",
+      "pool": [
+        10,
+        6,
+        5
+      ],
+      "difficulty": "Safe",
+      "removed": [],
+      "remaining": [
+        10,
+        6,
+        5
+      ],
+      "highest": 10,
+      "result": "CRIT_SUCCESS",
+      "fiction": "Seren maps the chapel's defensive positions and plans the cell's approach.",
+      "mechanical": null
+    },
+    {
+      "who": "Lys",
+      "skill": "Skulk",
+      "domain": "Underworld",
+      "pool": [
+        4,
+        2,
+        1
+      ],
+      "difficulty": "Dangerous",
+      "removed": [
+        4,
+        2
+      ],
+      "remaining": [
+        1
+      ],
+      "highest": 1,
+      "result": "CRIT_FAIL",
+      "fiction": "Lys works through the crowd toward the cult's candle-array, planning to replace it with a warded decoy.",
+      "mechanical": null
+    },
+    {
+      "who": "Seren",
+      "skill": "Fight",
+      "domain": "Militarum",
+      "pool": [
+        5,
+        4,
+        2
+      ],
+      "difficulty": "Risky",
+      "removed": [
+        5
+      ],
+      "remaining": [
+        4,
+        2
+      ],
+      "highest": 4,
+      "result": "FAIL",
+      "fiction": "Seren moves to neutralize the cult enforcers in the chapel.",
+      "mechanical": null
+    },
+    {
+      "who": "Kael",
+      "skill": "Command",
+      "domain": "Imperium",
+      "pool": [
+        7,
+        2
+      ],
+      "difficulty": "Dangerous",
+      "removed": [
+        7,
+        2
+      ],
+      "remaining": [],
+      "highest": 0,
+      "result": "CRIT_FAIL",
+      "fiction": "Kael pushes through the crowd to reach Mira before the cult can use her.",
+      "mechanical": null
+    },
+    {
+      "who": "Pyra",
+      "skill": "Fight",
+      "domain": "Warp",
+      "pool": [
+        8,
+        6,
+        3
+      ],
+      "difficulty": "Dangerous",
+      "removed": [
+        8,
+        6
+      ],
+      "remaining": [
+        3
+      ],
+      "highest": 3,
+      "result": "FAIL",
+      "fiction": "Pyra channels the Hexagrammic Rebuke \u2014 golden fire that burns the warp-echo.",
+      "mechanical": null
+    },
+    {
+      "who": "Kael",
+      "skill": "Investigate",
+      "domain": "Heresy",
+      "pool": [
+        10,
+        5,
+        4,
+        2
+      ],
+      "difficulty": "Dangerous",
+      "removed": [
+        10,
+        5
+      ],
+      "remaining": [
+        4,
+        2
+      ],
+      "highest": 4,
+      "result": "FAIL",
+      "fiction": "Kael uses his evidence kit to carefully extract the black glass bead from Sella's chest wound.",
+      "mechanical": null
+    }
+  ],
+  "clues_found": [
+    "mira_spotted",
+    "shadow_bends_to_prayer",
+    "black_glass_residue",
+    "shadow_bends_to_prayer",
+    "loam_cooperation",
+    "cale_visited_chapel",
+    "black_dust",
+    "transit_chit",
+    "mira_fled",
+    "relic_extracted_forbidden"
+  ],
+  "tactical_notes": [
+    "arbites_snipers",
+    "cult_lookout_spotted"
+  ],
+  "captures": [
+    "cult_lookout"
+  ],
+  "tactical_plan": [
+    "two_pronged",
+    "infiltration_route"
+  ]
+}

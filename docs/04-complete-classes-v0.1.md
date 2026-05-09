@@ -402,9 +402,23 @@ You are legal because someone signed the right execution delay. You are useful b
 >
 > You begin with two Psychic Powers. When you use a Psychic Power and roll a 10, clear D3 Mind or Corruption stress. When you roll a 1, the GM introduces psychic backlash, Warp Trace, or daemonic attention.
 >
-> **Refresh**
->
-> Remove stress when you submit to containment, confession, psychic examination, or self-denial.
+> **Refresh**  
+>  
+> **Scene-based:** Remove stress when you submit to containment, confession, psychic examination, or self-denial. This requires a specific fictional moment — a scene with a confessor, a period in restraints, a ritual of grounding.  
+>  
+> **Between Operations:** When the cell has downtime between Operations, you may **ground** your Corruption. Describe how — meditation in a warded space, prayer over your sanctioning brand, sedatives, a ritual performed by an ally, or simply sitting in silence while the brand burns.  
+>  
+> The amount you clear depends on your **Warp Trace** in the area:  
+>  
+> | Warp Trace | Corruption Cleared | Condition |
+> |---|---:|---|
+> | **0–2** | **D6** | The Warp is quiet. Grounding is easier. |
+> | **3–4** | **D3** | The trace is significant. The Warp presses back. |
+> | **5–6** | **D3, but roll** | The trace is a beacon. Roll Resist + Warp (Risky). On a success, clear D3. On a failure, clear nothing — the trace holds you. On a 1, take D3 Corruption stress as the Warp pushes back through the connection. |
+>  
+> You may ground once per between-Operation period. If no warded or sanctified space is available, treat Warp Trace as one category worse (0–2 becomes 3–4, 3–4 becomes 5–6, 5–6 becomes impossible — you cannot ground without a warded space at high trace).  
+>  
+> See also [Forbidden Methods v0.1](10-forbidden-methods-v0.1.md#psyker-corruption-recovery) for additional recovery options including Exorcist assistance.
 
 ### Psychic Powers
 

@@ -484,6 +484,27 @@ Forbidden pressure should be recoverable, but never casually erased.
 | **Forbidden assets** | Secrecy is restored, repairs are made, the asset is fed, a debt is repaid, faction help is secured, or the cell accepts a Burden or Liability. |
 | **Warp Trace** | Containment, misdirection, ritual cleansing, witness handling, machine-log correction, false trail, enemy distraction, or a stronger occult event obscures it. |
 | **Radical suspicion** | The cell provides proof, scapegoat, confession, Patron report, rival evidence, or a costly act of loyalty. |
+| **Corruption stress (psyker)** | Grounding between Operations (see Sanctioned Psyker class) — amount cleared depends on Warp Trace level. Scene-based Refresh for larger clears. Exorcist's Litany of Grounding. |
+
+### Psyker Corruption Recovery
+
+Psyker Corruption is meant to accumulate — that's the pressure that makes psychic use a real decision. Recovery is possible but never free, and it gets harder the more you've used your powers.
+
+**Between-Operation grounding** (Sanctioned Psyker class): Once per between-Operation period, a psyker may ground Corruption. The amount cleared depends on the **Warp Trace** clock in the area:
+
+- **Warp Trace 0–2:** Clear D6. The Warp is quiet. Grounding is straightforward.
+- **Warp Trace 3–4:** Clear D3. The trace is significant. The Warp presses back.
+- **Warp Trace 5–6:** Clear D3, but must roll Resist + Warp (Risky). On a failure, clear nothing. On a 1, take D3 Corruption as the Warp pushes back through the connection.
+
+No warded/sanctified space available? Treat Warp Trace as one category worse. At Warp Trace 5–6 with no warded space, grounding is impossible — you need sanctified ground to push back against a beacon.
+
+**Scene-based Refresh** (Sanctioned Psyker class): When the fiction supports it — a scene with a confessor, a period in restraints, a ritual of grounding — the psyker may clear stress through their Refresh action. This is more powerful but requires the table to create the scene.
+
+**Exorcist assistance:** An Exorcist (or Hierophant with the right advances) can perform a **Litany of Grounding** to help a psyker clear Corruption stress. The Exorcist takes D3 Mind stress; the psyker clears D3 Corruption stress. This is a meaningful choice for both players.
+
+**What doesn't work:** Corruption doesn't clear just because the scene ends. It doesn't clear from ordinary rest. It doesn't clear from using more psychic powers. It clears from specific fictional actions that cost time, safety, or dignity. The accumulation is the point — the recovery is the reward for making space for it in the fiction.
+
+**The Warp Trace link is the key design insight:** The more you use your powers, the higher the Warp Trace climbs, and the harder it becomes to ground. This creates a natural feedback loop: heavy psyker use → high trace → harder recovery → more Corruption carries forward → higher Fallout risk. A psyker who uses powers sparingly can ground D6 between Operations and stay clean. A psyker who burns bright pays for it in recovery difficulty.
 
 Do not clear Warp Trace just because the scene ends. Clear it when someone does the work or when a later consequence consumes it.
 

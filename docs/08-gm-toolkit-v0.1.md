@@ -95,6 +95,36 @@ They act when:
 - Fallout gives them an opening.
 - The fiction demands immediate response.
 
+### Foreshadow Cover Degradation
+
+When a player uses a Cover Identity, the fiction should hint at what's being tested *before* the Cover degrades. This makes the degradation feel inevitable rather than arbitrary.
+
+**The principle:** Cover doesn't just "fail." It's tested by specific pressures. When you describe the scene, name the pressure. When the Cover steps down, the player should think "of course that's wearing thin" not "why did that break?"
+
+**The procedure:**
+
+1. **When Cover is used, name the strain.** "Your Chartist vessel factor cover gets you into the plaza, but the candle seller looks at your papers a beat too long — he's seen a lot of factors, and yours are *almost* right." This foreshadows that the Cover is being tested.
+
+2. **When Cover steps down, connect it to the fiction.** Don't just say "your Cover steps down to D6." Say: "The candle seller files your description with a contact. Your Chartist identity is still good, but it's been *noticed*. Next time you use it, someone might be checking."
+
+3. **When Cover is at D3, warn the player.** "Your Cover is thin now. One more use and it's gone — and when it goes, Heat goes up. You might want to find a different way in."
+
+4. **When Cover burns, make it matter.** The person behind the Cover — the real Chartist factor, the actual pilgrim confessor — is now at risk. Someone remembers. Someone asks questions. The fiction should reflect that a life was spent.
+
+**Example arc:**
+
+> **First use (D8):** "Your Chartist factor cover works perfectly. The guards wave you through. But you notice a clerk copying your seal-stamp into a ledger — routine, but now there's a record."
+>
+> **Second use (D6):** "The cover still works, but the clerk from before gives you a second look. Your papers are fine, but your *face* is being remembered. The cover is holding, but it's thinner."
+>
+> **Third use (D3):** "The cover barely holds. The clerk is gone — transferred or disappeared. A new clerk doesn't know you, but the ledger entry is still there. One more use and this identity burns."
+>
+> **Burned:** "The real Chartist vessel factor shows up. He's been wondering why someone's been using his name. Heat +1, and now there's a very angry, very real person who wants answers."
+
+**Why this matters:** Cover degradation should feel like a story, not a mechanic. The player should see it coming and make choices about when to push and when to pull back. If Cover just "breaks" because the GM says so, the player feels powerless. If they can see the cracks forming, they're making real decisions.
+
+**Cover is fiction-driven, not GM-driven.** The GM should never burn Cover by fiat ("Cale recognizes you"). Instead, the GM should describe the pressure, let the player choose to spend Cover or not, and let the mechanical step-down reflect the fictional strain. If the player keeps using a D3 Cover despite warnings, *that's* their choice — and the consequences are earned.
+
 ---
 
 ## 3. When to Call for a Roll
@@ -188,6 +218,33 @@ Low pools need special care:
 - A **1D10 Risky** or **1D10 Dangerous** roll becomes an automatic critical failure because all dice are removed.
 - A **2D10 Dangerous** roll also becomes an automatic critical failure.
 - If an acolyte only has **1D10**, invite them to get help, use gear, change approach, find leverage, or accept automatic success with a clear cost instead of forcing a dead-end roll.
+
+### Before the Roll: Warn and Redirect
+
+When a player declares an action that would require a roll with no chance of success, **do not let them roll**. Instead, pause and redirect:
+
+**The rule:** If the pool is 2D10 or less and the Difficulty is Dangerous or Impossible, the roll cannot succeed. The dice will all be removed. This is not a dramatic moment — it is a dead end.
+
+**The procedure:**
+
+1. **Name the problem.** "You're rolling 2D10 against Dangerous. That means both dice get removed — you can't succeed on the roll itself."
+
+2. **Offer alternatives.** Present two or more options the player can choose from:
+   - **Stack advantage first.** "You could spend time preparing — get help, find gear, establish leverage — to add dice to your pool before you roll."
+   - **Change the approach.** "You could try a different angle that's only Risky instead of Dangerous."
+   - **Accept the cost.** "You could just do it, but you'll take the consequences of a critical failure. The fiction still moves forward — you just pay for it."
+   - **Spend a resource.** "You could burn Cover, use a Boon, or invoke authority to step down the Difficulty."
+
+3. **Let the player choose.** The key is that the player makes an informed decision. They should never feel cheated by the math.
+
+**Example:**
+
+> **Player:** "I want to infiltrate the cult meeting alone, without any cover or preparation."
+> **GM:** "That's 2D10 against Dangerous — Deceive plus Heresy, nothing else. Both dice get removed. You can't succeed on the roll. What you *can* do is: (a) spend time building a cover story first to add a die, (b) bring someone who can help, (c) try to observe from a distance instead of infiltrating, or (d) go in knowing it'll blow up in your face but you'll learn something from the fallout. What do you want to do?"
+
+**Why this matters:** The goal is to keep the fiction moving and the player in control. A dead-end roll is not dramatic — it's frustrating. A player who chooses to walk into a disaster because they know the cost *is* dramatic.
+
+**Do not use this as a punishment.** This is not "gotcha" GMing. It's transparency. The player should always understand what they're risking before they roll.
 
 ### Default Difficulty by Approach
 
